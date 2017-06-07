@@ -12,20 +12,16 @@
 #******************************************************************#
 
 #Export environment variable
-source setenv.sh
+source ./setenv.sh
 
 if [ "$#" -ne  "0" -a "$1" == "INITIAL" ]; then
     cd $DW_OT_ROOT/..
-    pwd
     ./setup.sh $1
-    cd -
 elif [ "$#" -ne  "0" -a "$1" == "UPDATE" ]; then
     cd $DW_OT_ROOT/..
-    pwd
     ./setup.sh $1
-    cd -
 fi
-
-#Build and flash command for RTLS Ranging applicatio
+ 
+#Build command for application
 $OT_ROOT/scripts/build.sh
 
