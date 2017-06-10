@@ -1,23 +1,23 @@
 # Thread Bourder Router with Raspberry Pi
 ## Introduction:
 Nordic semiconductors Developed an Example(Thread Border Router), i.e.,  Raspberry Pi as a Border Router connected with NCP node and to the Internet (Ethernet or Wi-Fi).
-Thread Border Router serves as a gateway between the Internet and the Thread network. 
-This example is tested for nordic radio and also for decawave radio. 
+Thread Border Router serves as a gateway between the Internet and the Thread network.
+This example is tested for nordic radio and also for decawave radio.
 
 ## Required hardware :
-* Raspberry Pi 3 B 
-* nRF52840 Development Kit 
-* 1 GB (or larger) microSD card with SD card adapter 
-* microUSB power supply for Raspberry Pi 3 B 
+* Raspberry Pi 3 B
+* nRF52840 Development Kit
+* 1 GB (or larger) microSD card with SD card adapter
+* microUSB power supply for Raspberry Pi 3 B
 * microUSB to USB cable for connecting the nRF52840 Development Kit to the Raspberry Pi
 * Computer running the Linux operating system with SD card slot or SD/microSD USB adapter.
 
 
 ## Required software:
 * Terminal client with serial connection support, such as PuTTy/Tera term/ Minicom /Pyterm
-* Border Router Raspberry Pi image available from [nRF5 SDK for Thread ](https://www.nordicsemi.com/eng/Products/nRF5-SDK-for-Thread/) in `downloads` section as `RaspPi_Thread_Border_Router_Demo_v0.9.0-1.alpha.img` 
-* NCP firmware binary – arm-none-eabi-ot-ncp.hex 
-* CLI firmware binary – arm-none-eabi-ot-cli-ftd.hex 
+* Border Router Raspberry Pi image available from [nRF5 SDK for Thread ](https://www.nordicsemi.com/eng/Products/nRF5-SDK-for-Thread/) in `downloads` section as `RaspPi_Thread_Border_Router_Demo_v0.9.0-1.alpha.img`
+* NCP firmware binary – arm-none-eabi-ot-ncp.hex
+* CLI firmware binary – arm-none-eabi-ot-cli-ftd.hex
 
 ## Setup procedure:
 Complete the following steps to set up the Border Router solution:
@@ -27,7 +27,7 @@ Complete the following steps to set up the Border Router solution:
 * Extract the package for Image file.
 * Insert the SD Card into the SD card adapter and plug the adapter into ubuntu PC.
 * Go to the command prompt and check the name given to sd card by using command
-```bash	
+```bash
 sudo fdisk -l
 ```
 it may be `/dev/sdb` or `/dev/sdc` or `/dev/sdd`  (varies from PC to PC)
@@ -54,15 +54,15 @@ sudo sync
 ![Thread_Border_Router](./images/thread_border_setup.png)
 
 ## Thread Settings:
-The following are the default settings of the Border Router: 
+The following are the default settings of the Border Router:
 ```bash
-	Radio Channel: 11
-	PAN ID: 0xABCD
-	Network Master Key: 0x00112233445566778899AABBCCDDEEFF
-	Mesh-Local Prefix: FDDE:AD00:BEEF::/64
-	NAT64 Prefix: FD00:64:123:4567::/96
+   Radio Channel: 11
+   PAN ID: 0xABCD
+   Network Master Key: 0x00112233445566778899AABBCCDDEEFF
+   Mesh-Local Prefix: FDDE:AD00:BEEF::/64
+   NAT64 Prefix: FD00:64:123:4567::/96
 ```
-To customize the Thread settings, you must Log into the Border Router using SSH. 
+To customize the Thread settings, you must Log into the Border Router using SSH.
 To Log into Raspberry Pi using SSH, requires it's Ipv4 address.
 To find the IP address of Pi , use the `nmap` command on Ubuntu.
    1. Install the `nmap` command using
@@ -74,14 +74,14 @@ sudo apt-get install nmap
 Ifconfig
 ```
 ex: if the inet address is 192.168.1.165 then 192.168.1.0 is your network prefix
-   
+
    3. Now use this command , which lists all the IP addresses Present in your Network.
-```bash 
+```bash
 sudo nmap -sP 192.168.1.0/24
-	     
-	Nmap scan report for 192.168.1.249 
-	Host is up (-0.100s latency). 
-	MAC Address: 00:25:64:B7:0F:01 (Raspberry Pi foundation)
+
+   Nmap scan report for 192.168.1.249
+   Host is up (-0.100s latency).
+   MAC Address: 00:25:64:B7:0F:01 (Raspberry Pi foundation)
 ```
    4. From the above output , Note the ipv4 address with the name Raspberry Pi foundation.
       Use the below command with username `root` and `empty password` to Log into Pi.
@@ -89,7 +89,7 @@ sudo nmap -sP 192.168.1.0/24
 ssh root@192.168.1.249
 ```
 Inside the Raspbian , vim/nano editors are available.
-To change the settings, edit the `/etc/config/thread_border_router` file. The following lines can be found at the top of the file. 
+To change the settings, edit the `/etc/config/thread_border_router` file. The following lines can be found at the top of the file.
 ```bash
 vi /etc/config/thread_border_router
 
@@ -124,19 +124,19 @@ The other connectivity option, which is also enabled by default, is support for 
 2. Flash the CLI Binary onto another Nordic kit connected with EVB1000.
 3. Start a terminal emulator like PuTTY/minicom/pyterm/  and connect to the used COM port with the settings described in CLI example
 
-4. Run the following commands: 
+4. Run the following commands:
 ```bash
-	panid 0xdeca
-	channel 5
-	ifconfig up
-	thread start
-	state
-	ping fd00:0064:0123:4567::0808:0808
+   panid 0xdeca
+   channel 5
+   ifconfig up
+   thread start
+   state
+   ping fd00:0064:0123:4567::0808:0808
 ```
 **Note:**
 
 0808:0808 is in fact the Google DNS server address "8.8.8.8" in hex representation. In that way, you can reach any IPv4 cloud by replacing last 32 bits of an IPv6 address with a correctly encoded IPv4 address.
-After running the command, you should receive the following result: 
+After running the command, you should receive the following result:
 ```bash
 16 bytes from fd00:64:123:4567:0:0:808:808: icmp_seq=5 hlim=39 time=111ms
 ```

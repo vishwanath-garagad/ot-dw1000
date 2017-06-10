@@ -22,8 +22,6 @@ if [ -d "$OT_ROOT/build" ]; then
     rm -rf build/
 fi
 
-ls -l
-
 # Run bootstrap
 ./bootstrap
 

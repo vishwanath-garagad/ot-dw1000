@@ -113,6 +113,7 @@ endif
 #This was the path given, but it is commented out as it did not work with symlink.
 #TopSourceDir                    := $(dir $(shell readlink $(firstword $(MAKEFILE_LIST))))..
 #AbsTopSourceDir                 := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))..
+
 #This is the modified path added for the make command to work with symlink
 TopSourceDir                    := $(OT_ROOT)/examples
 AbsTopSourceDir                 := $(OT_ROOT)

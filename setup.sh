@@ -3,10 +3,10 @@
 # Author     : Nishal
 # Date       : 2nd June 2017
 # File       : setup.sh
-# Version    : 0.1 
-# Description: This script does the setup for the system to work 
+# Version    : 0.1
+# Description: This script does the setup for the system to work
 #              with DW1000 examples with OpenThread stack
-#              
+#
 #******************************************************************#
 #Initialising the necessary variables required for this script
 DIR=$(pwd)
@@ -37,15 +37,15 @@ if [ "$#" -ne  "0" -a "$1" == "INITIAL" ]; then
     sudo apt-get update
     sudo apt-get install gcc-arm-embedded
 
-    #Install wpantund 
+    #Install wpantund
     echo "<SCRIPT_LOG> Installing wpantund..."
     sudo apt-get install dbus libreadline
     sudo apt-get install gcc g++ libdbus-1-dev libboost-dev libreadline-dev
     sudo apt-get install libtool autoconf autoconf-archive
-    
+
     mkdir tools
     echo "<SCRIPT_LOG> Downloading package for wpantund..."
-    #Download the package if not available    
+    #Download the package if not available
     if [ -f $DIR/tools/$WPAN_FILE ]; then
        echo "<SCRIPT_LOG> $WPAN_FILE already exists..."
     else

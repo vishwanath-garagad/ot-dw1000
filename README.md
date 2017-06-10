@@ -1,5 +1,5 @@
 [![OpenThread][ot-logo]][dw-repo]
-# What is OpenThread?  
+# What is OpenThread?
 
 OpenThread is...
 <a href="http://threadgroup.org/technology/ourtechnology#certifiedproducts">
@@ -46,7 +46,7 @@ OpenThread supports both system-on-chip (SoC) and network co-processor (NCP) des
 1.Download the suitable package from [SEGGER-JLink][SEGGER].
 
   [SEGGER]: https://www.segger.com/downloads/jlink
-  
+
 (or)
 
 For Ubuntu 64-bit sytem download [SEGGER-JLink-Ubuntu-64bit][SEGGER-64bit].
@@ -105,14 +105,14 @@ $ sudo ./nrfjprog -f nrf52 -r
 ## Running the CLI example
 
 1. Prepare two boards with the flashed `CLI Example` (as shown above).
-2. The CLI example uses UART connection. 
+2. The CLI example uses UART connection.
    To view raw UART output, start a terminal emulator like PuTTY and connect to the used COM port with the following UART settings:
     - Baud rate: 115200
     - 8 data bits
     - 1 stop bit
     - No parity
     - HW flow control: RTS/CTS
-    
+
 (or)
 
    Use Run the pyterm script provided in the `ot-dw1000/openthread-master/tools/pyterm` directory.
@@ -120,10 +120,10 @@ $ sudo ./nrfjprog -f nrf52 -r
 
 3. Open a terminal connection on the first board and start a new Thread network.
 
- ```bash 
+ ```bash
 $ cd $OT_ROOT/tools/pyterm
 $ sudo ./pyterm -p /dev/ttyACM0
-  
+
  > channel 5
  Done
  > panid 0xdeca
@@ -200,9 +200,9 @@ The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 ### Known Issues
 * Observed that Discover Command displays network info all the channels instead of displaying for active channel.
 
-### Known Limitations 
-ActiveScan have a limitation of displaying only one node information. 
-* During ActiveScan the node will broadcast a message to all the nodes and wait for responses. Since DW1000 doesn't support     CSMA/CA if all the responses are arriving in same time, only one node data will be successfully received by the scan initiator node. 
+### Known Limitations
+ActiveScan have a limitation of displaying only one node information.
+* During ActiveScan the node will broadcast a message to all the nodes and wait for responses. Since DW1000 doesn't support     CSMA/CA if all the responses are arriving in same time, only one node data will be successfully received by the scan initiator node.
 * A PC can support only two nodes while testing Open Thread CLI and NCP Application. While testing open-thread CLI and NCP application with multiple nodes we need to use multiple PCs for pyterm terminal.
 
 ## Documentation

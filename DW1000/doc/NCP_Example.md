@@ -15,48 +15,48 @@ sudo wpanctl -I wpan0
 ```
 A command line to control/configure NCP appears as  `wpanctl:wpan0`
 ```bash
-wpanctl:wpan0> 
+wpanctl:wpan0>
 ```
 4.Now by following NCP commands , we can configure the NCP.  `help` command will list the available commands.
 ```bash
-Wpanctl:wpan0>help 
-Commands: 
-   join                          Join a WPAN. 
-   form                          Form a new WPAN. 
-   attach                        Attach/resume a previously commissioned network 
-   reset                      	 Reset the NCP 
-   begin-low-power   	         Enter low-power mode 
-   leave                      	 Abandon the currently connected WPAN. 
-   poll                          Poll the parent immediately to see if there is IP traffic 
-   config-gateway                Configure gateway 
-   add-route                     Add external route prefix 
-   remove-route                  Remove external route prefix 
-   list                       	 List available interfaces. 
-   status                        Retrieve the status of the interface. 
-   permit-join                   Permit other devices to join the current network. 
-   scan                          Scan for nearby networks. 
-   mfg                           Execute manufacturing command. 
-   getprop                       Get a property. 
-   setprop                       Set a property. 
-   begin-net-wake                Initiate a network wakeup 
-   host-did-wake                 Perform any host-wakeup related tasks 
-   pcap                          Start a packet capture 
-   cd                            Change current interface (command mode) 
-   quit                          Terminate command line mode. 
-   help                          Display this help. 
-   clear                         Clear shell. 
+Wpanctl:wpan0>help
+Commands:
+   join                          Join a WPAN.
+   form                          Form a new WPAN.
+   attach                        Attach/resume a previously commissioned network
+   reset                         Reset the NCP
+   begin-low-power               Enter low-power mode
+   leave                         Abandon the currently connected WPAN.
+   poll                          Poll the parent immediately to see if there is IP traffic
+   config-gateway                Configure gateway
+   add-route                     Add external route prefix
+   remove-route                  Remove external route prefix
+   list                          List available interfaces.
+   status                        Retrieve the status of the interface.
+   permit-join                   Permit other devices to join the current network.
+   scan                          Scan for nearby networks.
+   mfg                           Execute manufacturing command.
+   getprop                       Get a property.
+   setprop                       Set a property.
+   begin-net-wake                Initiate a network wakeup
+   host-did-wake                 Perform any host-wakeup related tasks
+   pcap                          Start a packet capture
+   cd                            Change current interface (command mode)
+   quit                          Terminate command line mode.
+   help                          Display this help.
+   clear                         Clear shell.
 wpanctl:wpan0>
 ```
 5. `status` command will display the status of the NCP.
 ```bash
-wpanctl:wpan0>status 
-wpan0 => [ 
-	"NCP:State" => "offline" 
-	"Daemon:Enabled" => true 
-	"NCP:Version" => "OPENTHREAD/0.01.00; NRF52840; Mar 27 2017 10:06:23" 
-	"Daemon:Version" => "0.08.00 (/f911961-dirty; Mar 31 2017 11:32:13)" 
-	"Config:NCP:DriverName" => "spinel" 
-	"NCP:HardwareAddress" => [B8DD443A6E973DEB] 
+wpanctl:wpan0>status
+wpan0 => [
+        "NCP:State" => "offline"
+        "Daemon:Enabled" => true
+        "NCP:Version" => "OPENTHREAD/0.01.00; NRF52840; Mar 27 2017 10:06:23"
+        "Daemon:Version" => "0.08.00 (/f911961-dirty; Mar 31 2017 11:32:13)"
+        "Config:NCP:DriverName" => "spinel"
+        "NCP:HardwareAddress" => [B8DD443A6E973DEB]
 ]
 ```
 ## Making NCP as end device and CLI node as Leader:
@@ -64,37 +64,37 @@ wpan0 => [
 
 2. To Join NCP Node to the above network , use `scan` and `Join` commands. On wpanctl
 ```bash
-wpanctl:wpan0> scan 
-   | Joinable | NetworkName        | PAN ID | Ch | XPanID           | HWAddr           | RSSI 
----+----------+--------------------+--------+----+------------------+------------------+------ 
- 1 |       NO | "OpenThread"       | 0xDECA | 5 | DEAD00BEEF00CAFE | AA9D0AFEC741A253 |  -67 
+wpanctl:wpan0> scan
+   | Joinable | NetworkName        | PAN ID | Ch | XPanID           | HWAddr           | RSSI
+---+----------+--------------------+--------+----+------------------+------------------+------
+ 1 |       NO | "OpenThread"       | 0xDECA | 5 | DEAD00BEEF00CAFE | AA9D0AFEC741A253 |  -67
 ```
-3. Use `join` command with Network Id the with option 
+3. Use `join` command with Network Id the with option
 ```bash
-wpanctl:wpan0> join 1 
-Joining "OpenThread" DEAD00BEEF00CAFE as node type "end-device" 
+wpanctl:wpan0> join 1
+Joining "OpenThread" DEAD00BEEF00CAFE as node type "end-device"
 Successfully Joined!
 ```
 4. Check the `status`.
 ```bash
-wpanctl:wpan0> status 
-wpan0 => [ 
-	"NCP:State" => "associated" 
-	"Daemon:Enabled" => true 
-	"NCP:Version" => "OPENTHREAD/0.01.00; none; May 12 2017 11:47:38" 
-	"Daemon:Version" => "0.08.00d (/f911961-dirty; May  5 2017 10:52:26)" 
-	"Config:NCP:DriverName" => "spinel" 
-	"NCP:HardwareAddress" => [18B4300000000002] 
-	"NCP:Channel" => 5 
-	"Network:NodeType" => "end-device" 
-	"Network:Name" => "Open Thread" 
-	"Network:XPANID" => 0x64941B1C5D9C8F10 
-	"Network:PANID" => 0xDECA 
-	"IPv6:LinkLocalAddress" => "fe80::24b1:b3df:dc48:9585" 
-	"IPv6:MeshLocalAddress" => "fd64:941b:1c5d:0:7c34:ca08:8028:352c" 
-	"IPv6:MeshLocalPrefix" => "fd64:941b:1c5d::/64" 
-	"com.nestlabs.internal:Network:AllowingJoin" => false 
-] 
+wpanctl:wpan0> status
+wpan0 => [
+        "NCP:State" => "associated"
+        "Daemon:Enabled" => true
+        "NCP:Version" => "OPENTHREAD/0.01.00; none; May 12 2017 11:47:38"
+        "Daemon:Version" => "0.08.00d (/f911961-dirty; May  5 2017 10:52:26)"
+        "Config:NCP:DriverName" => "spinel"
+        "NCP:HardwareAddress" => [18B4300000000002]
+        "NCP:Channel" => 5
+        "Network:NodeType" => "end-device"
+        "Network:Name" => "Open Thread"
+        "Network:XPANID" => 0x64941B1C5D9C8F10
+        "Network:PANID" => 0xDECA
+        "IPv6:LinkLocalAddress" => "fe80::24b1:b3df:dc48:9585"
+        "IPv6:MeshLocalAddress" => "fd64:941b:1c5d:0:7c34:ca08:8028:352c"
+        "IPv6:MeshLocalPrefix" => "fd64:941b:1c5d::/64"
+        "com.nestlabs.internal:Network:AllowingJoin" => false
+]
 wpanctl:wpan0>
 ```
 5. It is Possible to ping with the MeshLocalAddress of NCP from the CLI node using ping command.
@@ -121,29 +121,29 @@ PING fd64:941b:1c5d:0:7c34:ca08:8028:352c(fd64:941b:1c5d:0:7c34:ca08:8028:352c) 
 3. By using `form` command , NCP can create a Network as a Leader
 ```bash
 wpanctl:wpan0> form Thread_Name
-Forming WPAN "Thread_Name" as node type "router" 
-Successfully formed! 
+Forming WPAN "Thread_Name" as node type "router"
+Successfully formed!
 ```
 4. Now check the `status`.
 ```bash
-wpanctl:wpan0> status 
-wpan0 => [ 
-	"NCP:State" => "associated" 
-	"Daemon:Enabled" => true 
-	"NCP:Version" => "OPENTHREAD/0.01.00; none; May 12 2017 11:47:38" 
-	"Daemon:Version" => "0.08.00d (/f911961-dirty; May  5 2017 10:52:26)" 
-	"Config:NCP:DriverName" => "spinel" 
-	"NCP:HardwareAddress" => [18B4300000000002] 
-	"NCP:Channel" => 19 
-	"Network:NodeType" => "leader" 
-	"Network:Name" => "Thread_Name" 
-	"Network:XPANID" => 0x64941B1C5D9C8F10 
-	"Network:PANID" => 0x803B 
-	"IPv6:LinkLocalAddress" => "fe80::24b1:b3df:dc48:9585" 
-	"IPv6:MeshLocalAddress" => "fd64:941b:1c5d:0:7c34:ca08:8028:352c" 
-	"IPv6:MeshLocalPrefix" => "fd64:941b:1c5d::/64" 
-	"com.nestlabs.internal:Network:AllowingJoin" => false 
-] 
+wpanctl:wpan0> status
+wpan0 => [
+        "NCP:State" => "associated"
+        "Daemon:Enabled" => true
+        "NCP:Version" => "OPENTHREAD/0.01.00; none; May 12 2017 11:47:38"
+        "Daemon:Version" => "0.08.00d (/f911961-dirty; May  5 2017 10:52:26)"
+        "Config:NCP:DriverName" => "spinel"
+        "NCP:HardwareAddress" => [18B4300000000002]
+        "NCP:Channel" => 19
+        "Network:NodeType" => "leader"
+        "Network:Name" => "Thread_Name"
+        "Network:XPANID" => 0x64941B1C5D9C8F10
+        "Network:PANID" => 0x803B
+        "IPv6:LinkLocalAddress" => "fe80::24b1:b3df:dc48:9585"
+        "IPv6:MeshLocalAddress" => "fd64:941b:1c5d:0:7c34:ca08:8028:352c"
+        "IPv6:MeshLocalPrefix" => "fd64:941b:1c5d::/64"
+        "com.nestlabs.internal:Network:AllowingJoin" => false
+]
 wpanctl:wpan0>
 ```
 5. `getprop` will list all the parameters of the NCP Node.
