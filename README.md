@@ -203,12 +203,14 @@ The COAP based Cloud application is explained in [COAP_CLOUD_APPLICATION][CCA].
 
 ### Known Issues
 * Observed that Discover Command displays network info all the channels instead of displaying for active channel.
+* Observed that Ping between Child and Router nodes in a thread network fails.
+* Observed that Active Scan have a limitation of displaying only one node information. During Active Scan the node 
+  will broadcast a message to all the nodes and wait for responses. Since DW1000 doesn't support CSMA/CA if all the 
+  responses are arriving in same time, only one node data will be successfully received by the scan initiator node
 
 ### Known Limitations
-ActiveScan have a limitation of displaying only one node information.
-* During ActiveScan the node will broadcast a message to all the nodes and wait for responses. Since DW1000 doesn't support     CSMA/CA if all the responses are arriving in same time, only one node data will be successfully received by the scan initiator node.
 * A PC can support only two nodes while testing Open Thread CLI and NCP Application. While testing open-thread CLI and NCP application with multiple nodes we need to use multiple PCs for pyterm terminal.
 
 ## Documentation
-* Userguide is available in DW1000/doc/PP_DecaWave_MAC_ReleaseNotes.pdf
-* ReleaseNote is available in DW1000/doc/PP_DecaWave_MAC_UserGuide.pdf
+* Userguide is available in DW1000/doc/PP_DecaWave_OT_DW1000_ReleaseNotes.pdf
+* ReleaseNote is available in DW1000/doc/PP_DecaWave_OT_DW1000_UserGuide.pdf
