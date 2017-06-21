@@ -35,7 +35,7 @@
 #ifndef DW1000_RADIO_H
 #define DW1000_RADIO_H
 
-#include <openthread-types.h>
+#include <openthread/types.h>
 
 extern uint8_t *dw_status;
 /**

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['q',['Q',['../structmbedtls__ecdh__context.html#a9928c3663030c8c4b86c6c0891fcb95c',1,'mbedtls_ecdh_context::Q()'],['../structmbedtls__ecp__keypair.html#a9928c3663030c8c4b86c6c0891fcb95c',1,'mbedtls_ecp_keypair::Q()'],['../structmbedtls__rsa__context.html#aa73718163e8acc186dd7a0406ed26965',1,'mbedtls_rsa_context::Q()'],['../union_a_p_s_r___type.html#a65f27ddc4f7e09c14ce7c5211b2e000a',1,'APSR_Type::Q()'],['../unionx_p_s_r___type.html#a65f27ddc4f7e09c14ce7c5211b2e000a',1,'xPSR_Type::Q()']]],
+  ['qdctrl',['QDCTRL',['../group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga9416ddd62b5d7ccea41cb9bb4cd7b29f',1,'TPM_Type']]],
   ['qdec_5fclockdiv_5freg',['QDEC_CLOCKDIV_REG',['../struct_q_u_a_d___type.html#a5c6680d95a54c1870c7bbca2e88e6fa3',1,'QUAD_Type']]],
   ['qdec_5fctrl_5freg',['QDEC_CTRL_REG',['../struct_q_u_a_d___type.html#a574690c5f5e7e28da0bc598b5b5f6ddd',1,'QUAD_Type']]],
   ['qdec_5fxcnt_5freg',['QDEC_XCNT_REG',['../struct_q_u_a_d___type.html#af1fab9798f7b0e4ef2ecbaf42262a6bc',1,'QUAD_Type']]],

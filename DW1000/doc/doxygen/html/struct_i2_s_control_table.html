@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>I2SControlTable Struct Reference</title>
+<title>OT-DW1000: I2SControlTable Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -106,9 +107,7 @@ Data Fields</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>The control table must be defined by the user as a global variable and the global pointer must then be assigned the address of the control table inside a user function (but before calling any I2S-function).</dd></dl>
 <pre class="fragment"> I2SControlTable g_controlTable;    // Define global
  g_pControlTable = &amp;g_controlTable; // Assign pointer (inside a function)
-</pre> 
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00116">116</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+</pre> </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a9c18052ec2eef22621cee6e61044cd29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c18052ec2eef22621cee6e61044cd29">&#9670;&nbsp;</a></span>ui16ChBufSize</h2>
 
@@ -122,8 +121,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Size of Channel buffer. </p>
-
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00119">119</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
 
 </div>
 </div>
@@ -141,8 +138,6 @@ Data Fields</h2></td></tr>
 
 <p>Size of DMA buffer in number of samples. </p>
 
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00118">118</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
-
 </div>
 </div>
 <a id="a096112544bab188b0d590b2ce5a56df4"></a>
@@ -158,8 +153,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of the audio words stored in memory. </p>
-
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00122">122</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
 
 </div>
 </div>
@@ -177,8 +170,6 @@ Data Fields</h2></td></tr>
 
 <p>Base address of the input buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00123">123</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
-
 </div>
 </div>
 <a id="a5f9383d123d44d78b183333a7c85e7a7"></a>
@@ -194,8 +185,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Value of the current input pointer offset. </p>
-
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00124">124</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
 
 </div>
 </div>
@@ -213,8 +202,6 @@ Data Fields</h2></td></tr>
 
 <p>Base address of the output buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00125">125</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
-
 </div>
 </div>
 <a id="aa26b6b36859029d96678062e4d449dc5"></a>
@@ -230,8 +217,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Value of the current output pointer offset. </p>
-
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00126">126</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
 
 </div>
 </div>
@@ -249,8 +234,6 @@ Data Fields</h2></td></tr>
 
 <p>Input Channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00120">120</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
-
 </div>
 </div>
 <a id="af504dc45f54f5eb87c3f55dd6fda5fa8"></a>
@@ -267,17 +250,15 @@ Data Fields</h2></td></tr>
 
 <p>Output Channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="i2s_8h_source.html#l00121">121</a> of file <a class="el" href="i2s_8h_source.html">i2s.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>third_party/ti/cc26xxware/driverlib/<a class="el" href="i2s_8h_source.html">i2s.h</a></li>
+<li>openthread-master/third_party/ti/cc26xxware/driverlib/<a class="el" href="i2s_8h_source.html">i2s.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:38 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

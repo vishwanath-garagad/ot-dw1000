@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['uart_5fdps_5fformat',['UART_DPS_FORMAT',['../group___d_e_v_i_c_e___h_a_l___u_a_r_t___f_o_r_m_a_t.html#gacaa41f5e07b9b64820a2a96bd96dfd41',1,'dev_uart.h']]],
   ['udpheader',['UDPHeader',['../ot_lwf_2precomp_8h.html#a9aa9be61e8a145c57d025748a16ea6d9',1,'precomp.h']]],
   ['uint16',['uint16',['../dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e',1,'uint16():&#160;dw1000_device_api.h'],['../dw1000__types_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e',1,'uint16():&#160;dw1000_types.h'],['../group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e',1,'uint16():&#160;sdk_defs.h']]],
   ['uint16_5ft',['uint16_t',['../stdint_8h.html#a273cf69d639a59973b6019625df33e30',1,'stdint.h']]],

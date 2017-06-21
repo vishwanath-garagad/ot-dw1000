@@ -10,5 +10,7 @@ var searchData=
   ['ku_5fkey_5fagreement',['KU_KEY_AGREEMENT',['../compat-1_83_8h.html#a349ec0e59749ed5ca9ac9e030c06049f',1,'compat-1.3.h']]],
   ['ku_5fkey_5fcert_5fsign',['KU_KEY_CERT_SIGN',['../compat-1_83_8h.html#a5da71e896dc465af98e4004ea40eb230',1,'compat-1.3.h']]],
   ['ku_5fkey_5fencipherment',['KU_KEY_ENCIPHERMENT',['../compat-1_83_8h.html#a64f1e2e3dd57557fdad2ca9c07f63ec4',1,'compat-1.3.h']]],
-  ['ku_5fnon_5frepudiation',['KU_NON_REPUDIATION',['../compat-1_83_8h.html#aa97f2a6fc340bc3a22004fe7a245a1c6',1,'compat-1.3.h']]]
+  ['ku_5fnon_5frepudiation',['KU_NON_REPUDIATION',['../compat-1_83_8h.html#aa97f2a6fc340bc3a22004fe7a245a1c6',1,'compat-1.3.h']]],
+  ['kw4x_5f256_5fbase',['KW4x_256_BASE',['../ifr__radio_8c.html#a9a79c6bef4fd052d3384ae07a28c030a',1,'ifr_radio.c']]],
+  ['kw4x_5f512_5fbase',['KW4x_512_BASE',['../ifr__radio_8c.html#ac3d8a4a6e2ad3056d4a3df0629df64d7',1,'ifr_radio.c']]]
 ];

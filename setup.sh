@@ -10,7 +10,7 @@
 #******************************************************************#
 #Initialising the necessary variables required for this script
 DIR=$(pwd)
-OT_COMMIT_ID=0e812192e2edd11b84c01307eb310b7fd7ba7c4e
+OT_COMMIT_ID=915261b36b256234ef6b40f6cbad69f036851385
 
 CLI_TOOL_URL=https://www.nordicsemi.com/eng/nordic/download_resource/58852/21/81185512/94917
 CLI_TOOL_FILE=nRF5x-Command-Line-Tools_9_3_1_Linux-x86_64.tar

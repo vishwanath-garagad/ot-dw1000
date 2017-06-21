@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>src/core/common/debug.hpp File Reference</title>
+<title>OT-DW1000: openthread-master/src/core/common/debug.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_34b4cee2b5900b653deb3438fc906cf4.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_e7e04e66d76e31c0e8b2494724c42aa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4ca71ea08edab0ee9a604b83c61d680d.html">core</a></li><li class="navelem"><a class="el" href="dir_e7633c461746b73ae9ff9f96bae48b38.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,10 +69,10 @@ $(function() {
 <div class="title">debug.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="openthread-core-config_8h_source.html">openthread-core-config.h</a>&gt;</code><br />
-<code>#include &lt;ctype.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="wrap__string_8h_source.html">utils/wrap_string.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="openthread-core-config_8h_source.html">openthread-core-config.h</a>&quot;</code><br />
 </div>
 <p><a href="debug_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -82,8 +83,6 @@ Macros</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes functions for debugging. </p>
-
-<p class="definition">Definition in file <a class="el" href="debug_8hpp_source.html">debug.hpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3153a272f18d0f805028fce7e4337b53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3153a272f18d0f805028fce7e4337b53">&#9670;&nbsp;</a></span>assert</h2>
@@ -101,14 +100,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                          \</div><div class="line">    if (!(cond)) {                              \</div><div class="line">      while (1) {}                              \</div><div class="line">    }                                           \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="debug_8hpp_source.html#l00073">73</a> of file <a class="el" href="debug_8hpp_source.html">debug.hpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

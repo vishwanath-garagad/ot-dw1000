@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['radio_2ec',['radio.c',['../drivers_2windows_2ot_lwf_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2cc2538_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2cc2650_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2da15000_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2nrf52840_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2posix_2radio_8c.html',1,'(Global Namespace)']]],
-  ['radio_2eh',['radio.h',['../examples_2drivers_2windows_2ot_lwf_2radio_8h.html',1,'(Global Namespace)'],['../include_2platform_2radio_8h.html',1,'(Global Namespace)']]],
-  ['random_2ec',['random.c',['../cc2538_2random_8c.html',1,'(Global Namespace)'],['../cc2650_2random_8c.html',1,'(Global Namespace)'],['../da15000_2random_8c.html',1,'(Global Namespace)'],['../nrf52840_2random_8c.html',1,'(Global Namespace)'],['../posix_2random_8c.html',1,'(Global Namespace)']]],
+  ['radio_2ec',['radio.c',['../drivers_2windows_2ot_lwf_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2cc2538_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2cc2650_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2da15000_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2efr32_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2emsk_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2kw41z_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2nrf52840_2radio_8c.html',1,'(Global Namespace)'],['../platforms_2posix_2radio_8c.html',1,'(Global Namespace)']]],
+  ['radio_2eh',['radio.h',['../examples_2drivers_2windows_2ot_lwf_2radio_8h.html',1,'(Global Namespace)'],['../include_2openthread_2platform_2radio_8h.html',1,'(Global Namespace)']]],
+  ['random_2ec',['random.c',['../cc2538_2random_8c.html',1,'(Global Namespace)'],['../cc2650_2random_8c.html',1,'(Global Namespace)'],['../da15000_2random_8c.html',1,'(Global Namespace)'],['../efr32_2random_8c.html',1,'(Global Namespace)'],['../emsk_2random_8c.html',1,'(Global Namespace)'],['../kw41z_2random_8c.html',1,'(Global Namespace)'],['../nrf52840_2random_8c.html',1,'(Global Namespace)'],['../posix_2random_8c.html',1,'(Global Namespace)']]],
   ['random_2eh',['random.h',['../random_8h.html',1,'']]],
+  ['readme_2ddw1000_2dnrf52840_2emd',['README-DW1000-NRF52840.md',['../_r_e_a_d_m_e-_d_w1000-_n_r_f52840_8md.html',1,'']]],
   ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['reed_5f5_5f2_5f4_2epy',['reed_5_2_4.py',['../reed__5__2__4_8py.html',1,'']]],
   ['reed_5f5_5f2_5f5_2epy',['reed_5_2_5.py',['../reed__5__2__5_8py.html',1,'']]],
@@ -46,6 +47,7 @@ var searchData=
   ['router_5f5_5f1_5f9_2epy',['router_5_1_9.py',['../router__5__1__9_8py.html',1,'']]],
   ['router_5f5_5f2_5f1_2epy',['router_5_2_1.py',['../router__5__2__1_8py.html',1,'']]],
   ['router_5f5_5f2_5f6_2epy',['router_5_2_6.py',['../router__5__2__6_8py.html',1,'']]],
+  ['router_5f5_5f2_5f7_2epy',['router_5_2_7.py',['../router__5__2__7_8py.html',1,'']]],
   ['router_5f5_5f3_5f1_2epy',['router_5_3_1.py',['../router__5__3__1_8py.html',1,'']]],
   ['router_5f5_5f3_5f10_2epy',['router_5_3_10.py',['../router__5__3__10_8py.html',1,'']]],
   ['router_5f5_5f3_5f11_2epy',['router_5_3_11.py',['../router__5__3__11_8py.html',1,'']]],

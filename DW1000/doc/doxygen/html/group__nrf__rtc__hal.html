@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RTC HAL</title>
+<title>OT-DW1000: RTC HAL</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -72,7 +73,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga50661eb9bf555e2b93734014aa76f9bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nrf__rtc__hal.html#ga50661eb9bf555e2b93734014aa76f9bb">NRF_RTC_CC_CHANNEL_COUNT</a>(id)&#160;&#160;&#160;<a class="el" href="nordic__common_8h.html#a8f2d8588e43cf08fbc3777dd842b6b80">CONCAT_3</a>(RTC, id, _CC_NUM)</td></tr>
+<tr class="memitem:ga50661eb9bf555e2b93734014aa76f9bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nrf__rtc__hal.html#ga50661eb9bf555e2b93734014aa76f9bb">NRF_RTC_CC_CHANNEL_COUNT</a>(id)&#160;&#160;&#160;<a class="el" href="nordic__common_8h.html#a8f2d8588e43cf08fbc3777dd842b6b80">CONCAT_3</a>(<a class="el" href="group___r_t_c___register___masks.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>, id, _CC_NUM)</td></tr>
 <tr class="memdesc:ga50661eb9bf555e2b93734014aa76f9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for getting the number of compare channels available in a given RTC instance.  <a href="#ga50661eb9bf555e2b93734014aa76f9bb">More...</a><br /></td></tr>
 <tr class="separator:ga50661eb9bf555e2b93734014aa76f9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05d33b1e64fc3150998c82b42c9339be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nrf__rtc__hal.html#ga05d33b1e64fc3150998c82b42c9339be">RTC_INPUT_FREQ</a>&#160;&#160;&#160;32768</td></tr>
@@ -183,14 +184,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">id</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="nordic__common_8h.html#a8f2d8588e43cf08fbc3777dd842b6b80">CONCAT_3</a>(RTC, id, _CC_NUM)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="nordic__common_8h.html#a8f2d8588e43cf08fbc3777dd842b6b80">CONCAT_3</a>(<a class="el" href="group___r_t_c___register___masks.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>, id, _CC_NUM)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Macro for getting the number of compare channels available in a given RTC instance. </p>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00062">62</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -210,8 +209,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00077">77</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga77626779c0b172803f201ae0e2aa66a0"></a>
@@ -229,8 +226,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00076">76</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -253,8 +248,6 @@ Functions</h2></td></tr>
 <p>Macro for converting expected frequency to prescaler setting. </p>
 <p>Macro for wrapping values to RTC capacity. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00069">69</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga05d33b1e64fc3150998c82b42c9339be"></a>
@@ -269,8 +262,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Input frequency of the RTC instance. </p>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00064">64</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -289,8 +280,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00074">74</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -323,8 +312,6 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00096">96</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga22211dc20a5c2f6cf1b43039d2bae4a3"></a>
@@ -355,8 +342,6 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00112">112</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="gab1bbbc39c6dac153baf61aeae33c4274"></a>
@@ -382,8 +367,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ggab1bbbc39c6dac153baf61aeae33c4274a4cda1feac46eb1092cad53e9abe1a3d2"></a>NRF_RTC_TASK_TRIGGER_OVERFLOW&#160;</td><td class="fielddoc"><p>Trigger overflow. </p>
 </td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00082">82</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -423,8 +406,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>COMPARE[ch] value. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00252">252</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -470,8 +451,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00247">247</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="gac530a192ba3559478b8c653ba924abfc"></a>
@@ -498,8 +477,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Counter value. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00291">291</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -539,8 +516,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Address of the requested event register. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00306">306</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga48f44b45200368ed146abb9e489e8231"></a>
@@ -577,8 +552,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00282">282</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -617,8 +590,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00325">325</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga022195e61bf8c1b7db06049e8b9c2190"></a>
@@ -655,8 +626,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00321">321</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -696,8 +665,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mask of pending events. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00277">277</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga0b60105662ed3b084621a44fd5a3ef20"></a>
@@ -734,8 +701,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00262">262</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -774,8 +739,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00257">257</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga7d40ce8e93725c6b447cc9356303406c"></a>
@@ -802,8 +765,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value in INTEN register. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00272">272</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -843,8 +804,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mask with enabled interrupts. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00267">267</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga84628657e0fd0d31777fbdbbc95ed4e1"></a>
@@ -881,8 +840,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00296">296</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
 
 </div>
 </div>
@@ -922,8 +879,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Address of the requested task register. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00311">311</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga2aae0db622731be438c4aebed18025d4"></a>
@@ -961,14 +916,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__rtc_8h_source.html#l00316">316</a> of file <a class="el" href="nrf__rtc_8h_source.html">nrf_rtc.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:36 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:05 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

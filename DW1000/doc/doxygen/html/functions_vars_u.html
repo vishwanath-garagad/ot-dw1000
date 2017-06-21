@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Data Fields - Variables</title>
+<title>OT-DW1000: Data Fields - Variables</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -197,11 +198,23 @@ $(function() {
 <li>UART2_USR_REG
 : <a class="el" href="struct_u_a_r_t2___type.html#a2a08f67d278128fa50dff47b70fab4d0">UART2_Type</a>
 </li>
+<li>uart_cbs
+: <a class="el" href="structdev__uart__info.html#acd967565f1d7452c8177e9eb3cf5489e">dev_uart_info</a>
+</li>
+<li>uart_close
+: <a class="el" href="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t.html#gacdc17204bea46d7103e0102982ce9f34">dev_uart</a>
+</li>
+<li>uart_control
+: <a class="el" href="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t.html#ga788233991069ec591db26beefd0a6c73">dev_uart</a>
+</li>
 <li>UART_CPR_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a45ecbf9138cdc014bf38d40475399ab5">UART_Type</a>
 </li>
 <li>UART_CTR_REG
 : <a class="el" href="struct_u_a_r_t___type.html#afef4ec93aaf742c034f70108db41328e">UART_Type</a>
+</li>
+<li>uart_ctrl
+: <a class="el" href="structdev__uart__info.html#ac4cec52d22633b4c031210d534ba4d06">dev_uart_info</a>
 </li>
 <li>UART_DLF_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a5b6167f2646d6e2898f20c33ce216b3a">UART_Type</a>
@@ -215,6 +228,9 @@ $(function() {
 <li>UART_IIR_FCR_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a9510df46e139dc1e597190716f12089b">UART_Type</a>
 </li>
+<li>uart_info
+: <a class="el" href="structdev__uart.html#a5e50161d5204be47e04509b55f708976">dev_uart</a>
+</li>
 <li>UART_LCR_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a5f200155a139d5a48ebbde962db0cded">UART_Type</a>
 </li>
@@ -224,8 +240,14 @@ $(function() {
 <li>UART_MCR_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a82e92dfdd9102f19a55069f3b88eca14">UART_Type</a>
 </li>
+<li>uart_open
+: <a class="el" href="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t.html#ga466bb09b1e12f83d6c6f96ff56daa76d">dev_uart</a>
+</li>
 <li>UART_RBR_THR_DLL_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a6cbe7343fa2631e6a191414c5d2bf8f9">UART_Type</a>
+</li>
+<li>uart_read
+: <a class="el" href="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t.html#ga1e79f1bc2250c0653fa925e2f537b70f">dev_uart</a>
 </li>
 <li>UART_SBCR_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a61254e0eabfb55046f83bd4286351626">UART_Type</a>
@@ -242,8 +264,14 @@ $(function() {
 <li>UART_USR_REG
 : <a class="el" href="struct_u_a_r_t___type.html#a11ead694ffe4cc1d0acd56a3a6908cb0">UART_Type</a>
 </li>
+<li>uart_write
+: <a class="el" href="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t.html#ga2dfe56d8feed9809b6d8053353bab215">dev_uart</a>
+</li>
 <li>ucode_wakeup
 : <a class="el" href="structqspi__flash__config.html#a3ce29d4992856e23f2213c5f8f7b3fa6">qspi_flash_config</a>
+</li>
+<li>UCV
+: <a class="el" href="structdw__uart__reg.html#ae28b59b424b5c81048b963c31378176d">dw_uart_reg</a>
 </li>
 <li>UDP_HC_C_ELIDED
 : <a class="el" href="classthread-cert_1_1lowpan_1_1_lowpan_udp_header_factory.html#a5d2bf4efb1574b5c2759f038e57f9ab1">LowpanUdpHeaderFactory</a>
@@ -308,6 +336,15 @@ $(function() {
 <li>ui8OutChan
 : <a class="el" href="struct_i2_s_control_table.html#af504dc45f54f5eb87c3f55dd6fda5fa8">I2SControlTable</a>
 </li>
+<li>UIDL
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gaac796478e9fdd908d4bccc7b754de080">SIM_Type</a>
+</li>
+<li>UIDMH
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga6526be9b8cd1160be6ff367641220e96">SIM_Type</a>
+</li>
+<li>UIDML
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga9d04f09d406768348505eb747ade1e23">SIM_Type</a>
+</li>
 <li>UIStatusMsg
 : <a class="el" href="class_open_thread_1_1_open_thread.html#a50cc8337ec457159d97386aade4d109b">OpenThread</a>
 </li>
@@ -360,6 +397,9 @@ $(function() {
 <li>unused_bits
 : <a class="el" href="structmbedtls__asn1__bitstring.html#a2b9521c5d91b8e8d7407337790da4330">mbedtls_asn1_bitstring</a>
 </li>
+<li>uordblks
+: <a class="el" href="structmallinfo.html#adfae0d223395438424dc280941abd2d8">mallinfo</a>
+</li>
 <li>UPDATE
 : <a class="el" href="classthread-cert_1_1mle_1_1_command_type.html#ad1a9faf18f9d495e95a135947a2bd705">CommandType</a>
 </li>
@@ -375,8 +415,17 @@ $(function() {
 <li>UPDATE_REQUEST
 : <a class="el" href="classthread-cert_1_1mle_1_1_command_type.html#a76488575bfe4efbac733cf692d5a48a2">CommandType</a>
 </li>
+<li>updateMode
+: <a class="el" href="struct__rtc__config.html#aaf5f1a5e341e69711f871aef95ffe4be">_rtc_config</a>
+</li>
 <li>upper_layer_protocol
 : <a class="el" href="classthread-cert_1_1ipv6_1_1_i_pv6_packet.html#a74a51ad4810dbf83bf4fa5d56c697281">IPv6Packet</a>
+</li>
+<li>upperAddress
+: <a class="el" href="struct__i2c__slave__config.html#a959e9269b2e7e83f1c4aebac870bf822">_i2c_slave_config</a>
+</li>
+<li>upperLimit
+: <a class="el" href="struct__dac__buffer__config.html#a3d1bafdd1690313dea7c4853b7576ef7">_dac_buffer_config</a>
 </li>
 <li>URI_HOST
 : <a class="el" href="classthread-cert_1_1coap_1_1_coap_options_types.html#a003496b87188e1bbc21724d2b1d46bb1">CoapOptionsTypes</a>
@@ -389,9 +438,6 @@ $(function() {
 </li>
 <li>URI_QUERY
 : <a class="el" href="classthread-cert_1_1coap_1_1_coap_options_types.html#a1340224fc0e6e01a88161840c3591b41">CoapOptionsTypes</a>
-</li>
-<li>us
-: <a class="el" href="struct_alarm_time.html#a8fc303618c54ef2935ee6b880f77bae4">AlarmTime</a>
 </li>
 <li>USB_ALTEV_REG
 : <a class="el" href="struct_u_s_b___type.html#af6484ca6183ea6fababd3adf893842b1">USB_Type</a>
@@ -576,12 +622,6 @@ $(function() {
 <li>use_easy_dma
 : <a class="el" href="structnrf__drv__spi__t.html#ac7b5d0f7f4700c0122c90f01803e2b31">nrf_drv_spi_t</a>
 </li>
-<li>use_hdlc
-: <a class="el" href="classspinel_1_1codec_1_1_wpan_api.html#a205b7675d7b23a24e3d2f3553267f9ad">WpanApi</a>
-</li>
-<li>use_rawinput
-: <a class="el" href="classspinel-cli_1_1_spinel_cli_cmd.html#acb5a89cb9355a30b749c488cee2d7021">SpinelCliCmd</a>
-</li>
 <li>UseAutomaticMetric
 : <a class="el" href="struct___n_l___i_n_t_e_r_f_a_c_e___r_w.html#a465d10a9c244859727d6288957dd181c">_NL_INTERFACE_RW</a>
 </li>
@@ -591,17 +631,45 @@ $(function() {
 <li>useEnhancedBecaon
 : <a class="el" href="struct_f_t_d_f___pib.html#a7c6844b0d87680cc209126c7fc665e7a">FTDF_Pib</a>
 </li>
+<li>useGlobalTimeBase
+: <a class="el" href="struct__tpm__config.html#af416ab48aec0988cb89bfd89ec771062">_tpm_config</a>
+</li>
 <li>UseNeighborUnreachabilityDetection
 : <a class="el" href="struct___n_l___i_n_t_e_r_f_a_c_e___r_w.html#a5ce7bea6ad0892eb7a813df80a6bc488">_NL_INTERFACE_RW</a>
 </li>
+<li>userData
+: <a class="el" href="struct__dspi__master__edma__handle.html#a2e294dd14122c554baa0665072b4ca7a">_dspi_master_edma_handle</a>
+, <a class="el" href="struct__dspi__master__handle.html#a2e294dd14122c554baa0665072b4ca7a">_dspi_master_handle</a>
+, <a class="el" href="struct__dspi__slave__edma__handle.html#a2e294dd14122c554baa0665072b4ca7a">_dspi_slave_edma_handle</a>
+, <a class="el" href="struct__dspi__slave__handle.html#a2e294dd14122c554baa0665072b4ca7a">_dspi_slave_handle</a>
+, <a class="el" href="struct__edma__handle.html#a2e294dd14122c554baa0665072b4ca7a">_edma_handle</a>
+, <a class="el" href="struct__i2c__master__edma__handle.html#a2e294dd14122c554baa0665072b4ca7a">_i2c_master_edma_handle</a>
+, <a class="el" href="struct__i2c__master__handle.html#a2e294dd14122c554baa0665072b4ca7a">_i2c_master_handle</a>
+, <a class="el" href="struct__i2c__slave__handle.html#a2e294dd14122c554baa0665072b4ca7a">_i2c_slave_handle</a>
+, <a class="el" href="struct__lpuart__edma__handle.html#a2e294dd14122c554baa0665072b4ca7a">_lpuart_edma_handle</a>
+, <a class="el" href="struct__lpuart__handle.html#a2e294dd14122c554baa0665072b4ca7a">_lpuart_handle</a>
+, <a class="el" href="struct__ltc__edma__handle.html#a2e294dd14122c554baa0665072b4ca7a">_ltc_edma_handle</a>
+</li>
+<li>userdata
+: <a class="el" href="structslist.html#a2aa76a7bfd06a16154eccdd30d6f6393">slist</a>
+</li>
+<li>useUnfilteredOutput
+: <a class="el" href="struct__cmp__config.html#a19cb8cf9f4c717f408371da242faaa33">_cmp_config</a>
+</li>
 <li>UseZeroBroadcastAddress
 : <a class="el" href="struct___n_l___i_n_t_e_r_f_a_c_e___r_w.html#acc45d3a6981cf6a24404fe9ed48d9bfb">_NL_INTERFACE_RW</a>
+</li>
+<li>usmblks
+: <a class="el" href="structmallinfo.html#af6ad0df613ea4a48ade27b83b8ad38ad">mallinfo</a>
+</li>
+<li>USR
+: <a class="el" href="structdw__uart__reg.html#a4b61f14d19f005381f6d2c8b9b554738">dw_uart_reg</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:53 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:14 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

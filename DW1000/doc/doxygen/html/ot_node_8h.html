@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/drivers/windows/include/otNode.h File Reference</title>
+<title>OT-DW1000: openthread-master/examples/drivers/windows/include/otNode.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_757d408b91fe77c0d6541574880c2422.html">drivers</a></li><li class="navelem"><a class="el" href="dir_2241398f140824e7a05e00f2ce66418d.html">windows</a></li><li class="navelem"><a class="el" href="dir_48ed7ee5b8496fa47990b4c81df3f2b1.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_f008ccfebca6b1721ca65dcf50715dd5.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a7733a9637be92d1f239c18e2519fad4.html">windows</a></li><li class="navelem"><a class="el" href="dir_038732787e6ea10a29634cf9cce36816.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,7 +75,7 @@ $(function() {
 
 <p>This file defines a node interface for <a class="el" href="openthread_8h.html" title="This file defines the top-level functions for the OpenThread library. ">openthread.h</a> to be used for certification tests.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread/openthread.h</a>&gt;</code><br />
 </div>
 <p><a href="ot_node_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -99,143 +100,141 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a13ec7dfb08b38c7aed24c25d403fd4d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a13ec7dfb08b38c7aed24c25d403fd4d5">otNodeLog</a> (const char *aMessage)</td></tr>
+<tr class="memitem:a13ec7dfb08b38c7aed24c25d403fd4d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a13ec7dfb08b38c7aed24c25d403fd4d5">otNodeLog</a> (const char *aMessage)</td></tr>
 <tr class="separator:a13ec7dfb08b38c7aed24c25d403fd4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b2f8439a7b986399ff245cb5b3b5c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_node.html">otNode</a> *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a5b2f8439a7b986399ff245cb5b3b5c81">otNodeInit</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> id)</td></tr>
+<tr class="memitem:a5b2f8439a7b986399ff245cb5b3b5c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_node.html">otNode</a> *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a5b2f8439a7b986399ff245cb5b3b5c81">otNodeInit</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> id)</td></tr>
 <tr class="separator:a5b2f8439a7b986399ff245cb5b3b5c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a81b028ed9225441168de6427c11ca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3a81b028ed9225441168de6427c11ca0">otNodeFinalize</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a3a81b028ed9225441168de6427c11ca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3a81b028ed9225441168de6427c11ca0">otNodeFinalize</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a3a81b028ed9225441168de6427c11ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bde33ba4d54a6ff72bda745270cc7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7bde33ba4d54a6ff72bda745270cc7b8">otNodeSetMode</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aMode)</td></tr>
+<tr class="memitem:a7bde33ba4d54a6ff72bda745270cc7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7bde33ba4d54a6ff72bda745270cc7b8">otNodeSetMode</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aMode)</td></tr>
 <tr class="separator:a7bde33ba4d54a6ff72bda745270cc7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a731ee3810c28613d53afa6cead6ba648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a731ee3810c28613d53afa6cead6ba648">otNodeInterfaceUp</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a731ee3810c28613d53afa6cead6ba648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a731ee3810c28613d53afa6cead6ba648">otNodeInterfaceUp</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a731ee3810c28613d53afa6cead6ba648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bfb7a8eab5aaad708b97f0995df5850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3bfb7a8eab5aaad708b97f0995df5850">otNodeInterfaceDown</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a3bfb7a8eab5aaad708b97f0995df5850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3bfb7a8eab5aaad708b97f0995df5850">otNodeInterfaceDown</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a3bfb7a8eab5aaad708b97f0995df5850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7855199b4607e21fd47d242a0182da83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7855199b4607e21fd47d242a0182da83">otNodeThreadStart</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a7855199b4607e21fd47d242a0182da83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7855199b4607e21fd47d242a0182da83">otNodeThreadStart</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a7855199b4607e21fd47d242a0182da83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac463a2f8061ee8d51fe0379e0537218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aac463a2f8061ee8d51fe0379e0537218">otNodeThreadStop</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:aac463a2f8061ee8d51fe0379e0537218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aac463a2f8061ee8d51fe0379e0537218">otNodeThreadStop</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:aac463a2f8061ee8d51fe0379e0537218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eb63752feb8694edd77ca9e5160a579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1eb63752feb8694edd77ca9e5160a579">otNodeCommissionerStart</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a1eb63752feb8694edd77ca9e5160a579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1eb63752feb8694edd77ca9e5160a579">otNodeCommissionerStart</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a1eb63752feb8694edd77ca9e5160a579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394dcc5043c61802355db54ce24ce521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a394dcc5043c61802355db54ce24ce521">otNodeCommissionerJoinerAdd</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aExtAddr, const char *aPSKd)</td></tr>
+<tr class="memitem:a394dcc5043c61802355db54ce24ce521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a394dcc5043c61802355db54ce24ce521">otNodeCommissionerJoinerAdd</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aExtAddr, const char *aPSKd)</td></tr>
 <tr class="separator:a394dcc5043c61802355db54ce24ce521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d7fa6278ba23046bdf37807f1f36cbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3d7fa6278ba23046bdf37807f1f36cbf">otNodeCommissionerStop</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a3d7fa6278ba23046bdf37807f1f36cbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3d7fa6278ba23046bdf37807f1f36cbf">otNodeCommissionerStop</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a3d7fa6278ba23046bdf37807f1f36cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855f45ada9e76e40270c0790980e0603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a855f45ada9e76e40270c0790980e0603">otNodeJoinerStart</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aPSKd, const char *aProvisioningUrl)</td></tr>
+<tr class="memitem:a855f45ada9e76e40270c0790980e0603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a855f45ada9e76e40270c0790980e0603">otNodeJoinerStart</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aPSKd, const char *aProvisioningUrl)</td></tr>
 <tr class="separator:a855f45ada9e76e40270c0790980e0603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a3249ca16a682683b039b9f7f1afe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#af5a3249ca16a682683b039b9f7f1afe2">otNodeClearWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:af5a3249ca16a682683b039b9f7f1afe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#af5a3249ca16a682683b039b9f7f1afe2">otNodeClearWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:af5a3249ca16a682683b039b9f7f1afe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bbce00bf92ee906e6f6165fd7334194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1bbce00bf92ee906e6f6165fd7334194">otNodeEnableWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a1bbce00bf92ee906e6f6165fd7334194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1bbce00bf92ee906e6f6165fd7334194">otNodeEnableWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a1bbce00bf92ee906e6f6165fd7334194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b8b73fe420f4c5ab914908dfcb0703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a53b8b73fe420f4c5ab914908dfcb0703">otNodeDisableWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a53b8b73fe420f4c5ab914908dfcb0703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a53b8b73fe420f4c5ab914908dfcb0703">otNodeDisableWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a53b8b73fe420f4c5ab914908dfcb0703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae64de48a85aee8ccfb6a7ea33ce80dc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ae64de48a85aee8ccfb6a7ea33ce80dc4">otNodeAddWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aExtAddr, <a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aRssi)</td></tr>
+<tr class="memitem:ae64de48a85aee8ccfb6a7ea33ce80dc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ae64de48a85aee8ccfb6a7ea33ce80dc4">otNodeAddWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aExtAddr, <a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aRssi)</td></tr>
 <tr class="separator:ae64de48a85aee8ccfb6a7ea33ce80dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a381e76a3934dc7c3962032c92e6c163e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a381e76a3934dc7c3962032c92e6c163e">otNodeRemoveWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aExtAddr)</td></tr>
+<tr class="memitem:a381e76a3934dc7c3962032c92e6c163e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a381e76a3934dc7c3962032c92e6c163e">otNodeRemoveWhitelist</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aExtAddr)</td></tr>
 <tr class="separator:a381e76a3934dc7c3962032c92e6c163e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63682fb703fd11c258eb979c40f3b4a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a63682fb703fd11c258eb979c40f3b4a8">otNodeGetAddr16</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a63682fb703fd11c258eb979c40f3b4a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a63682fb703fd11c258eb979c40f3b4a8">otNodeGetAddr16</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a63682fb703fd11c258eb979c40f3b4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a174aeed5788b47ee5186a7a083f2d462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a174aeed5788b47ee5186a7a083f2d462">otNodeGetAddr64</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a174aeed5788b47ee5186a7a083f2d462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a174aeed5788b47ee5186a7a083f2d462">otNodeGetAddr64</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a174aeed5788b47ee5186a7a083f2d462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c1ef521cceb7cf336955a23681c7d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ab5c1ef521cceb7cf336955a23681c7d6">otNodeGetHashMacAddress</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:ab5c1ef521cceb7cf336955a23681c7d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ab5c1ef521cceb7cf336955a23681c7d6">otNodeGetHashMacAddress</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:ab5c1ef521cceb7cf336955a23681c7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad524f5bb1dc62dd406fa0a8cf7fce8b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ad524f5bb1dc62dd406fa0a8cf7fce8b4">otNodeSetChannel</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
+<tr class="memitem:ad524f5bb1dc62dd406fa0a8cf7fce8b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ad524f5bb1dc62dd406fa0a8cf7fce8b4">otNodeSetChannel</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
 <tr class="separator:ad524f5bb1dc62dd406fa0a8cf7fce8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f55ab1185a526d8bd40e759c898741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a76f55ab1185a526d8bd40e759c898741">otNodeGetChannel</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a76f55ab1185a526d8bd40e759c898741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a76f55ab1185a526d8bd40e759c898741">otNodeGetChannel</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a76f55ab1185a526d8bd40e759c898741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd0b93f847b37ec39e6979ff1af47fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3bd0b93f847b37ec39e6979ff1af47fd">otNodeSetMasterkey</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aMasterkey)</td></tr>
+<tr class="memitem:a3bd0b93f847b37ec39e6979ff1af47fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a3bd0b93f847b37ec39e6979ff1af47fd">otNodeSetMasterkey</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aMasterkey)</td></tr>
 <tr class="separator:a3bd0b93f847b37ec39e6979ff1af47fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c49bfe668f1a5a271d220c11318eefc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8c49bfe668f1a5a271d220c11318eefc">otNodeGetMasterkey</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a8c49bfe668f1a5a271d220c11318eefc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8c49bfe668f1a5a271d220c11318eefc">otNodeGetMasterkey</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a8c49bfe668f1a5a271d220c11318eefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a282c2e5689195312caf17ce5b6ce5673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a282c2e5689195312caf17ce5b6ce5673">otNodeGetKeySequenceCounter</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a282c2e5689195312caf17ce5b6ce5673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a282c2e5689195312caf17ce5b6ce5673">otNodeGetKeySequenceCounter</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a282c2e5689195312caf17ce5b6ce5673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8825ee2ea5ede64668bbb981d0f7dadd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8825ee2ea5ede64668bbb981d0f7dadd">otNodeSetKeySequenceCounter</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aSequence)</td></tr>
+<tr class="memitem:a8825ee2ea5ede64668bbb981d0f7dadd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8825ee2ea5ede64668bbb981d0f7dadd">otNodeSetKeySequenceCounter</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aSequence)</td></tr>
 <tr class="separator:a8825ee2ea5ede64668bbb981d0f7dadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18678047784357bb11438f18f186758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ad18678047784357bb11438f18f186758">otNodeSetKeySwitchGuardTime</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aSequence)</td></tr>
+<tr class="memitem:ad18678047784357bb11438f18f186758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ad18678047784357bb11438f18f186758">otNodeSetKeySwitchGuardTime</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aSequence)</td></tr>
 <tr class="separator:ad18678047784357bb11438f18f186758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a223913ce5d5f666dad820737b0f68ee8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a223913ce5d5f666dad820737b0f68ee8">otNodeSetNetworkIdTimeout</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aTimeout)</td></tr>
+<tr class="memitem:a223913ce5d5f666dad820737b0f68ee8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a223913ce5d5f666dad820737b0f68ee8">otNodeSetNetworkIdTimeout</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aTimeout)</td></tr>
 <tr class="separator:a223913ce5d5f666dad820737b0f68ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a459fcbab1aeec13035668f7876aaa069"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a459fcbab1aeec13035668f7876aaa069">otNodeGetNetworkName</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a459fcbab1aeec13035668f7876aaa069"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a459fcbab1aeec13035668f7876aaa069">otNodeGetNetworkName</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a459fcbab1aeec13035668f7876aaa069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc9add3cdf5c5af6157e92d3551bfa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a9cc9add3cdf5c5af6157e92d3551bfa9">otNodeSetNetworkName</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aName)</td></tr>
+<tr class="memitem:a9cc9add3cdf5c5af6157e92d3551bfa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a9cc9add3cdf5c5af6157e92d3551bfa9">otNodeSetNetworkName</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aName)</td></tr>
 <tr class="separator:a9cc9add3cdf5c5af6157e92d3551bfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a299f1b034af4051c8bb344572d1725ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a299f1b034af4051c8bb344572d1725ff">otNodeGetPanId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a299f1b034af4051c8bb344572d1725ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a299f1b034af4051c8bb344572d1725ff">otNodeGetPanId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a299f1b034af4051c8bb344572d1725ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a282c73b06fde8db11febc28bce16ef57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a282c73b06fde8db11febc28bce16ef57">otNodeSetPanId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId)</td></tr>
+<tr class="memitem:a282c73b06fde8db11febc28bce16ef57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a282c73b06fde8db11febc28bce16ef57">otNodeSetPanId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId)</td></tr>
 <tr class="separator:a282c73b06fde8db11febc28bce16ef57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344c6445b6cf81b6fa55c3ba7b6cb817"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a344c6445b6cf81b6fa55c3ba7b6cb817">otNodeGetPartitionId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a344c6445b6cf81b6fa55c3ba7b6cb817"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a344c6445b6cf81b6fa55c3ba7b6cb817">otNodeGetPartitionId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a344c6445b6cf81b6fa55c3ba7b6cb817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a98cdea7ecaa5508b0b0d1413b6ef83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a2a98cdea7ecaa5508b0b0d1413b6ef83">otNodeSetPartitionId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aPartitionId)</td></tr>
+<tr class="memitem:a2a98cdea7ecaa5508b0b0d1413b6ef83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a2a98cdea7ecaa5508b0b0d1413b6ef83">otNodeSetPartitionId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aPartitionId)</td></tr>
 <tr class="separator:a2a98cdea7ecaa5508b0b0d1413b6ef83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63c0d24f1dae67d67e79303f7529bf9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a63c0d24f1dae67d67e79303f7529bf9a">otNodeSetRouterUpgradeThreshold</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aThreshold)</td></tr>
+<tr class="memitem:a63c0d24f1dae67d67e79303f7529bf9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a63c0d24f1dae67d67e79303f7529bf9a">otNodeSetRouterUpgradeThreshold</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aThreshold)</td></tr>
 <tr class="separator:a63c0d24f1dae67d67e79303f7529bf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fd1b664ff330cbdc3bb65775d7f642"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a95fd1b664ff330cbdc3bb65775d7f642">otNodeSetRouterDowngradeThreshold</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aThreshold)</td></tr>
+<tr class="memitem:a95fd1b664ff330cbdc3bb65775d7f642"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a95fd1b664ff330cbdc3bb65775d7f642">otNodeSetRouterDowngradeThreshold</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aThreshold)</td></tr>
 <tr class="separator:a95fd1b664ff330cbdc3bb65775d7f642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dce4173a3ffdd176d251148f340c967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8dce4173a3ffdd176d251148f340c967">otNodeReleaseRouterId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aRouterId)</td></tr>
+<tr class="memitem:a8dce4173a3ffdd176d251148f340c967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8dce4173a3ffdd176d251148f340c967">otNodeReleaseRouterId</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aRouterId)</td></tr>
 <tr class="separator:a8dce4173a3ffdd176d251148f340c967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdf127063077f48455d3fd21f433f74e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#afdf127063077f48455d3fd21f433f74e">otNodeGetState</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:afdf127063077f48455d3fd21f433f74e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#afdf127063077f48455d3fd21f433f74e">otNodeGetState</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:afdf127063077f48455d3fd21f433f74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa842b5adf44cdb55444e7d32103ce9ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aa842b5adf44cdb55444e7d32103ce9ce">otNodeSetState</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aState)</td></tr>
+<tr class="memitem:aa842b5adf44cdb55444e7d32103ce9ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aa842b5adf44cdb55444e7d32103ce9ce">otNodeSetState</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aState)</td></tr>
 <tr class="separator:aa842b5adf44cdb55444e7d32103ce9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52dc675aee1ef9a0933342f50a199ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a52dc675aee1ef9a0933342f50a199ee3">otNodeGetTimeout</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a52dc675aee1ef9a0933342f50a199ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a52dc675aee1ef9a0933342f50a199ee3">otNodeGetTimeout</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a52dc675aee1ef9a0933342f50a199ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6377b1e289b982324114dd31c34e7c44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a6377b1e289b982324114dd31c34e7c44">otNodeSetTimeout</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aTimeout)</td></tr>
+<tr class="memitem:a6377b1e289b982324114dd31c34e7c44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a6377b1e289b982324114dd31c34e7c44">otNodeSetTimeout</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aTimeout)</td></tr>
 <tr class="separator:a6377b1e289b982324114dd31c34e7c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a838cdc124e64432fefb54a23d0e597b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a838cdc124e64432fefb54a23d0e597b8">otNodeGetWeight</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a838cdc124e64432fefb54a23d0e597b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a838cdc124e64432fefb54a23d0e597b8">otNodeGetWeight</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a838cdc124e64432fefb54a23d0e597b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f68eb04c1d603fb348f818abf209229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1f68eb04c1d603fb348f818abf209229">otNodeSetWeight</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aWeight)</td></tr>
+<tr class="memitem:a1f68eb04c1d603fb348f818abf209229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1f68eb04c1d603fb348f818abf209229">otNodeSetWeight</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aWeight)</td></tr>
 <tr class="separator:a1f68eb04c1d603fb348f818abf209229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7871d6e5bf22c8250b790789aea1daf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7871d6e5bf22c8250b790789aea1daf8">otNodeAddIpAddr</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aAddr)</td></tr>
+<tr class="memitem:a7871d6e5bf22c8250b790789aea1daf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7871d6e5bf22c8250b790789aea1daf8">otNodeAddIpAddr</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aAddr)</td></tr>
 <tr class="separator:a7871d6e5bf22c8250b790789aea1daf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7402431a7fbcd4cc3df493d57bfb7ef8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7402431a7fbcd4cc3df493d57bfb7ef8">otNodeGetAddrs</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a7402431a7fbcd4cc3df493d57bfb7ef8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a7402431a7fbcd4cc3df493d57bfb7ef8">otNodeGetAddrs</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a7402431a7fbcd4cc3df493d57bfb7ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ef29b0b249ba52e8757ad8cb0ac8ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#af6ef29b0b249ba52e8757ad8cb0ac8ca">otNodeGetContextReuseDelay</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:af6ef29b0b249ba52e8757ad8cb0ac8ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#af6ef29b0b249ba52e8757ad8cb0ac8ca">otNodeGetContextReuseDelay</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:af6ef29b0b249ba52e8757ad8cb0ac8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef70d4e5aec14bc397c018432fc69b55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aef70d4e5aec14bc397c018432fc69b55">otNodeSetContextReuseDelay</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aDelay)</td></tr>
+<tr class="memitem:aef70d4e5aec14bc397c018432fc69b55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aef70d4e5aec14bc397c018432fc69b55">otNodeSetContextReuseDelay</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aDelay)</td></tr>
 <tr class="separator:aef70d4e5aec14bc397c018432fc69b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0624644aeda1ed3737ecf4f9f5de88c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ae0624644aeda1ed3737ecf4f9f5de88c">otNodeAddPrefix</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>, const char *aFlags, const char *aPreference)</td></tr>
+<tr class="memitem:ae0624644aeda1ed3737ecf4f9f5de88c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ae0624644aeda1ed3737ecf4f9f5de88c">otNodeAddPrefix</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>, const char *aFlags, const char *aPreference)</td></tr>
 <tr class="separator:ae0624644aeda1ed3737ecf4f9f5de88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad209e026fe1fc63ba6fd40ea9abd1288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ad209e026fe1fc63ba6fd40ea9abd1288">otNodeRemovePrefix</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>)</td></tr>
+<tr class="memitem:ad209e026fe1fc63ba6fd40ea9abd1288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ad209e026fe1fc63ba6fd40ea9abd1288">otNodeRemovePrefix</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>)</td></tr>
 <tr class="separator:ad209e026fe1fc63ba6fd40ea9abd1288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b3451d61640352a0565327b2e02d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aa7b3451d61640352a0565327b2e02d27">otNodeAddRoute</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>, const char *aPreference)</td></tr>
+<tr class="memitem:aa7b3451d61640352a0565327b2e02d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aa7b3451d61640352a0565327b2e02d27">otNodeAddRoute</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>, const char *aPreference)</td></tr>
 <tr class="separator:aa7b3451d61640352a0565327b2e02d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89b8876dc751f0efdccd1815b74845e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a89b8876dc751f0efdccd1815b74845e9">otNodeRemoveRoute</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>)</td></tr>
+<tr class="memitem:a89b8876dc751f0efdccd1815b74845e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a89b8876dc751f0efdccd1815b74845e9">otNodeRemoveRoute</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *<a class="el" href="ot_node_api_8cpp.html#ab6337c30fe3265d276b019195541927f">aPrefix</a>)</td></tr>
 <tr class="separator:a89b8876dc751f0efdccd1815b74845e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58b9e35bfe8eeeb814bf3706c7ff2415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a58b9e35bfe8eeeb814bf3706c7ff2415">otNodeRegisterNetdata</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a58b9e35bfe8eeeb814bf3706c7ff2415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a58b9e35bfe8eeeb814bf3706c7ff2415">otNodeRegisterNetdata</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a58b9e35bfe8eeeb814bf3706c7ff2415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fced71f9b7897640d60813ced92036e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1fced71f9b7897640d60813ced92036e">otNodeEnergyScan</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aMask, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aCount, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPeriod, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aDuration, const char *aAddr)</td></tr>
+<tr class="memitem:a1fced71f9b7897640d60813ced92036e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a1fced71f9b7897640d60813ced92036e">otNodeEnergyScan</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aMask, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aCount, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPeriod, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aDuration, const char *aAddr)</td></tr>
 <tr class="separator:a1fced71f9b7897640d60813ced92036e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d283d406f06a708c225c8db18f05d21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a6d283d406f06a708c225c8db18f05d21">otNodePanIdQuery</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aMask, const char *aAddr)</td></tr>
+<tr class="memitem:a6d283d406f06a708c225c8db18f05d21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a6d283d406f06a708c225c8db18f05d21">otNodePanIdQuery</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aMask, const char *aAddr)</td></tr>
 <tr class="separator:a6d283d406f06a708c225c8db18f05d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ede31cdbfd51fcb094921d638c3c0f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a2ede31cdbfd51fcb094921d638c3c0f7">otNodeScan</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
+<tr class="memitem:a2ede31cdbfd51fcb094921d638c3c0f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a2ede31cdbfd51fcb094921d638c3c0f7">otNodeScan</a> (<a class="el" href="structot_node.html">otNode</a> *aNode)</td></tr>
 <tr class="separator:a2ede31cdbfd51fcb094921d638c3c0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead87057b15d2e7389d04cc2bfd47579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aead87057b15d2e7389d04cc2bfd47579">otNodePing</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aAddr, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aSize, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aMinReplies)</td></tr>
-<tr class="separator:aead87057b15d2e7389d04cc2bfd47579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8848b7bf2ad813c048dabfbccc8782c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8848b7bf2ad813c048dabfbccc8782c5">otNodeSetRouterSelectionJitter</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aRouterJitter)</td></tr>
+<tr class="memitem:a41a25c6447f33bc916c906bd7ba606c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a41a25c6447f33bc916c906bd7ba606c8">otNodePing</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, const char *aAddr, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aSize, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aMinReplies, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aTimeout)</td></tr>
+<tr class="separator:a41a25c6447f33bc916c906bd7ba606c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8848b7bf2ad813c048dabfbccc8782c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8848b7bf2ad813c048dabfbccc8782c5">otNodeSetRouterSelectionJitter</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aRouterJitter)</td></tr>
 <tr class="separator:a8848b7bf2ad813c048dabfbccc8782c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add18b5a9273a32c2c406ff21f4260147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#add18b5a9273a32c2c406ff21f4260147">otNodeCommissionerAnnounceBegin</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aChannelMask, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aCount, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPeriod, const char *aAddr)</td></tr>
+<tr class="memitem:add18b5a9273a32c2c406ff21f4260147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#add18b5a9273a32c2c406ff21f4260147">otNodeCommissionerAnnounceBegin</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aChannelMask, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aCount, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPeriod, const char *aAddr)</td></tr>
 <tr class="separator:add18b5a9273a32c2c406ff21f4260147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba548235dc058f74ff0b8ddb08f7f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a6ba548235dc058f74ff0b8ddb08f7f95">otNodeSetActiveDataset</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aTimestamp, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aChannelMask, const char *aMasterKey)</td></tr>
+<tr class="memitem:a6ba548235dc058f74ff0b8ddb08f7f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a6ba548235dc058f74ff0b8ddb08f7f95">otNodeSetActiveDataset</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aTimestamp, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aChannelMask, const char *aMasterKey)</td></tr>
 <tr class="separator:a6ba548235dc058f74ff0b8ddb08f7f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5c57b337ca1cc7c4b3072722743ea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a4d5c57b337ca1cc7c4b3072722743ea2">otNodeSetPendingDataset</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aActiveTimestamp, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aPendingTimestamp, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel)</td></tr>
+<tr class="memitem:a4d5c57b337ca1cc7c4b3072722743ea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a4d5c57b337ca1cc7c4b3072722743ea2">otNodeSetPendingDataset</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aActiveTimestamp, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aPendingTimestamp, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel)</td></tr>
 <tr class="separator:a4d5c57b337ca1cc7c4b3072722743ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8b29e4a23d90b71c44af654d5c2160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aca8b29e4a23d90b71c44af654d5c2160">otNodeSendPendingSet</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aActiveTimestamp, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aPendingTimestamp, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aDelayTimer, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel, const char *aMasterKey, const char *aMeshLocal, const char *aNetworkName)</td></tr>
+<tr class="memitem:aca8b29e4a23d90b71c44af654d5c2160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#aca8b29e4a23d90b71c44af654d5c2160">otNodeSendPendingSet</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aActiveTimestamp, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aPendingTimestamp, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aDelayTimer, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel, const char *aMasterKey, const char *aMeshLocal, const char *aNetworkName)</td></tr>
 <tr class="separator:aca8b29e4a23d90b71c44af654d5c2160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bff5fc4270142cc3189173db7ade87d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a4bff5fc4270142cc3189173db7ade87d">otNodeSendActiveSet</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aActiveTimestamp, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aChannelMask, const char *aExtPanId, const char *aMasterKey, const char *aMeshLocal, const char *aNetworkName, const char *aBinary)</td></tr>
+<tr class="memitem:a4bff5fc4270142cc3189173db7ade87d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a4bff5fc4270142cc3189173db7ade87d">otNodeSendActiveSet</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> aActiveTimestamp, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aChannel, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aChannelMask, const char *aExtPanId, const char *aMasterKey, const char *aMeshLocal, const char *aNetworkName, const char *aBinary)</td></tr>
 <tr class="separator:a4bff5fc4270142cc3189173db7ade87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac31958bab51bd1ae106d2785fa617bae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ac31958bab51bd1ae106d2785fa617bae">otNodeSetMaxChildren</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aMaxChildren)</td></tr>
+<tr class="memitem:ac31958bab51bd1ae106d2785fa617bae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#ac31958bab51bd1ae106d2785fa617bae">otNodeSetMaxChildren</a> (<a class="el" href="structot_node.html">otNode</a> *aNode, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aMaxChildren)</td></tr>
 <tr class="separator:ac31958bab51bd1ae106d2785fa617bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eef5746912dbc7a3c3495bccc06f572"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_listener.html">otListener</a> *<a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8eef5746912dbc7a3c3495bccc06f572">otListenerInit</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> nodeid)</td></tr>
+<tr class="memitem:a8eef5746912dbc7a3c3495bccc06f572"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_listener.html">otListener</a> *<a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a8eef5746912dbc7a3c3495bccc06f572">otListenerInit</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> nodeid)</td></tr>
 <tr class="separator:a8eef5746912dbc7a3c3495bccc06f572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a124b349b8da9b0ec7bb3cf81cf3d5ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a124b349b8da9b0ec7bb3cf81cf3d5ca7">otListenerFinalize</a> (<a class="el" href="structot_listener.html">otListener</a> *aListener)</td></tr>
+<tr class="memitem:a124b349b8da9b0ec7bb3cf81cf3d5ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a124b349b8da9b0ec7bb3cf81cf3d5ca7">otListenerFinalize</a> (<a class="el" href="structot_listener.html">otListener</a> *aListener)</td></tr>
 <tr class="separator:a124b349b8da9b0ec7bb3cf81cf3d5ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b95e02b22ce1a960a1b977f21fbeb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a60b95e02b22ce1a960a1b977f21fbeb5">otListenerRead</a> (<a class="el" href="structot_listener.html">otListener</a> *aListener, <a class="el" href="structot_mac_frame.html">otMacFrame</a> *aFrame)</td></tr>
+<tr class="memitem:a60b95e02b22ce1a960a1b977f21fbeb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ot_node_8h.html#a60b95e02b22ce1a960a1b977f21fbeb5">otListenerRead</a> (<a class="el" href="structot_listener.html">otListener</a> *aListener, <a class="el" href="structot_mac_frame.html">otMacFrame</a> *aFrame)</td></tr>
 <tr class="separator:a60b95e02b22ce1a960a1b977f21fbeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines a node interface for <a class="el" href="openthread_8h.html" title="This file defines the top-level functions for the OpenThread library. ">openthread.h</a> to be used for certification tests. </p>
-
-<p class="definition">Definition in file <a class="el" href="ot_node_8h_source.html">otNode.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad03447590d567da262fcdd6709615b1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad03447590d567da262fcdd6709615b1c">&#9670;&nbsp;</a></span>OTNODEAPI</h2>
@@ -248,8 +247,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ot_node_8h_source.html#l00041">41</a> of file <a class="el" href="ot_node_8h_source.html">otNode.h</a>.</p>
 
 </div>
 </div>
@@ -266,8 +263,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The interface used to listen in on virtual nodes' MAC frames </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_8h_source.html#l00372">372</a> of file <a class="el" href="ot_node_8h_source.html">otNode.h</a>.</p>
 
 </div>
 </div>
@@ -299,8 +294,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Represents a virtual node for an openthread interface </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_8h_source.html#l00051">51</a> of file <a class="el" href="ot_node_8h_source.html">otNode.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -311,7 +304,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otListenerFinalize </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otListenerFinalize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_listener.html">otListener</a> *&#160;</td>
           <td class="paramname"><em>aListener</em></td><td>)</td>
@@ -320,8 +313,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Frees a listener </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l02254">2254</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +323,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_listener.html">otListener</a>* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otListenerInit </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_listener.html">otListener</a>* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otListenerInit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>nodeid</em></td><td>)</td>
@@ -341,8 +332,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Creates and starts a new listener </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l02209">2209</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -353,7 +342,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otListenerRead </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otListenerRead </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_listener.html">otListener</a> *&#160;</td>
           <td class="paramname"><em>aListener</em>, </td>
@@ -373,8 +362,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Reads the next MAC frame from the listener </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l02297">2297</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a7871d6e5bf22c8250b790789aea1daf8"></a>
@@ -384,7 +371,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddIpAddr </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddIpAddr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -404,8 +391,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds an IP address for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01424">1424</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ae0624644aeda1ed3737ecf4f9f5de88c"></a>
@@ -415,7 +400,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddPrefix </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddPrefix </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -447,8 +432,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds an IP prefix for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01515">1515</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aa7b3451d61640352a0565327b2e02d27"></a>
@@ -458,7 +441,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddRoute </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddRoute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -484,8 +467,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds an IP route for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01593">1593</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ae64de48a85aee8ccfb6a7ea33ce80dc4"></a>
@@ -495,7 +476,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddWhitelist </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeAddWhitelist </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -521,8 +502,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds an entry to the node's whitelist </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01093">1093</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="af5a3249ca16a682683b039b9f7f1afe2"></a>
@@ -532,7 +511,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeClearWhitelist </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeClearWhitelist </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -541,8 +520,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Clears the node's whitelist </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01063">1063</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +530,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerAnnounceBegin </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerAnnounceBegin </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -591,8 +568,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sends the announce message for a node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01896">1896</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a394dcc5043c61802355db54ce24ce521"></a>
@@ -602,7 +577,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerJoinerAdd </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerJoinerAdd </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -628,8 +603,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds a new joiner to the list for commissioning </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01005">1005</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1eb63752feb8694edd77ca9e5160a579"></a>
@@ -639,7 +612,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerStart </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerStart </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -648,8 +621,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Starts the commissioner logic </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00994">994</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -660,7 +631,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerStop </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeCommissionerStop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -669,8 +640,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Stops the commissioner logic </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01029">1029</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -681,7 +650,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeDisableWhitelist </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeDisableWhitelist </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -690,8 +659,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Disables the node's whitelist </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01083">1083</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -702,7 +669,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeEnableWhitelist </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeEnableWhitelist </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -711,8 +678,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Enables the node's whitelist </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01073">1073</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -723,7 +688,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeEnergyScan </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeEnergyScan </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -767,8 +732,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Performs an energy scan for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01657">1657</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a3a81b028ed9225441168de6427c11ca0"></a>
@@ -778,7 +741,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeFinalize </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeFinalize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -787,8 +750,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Frees a node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00867">867</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -799,7 +760,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetAddr16 </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetAddr16 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -808,8 +769,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the node's short mac address (Rloc16) </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01131">1131</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -820,7 +779,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetAddr64 </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetAddr64 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -829,8 +788,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the node's extended mac address </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01157">1157</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -841,7 +798,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetAddrs </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetAddrs </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -850,8 +807,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the IP address for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01448">1448</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -862,7 +817,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetChannel </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetChannel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -871,8 +826,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the channel for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01183">1183</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -883,7 +836,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetContextReuseDelay </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetContextReuseDelay </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -892,8 +845,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the context reuse delay for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01497">1497</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -904,7 +855,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetHashMacAddress </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetHashMacAddress </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -913,8 +864,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the node's hash mac address </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01140">1140</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -925,7 +874,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetKeySequenceCounter </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetKeySequenceCounter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -934,8 +883,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the key sequence counter for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01229">1229</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -946,7 +893,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetMasterkey </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetMasterkey </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -955,8 +902,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the node's master key </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01210">1210</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -967,7 +912,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetNetworkName </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetNetworkName </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -976,8 +921,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the network name for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01274">1274</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -988,7 +931,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetPanId </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetPanId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -997,8 +940,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the pan id for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01284">1284</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +950,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetPartitionId </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetPartitionId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1018,8 +959,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the partition id for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01302">1302</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +969,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetState </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetState </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1039,8 +978,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the node's state </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01347">1347</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +988,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetTimeout </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetTimeout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1060,8 +997,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the child timeout for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01388">1388</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1007,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetWeight </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeGetWeight </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1081,8 +1016,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the leader weight for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01406">1406</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1026,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_node.html">otNode</a>* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeInit </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="structot_node.html">otNode</a>* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeInit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1102,8 +1035,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Allocates a new virtual node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00731">731</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1045,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeInterfaceDown </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeInterfaceDown </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1123,8 +1054,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Stops the thread interface </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00961">961</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1064,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeInterfaceUp </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeInterfaceUp </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1144,8 +1073,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Starts the thread interface </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00950">950</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1083,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeJoinerStart </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeJoinerStart </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1182,8 +1109,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Starts the joiner logic </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01040">1040</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a13ec7dfb08b38c7aed24c25d403fd4d5"></a>
@@ -1193,7 +1118,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeLog </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeLog </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>aMessage</em></td><td>)</td>
@@ -1202,8 +1127,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Logs a WPP message </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00725">725</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1137,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodePanIdQuery </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodePanIdQuery </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1246,18 +1169,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Performs a panid query for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01691">1691</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
-<a id="aead87057b15d2e7389d04cc2bfd47579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aead87057b15d2e7389d04cc2bfd47579">&#9670;&nbsp;</a></span>otNodePing()</h2>
+<a id="a41a25c6447f33bc916c906bd7ba606c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a25c6447f33bc916c906bd7ba606c8">&#9670;&nbsp;</a></span>otNodePing()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodePing </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodePing </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1278,7 +1199,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>aMinReplies</em>&#160;</td>
+          <td class="paramname"><em>aMinReplies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>aTimeout</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1289,8 +1216,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Performs an scan for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01726">1726</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a58b9e35bfe8eeeb814bf3706c7ff2415"></a>
@@ -1300,7 +1225,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRegisterNetdata </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRegisterNetdata </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1309,8 +1234,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Registers the net data for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01636">1636</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +1244,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeReleaseRouterId </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeReleaseRouterId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1341,8 +1264,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Releases a router id for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01338">1338</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ad209e026fe1fc63ba6fd40ea9abd1288"></a>
@@ -1352,7 +1273,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRemovePrefix </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRemovePrefix </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1372,8 +1293,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Removes an IP prefix from the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01580">1580</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a89b8876dc751f0efdccd1815b74845e9"></a>
@@ -1383,7 +1302,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRemoveRoute </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRemoveRoute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1403,8 +1322,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Removes an IP route from the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01623">1623</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a381e76a3934dc7c3962032c92e6c163e"></a>
@@ -1414,7 +1331,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRemoveWhitelist </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeRemoveWhitelist </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1434,8 +1351,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Removes an entry to the node's whitelist </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01117">1117</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a2ede31cdbfd51fcb094921d638c3c0f7"></a>
@@ -1445,7 +1360,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeScan </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> const char* <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeScan </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -1454,8 +1369,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Performs an scan for the node </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01718">1718</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -1466,7 +1379,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSendActiveSet </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSendActiveSet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1534,8 +1447,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sends a active set for a node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l02058">2058</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aca8b29e4a23d90b71c44af654d5c2160"></a>
@@ -1545,7 +1456,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSendPendingSet </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSendPendingSet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1607,8 +1518,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sends a pending set for a node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01990">1990</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a6ba548235dc058f74ff0b8ddb08f7f95"></a>
@@ -1618,7 +1527,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetActiveDataset </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetActiveDataset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1662,8 +1571,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the active dataset for a node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01910">1910</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ad524f5bb1dc62dd406fa0a8cf7fce8b4"></a>
@@ -1673,7 +1580,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetChannel </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetChannel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1693,8 +1600,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the channel for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01174">1174</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aef70d4e5aec14bc397c018432fc69b55"></a>
@@ -1704,7 +1609,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetContextReuseDelay </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetContextReuseDelay </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1724,8 +1629,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the context reuse delay for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01506">1506</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a8825ee2ea5ede64668bbb981d0f7dadd"></a>
@@ -1735,7 +1638,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetKeySequenceCounter </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetKeySequenceCounter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1755,8 +1658,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the key sequence counter for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01238">1238</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ad18678047784357bb11438f18f186758"></a>
@@ -1766,7 +1667,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetKeySwitchGuardTime </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetKeySwitchGuardTime </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1786,8 +1687,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the key switch guard time for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01247">1247</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a3bd0b93f847b37ec39e6979ff1af47fd"></a>
@@ -1797,7 +1696,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetMasterkey </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetMasterkey </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1817,8 +1716,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>sets the node's master key </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01192">1192</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ac31958bab51bd1ae106d2785fa617bae"></a>
@@ -1828,7 +1725,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetMaxChildren </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetMaxChildren </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1848,8 +1745,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the maximum number of children for a node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l02143">2143</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a7bde33ba4d54a6ff72bda745270cc7b8"></a>
@@ -1859,7 +1754,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetMode </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1879,8 +1774,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the link mode </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00915">915</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a223913ce5d5f666dad820737b0f68ee8"></a>
@@ -1890,7 +1783,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetNetworkIdTimeout </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetNetworkIdTimeout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1910,8 +1803,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the network id timeout for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01256">1256</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a9cc9add3cdf5c5af6157e92d3551bfa9"></a>
@@ -1921,7 +1812,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetNetworkName </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetNetworkName </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1941,8 +1832,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the network name for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01265">1265</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a282c73b06fde8db11febc28bce16ef57"></a>
@@ -1952,7 +1841,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetPanId </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetPanId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -1972,8 +1861,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the pan id for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01293">1293</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a2a98cdea7ecaa5508b0b0d1413b6ef83"></a>
@@ -1983,7 +1870,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetPartitionId </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetPartitionId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2003,8 +1890,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the partition id for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01311">1311</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a4d5c57b337ca1cc7c4b3072722743ea2"></a>
@@ -2014,7 +1899,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetPendingDataset </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetPendingDataset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2052,8 +1937,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the pending dataset for a node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01954">1954</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a95fd1b664ff330cbdc3bb65775d7f642"></a>
@@ -2063,7 +1946,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetRouterDowngradeThreshold </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetRouterDowngradeThreshold </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2083,8 +1966,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the router downgrade threshold for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01329">1329</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a8848b7bf2ad813c048dabfbccc8782c5"></a>
@@ -2094,7 +1975,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetRouterSelectionJitter </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetRouterSelectionJitter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2114,8 +1995,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the router selection jitter value for a node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01887">1887</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a63c0d24f1dae67d67e79303f7529bf9a"></a>
@@ -2125,7 +2004,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetRouterUpgradeThreshold </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetRouterUpgradeThreshold </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2145,8 +2024,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the router upgrade threshold for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01320">1320</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aa842b5adf44cdb55444e7d32103ce9ce"></a>
@@ -2156,7 +2033,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetState </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetState </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2176,8 +2053,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the node's state </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01358">1358</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a6377b1e289b982324114dd31c34e7c44"></a>
@@ -2187,7 +2062,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetTimeout </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetTimeout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2207,8 +2082,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the child timeout for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01397">1397</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1f68eb04c1d603fb348f818abf209229"></a>
@@ -2218,7 +2091,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetWeight </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeSetWeight </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em>, </td>
@@ -2238,8 +2111,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the leader weight for the node </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l01415">1415</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a7855199b4607e21fd47d242a0182da83"></a>
@@ -2249,7 +2120,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeThreadStart </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeThreadStart </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -2258,8 +2129,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Starts the thread logic </p>
-
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00972">972</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
 
 </div>
 </div>
@@ -2270,7 +2139,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeThreadStop </td>
+          <td class="memname"><a class="el" href="ot_node_api_2precomp_8h.html#ad03447590d567da262fcdd6709615b1c">OTNODEAPI</a> <a class="el" href="stdint_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="group__plat-toolchain.html#ga3e627a0014c2c5afaf69f51b47cf12a5">OTCALL</a> otNodeThreadStop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_node.html">otNode</a> *&#160;</td>
           <td class="paramname"><em>aNode</em></td><td>)</td>
@@ -2280,14 +2149,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Stops the thread logic </p>
 
-<p class="definition">Definition at line <a class="el" href="ot_node_api_8cpp_source.html#l00983">983</a> of file <a class="el" href="ot_node_api_8cpp_source.html">otNodeApi.cpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

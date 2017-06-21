@@ -1,7 +1,7 @@
-diff -u -r openthread-master/configure.ac ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/configure.ac
---- openthread-master/configure.ac  2017-06-02 15:28:31.571473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/configure.ac    2017-06-02 15:15:20.179502743 +0530
-@@ -872,6 +872,36 @@
+diff -u -r openthread-master/configure.ac openthread-modified/configure.ac
+--- openthread-master/configure.ac     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/configure.ac     2017-06-13 19:44:01.178447178 +0530
+@@ -1048,6 +1048,36 @@
  AC_DEFINE_UNQUOTED([OPENTHREAD_ENABLE_RAW_LINK_API],[${OPENTHREAD_ENABLE_RAW_LINK_API}],[Define to 1 if you want to enable raw link-layer API])
 
  #
@@ -38,89 +38,20 @@ diff -u -r openthread-master/configure.ac ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/
  # Examples
  #
 
-diff -u -r openthread-master/doc/spinel-protocol-src/Makefile ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/doc/spinel-protocol-src/Makefile
---- openthread-master/doc/spinel-protocol-src/Makefile  2017-06-02 15:28:31.575473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/doc/spinel-protocol-src/Makefile    2017-05-29 19:11:44.304989015 +0530
-@@ -35,8 +35,8 @@
- XML2RFC           ?= $(TOOL_PREFIX) xml2rfc
- MMARK             ?= $(TOOL_PREFIX) mmark
- SED               ?= sed
--RM_F             ?= rm -f
--MKDIR_P              ?= mkdir -p
-+RM_F              ?= rm -f
-+MKDIR_P           ?= mkdir -p
-
- SOURCE_DATE       := $(shell (TZ=UTC git log -n 1 --date=iso-strict-local --pretty=format:%ad 2> /dev/null || date -u +"%Y-%m-%dT%H:%M:%SZ" ) | sed 's/+00:00$$/Z/')
- SOURCE_VERSION    := $(shell git describe --dirty --always --match "--PoIsOn--" 2> /dev/null)
-@@ -51,41 +51,41 @@
- all: $(XML) $(TXT) $(HTML)
-
- clean:
--   $(RM_F) $(XML) $(TXT) $(HTML) $(patsubst %.md.in,%.md,$(wildcard draft-*.md.in))
-+    $(RM_F) $(XML) $(TXT) $(HTML) $(patsubst %.md.in,%.md,$(wildcard draft-*.md.in))
-
- $(XML2RFC_CACHE_DIR):
--   $(MKDIR_P) "$(XML2RFC_CACHE_DIR)"
-+    $(MKDIR_P) "$(XML2RFC_CACHE_DIR)"
-
- %.md: %.md.in
--   $(SED) 's/@SOURCE_VERSION@/$(SOURCE_VERSION)/g;s/@SOURCE_DATE@/$(SOURCE_DATE)/g' < $< > $@
-+    $(SED) 's/@SOURCE_VERSION@/$(SOURCE_VERSION)/g;s/@SOURCE_DATE@/$(SOURCE_DATE)/g' < $< > $@
-
- %.xml: %.md
--   $(MMARK) -xml2 -page $< $@
-+    $(MMARK) -xml2 -page $< $@
-
- %.html: %.xml $(XML2RFC_CACHE_DIR)
--   $(XML2RFC) --html $<
-+    $(XML2RFC) --html $<
-
- %.txt: %.xml $(XML2RFC_CACHE_DIR)
--   $(XML2RFC) --text $<
-+    $(XML2RFC) --text $<
-
- # -------------
-
- draft-spinel-protocol-bis.xml: \
--   draft-spinel-protocol-bis.md \
--   spinel-commands.md \
--   spinel-data-packing.md \
--   spinel-example-sessions.md \
--   spinel-feature-host-buffer-offload.md \
--   spinel-feature-network-save.md \
--   spinel-frame-format.md \
--   spinel-framing.md \
--   spinel-prop-core.md \
--   spinel-prop-ipv6.md \
--   spinel-prop-mac.md \
--   spinel-prop-net.md \
--   spinel-prop-phy.md \
--   spinel-prop.md \
--   spinel-status-codes.md \
--   spinel-tech-thread.md \
--   spinel-test-vectors.md \
--   $(NULL)
-+    draft-spinel-protocol-bis.md \
-+    spinel-commands.md \
-+    spinel-data-packing.md \
-+    spinel-example-sessions.md \
-+    spinel-feature-host-buffer-offload.md \
-+    spinel-feature-network-save.md \
-+    spinel-frame-format.md \
-+    spinel-framing.md \
-+    spinel-prop-core.md \
-+    spinel-prop-ipv6.md \
-+    spinel-prop-mac.md \
-+    spinel-prop-net.md \
-+    spinel-prop-phy.md \
-+    spinel-prop.md \
-+    spinel-status-codes.md \
-+    spinel-tech-thread.md \
-+    spinel-test-vectors.md \
-+    $(NULL)
-diff -u -r openthread-master/examples/platforms/nrf52840/Makefile.am ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/examples/platforms/nrf52840/Makefile.am
---- openthread-master/examples/platforms/nrf52840/Makefile.am   2017-06-02 15:28:31.183473754 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/examples/platforms/nrf52840/Makefile.am 2017-05-29 19:11:44.316989014 +0530
+diff -u -r openthread-master/examples/common-switches.mk openthread-modified/examples/common-switches.mk
+--- openthread-master/examples/common-switches.mk     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/examples/common-switches.mk     2017-06-13 19:44:01.158447178 +0530
+@@ -85,3 +85,7 @@
+ ifeq ($(COAP),1)
+ configure_OPTIONS              += --enable-application-coap
+ endif
++
++ifeq ($(ENABLE_DW1000),1)
++configure_OPTIONS              += --enable-dw1000
++endif
+diff -u -r openthread-master/examples/platforms/nrf52840/Makefile.am openthread-modified/examples/platforms/nrf52840/Makefile.am
+--- openthread-master/examples/platforms/nrf52840/Makefile.am     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/examples/platforms/nrf52840/Makefile.am     2017-06-13 19:44:01.158447178 +0530
 @@ -49,19 +49,36 @@
      -I$(top_srcdir)/third_party/NordicSemiconductor/segger_rtt                   \
      $(NULL)
@@ -138,8 +69,9 @@ diff -u -r openthread-master/examples/platforms/nrf52840/Makefile.am ../PP_GIT/D
      flash.c                                                                      \
      logging.c                                                                    \
      misc.c                                                                       \
-     platform.c                                                                   \
+-    platform.c                                                                   \
 -    radio.c                                                                      \
++    platform.c                                                                   \                                                           \
      random.c                                                                     \
      uart.c                                                                       \
      platform-config.h                                                            \
@@ -215,37 +147,26 @@ diff -u -r openthread-master/examples/platforms/nrf52840/Makefile.am ../PP_GIT/D
  PRETTY_FILES                                                                   = \
      $(PLATFORM_SOURCES)                                                          \
      $(NULL)
-diff -u -r openthread-master/examples/platforms/nrf52840/openthread-core-nrf52840-config.h ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/examples/platforms/nrf52840/openthread-core-nrf52840-config.h
---- openthread-master/examples/platforms/nrf52840/openthread-core-nrf52840-config.h 2017-06-02 15:28:31.583473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/examples/platforms/nrf52840/openthread-core-nrf52840-config.h   2017-05-29 19:11:44.316989014 +0530
-@@ -66,7 +66,6 @@
-  *
-  */
- #define OPENTHREAD_CONFIG_LOG_PREPEND_LEVEL                     0
--
-  /**
-   * @def OPENTHREAD_CONFIG_ENABLE_SOFTWARE_ACK_TIMEOUT
-   *
-diff -u -r openthread-master/examples/platforms/nrf52840/platform.c ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/examples/platforms/nrf52840/platform.c
---- openthread-master/examples/platforms/nrf52840/platform.c    2017-06-02 15:28:31.583473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/examples/platforms/nrf52840/platform.c  2017-05-29 19:11:44.316989014 +0530
-@@ -41,6 +41,10 @@
+diff -u -r openthread-master/examples/platforms/nrf52840/platform.c openthread-modified/examples/platforms/nrf52840/platform.c
+--- openthread-master/examples/platforms/nrf52840/platform.c     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/examples/platforms/nrf52840/platform.c     2017-06-13 19:44:01.158447178 +0530
+@@ -40,6 +40,10 @@
  #include <openthread-core-config.h>
  #include <openthread-config.h>
 
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
++#if OPENTHREAD_ENABLE_DW1000_RADIO
 +#include "dw1000/dw1000_radio.h"
 +#endif
 +
  void __cxa_pure_virtual(void) { while (1); }
 
  void PlatformInit(int argc, char *argv[])
-@@ -54,7 +58,13 @@
+@@ -53,7 +57,13 @@
      nrf5UartInit();
      nrf5MiscInit();
      nrf5CryptoInit();
 +
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
++#if OPENTHREAD_ENABLE_DW1000_RADIO
 +    dw1000RadioInit();
 +#else
      nrf5RadioInit();
@@ -254,42 +175,106 @@ diff -u -r openthread-master/examples/platforms/nrf52840/platform.c ../PP_GIT/DC
  #if (OPENTHREAD_ENABLE_DEFAULT_LOGGING == 0)
      nrf5LogInit();
  #endif
-@@ -66,6 +76,10 @@
+@@ -61,10 +71,16 @@
+
+ void PlatformDeinit(void)
+ {
++
+ #if (OPENTHREAD_ENABLE_DEFAULT_LOGGING == 0)
+     nrf5LogDeinit();
+ #endif
++
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++#else
+     nrf5RadioDeinit();
++#endif
++
+     nrf5CryptoDeinit();
+     nrf5MiscDeinit();
+     nrf5UartDeinit();
+@@ -75,6 +91,11 @@
  void PlatformProcessDrivers(otInstance *aInstance)
  {
      nrf5AlarmProcess(aInstance);
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
++
++#if OPENTHREAD_ENABLE_DW1000_RADIO
 +    dw1000RadioProcess(aInstance);
 +#else
      nrf5RadioProcess(aInstance);
 +#endif
      nrf5UartProcess();
  }
-diff -u -r openthread-master/include/platform/radio.h ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/include/platform/radio.h
---- openthread-master/include/platform/radio.h  2017-06-02 15:28:31.587473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/include/platform/radio.h    2017-05-29 19:11:44.316989014 +0530
-@@ -68,11 +68,20 @@
+diff -u -r openthread-master/include/openthread/coap.h openthread-modified/include/openthread/coap.h
+--- openthread-master/include/openthread/coap.h     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/include/openthread/coap.h     2017-06-16 14:07:57.173977000 +0530
+@@ -508,6 +508,32 @@
+  *
+  */
+ otError otCoapSendResponse(otInstance *aInstance, otMessage *aMessage, const otMessageInfo *aMessageInfo);
++
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++
++/**
++ * This function will send the widget value into the cloud.
++ *
++ * @param[in]  aInstance        A pointer to an OpenThread instance.
++ * @param[in]  aUriPath         Cloud URI path
++ * @param[in]  aPayload         Payload which is to be sent to the cloud.
++ *
++ */
++void otCloudDataSend(otInstance * aInstance,
++                     const char * aUriPath,
++                     char       * aPayload);
++
++/**
++ * This function will create the payload and Updates the integer value
++ * to the cloud.
++ *
++ * @param[in]  aInstance        A pointer to an OpenThread instance.
++ * @param[in]  aWidgetVal       The value which will be sent to the cloud.
++ *
++ */
++void otCloudDataUpdate(otInstance * aInstance, uint16_t aWidgetVal);
++
++#endif
+ #endif // OPENTHREAD_ENABLE_APPLICATION_COAP
+
+ /**
+diff -u -r openthread-master/include/openthread/platform/radio.h openthread-modified/include/openthread/platform/radio.h
+--- openthread-master/include/openthread/platform/radio.h     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/include/openthread/platform/radio.h     2017-06-14 20:21:49.642935000 +0530
+@@ -67,12 +67,21 @@
  enum
  {
-     kMaxPHYPacketSize        = 127,                       ///< aMaxPHYPacketSize (IEEE 802.15.4-2006)
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
-+    kPhyMinChannel           = 5,
-+    kPhyMaxChannel           = 5,
+     OT_RADIO_FRAME_MAX_SIZE     = 127,                             ///< aMaxPHYPacketSize (IEEE 802.15.4-2006)
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++    OT_RADIO_CHANNEL_MIN         = 5,
++    OT_RADIO_CHANNEL_MAX         = 5,
 +#else
-     kPhyMinChannel           = 11,                        ///< 2.4 GHz IEEE 802.15.4-2006
-     kPhyMaxChannel           = 26,                        ///< 2.4 GHz IEEE 802.15.4-2006
+     OT_RADIO_CHANNEL_MIN         = 11,                              ///< 2.4 GHz IEEE 802.15.4-2006
+     OT_RADIO_CHANNEL_MAX         = 26,                              ///< 2.4 GHz IEEE 802.15.4-2006
 +#endif
-     kPhySupportedChannelMask = 0xffff << kPhyMinChannel,  ///< 2.4 GHz IEEE 802.15.4-2006
-     kPhySymbolsPerOctet      = 2,                         ///< 2.4 GHz IEEE 802.15.4-2006
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
-+    kPhyBitRate              = 6800000,                   ///< 2.4 GHz IEEE 802.15.4 (kilobits per second)
++
+     OT_RADIO_SUPPORTED_CHANNELS  = 0xffff << OT_RADIO_CHANNEL_MIN,  ///< 2.4 GHz IEEE 802.15.4-2006
+     OT_RADIO_SYMBOLS_PER_OCTET   = 2,                               ///< 2.4 GHz IEEE 802.15.4-2006
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++    OT_RADIO_BIT_RATE            = 6800000,
 +#else
-     kPhyBitRate              = 250000,                    ///< 2.4 GHz IEEE 802.15.4 (kilobits per second)
+     OT_RADIO_BIT_RATE            = 250000,                          ///< 2.4 GHz IEEE 802.15.4 (kilobits per second)
+-
 +#endif
+     OT_RADIO_BITS_PER_OCTET  = 8,      ///< Number of bits per octet
+     OT_RADIO_SYMBOL_TIME     = ((OT_RADIO_BITS_PER_OCTET / OT_RADIO_SYMBOLS_PER_OCTET) * 1000000) / OT_RADIO_BIT_RATE,
 
-     kPhyBitsPerOctet    = 8,
-     kPhyUsPerSymbol     = ((kPhyBitsPerOctet / kPhySymbolsPerOctet) * 1000000) / kPhyBitRate,
-@@ -158,6 +167,15 @@
+@@ -84,6 +93,7 @@
+  * This enum represents radio capabilities.
+  *
+  */
++
+ typedef enum otRadioCaps
+ {
+     OT_RADIO_CAPS_NONE              = 0,  ///< None
+@@ -159,6 +169,15 @@
  void otPlatRadioGetIeeeEui64(otInstance *aInstance, uint8_t *aIeeeEui64);
 
  /**
@@ -305,8 +290,8 @@ diff -u -r openthread-master/include/platform/radio.h ../PP_GIT/DCWL_USA_17_001/
   * Set the PAN ID for address filtering.
   *
   * @param[in] aInstance  The OpenThread instance structure.
-@@ -461,6 +479,15 @@
- extern void otPlatRadioEnergyScanDone(otInstance *aInstance, int8_t aEnergyScanMaxRssi);
+@@ -523,6 +542,16 @@
+ int8_t otPlatRadioGetReceiveSensitivity(otInstance *aInstance);
 
  /**
 + * The Cli command "logprint" calls this method to Print any variable or data.
@@ -317,74 +302,57 @@ diff -u -r openthread-master/include/platform/radio.h ../PP_GIT/DCWL_USA_17_001/
 + */
 +uint8_t otPlatRadioPrintBuf(uint8_t *buffer);
 +
++
 +/**
   * @}
   *
   */
-diff -u -r openthread-master/README.md ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/README.md
---- openthread-master/README.md 2017-06-02 15:28:31.571473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/README.md   2017-05-29 19:11:44.304989015 +0530
-@@ -1,4 +1,4 @@
--[![OpenThread][ot-logo]][ot-repo]
-+[![OpenThread][ot-logo]][ot-repo]
- [![Build Status][ot-travis-svg]][ot-travis]
- [![Build Status][ot-appveyor-svg]][ot-appveyor]
- [![Coverage Status][ot-codecov-svg]][ot-codecov]
-@@ -7,7 +7,7 @@
+diff -u -r openthread-master/src/cli/cli.cpp openthread-modified/src/cli/cli.cpp
+--- openthread-master/src/cli/cli.cpp     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/src/cli/cli.cpp     2017-06-16 14:12:19.545972000 +0530
+@@ -74,10 +74,16 @@
 
- OpenThread is an open-source implementation of the [Thread][thread]
- networking protocol. Nest has released OpenThread to make the technology
--used in Nest products more broadly available to developers to accelerate
-+used in Nest products more broadly available to developers to accelerate
- the development of products for the connected home.
+ #if OPENTHREAD_ENABLE_APPLICATION_COAP
+ #include "cli_coap.hpp"
++#include "openthread/coap.h"
+ #endif
 
- The Thread specification defines an IPv6-based reliable, secure and
-diff -u -r openthread-master/src/cli/cli.cpp ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/src/cli/cli.cpp
---- openthread-master/src/cli/cli.cpp   2017-06-02 15:28:31.587473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/src/cli/cli.cpp 2017-05-29 19:11:44.316989014 +0530
-@@ -55,8 +55,13 @@
- #include <common/encoding.hpp>
- #include <common/new.hpp>
- #include <net/ip6.hpp>
-+
- #include <platform/uart.h>
+ #include "common/encoding.hpp"
 
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
-+#include <platform/radio.h>
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++#include <openthread/platform/radio.h>
 +#endif
 +
- using Thread::Encoding::BigEndian::HostSwap16;
- using Thread::Encoding::BigEndian::HostSwap32;
++
+ using ot::Encoding::BigEndian::HostSwap16;
+ using ot::Encoding::BigEndian::HostSwap32;
 
-@@ -132,6 +137,9 @@
-     { "thread", &Interpreter::ProcessThread },
+@@ -99,6 +105,9 @@
+     { "childtimeout", &Interpreter::ProcessChildTimeout },
+ #if OPENTHREAD_ENABLE_APPLICATION_COAP
+     { "coap", &Interpreter::ProcessCoap },
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++    { "coapsend", &Interpreter::ProcessCoapSend},
++#endif
+ #endif
+ #if OPENTHREAD_ENABLE_COMMISSIONER && OPENTHREAD_FTD
+     { "commissioner", &Interpreter::ProcessCommissioner },
+@@ -192,6 +201,9 @@
+     { "txpowermax", &Interpreter::ProcessTxPowerMax },
      { "version", &Interpreter::ProcessVersion },
      { "whitelist", &Interpreter::ProcessWhitelist },
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
++#if OPENTHREAD_ENABLE_DW1000_RADIO
 +    { "logprint", &Interpreter::ProcessLogPrint},
 +#endif
  };
 
- Interpreter::Interpreter(otInstance *aInstance):
-@@ -1203,7 +1211,11 @@
-
-     if (argc == 0)
-     {
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
-+        sServer->OutputFormat("%04x\r\n", otPlatformGetPanId(mInstance));
-+#else
-         sServer->OutputFormat("%04x\r\n", otGetPanId(mInstance));
-+#endif
-     }
-     else
-     {
-@@ -2755,5 +2767,21 @@
-     sServer->OutputFormat("\r\n");
+ #ifdef OTDLL
+@@ -3124,5 +3136,39 @@
  }
+ #endif
 
-+#ifdef OPENTHREAD_ENABLE_DW1000_RADIO
-+/*  This feature is added to print any variable or data by using "logprint"
-+ *  cli command*/
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++
 +void Interpreter::ProcessLogPrint(int argc, char *argv[])
 +{
 +    (void)argc;
@@ -396,31 +364,162 @@ diff -u -r openthread-master/src/cli/cli.cpp ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_
 +    OutputBytes(buffer, size);
 +    sServer->OutputFormat("\r\n");
 +}
-+#endif
 +
++#if OPENTHREAD_ENABLE_APPLICATION_COAP
++
++void Interpreter::ProcessCoapSend(int argc, char *argv[])
++{
++    long temp= 0;
++    otError error = OT_ERROR_NONE;
++
++    VerifyOrExit(argc > 0, error = OT_ERROR_INVALID_ARGS);
++    SuccessOrExit(error = ParseLong(argv[0], (temp)));
++
++    otCloudDataUpdate(mInstance, static_cast<uint16_t>(temp));
++
++    sServer->OutputFormat("cloud value updated %d\r\n", temp);
++
++exit:
++    AppendResult(error);
++}
++
++#endif // OPENTHREAD_ENABLE_APPLICATION_COAP
++#endif // OPENTHREAD_ENABLE_DW1000_RADIO
  }  // namespace Cli
- }  // namespace Thread
-diff -u -r openthread-master/src/cli/cli.hpp ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/src/cli/cli.hpp
---- openthread-master/src/cli/cli.hpp   2017-06-02 15:28:31.587473739 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/src/cli/cli.hpp 2017-05-29 19:11:44.316989014 +0530
-@@ -216,7 +216,7 @@
-     void ProcessThread(int argc, char *argv[]);
+ }  // namespace ot
+diff -u -r openthread-master/src/cli/cli.hpp openthread-modified/src/cli/cli.hpp
+--- openthread-master/src/cli/cli.hpp     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/src/cli/cli.hpp     2017-06-16 14:14:52.545969000 +0530
+@@ -170,6 +170,9 @@
+ #endif
+     void ProcessChildTimeout(int argc, char *argv[]);
+ #if OPENTHREAD_ENABLE_APPLICATION_COAP
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++    void ProcessCoapSend(int argc,char *argv[]);
++#endif
+     void ProcessCoap(int argc, char *argv[]);
+ #endif  //OPENTHREAD_ENABLE_APPLICATION_COAP
+ #if OPENTHREAD_ENABLE_COMMISSIONER && OPENTHREAD_FTD
+@@ -266,7 +269,9 @@
+     void ProcessTxPowerMax(int argc, char *argv[]);
      void ProcessVersion(int argc, char *argv[]);
      void ProcessWhitelist(int argc, char *argv[]);
 -
++#if OPENTHREAD_ENABLE_DW1000_RADIO
 +    void ProcessLogPrint(int argc, char *argv[]);
-     static void s_HandleEchoResponse(void *aContext, Message &aMessage, const Ip6::MessageInfo &aMessageInfo);
-     static void s_HandlePingTimer(void *aContext);
-     static void s_HandleActiveScanResult(otActiveScanResult *aResult, void *aContext);
-diff -u -r openthread-master/src/core/openthread-core-default-config.h ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/src/core/openthread-core-default-config.h
---- openthread-master/src/core/openthread-core-default-config.h 2017-06-02 15:28:31.595473738 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/src/core/openthread-core-default-config.h   2017-05-29 19:11:44.324989014 +0530
++#endif
+ #ifdef OTDLL
+     void ProcessInstanceList(int argc, char *argv[]);
+     void ProcessInstance(int argc, char *argv[]);
+diff -u -r openthread-master/src/core/api/coap_api.cpp openthread-modified/src/core/api/coap_api.cpp
+--- openthread-master/src/core/api/coap_api.cpp     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/src/core/api/coap_api.cpp     2017-06-16 14:17:40.617966000 +0530
+@@ -38,6 +38,30 @@
+
+ #if OPENTHREAD_ENABLE_APPLICATION_COAP
+
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++#include <assert.h>
++#include <stdbool.h>
++#include <stdint.h>
++#include <string.h>
++#include <openthread/openthread.h>
++#include <openthread/diag.h>
++#include <openthread/cli.h>
++#include <openthread/platform/platform.h>
++#include <openthread/platform/alarm.h>
++
++/**< NAT64 address of the thethings.io cloud. */
++#define CLOUD_NAT64_ADDRESS           "fd00:64:123:4567::68c7:55d3"
++
++/**< Put your things URI here. */
++#define CLOUD_URI_PATH                "v2/things/oixa-fWQV2rPAB7oj5bEju7vlaafEpitg0Gogxz9PeM"
++
++/**< Thing resource name. */
++#define CLOUD_THING_RESOURCE          "Nordic-Decawave"
++
++/**< Use application/json content format type. */
++#define CLOUD_COAP_CONTENT_FORMAT     50
++#endif
++
+ using namespace ot;
+
+ void otCoapHeaderInit(otCoapHeader *aHeader, otCoapType aType, otCoapCode aCode)
+@@ -180,4 +204,65 @@
+                *static_cast<Message *>(aMessage), *static_cast<const Ip6::MessageInfo *>(aMessageInfo));
+ }
+
++#if OPENTHREAD_ENABLE_DW1000_RADIO
++void otCloudDataSend(otInstance * aInstance,
++                     const char * aUriPath,
++                     char       * aPayload)
++{
++     otError error = OT_ERROR_NO_BUFS;
++     otCoapHeader header;
++     otCoapOption content_format_option;
++     otMessage * p_request;
++     otMessageInfo message_info;
++     uint8_t content_format = CLOUD_COAP_CONTENT_FORMAT;
++
++     do
++     {
++         content_format_option.mNumber = kCoapOptionContentFormat;
++         content_format_option.mLength = 1;
++         content_format_option.mValue  = &content_format;
++
++         otCoapHeaderInit(&header, kCoapTypeNonConfirmable, kCoapRequestPost);
++         otCoapHeaderAppendUriPathOptions(&header, aUriPath);
++         otCoapHeaderAppendOption(&header, &content_format_option);
++         otCoapHeaderSetPayloadMarker(&header);
++
++         p_request = otCoapNewMessage(aInstance, &header);
++         if (p_request == NULL)
++         {
++             break;
++         }
++
++         error = otMessageAppend(p_request, aPayload, strlen(aPayload));
++         if (error != OT_ERROR_NONE)
++         {
++             break;
++         }
++
++         memset(&message_info, 0, sizeof(message_info));
++         message_info.mInterfaceId = OT_NETIF_INTERFACE_ID_THREAD;
++         message_info.mPeerPort = OT_DEFAULT_COAP_PORT;
++         otIp6AddressFromString(CLOUD_NAT64_ADDRESS, &message_info.mPeerAddr);
++
++         error = otCoapSendRequest(aInstance, p_request, &message_info, NULL, NULL);
++
++     } while (false);
++
++     if (error != OT_ERROR_NONE && p_request != NULL)
++     {
++         otMessageFree(p_request);
++     }
++ }
++
++void otCloudDataUpdate(otInstance * aInstance, uint16_t aWidgetVal)
++ {
++     char payload_buffer[64];
++
++     sprintf(payload_buffer,
++             "{\"values\":[{\"key\":\"%s\",\"value\":\"%d\"}]}",
++             CLOUD_THING_RESOURCE, aWidgetVal);
++
++     otCloudDataSend(aInstance, CLOUD_URI_PATH, payload_buffer);
++ }
++#endif // OPENTHREAD_ENABLE_DW1000_RADIO
+ #endif // OPENTHREAD_ENABLE_APPLICATION_COAP
+diff -u -r openthread-master/src/core/openthread-core-default-config.h openthread-modified/src/core/openthread-core-default-config.h
+--- openthread-master/src/core/openthread-core-default-config.h     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/src/core/openthread-core-default-config.h     2017-06-13 19:44:01.058447179 +0530
 @@ -102,7 +102,13 @@
   *
   */
  #ifndef OPENTHREAD_CONFIG_DEFAULT_CHANNEL
 +
-+#ifdef  OPENTHREAD_ENABLE_DW1000_RADIO
++#if  OPENTHREAD_ENABLE_DW1000_RADIO
 +#define OPENTHREAD_CONFIG_DEFAULT_CHANNEL                       5
 +#else
  #define OPENTHREAD_CONFIG_DEFAULT_CHANNEL                       11
@@ -429,1419 +528,6 @@ diff -u -r openthread-master/src/core/openthread-core-default-config.h ../PP_GIT
  #endif  // OPENTHREAD_CONFIG_DEFAULT_CHANNEL
 
  /**
-@@ -346,7 +352,7 @@
-  *
-  */
- #ifndef OPENTHREAD_CONFIG_LOG_LEVEL
--#define OPENTHREAD_CONFIG_LOG_LEVEL                             OPENTHREAD_LOG_LEVEL_CRIT
-+#define OPENTHREAD_CONFIG_LOG_LEVEL                          OPENTHREAD_LOG_LEVEL_CRIT
- #endif  // OPENTHREAD_CONFIG_LOG_LEVEL
-
- /**
-diff -u -r openthread-master/third_party/mbedtls/repo/library/Makefile ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/library/Makefile
---- openthread-master/third_party/mbedtls/repo/library/Makefile 2017-06-02 15:28:31.235473752 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/library/Makefile   2017-05-29 19:11:44.356989013 +0530
-@@ -1,7 +1,7 @@
-
- # Also see "include/mbedtls/config.h"
-
--CFLAGS ?= -O2
-+CFLAGS  ?= -O2
- WARNING_CFLAGS ?=  -Wall -W -Wdeclaration-after-statement
- LDFLAGS ?=
-
-@@ -44,35 +44,35 @@
- DLEXT=dll
- endif
-
--OBJS_CRYPTO=   aes.o       aesni.o     arc4.o      \
--       asn1parse.o asn1write.o base64.o    \
--       bignum.o    blowfish.o  camellia.o  \
--       ccm.o       cipher.o    cipher_wrap.o   \
--       cmac.o      ctr_drbg.o  des.o       \
--       dhm.o       ecdh.o      ecdsa.o     \
--       ecjpake.o   ecp.o               \
--       ecp_curves.o    entropy.o   entropy_poll.o  \
--       error.o     gcm.o       havege.o    \
--       hmac_drbg.o md.o        md2.o       \
--       md4.o       md5.o       md_wrap.o   \
--       memory_buffer_alloc.o       oid.o       \
--       padlock.o   pem.o       pk.o        \
--       pk_wrap.o   pkcs12.o    pkcs5.o     \
--       pkparse.o   pkwrite.o   platform.o  \
--       ripemd160.o rsa.o       sha1.o      \
--       sha256.o    sha512.o    threading.o \
--       timing.o    version.o           \
--       version_features.o      xtea.o
--
--OBJS_X509= certs.o     pkcs11.o    x509.o      \
--       x509_create.o   x509_crl.o  x509_crt.o  \
--       x509_csr.o  x509write_crt.o x509write_csr.o
--
--OBJS_TLS=  debug.o     net_sockets.o       \
--       ssl_cache.o ssl_ciphersuites.o  \
--       ssl_cli.o   ssl_cookie.o        \
--       ssl_srv.o   ssl_ticket.o        \
--       ssl_tls.o
-+OBJS_CRYPTO=    aes.o       aesni.o     arc4.o      \
-+        asn1parse.o asn1write.o base64.o    \
-+        bignum.o    blowfish.o  camellia.o  \
-+        ccm.o       cipher.o    cipher_wrap.o   \
-+        cmac.o      ctr_drbg.o  des.o       \
-+        dhm.o       ecdh.o      ecdsa.o     \
-+        ecjpake.o   ecp.o               \
-+        ecp_curves.o    entropy.o   entropy_poll.o  \
-+        error.o     gcm.o       havege.o    \
-+        hmac_drbg.o md.o        md2.o       \
-+        md4.o       md5.o       md_wrap.o   \
-+        memory_buffer_alloc.o       oid.o       \
-+        padlock.o   pem.o       pk.o        \
-+        pk_wrap.o   pkcs12.o    pkcs5.o     \
-+        pkparse.o   pkwrite.o   platform.o  \
-+        ripemd160.o rsa.o       sha1.o      \
-+        sha256.o    sha512.o    threading.o \
-+        timing.o    version.o           \
-+        version_features.o      xtea.o
-+
-+OBJS_X509=  certs.o     pkcs11.o    x509.o      \
-+        x509_create.o   x509_crl.o  x509_crt.o  \
-+        x509_csr.o  x509write_crt.o x509write_csr.o
-+
-+OBJS_TLS=   debug.o     net_sockets.o       \
-+        ssl_cache.o ssl_ciphersuites.o  \
-+        ssl_cli.o   ssl_cookie.o        \
-+        ssl_srv.o   ssl_ticket.o        \
-+        ssl_tls.o
-
- .SILENT:
-
-@@ -90,80 +90,80 @@
-
- # tls
- libmbedtls.a: $(OBJS_TLS)
--   echo "  AR    $@"
--   $(AR) -rc $@ $(OBJS_TLS)
--   echo "  RL    $@"
--   $(AR) -s $@
-+    echo "  AR    $@"
-+    $(AR) -rc $@ $(OBJS_TLS)
-+    echo "  RL    $@"
-+    $(AR) -s $@
-
- libmbedtls.$(SOEXT_TLS): $(OBJS_TLS) libmbedx509.so
--   echo "  LD    $@"
--   $(CC) -shared -Wl,-soname,$@ -L. -lmbedcrypto -lmbedx509 $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_TLS)
-+    echo "  LD    $@"
-+    $(CC) -shared -Wl,-soname,$@ -L. -lmbedcrypto -lmbedx509 $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_TLS)
-
- libmbedtls.so: libmbedtls.$(SOEXT_TLS)
--   echo "  LN    $@ -> $<"
--   ln -sf $< $@
-+    echo "  LN    $@ -> $<"
-+    ln -sf $< $@
-
- libmbedtls.dylib: $(OBJS_TLS)
--   echo "  LD    $@"
--   $(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_TLS)
-+    echo "  LD    $@"
-+    $(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_TLS)
-
- libmbedtls.dll: $(OBJS_TLS) libmbedx509.dll
--   echo "  LD    $@"
--   $(CC) -shared -Wl,-soname,$@ -Wl,--out-implib,$@.a -o $@ $(OBJS_TLS) -lws2_32 -lwinmm -lgdi32 -L. -lmbedcrypto -lmbedx509 -static-libgcc $(LOCAL_LDFLAGS) $(LDFLAGS)
-+    echo "  LD    $@"
-+    $(CC) -shared -Wl,-soname,$@ -Wl,--out-implib,$@.a -o $@ $(OBJS_TLS) -lws2_32 -lwinmm -lgdi32 -L. -lmbedcrypto -lmbedx509 -static-libgcc $(LOCAL_LDFLAGS) $(LDFLAGS)
-
- # x509
- libmbedx509.a: $(OBJS_X509)
--   echo "  AR    $@"
--   $(AR) -rc $@ $(OBJS_X509)
--   echo "  RL    $@"
--   $(AR) -s $@
-+    echo "  AR    $@"
-+    $(AR) -rc $@ $(OBJS_X509)
-+    echo "  RL    $@"
-+    $(AR) -s $@
-
- libmbedx509.$(SOEXT_X509): $(OBJS_X509) libmbedcrypto.so
--   echo "  LD    $@"
--   $(CC) -shared -Wl,-soname,$@ -L. -lmbedcrypto $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_X509)
-+    echo "  LD    $@"
-+    $(CC) -shared -Wl,-soname,$@ -L. -lmbedcrypto $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_X509)
-
- libmbedx509.so: libmbedx509.$(SOEXT_X509)
--   echo "  LN    $@ -> $<"
--   ln -sf $< $@
-+    echo "  LN    $@ -> $<"
-+    ln -sf $< $@
-
- libmbedx509.dylib: $(OBJS_X509)
--   echo "  LD    $@"
--   $(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_X509)
-+    echo "  LD    $@"
-+    $(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_X509)
-
- libmbedx509.dll: $(OBJS_X509) libmbedcrypto.dll
--   echo "  LD    $@"
--   $(CC) -shared -Wl,-soname,$@ -Wl,--out-implib,$@.a -o $@ $(OBJS_X509) -lws2_32 -lwinmm -lgdi32 -L. -lmbedcrypto -static-libgcc $(LOCAL_LDFLAGS) $(LDFLAGS)
-+    echo "  LD    $@"
-+    $(CC) -shared -Wl,-soname,$@ -Wl,--out-implib,$@.a -o $@ $(OBJS_X509) -lws2_32 -lwinmm -lgdi32 -L. -lmbedcrypto -static-libgcc $(LOCAL_LDFLAGS) $(LDFLAGS)
-
- # crypto
- libmbedcrypto.a: $(OBJS_CRYPTO)
--   echo "  AR    $@"
--   $(AR) -rc $@ $(OBJS_CRYPTO)
--   echo "  RL    $@"
--   $(AR) -s $@
-+    echo "  AR    $@"
-+    $(AR) -rc $@ $(OBJS_CRYPTO)
-+    echo "  RL    $@"
-+    $(AR) -s $@
-
- libmbedcrypto.$(SOEXT_CRYPTO): $(OBJS_CRYPTO)
--   echo "  LD    $@"
--   $(CC) -shared -Wl,-soname,$@ $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_CRYPTO)
-+    echo "  LD    $@"
-+    $(CC) -shared -Wl,-soname,$@ $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_CRYPTO)
-
- libmbedcrypto.so: libmbedcrypto.$(SOEXT_CRYPTO)
--   echo "  LN    $@ -> $<"
--   ln -sf $< $@
-+    echo "  LN    $@ -> $<"
-+    ln -sf $< $@
-
- libmbedcrypto.dylib: $(OBJS_CRYPTO)
--   echo "  LD    $@"
--   $(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_CRYPTO)
-+    echo "  LD    $@"
-+    $(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_CRYPTO)
-
- libmbedcrypto.dll: $(OBJS_CRYPTO)
--   echo "  LD    $@"
--   $(CC) -shared -Wl,-soname,$@ -Wl,--out-implib,$@.a -o $@ $(OBJS_CRYPTO) -lws2_32 -lwinmm -lgdi32 -static-libgcc $(LOCAL_LDFLAGS) $(LDFLAGS)
-+    echo "  LD    $@"
-+    $(CC) -shared -Wl,-soname,$@ -Wl,--out-implib,$@.a -o $@ $(OBJS_CRYPTO) -lws2_32 -lwinmm -lgdi32 -static-libgcc $(LOCAL_LDFLAGS) $(LDFLAGS)
-
- .c.o:
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) -c $<
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) -c $<
-
- clean:
- ifndef WINDOWS
--   rm -f *.o libmbed*
-+    rm -f *.o libmbed*
- else
--   del /Q /F *.o libmbed*
-+    del /Q /F *.o libmbed*
- endif
-diff -u -r openthread-master/third_party/mbedtls/repo/Makefile ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/Makefile
---- openthread-master/third_party/mbedtls/repo/Makefile 2017-06-02 15:28:31.231473752 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/Makefile   2017-05-29 19:11:44.352989013 +0530
-@@ -7,51 +7,51 @@
- .PHONY: all no_test programs lib tests install uninstall clean test check covtest lcov apidoc apidoc_clean
-
- all: programs tests
--   $(MAKE) post_build
-+    $(MAKE) post_build
-
- no_test: programs
-
- programs: lib
--   $(MAKE) -C programs
-+    $(MAKE) -C programs
-
- lib:
--   $(MAKE) -C library
-+    $(MAKE) -C library
-
- tests: lib
--   $(MAKE) -C tests
-+    $(MAKE) -C tests
-
- ifndef WINDOWS
- install: no_test
--   mkdir -p $(DESTDIR)/include/mbedtls
--   cp -r include/mbedtls $(DESTDIR)/include
--
--   mkdir -p $(DESTDIR)/lib
--   cp -RP library/libmbedtls.*    $(DESTDIR)/lib
--   cp -RP library/libmbedx509.*   $(DESTDIR)/lib
--   cp -RP library/libmbedcrypto.* $(DESTDIR)/lib
--
--   mkdir -p $(DESTDIR)/bin
--   for p in programs/*/* ; do              \
--       if [ -x $$p ] && [ ! -d $$p ] ;     \
--       then                                \
--           f=$(PREFIX)`basename $$p` ;     \
--           cp $$p $(DESTDIR)/bin/$$f ;     \
--       fi                                  \
--   done
-+    mkdir -p $(DESTDIR)/include/mbedtls
-+    cp -r include/mbedtls $(DESTDIR)/include
-+
-+    mkdir -p $(DESTDIR)/lib
-+    cp -RP library/libmbedtls.*    $(DESTDIR)/lib
-+    cp -RP library/libmbedx509.*   $(DESTDIR)/lib
-+    cp -RP library/libmbedcrypto.* $(DESTDIR)/lib
-+
-+    mkdir -p $(DESTDIR)/bin
-+    for p in programs/*/* ; do              \
-+        if [ -x $$p ] && [ ! -d $$p ] ;     \
-+        then                                \
-+            f=$(PREFIX)`basename $$p` ;     \
-+            cp $$p $(DESTDIR)/bin/$$f ;     \
-+        fi                                  \
-+    done
-
- uninstall:
--   rm -rf $(DESTDIR)/include/mbedtls
--   rm -f $(DESTDIR)/lib/libmbedtls.*
--   rm -f $(DESTDIR)/lib/libmbedx509.*
--   rm -f $(DESTDIR)/lib/libmbedcrypto.*
--
--   for p in programs/*/* ; do              \
--       if [ -x $$p ] && [ ! -d $$p ] ;     \
--       then                                \
--           f=$(PREFIX)`basename $$p` ;     \
--           rm -f $(DESTDIR)/bin/$$f ;      \
--       fi                                  \
--   done
-+    rm -rf $(DESTDIR)/include/mbedtls
-+    rm -f $(DESTDIR)/lib/libmbedtls.*
-+    rm -f $(DESTDIR)/lib/libmbedx509.*
-+    rm -f $(DESTDIR)/lib/libmbedcrypto.*
-+
-+    for p in programs/*/* ; do              \
-+        if [ -x $$p ] && [ ! -d $$p ] ;     \
-+        then                                \
-+            f=$(PREFIX)`basename $$p` ;     \
-+            rm -f $(DESTDIR)/bin/$$f ;      \
-+        fi                                  \
-+    done
- endif
-
- WARNING_BORDER      =*******************************************************\n
-@@ -64,21 +64,21 @@
- # Post build steps
- post_build:
- ifndef WINDOWS
--   # If NULL Entropy is configured, display an appropriate warning
--   -scripts/config.pl get MBEDTLS_TEST_NULL_ENTROPY && ([ $$? -eq 0 ]) && \
--       echo '$(NULL_ENTROPY_WARNING)'
-+    # If NULL Entropy is configured, display an appropriate warning
-+    -scripts/config.pl get MBEDTLS_TEST_NULL_ENTROPY && ([ $$? -eq 0 ]) && \
-+        echo '$(NULL_ENTROPY_WARNING)'
- endif
-
- clean:
--   $(MAKE) -C library clean
--   $(MAKE) -C programs clean
--   $(MAKE) -C tests clean
-+    $(MAKE) -C library clean
-+    $(MAKE) -C programs clean
-+    $(MAKE) -C tests clean
- ifndef WINDOWS
--   find . \( -name \*.gcno -o -name \*.gcda -o -name \*.info \) -exec rm {} +
-+    find . \( -name \*.gcno -o -name \*.gcda -o -name \*.info \) -exec rm {} +
- endif
-
- check: lib tests
--   $(MAKE) -C tests check
-+    $(MAKE) -C tests check
-
- test: check
-
-@@ -86,25 +86,25 @@
- # note: for coverage testing, build with:
- # make CFLAGS='--coverage -g3 -O0'
- covtest:
--   $(MAKE) check
--   programs/test/selftest
--   tests/compat.sh
--   tests/ssl-opt.sh
-+    $(MAKE) check
-+    programs/test/selftest
-+    tests/compat.sh
-+    tests/ssl-opt.sh
-
- lcov:
--   rm -rf Coverage
--   lcov --capture --initial --directory library -o files.info
--   lcov --capture --directory library -o tests.info
--   lcov --add-tracefile files.info --add-tracefile tests.info -o all.info
--   lcov --remove all.info -o final.info '*.h'
--   gendesc tests/Descriptions.txt -o descriptions
--   genhtml --title "mbed TLS" --description-file descriptions --keep-descriptions --legend --no-branch-coverage -o Coverage final.info
--   rm -f files.info tests.info all.info final.info descriptions
-+    rm -rf Coverage
-+    lcov --capture --initial --directory library -o files.info
-+    lcov --capture --directory library -o tests.info
-+    lcov --add-tracefile files.info --add-tracefile tests.info -o all.info
-+    lcov --remove all.info -o final.info '*.h'
-+    gendesc tests/Descriptions.txt -o descriptions
-+    genhtml --title "mbed TLS" --description-file descriptions --keep-descriptions --legend --no-branch-coverage -o Coverage final.info
-+    rm -f files.info tests.info all.info final.info descriptions
-
- apidoc:
--   mkdir -p apidoc
--   doxygen doxygen/mbedtls.doxyfile
-+    mkdir -p apidoc
-+    doxygen doxygen/mbedtls.doxyfile
-
- apidoc_clean:
--   rm -rf apidoc
-+    rm -rf apidoc
- endif
-diff -u -r openthread-master/third_party/mbedtls/repo/programs/Makefile ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/programs/Makefile
---- openthread-master/third_party/mbedtls/repo/programs/Makefile    2017-06-02 15:28:31.239473752 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/programs/Makefile  2017-05-29 19:11:44.364989012 +0530
-@@ -2,15 +2,15 @@
- # To compile on SunOS: add "-lsocket -lnsl" to LDFLAGS
- # To compile with PKCS11: add "-lpkcs11-helper" to LDFLAGS
-
--CFLAGS ?= -O2
-+CFLAGS  ?= -O2
- WARNING_CFLAGS ?= -Wall -W -Wdeclaration-after-statement
- LDFLAGS ?=
-
- LOCAL_CFLAGS = $(WARNING_CFLAGS) -I../include -D_FILE_OFFSET_BITS=64
--LOCAL_LDFLAGS = -L../library           \
--       -lmbedtls$(SHARED_SUFFIX)   \
--       -lmbedx509$(SHARED_SUFFIX)  \
--       -lmbedcrypto$(SHARED_SUFFIX)
-+LOCAL_LDFLAGS = -L../library            \
-+        -lmbedtls$(SHARED_SUFFIX)   \
-+        -lmbedx509$(SHARED_SUFFIX)  \
-+        -lmbedcrypto$(SHARED_SUFFIX)
-
- ifndef SHARED
- DEP=../library/libmbedcrypto.a ../library/libmbedx509.a ../library/libmbedtls.a
-@@ -45,35 +45,35 @@
- LOCAL_LDFLAGS += -lz
- endif
-
--APPS = aes/aescrypt2$(EXEXT)       aes/crypt_and_hash$(EXEXT)  \
--   hash/hello$(EXEXT)      hash/generic_sum$(EXEXT)    \
--                   pkey/dh_client$(EXEXT)      \
--   pkey/dh_genprime$(EXEXT)    pkey/dh_server$(EXEXT)      \
--   pkey/ecdh_curve25519$(EXEXT)                    \
--   pkey/ecdsa$(EXEXT)      pkey/gen_key$(EXEXT)        \
--   pkey/key_app$(EXEXT)        pkey/key_app_writer$(EXEXT) \
--   pkey/mpi_demo$(EXEXT)       pkey/pk_decrypt$(EXEXT)     \
--   pkey/pk_encrypt$(EXEXT)     pkey/pk_sign$(EXEXT)        \
--   pkey/pk_verify$(EXEXT)      pkey/rsa_genkey$(EXEXT)     \
--   pkey/rsa_decrypt$(EXEXT)    pkey/rsa_encrypt$(EXEXT)    \
--   pkey/rsa_sign$(EXEXT)       pkey/rsa_verify$(EXEXT)     \
--   pkey/rsa_sign_pss$(EXEXT)   pkey/rsa_verify_pss$(EXEXT) \
--   ssl/dtls_client$(EXEXT)     ssl/dtls_server$(EXEXT)     \
--   ssl/ssl_client1$(EXEXT)     ssl/ssl_client2$(EXEXT)     \
--   ssl/ssl_server$(EXEXT)      ssl/ssl_server2$(EXEXT)     \
--   ssl/ssl_fork_server$(EXEXT) ssl/mini_client$(EXEXT)     \
--   ssl/ssl_mail_client$(EXEXT) random/gen_entropy$(EXEXT)  \
--   random/gen_random_havege$(EXEXT)                \
--   random/gen_random_ctr_drbg$(EXEXT)              \
--   test/ssl_cert_test$(EXEXT)  test/benchmark$(EXEXT)      \
--   test/selftest$(EXEXT)       test/udp_proxy$(EXEXT)      \
--   util/pem2der$(EXEXT)        util/strerror$(EXEXT)       \
--   x509/cert_app$(EXEXT)       x509/crl_app$(EXEXT)        \
--   x509/cert_req$(EXEXT)       x509/cert_write$(EXEXT)     \
--   x509/req_app$(EXEXT)
-+APPS =  aes/aescrypt2$(EXEXT)       aes/crypt_and_hash$(EXEXT)  \
-+    hash/hello$(EXEXT)      hash/generic_sum$(EXEXT)    \
-+                    pkey/dh_client$(EXEXT)      \
-+    pkey/dh_genprime$(EXEXT)    pkey/dh_server$(EXEXT)      \
-+    pkey/ecdh_curve25519$(EXEXT)                    \
-+    pkey/ecdsa$(EXEXT)      pkey/gen_key$(EXEXT)        \
-+    pkey/key_app$(EXEXT)        pkey/key_app_writer$(EXEXT) \
-+    pkey/mpi_demo$(EXEXT)       pkey/pk_decrypt$(EXEXT)     \
-+    pkey/pk_encrypt$(EXEXT)     pkey/pk_sign$(EXEXT)        \
-+    pkey/pk_verify$(EXEXT)      pkey/rsa_genkey$(EXEXT)     \
-+    pkey/rsa_decrypt$(EXEXT)    pkey/rsa_encrypt$(EXEXT)    \
-+    pkey/rsa_sign$(EXEXT)       pkey/rsa_verify$(EXEXT)     \
-+    pkey/rsa_sign_pss$(EXEXT)   pkey/rsa_verify_pss$(EXEXT) \
-+    ssl/dtls_client$(EXEXT)     ssl/dtls_server$(EXEXT)     \
-+    ssl/ssl_client1$(EXEXT)     ssl/ssl_client2$(EXEXT)     \
-+    ssl/ssl_server$(EXEXT)      ssl/ssl_server2$(EXEXT)     \
-+    ssl/ssl_fork_server$(EXEXT) ssl/mini_client$(EXEXT)     \
-+    ssl/ssl_mail_client$(EXEXT) random/gen_entropy$(EXEXT)  \
-+    random/gen_random_havege$(EXEXT)                \
-+    random/gen_random_ctr_drbg$(EXEXT)              \
-+    test/ssl_cert_test$(EXEXT)  test/benchmark$(EXEXT)      \
-+    test/selftest$(EXEXT)       test/udp_proxy$(EXEXT)      \
-+    util/pem2der$(EXEXT)        util/strerror$(EXEXT)       \
-+    x509/cert_app$(EXEXT)       x509/crl_app$(EXEXT)        \
-+    x509/cert_req$(EXEXT)       x509/cert_write$(EXEXT)     \
-+    x509/req_app$(EXEXT)
-
- ifdef PTHREAD
--APPS +=    ssl/ssl_pthread_server$(EXEXT)
-+APPS += ssl/ssl_pthread_server$(EXEXT)
- endif
-
- .SILENT:
-@@ -83,206 +83,206 @@
- all: $(APPS)
-
- $(DEP):
--   $(MAKE) -C ../library
-+    $(MAKE) -C ../library
-
- aes/aescrypt2$(EXEXT): aes/aescrypt2.c $(DEP)
--   echo "  CC    aes/aescrypt2.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) aes/aescrypt2.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    aes/aescrypt2.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) aes/aescrypt2.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- aes/crypt_and_hash$(EXEXT): aes/crypt_and_hash.c $(DEP)
--   echo "  CC    aes/crypt_and_hash.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) aes/crypt_and_hash.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    aes/crypt_and_hash.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) aes/crypt_and_hash.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- hash/hello$(EXEXT): hash/hello.c $(DEP)
--   echo "  CC    hash/hello.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) hash/hello.c       $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    hash/hello.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) hash/hello.c       $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- hash/generic_sum$(EXEXT): hash/generic_sum.c $(DEP)
--   echo "  CC    hash/generic_sum.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) hash/generic_sum.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    hash/generic_sum.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) hash/generic_sum.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/dh_client$(EXEXT): pkey/dh_client.c $(DEP)
--   echo "  CC    pkey/dh_client.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/dh_client.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/dh_client.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/dh_client.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/dh_genprime$(EXEXT): pkey/dh_genprime.c $(DEP)
--   echo "  CC    pkey/dh_genprime.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/dh_genprime.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/dh_genprime.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/dh_genprime.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/dh_server$(EXEXT): pkey/dh_server.c $(DEP)
--   echo "  CC    pkey/dh_server.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/dh_server.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/dh_server.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/dh_server.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/ecdh_curve25519$(EXEXT): pkey/ecdh_curve25519.c $(DEP)
--   echo "  CC    pkey/ecdh_curve25519.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/ecdh_curve25519.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/ecdh_curve25519.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/ecdh_curve25519.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/ecdsa$(EXEXT): pkey/ecdsa.c $(DEP)
--   echo "  CC    pkey/ecdsa.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/ecdsa.c       $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/ecdsa.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/ecdsa.c       $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/gen_key$(EXEXT): pkey/gen_key.c $(DEP)
--   echo "  CC    pkey/gen_key.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/gen_key.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/gen_key.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/gen_key.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/key_app$(EXEXT): pkey/key_app.c $(DEP)
--   echo "  CC    pkey/key_app.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/key_app.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/key_app.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/key_app.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/key_app_writer$(EXEXT): pkey/key_app_writer.c $(DEP)
--   echo "  CC    pkey/key_app_writer.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/key_app_writer.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/key_app_writer.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/key_app_writer.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/mpi_demo$(EXEXT): pkey/mpi_demo.c $(DEP)
--   echo "  CC    pkey/mpi_demo.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/mpi_demo.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/mpi_demo.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/mpi_demo.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/pk_decrypt$(EXEXT): pkey/pk_decrypt.c $(DEP)
--   echo "  CC    pkey/pk_decrypt.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_decrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/pk_decrypt.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_decrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/pk_encrypt$(EXEXT): pkey/pk_encrypt.c $(DEP)
--   echo "  CC    pkey/pk_encrypt.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_encrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/pk_encrypt.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_encrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/pk_sign$(EXEXT): pkey/pk_sign.c $(DEP)
--   echo "  CC    pkey/pk_sign.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_sign.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/pk_sign.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_sign.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/pk_verify$(EXEXT): pkey/pk_verify.c $(DEP)
--   echo "  CC    pkey/pk_verify.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_verify.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/pk_verify.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/pk_verify.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/rsa_genkey$(EXEXT): pkey/rsa_genkey.c $(DEP)
--   echo "  CC    pkey/rsa_genkey.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_genkey.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/rsa_genkey.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_genkey.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/rsa_sign$(EXEXT): pkey/rsa_sign.c $(DEP)
--   echo "  CC    pkey/rsa_sign.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_sign.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/rsa_sign.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_sign.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/rsa_verify$(EXEXT): pkey/rsa_verify.c $(DEP)
--   echo "  CC    pkey/rsa_verify.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_verify.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/rsa_verify.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_verify.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/rsa_sign_pss$(EXEXT): pkey/rsa_sign_pss.c $(DEP)
--   echo "  CC    pkey/rsa_sign_pss.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_sign_pss.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/rsa_sign_pss.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_sign_pss.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/rsa_verify_pss$(EXEXT): pkey/rsa_verify_pss.c $(DEP)
--   echo "  CC    pkey/rsa_verify_pss.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_verify_pss.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/rsa_verify_pss.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_verify_pss.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/rsa_decrypt$(EXEXT): pkey/rsa_decrypt.c $(DEP)
--   echo "  CC    pkey/rsa_decrypt.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_decrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/rsa_decrypt.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_decrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- pkey/rsa_encrypt$(EXEXT): pkey/rsa_encrypt.c $(DEP)
--   echo "  CC    pkey/rsa_encrypt.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_encrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    pkey/rsa_encrypt.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) pkey/rsa_encrypt.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- random/gen_entropy$(EXEXT): random/gen_entropy.c $(DEP)
--   echo "  CC    random/gen_entropy.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) random/gen_entropy.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    random/gen_entropy.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) random/gen_entropy.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- random/gen_random_havege$(EXEXT): random/gen_random_havege.c $(DEP)
--   echo "  CC    random/gen_random_havege.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) random/gen_random_havege.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    random/gen_random_havege.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) random/gen_random_havege.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- random/gen_random_ctr_drbg$(EXEXT): random/gen_random_ctr_drbg.c $(DEP)
--   echo "  CC    random/gen_random_ctr_drbg.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) random/gen_random_ctr_drbg.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    random/gen_random_ctr_drbg.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) random/gen_random_ctr_drbg.c $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/dtls_client$(EXEXT): ssl/dtls_client.c $(DEP)
--   echo "  CC    ssl/dtls_client.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/dtls_client.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/dtls_client.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/dtls_client.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/dtls_server$(EXEXT): ssl/dtls_server.c $(DEP)
--   echo "  CC    ssl/dtls_server.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/dtls_server.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/dtls_server.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/dtls_server.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/ssl_client1$(EXEXT): ssl/ssl_client1.c $(DEP)
--   echo "  CC    ssl/ssl_client1.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_client1.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/ssl_client1.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_client1.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/ssl_client2$(EXEXT): ssl/ssl_client2.c $(DEP)
--   echo "  CC    ssl/ssl_client2.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_client2.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/ssl_client2.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_client2.c  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/ssl_server$(EXEXT): ssl/ssl_server.c $(DEP)
--   echo "  CC    ssl/ssl_server.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_server.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/ssl_server.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_server.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/ssl_server2$(EXEXT): ssl/ssl_server2.c $(DEP)
--   echo "  CC    ssl/ssl_server2.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_server2.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/ssl_server2.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_server2.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/ssl_fork_server$(EXEXT): ssl/ssl_fork_server.c $(DEP)
--   echo "  CC    ssl/ssl_fork_server.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_fork_server.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/ssl_fork_server.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_fork_server.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/ssl_pthread_server$(EXEXT): ssl/ssl_pthread_server.c $(DEP)
--   echo "  CC    ssl/ssl_pthread_server.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_pthread_server.c   $(LOCAL_LDFLAGS) -lpthread  $(LDFLAGS) -o $@
-+    echo "  CC    ssl/ssl_pthread_server.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_pthread_server.c   $(LOCAL_LDFLAGS) -lpthread  $(LDFLAGS) -o $@
-
- ssl/ssl_mail_client$(EXEXT): ssl/ssl_mail_client.c $(DEP)
--   echo "  CC    ssl/ssl_mail_client.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_mail_client.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/ssl_mail_client.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/ssl_mail_client.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- ssl/mini_client$(EXEXT): ssl/mini_client.c $(DEP)
--   echo "  CC    ssl/mini_client.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/mini_client.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    ssl/mini_client.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) ssl/mini_client.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test/ssl_cert_test$(EXEXT): test/ssl_cert_test.c $(DEP)
--   echo "  CC    test/ssl_cert_test.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/ssl_cert_test.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    test/ssl_cert_test.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/ssl_cert_test.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test/benchmark$(EXEXT): test/benchmark.c $(DEP)
--   echo "  CC    test/benchmark.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/benchmark.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    test/benchmark.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/benchmark.c   $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test/selftest$(EXEXT): test/selftest.c $(DEP)
--   echo "  CC    test/selftest.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/selftest.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    test/selftest.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/selftest.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test/udp_proxy$(EXEXT): test/udp_proxy.c $(DEP)
--   echo "  CC    test/udp_proxy.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/udp_proxy.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    test/udp_proxy.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) test/udp_proxy.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- util/pem2der$(EXEXT): util/pem2der.c $(DEP)
--   echo "  CC    util/pem2der.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) util/pem2der.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    util/pem2der.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) util/pem2der.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- util/strerror$(EXEXT): util/strerror.c $(DEP)
--   echo "  CC    util/strerror.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) util/strerror.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    util/strerror.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) util/strerror.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- x509/cert_app$(EXEXT): x509/cert_app.c $(DEP)
--   echo "  CC    x509/cert_app.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/cert_app.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    x509/cert_app.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/cert_app.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- x509/cert_write$(EXEXT): x509/cert_write.c $(DEP)
--   echo "  CC    x509/cert_write.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/cert_write.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    x509/cert_write.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/cert_write.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- x509/crl_app$(EXEXT): x509/crl_app.c $(DEP)
--   echo "  CC    x509/crl_app.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/crl_app.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    x509/crl_app.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/crl_app.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- x509/cert_req$(EXEXT): x509/cert_req.c $(DEP)
--   echo "  CC    x509/cert_req.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/cert_req.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    x509/cert_req.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/cert_req.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- x509/req_app$(EXEXT): x509/req_app.c $(DEP)
--   echo "  CC    x509/req_app.c"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/req_app.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    x509/req_app.c"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) x509/req_app.c    $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- clean:
- ifndef WINDOWS
--   rm -f $(APPS)
-+    rm -f $(APPS)
- else
--   del /S /Q /F *.o *.exe
-+    del /S /Q /F *.o *.exe
- endif
-
- list:
--   echo $(APPS)
-+    echo $(APPS)
-diff -u -r openthread-master/third_party/mbedtls/repo/tests/Makefile ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/tests/Makefile
---- openthread-master/third_party/mbedtls/repo/tests/Makefile   2017-06-02 15:28:31.243473751 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/mbedtls/repo/tests/Makefile 2017-05-29 19:11:44.368989012 +0530
-@@ -2,15 +2,15 @@
- # To compile on SunOS: add "-lsocket -lnsl" to LDFLAGS
- # To compile with PKCS11: add "-lpkcs11-helper" to LDFLAGS
-
--CFLAGS ?= -O2
-+CFLAGS  ?= -O2
- WARNING_CFLAGS ?= -Wall -W -Wdeclaration-after-statement -Wno-unused-function -Wno-unused-value
- LDFLAGS ?=
-
- LOCAL_CFLAGS = $(WARNING_CFLAGS) -I../include -D_FILE_OFFSET_BITS=64
--LOCAL_LDFLAGS = -L../library           \
--       -lmbedtls$(SHARED_SUFFIX)   \
--       -lmbedx509$(SHARED_SUFFIX)  \
--       -lmbedcrypto$(SHARED_SUFFIX)
-+LOCAL_LDFLAGS = -L../library            \
-+        -lmbedtls$(SHARED_SUFFIX)   \
-+        -lmbedx509$(SHARED_SUFFIX)  \
-+        -lmbedcrypto$(SHARED_SUFFIX)
-
- ifndef SHARED
- DEP=../library/libmbedcrypto.a ../library/libmbedx509.a ../library/libmbedtls.a
-@@ -45,46 +45,46 @@
- LOCAL_LDFLAGS += -lz
- endif
-
--APPS = test_suite_aes.ecb$(EXEXT)  test_suite_aes.cbc$(EXEXT)  \
--   test_suite_aes.cfb$(EXEXT)  test_suite_aes.rest$(EXEXT) \
--   test_suite_arc4$(EXEXT)     test_suite_asn1write$(EXEXT)    \
--   test_suite_base64$(EXEXT)   test_suite_blowfish$(EXEXT) \
--   test_suite_camellia$(EXEXT) test_suite_ccm$(EXEXT)      \
--   test_suite_cmac$(EXEXT)                     \
--   test_suite_cipher.aes$(EXEXT)                   \
--   test_suite_cipher.arc4$(EXEXT)  test_suite_cipher.ccm$(EXEXT)   \
--   test_suite_cipher.gcm$(EXEXT)                   \
--   test_suite_cipher.blowfish$(EXEXT)              \
--   test_suite_cipher.camellia$(EXEXT)              \
--   test_suite_cipher.des$(EXEXT)   test_suite_cipher.null$(EXEXT)  \
--   test_suite_cipher.padding$(EXEXT)               \
--   test_suite_ctr_drbg$(EXEXT) test_suite_debug$(EXEXT)    \
--   test_suite_des$(EXEXT)      test_suite_dhm$(EXEXT)      \
--   test_suite_ecdh$(EXEXT)     test_suite_ecdsa$(EXEXT)    \
--   test_suite_ecjpake$(EXEXT)  test_suite_ecp$(EXEXT)      \
--   test_suite_error$(EXEXT)    test_suite_entropy$(EXEXT)  \
--   test_suite_gcm.aes128_de$(EXEXT)                \
--   test_suite_gcm.aes192_de$(EXEXT)                \
--   test_suite_gcm.aes256_de$(EXEXT)                \
--   test_suite_gcm.aes128_en$(EXEXT)                \
--   test_suite_gcm.aes192_en$(EXEXT)                \
--   test_suite_gcm.aes256_en$(EXEXT)                \
--   test_suite_gcm.camellia$(EXEXT)                 \
--   test_suite_hmac_drbg.misc$(EXEXT)               \
--   test_suite_hmac_drbg.no_reseed$(EXEXT)              \
--   test_suite_hmac_drbg.nopr$(EXEXT)               \
--   test_suite_hmac_drbg.pr$(EXEXT)                 \
--   test_suite_md$(EXEXT)       test_suite_mdx$(EXEXT)      \
--   test_suite_memory_buffer_alloc$(EXEXT)              \
--   test_suite_mpi$(EXEXT)                      \
--   test_suite_pem$(EXEXT)          test_suite_pkcs1_v15$(EXEXT)    \
--   test_suite_pkcs1_v21$(EXEXT)    test_suite_pkcs5$(EXEXT)    \
--   test_suite_pkparse$(EXEXT)  test_suite_pkwrite$(EXEXT)  \
--   test_suite_pk$(EXEXT)                       \
--   test_suite_rsa$(EXEXT)      test_suite_shax$(EXEXT)     \
--   test_suite_ssl$(EXEXT)      test_suite_timing$(EXEXT)           \
--   test_suite_x509parse$(EXEXT)    test_suite_x509write$(EXEXT)    \
--   test_suite_xtea$(EXEXT)     test_suite_version$(EXEXT)
-+APPS =  test_suite_aes.ecb$(EXEXT)  test_suite_aes.cbc$(EXEXT)  \
-+    test_suite_aes.cfb$(EXEXT)  test_suite_aes.rest$(EXEXT) \
-+    test_suite_arc4$(EXEXT)     test_suite_asn1write$(EXEXT)    \
-+    test_suite_base64$(EXEXT)   test_suite_blowfish$(EXEXT) \
-+    test_suite_camellia$(EXEXT) test_suite_ccm$(EXEXT)      \
-+    test_suite_cmac$(EXEXT)                     \
-+    test_suite_cipher.aes$(EXEXT)                   \
-+    test_suite_cipher.arc4$(EXEXT)  test_suite_cipher.ccm$(EXEXT)   \
-+    test_suite_cipher.gcm$(EXEXT)                   \
-+    test_suite_cipher.blowfish$(EXEXT)              \
-+    test_suite_cipher.camellia$(EXEXT)              \
-+    test_suite_cipher.des$(EXEXT)   test_suite_cipher.null$(EXEXT)  \
-+    test_suite_cipher.padding$(EXEXT)               \
-+    test_suite_ctr_drbg$(EXEXT) test_suite_debug$(EXEXT)    \
-+    test_suite_des$(EXEXT)      test_suite_dhm$(EXEXT)      \
-+    test_suite_ecdh$(EXEXT)     test_suite_ecdsa$(EXEXT)    \
-+    test_suite_ecjpake$(EXEXT)  test_suite_ecp$(EXEXT)      \
-+    test_suite_error$(EXEXT)    test_suite_entropy$(EXEXT)  \
-+    test_suite_gcm.aes128_de$(EXEXT)                \
-+    test_suite_gcm.aes192_de$(EXEXT)                \
-+    test_suite_gcm.aes256_de$(EXEXT)                \
-+    test_suite_gcm.aes128_en$(EXEXT)                \
-+    test_suite_gcm.aes192_en$(EXEXT)                \
-+    test_suite_gcm.aes256_en$(EXEXT)                \
-+    test_suite_gcm.camellia$(EXEXT)                 \
-+    test_suite_hmac_drbg.misc$(EXEXT)               \
-+    test_suite_hmac_drbg.no_reseed$(EXEXT)              \
-+    test_suite_hmac_drbg.nopr$(EXEXT)               \
-+    test_suite_hmac_drbg.pr$(EXEXT)                 \
-+    test_suite_md$(EXEXT)       test_suite_mdx$(EXEXT)      \
-+    test_suite_memory_buffer_alloc$(EXEXT)              \
-+    test_suite_mpi$(EXEXT)                      \
-+    test_suite_pem$(EXEXT)          test_suite_pkcs1_v15$(EXEXT)    \
-+    test_suite_pkcs1_v21$(EXEXT)    test_suite_pkcs5$(EXEXT)    \
-+    test_suite_pkparse$(EXEXT)  test_suite_pkwrite$(EXEXT)  \
-+    test_suite_pk$(EXEXT)                       \
-+    test_suite_rsa$(EXEXT)      test_suite_shax$(EXEXT)     \
-+    test_suite_ssl$(EXEXT)      test_suite_timing$(EXEXT)           \
-+    test_suite_x509parse$(EXEXT)    test_suite_x509write$(EXEXT)    \
-+    test_suite_xtea$(EXEXT)     test_suite_version$(EXEXT)
-
- .SILENT:
-
-@@ -93,358 +93,358 @@
- all: $(APPS)
-
- $(DEP):
--   $(MAKE) -C ../library
-+    $(MAKE) -C ../library
-
- # invoke perl explicitly for the sake of mingw32-make
-
- test_suite_aes.ecb.c : suites/test_suite_aes.function suites/test_suite_aes.ecb.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.ecb
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.ecb
-
- test_suite_aes.cbc.c : suites/test_suite_aes.function suites/test_suite_aes.cbc.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.cbc
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.cbc
-
- test_suite_aes.cfb.c : suites/test_suite_aes.function suites/test_suite_aes.cfb.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.cfb
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.cfb
-
- test_suite_aes.rest.c : suites/test_suite_aes.function suites/test_suite_aes.rest.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.rest
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_aes test_suite_aes.rest
-
- test_suite_cipher.aes.c : suites/test_suite_cipher.function suites/test_suite_cipher.aes.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.aes
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.aes
-
- test_suite_cipher.arc4.c : suites/test_suite_cipher.function suites/test_suite_cipher.arc4.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.arc4
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.arc4
-
- test_suite_cipher.ccm.c : suites/test_suite_cipher.function suites/test_suite_cipher.ccm.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.ccm
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.ccm
-
- test_suite_cipher.gcm.c : suites/test_suite_cipher.function suites/test_suite_cipher.gcm.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.gcm
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.gcm
-
- test_suite_cipher.blowfish.c : suites/test_suite_cipher.function suites/test_suite_cipher.blowfish.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.blowfish
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.blowfish
-
- test_suite_cipher.camellia.c : suites/test_suite_cipher.function suites/test_suite_cipher.camellia.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.camellia
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.camellia
-
- test_suite_cipher.des.c : suites/test_suite_cipher.function suites/test_suite_cipher.des.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.des
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.des
-
- test_suite_cipher.null.c : suites/test_suite_cipher.function suites/test_suite_cipher.null.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.null
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.null
-
- test_suite_cipher.padding.c : suites/test_suite_cipher.function suites/test_suite_cipher.padding.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.padding
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_cipher test_suite_cipher.padding
-
- test_suite_gcm.aes128_de.c : suites/test_suite_gcm.function suites/test_suite_gcm.aes128_de.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes128_de
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes128_de
-
- test_suite_gcm.aes192_de.c : suites/test_suite_gcm.function suites/test_suite_gcm.aes192_de.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes192_de
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes192_de
-
- test_suite_gcm.aes256_de.c : suites/test_suite_gcm.function suites/test_suite_gcm.aes256_de.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes256_de
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes256_de
-
- test_suite_gcm.aes128_en.c : suites/test_suite_gcm.function suites/test_suite_gcm.aes128_en.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes128_en
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes128_en
-
- test_suite_gcm.aes192_en.c : suites/test_suite_gcm.function suites/test_suite_gcm.aes192_en.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes192_en
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes192_en
-
- test_suite_gcm.aes256_en.c : suites/test_suite_gcm.function suites/test_suite_gcm.aes256_en.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes256_en
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.aes256_en
-
- test_suite_gcm.camellia.c : suites/test_suite_gcm.function suites/test_suite_gcm.camellia.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.camellia
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_gcm test_suite_gcm.camellia
-
- test_suite_hmac_drbg.misc.c : suites/test_suite_hmac_drbg.function suites/test_suite_hmac_drbg.misc.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.misc
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.misc
-
- test_suite_hmac_drbg.no_reseed.c : suites/test_suite_hmac_drbg.function suites/test_suite_hmac_drbg.no_reseed.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.no_reseed
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.no_reseed
-
- test_suite_hmac_drbg.nopr.c : suites/test_suite_hmac_drbg.function suites/test_suite_hmac_drbg.nopr.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.nopr
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.nopr
-
- test_suite_hmac_drbg.pr.c : suites/test_suite_hmac_drbg.function suites/test_suite_hmac_drbg.pr.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.pr
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites test_suite_hmac_drbg test_suite_hmac_drbg.pr
-
- %.c : suites/%.function suites/%.data scripts/generate_code.pl suites/helpers.function suites/main_test.function
--   echo "  Gen   $@"
--   perl scripts/generate_code.pl suites $* $*
-+    echo "  Gen   $@"
-+    perl scripts/generate_code.pl suites $* $*
-
- test_suite_aes.ecb$(EXEXT): test_suite_aes.ecb.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_aes.cbc$(EXEXT): test_suite_aes.cbc.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_aes.cfb$(EXEXT): test_suite_aes.cfb.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_aes.rest$(EXEXT): test_suite_aes.rest.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_arc4$(EXEXT): test_suite_arc4.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_asn1write$(EXEXT): test_suite_asn1write.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_base64$(EXEXT): test_suite_base64.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_blowfish$(EXEXT): test_suite_blowfish.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_camellia$(EXEXT): test_suite_camellia.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_ccm$(EXEXT): test_suite_ccm.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cmac$(EXEXT): test_suite_cmac.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.aes$(EXEXT): test_suite_cipher.aes.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.arc4$(EXEXT): test_suite_cipher.arc4.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.ccm$(EXEXT): test_suite_cipher.ccm.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.gcm$(EXEXT): test_suite_cipher.gcm.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.blowfish$(EXEXT): test_suite_cipher.blowfish.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.camellia$(EXEXT): test_suite_cipher.camellia.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.des$(EXEXT): test_suite_cipher.des.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.null$(EXEXT): test_suite_cipher.null.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_cipher.padding$(EXEXT): test_suite_cipher.padding.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_ctr_drbg$(EXEXT): test_suite_ctr_drbg.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_des$(EXEXT): test_suite_des.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_dhm$(EXEXT): test_suite_dhm.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_ecdh$(EXEXT): test_suite_ecdh.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_ecdsa$(EXEXT): test_suite_ecdsa.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_ecjpake$(EXEXT): test_suite_ecjpake.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_ecp$(EXEXT): test_suite_ecp.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_entropy$(EXEXT): test_suite_entropy.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_error$(EXEXT): test_suite_error.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_gcm.aes128_de$(EXEXT): test_suite_gcm.aes128_de.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_gcm.aes192_de$(EXEXT): test_suite_gcm.aes192_de.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_gcm.aes256_de$(EXEXT): test_suite_gcm.aes256_de.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_gcm.aes128_en$(EXEXT): test_suite_gcm.aes128_en.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_gcm.aes192_en$(EXEXT): test_suite_gcm.aes192_en.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_gcm.aes256_en$(EXEXT): test_suite_gcm.aes256_en.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_gcm.camellia$(EXEXT): test_suite_gcm.camellia.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_hmac_drbg.misc$(EXEXT): test_suite_hmac_drbg.misc.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_hmac_drbg.no_reseed$(EXEXT): test_suite_hmac_drbg.no_reseed.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_hmac_drbg.nopr$(EXEXT): test_suite_hmac_drbg.nopr.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_hmac_drbg.pr$(EXEXT): test_suite_hmac_drbg.pr.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_md$(EXEXT): test_suite_md.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_mdx$(EXEXT): test_suite_mdx.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_memory_buffer_alloc$(EXEXT): test_suite_memory_buffer_alloc.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_mpi$(EXEXT): test_suite_mpi.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_pem$(EXEXT): test_suite_pem.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_pkcs1_v15$(EXEXT): test_suite_pkcs1_v15.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_pkcs1_v21$(EXEXT): test_suite_pkcs1_v21.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_pkcs5$(EXEXT): test_suite_pkcs5.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_pkparse$(EXEXT): test_suite_pkparse.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_pkwrite$(EXEXT): test_suite_pkwrite.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_pk$(EXEXT): test_suite_pk.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_rsa$(EXEXT): test_suite_rsa.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_shax$(EXEXT): test_suite_shax.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_ssl$(EXEXT): test_suite_ssl.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_timing$(EXEXT): test_suite_timing.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_x509parse$(EXEXT): test_suite_x509parse.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_x509write$(EXEXT): test_suite_x509write.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_xtea$(EXEXT): test_suite_xtea.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_debug$(EXEXT): test_suite_debug.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- test_suite_version$(EXEXT): test_suite_version.c $(DEP)
--   echo "  CC    $<"
--   $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-+    echo "  CC    $<"
-+    $(CC) $(LOCAL_CFLAGS) $(CFLAGS) $<  $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@
-
- clean:
- ifndef WINDOWS
--   rm -f $(APPS) *.c
-+    rm -f $(APPS) *.c
- else
--   del /Q /F *.c *.exe
-+    del /Q /F *.c *.exe
- endif
-
- check: $(APPS)
--   perl scripts/run-test-suites.pl
-+    perl scripts/run-test-suites.pl
-
- test: check
-diff -u -r openthread-master/third_party/NordicSemiconductor/drivers/nrf_drv_radio802154.c ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/NordicSemiconductor/drivers/nrf_drv_radio802154.c
---- openthread-master/third_party/NordicSemiconductor/drivers/nrf_drv_radio802154.c 2017-06-02 15:28:31.607473738 +0530
-+++ ../PP_GIT/DCWL_USA_17_001/DCWL_MAC_OT/openthread-master/third_party/NordicSemiconductor/drivers/nrf_drv_radio802154.c   2017-05-29 19:11:44.340989013 +0530
-@@ -1365,7 +1365,7 @@
-             // Receiver is enabled by shorts.
-             break;
-
--        case RADIO_STATE_CCA: // This could happen at the beginning of transmission procedure (the procedure already has disabled shorts).
-+        case RADIO_STATE_CCA: // This could happen at the beginning of transmission procedure (the procedure alxeady has disabled shorts).
-             assert_tifs_shorts_disabled();
-             break;
-
-
+diff -u -r openthread-master/third_party/mbedtls/repo/library/ssl_tls.c openthread-modified/third_party/mbedtls/repo/library/ssl_tls.c
+--- openthread-master/third_party/mbedtls/repo/library/ssl_tls.c     2017-05-30 22:26:22.000000000 +0530
++++ openthread-modified/third_party/mbedtls/repo/library/ssl_tls.c     2017-06-13 19:44:01.094447178 +0530

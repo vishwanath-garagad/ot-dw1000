@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CMSIS Core Instruction Interface</title>
+<title>OT-DW1000: CMSIS Core Instruction Interface</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -159,6 +160,86 @@ Macros</h2></td></tr>
 <tr class="memitem:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga5d5bb1527e042be4a9fa5a33f65cc248">__CLZ</a>&#160;&#160;&#160;__builtin_clz</td></tr>
 <tr class="memdesc:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count leading zeros.  <a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">More...</a><br /></td></tr>
 <tr class="separator:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd585ddc865fb9b7f2493af1eee1a572"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gabd585ddc865fb9b7f2493af1eee1a572">__NOP</a>&#160;&#160;&#160;__nop</td></tr>
+<tr class="memdesc:gabd585ddc865fb9b7f2493af1eee1a572"><td class="mdescLeft">&#160;</td><td class="mdescRight">No Operation.  <a href="#gabd585ddc865fb9b7f2493af1eee1a572">More...</a><br /></td></tr>
+<tr class="separator:gabd585ddc865fb9b7f2493af1eee1a572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad23bf2b78a9a4524157c9de0d30b7448"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gad23bf2b78a9a4524157c9de0d30b7448">__WFI</a>&#160;&#160;&#160;__wfi</td></tr>
+<tr class="memdesc:gad23bf2b78a9a4524157c9de0d30b7448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait For Interrupt.  <a href="#gad23bf2b78a9a4524157c9de0d30b7448">More...</a><br /></td></tr>
+<tr class="separator:gad23bf2b78a9a4524157c9de0d30b7448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac6cc7dd4325d9cb40d3290fa5244b3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaac6cc7dd4325d9cb40d3290fa5244b3d">__WFE</a>&#160;&#160;&#160;__wfe</td></tr>
+<tr class="memdesc:gaac6cc7dd4325d9cb40d3290fa5244b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait For Event.  <a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">More...</a><br /></td></tr>
+<tr class="separator:gaac6cc7dd4325d9cb40d3290fa5244b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab4f296d0022b4b10dc0976eb22052f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaab4f296d0022b4b10dc0976eb22052f9">__SEV</a>&#160;&#160;&#160;__sev</td></tr>
+<tr class="memdesc:gaab4f296d0022b4b10dc0976eb22052f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Event.  <a href="#gaab4f296d0022b4b10dc0976eb22052f9">More...</a><br /></td></tr>
+<tr class="separator:gaab4f296d0022b4b10dc0976eb22052f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad233022e850a009fc6f7602be1182f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaad233022e850a009fc6f7602be1182f6">__ISB</a>()</td></tr>
+<tr class="memdesc:gaad233022e850a009fc6f7602be1182f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruction Synchronization Barrier.  <a href="#gaad233022e850a009fc6f7602be1182f6">More...</a><br /></td></tr>
+<tr class="separator:gaad233022e850a009fc6f7602be1182f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga067d257a2b34565410acefb5afef2203"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga067d257a2b34565410acefb5afef2203">__DSB</a>()</td></tr>
+<tr class="memdesc:ga067d257a2b34565410acefb5afef2203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Synchronization Barrier.  <a href="#ga067d257a2b34565410acefb5afef2203">More...</a><br /></td></tr>
+<tr class="separator:ga067d257a2b34565410acefb5afef2203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga671101179b5943990785f36f8c1e2269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga671101179b5943990785f36f8c1e2269">__DMB</a>()</td></tr>
+<tr class="memdesc:ga671101179b5943990785f36f8c1e2269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Memory Barrier.  <a href="#ga671101179b5943990785f36f8c1e2269">More...</a><br /></td></tr>
+<tr class="separator:ga671101179b5943990785f36f8c1e2269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14f54807872c0f5e05604c4924abfdae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga14f54807872c0f5e05604c4924abfdae">__REV</a>&#160;&#160;&#160;__rev</td></tr>
+<tr class="memdesc:ga14f54807872c0f5e05604c4924abfdae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse byte order (32 bit)  <a href="#ga14f54807872c0f5e05604c4924abfdae">More...</a><br /></td></tr>
+<tr class="separator:ga14f54807872c0f5e05604c4924abfdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95b9bd281ddeda378b85afdb8f2ced86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga95b9bd281ddeda378b85afdb8f2ced86">__ROR</a>&#160;&#160;&#160;__ror</td></tr>
+<tr class="memdesc:ga95b9bd281ddeda378b85afdb8f2ced86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate Right in unsigned value (32 bit)  <a href="#ga95b9bd281ddeda378b85afdb8f2ced86">More...</a><br /></td></tr>
+<tr class="separator:ga95b9bd281ddeda378b85afdb8f2ced86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</a>(value)&#160;&#160;&#160;__breakpoint(value)</td></tr>
+<tr class="memdesc:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breakpoint.  <a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">More...</a><br /></td></tr>
+<tr class="separator:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga5d5bb1527e042be4a9fa5a33f65cc248">__CLZ</a>&#160;&#160;&#160;__clz</td></tr>
+<tr class="memdesc:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count leading zeros.  <a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">More...</a><br /></td></tr>
+<tr class="separator:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc17e391c13c71702366c67cba39c276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gabc17e391c13c71702366c67cba39c276">__CMSIS_GCC_OUT_REG</a>(r)&#160;&#160;&#160;&quot;=r&quot; (r)</td></tr>
+<tr class="separator:gabc17e391c13c71702366c67cba39c276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d94dee7402367961d2cf0accc00fd97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga9d94dee7402367961d2cf0accc00fd97">__CMSIS_GCC_USE_REG</a>(r)&#160;&#160;&#160;&quot;r&quot; (r)</td></tr>
+<tr class="separator:ga9d94dee7402367961d2cf0accc00fd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd585ddc865fb9b7f2493af1eee1a572"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gabd585ddc865fb9b7f2493af1eee1a572">__NOP</a>&#160;&#160;&#160;__builtin_arm_nop</td></tr>
+<tr class="memdesc:gabd585ddc865fb9b7f2493af1eee1a572"><td class="mdescLeft">&#160;</td><td class="mdescRight">No Operation.  <a href="#gabd585ddc865fb9b7f2493af1eee1a572">More...</a><br /></td></tr>
+<tr class="separator:gabd585ddc865fb9b7f2493af1eee1a572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad23bf2b78a9a4524157c9de0d30b7448"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gad23bf2b78a9a4524157c9de0d30b7448">__WFI</a>&#160;&#160;&#160;__builtin_arm_wfi</td></tr>
+<tr class="memdesc:gad23bf2b78a9a4524157c9de0d30b7448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait For Interrupt.  <a href="#gad23bf2b78a9a4524157c9de0d30b7448">More...</a><br /></td></tr>
+<tr class="separator:gad23bf2b78a9a4524157c9de0d30b7448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac6cc7dd4325d9cb40d3290fa5244b3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaac6cc7dd4325d9cb40d3290fa5244b3d">__WFE</a>&#160;&#160;&#160;__builtin_arm_wfe</td></tr>
+<tr class="memdesc:gaac6cc7dd4325d9cb40d3290fa5244b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait For Event.  <a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">More...</a><br /></td></tr>
+<tr class="separator:gaac6cc7dd4325d9cb40d3290fa5244b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab4f296d0022b4b10dc0976eb22052f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaab4f296d0022b4b10dc0976eb22052f9">__SEV</a>&#160;&#160;&#160;__builtin_arm_sev</td></tr>
+<tr class="memdesc:gaab4f296d0022b4b10dc0976eb22052f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Event.  <a href="#gaab4f296d0022b4b10dc0976eb22052f9">More...</a><br /></td></tr>
+<tr class="separator:gaab4f296d0022b4b10dc0976eb22052f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad233022e850a009fc6f7602be1182f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaad233022e850a009fc6f7602be1182f6">__ISB</a>()&#160;&#160;&#160;__builtin_arm_isb(0xF);</td></tr>
+<tr class="memdesc:gaad233022e850a009fc6f7602be1182f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruction Synchronization Barrier.  <a href="#gaad233022e850a009fc6f7602be1182f6">More...</a><br /></td></tr>
+<tr class="separator:gaad233022e850a009fc6f7602be1182f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga067d257a2b34565410acefb5afef2203"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga067d257a2b34565410acefb5afef2203">__DSB</a>()&#160;&#160;&#160;__builtin_arm_dsb(0xF);</td></tr>
+<tr class="memdesc:ga067d257a2b34565410acefb5afef2203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Synchronization Barrier.  <a href="#ga067d257a2b34565410acefb5afef2203">More...</a><br /></td></tr>
+<tr class="separator:ga067d257a2b34565410acefb5afef2203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga671101179b5943990785f36f8c1e2269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga671101179b5943990785f36f8c1e2269">__DMB</a>()&#160;&#160;&#160;__builtin_arm_dmb(0xF);</td></tr>
+<tr class="memdesc:ga671101179b5943990785f36f8c1e2269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Memory Barrier.  <a href="#ga671101179b5943990785f36f8c1e2269">More...</a><br /></td></tr>
+<tr class="separator:ga671101179b5943990785f36f8c1e2269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14f54807872c0f5e05604c4924abfdae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga14f54807872c0f5e05604c4924abfdae">__REV</a>&#160;&#160;&#160;__builtin_bswap32</td></tr>
+<tr class="memdesc:ga14f54807872c0f5e05604c4924abfdae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse byte order (32 bit)  <a href="#ga14f54807872c0f5e05604c4924abfdae">More...</a><br /></td></tr>
+<tr class="separator:ga14f54807872c0f5e05604c4924abfdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e3acd41e7667cdf65ffcd8c76a8613f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga4e3acd41e7667cdf65ffcd8c76a8613f">__REV16</a>&#160;&#160;&#160;__builtin_bswap16                           /* ToDo:  ARMCC_V6: check <a class="el" href="serial_8cpp.html#a20c1e3e3859df1c8b9c6649da37ff62e">if</a> __builtin_bswap16 could be used */</td></tr>
+<tr class="memdesc:ga4e3acd41e7667cdf65ffcd8c76a8613f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse byte order (16 bit)  <a href="#ga4e3acd41e7667cdf65ffcd8c76a8613f">More...</a><br /></td></tr>
+<tr class="separator:ga4e3acd41e7667cdf65ffcd8c76a8613f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</a>(value)&#160;&#160;&#160;__ASM volatile (&quot;bkpt &quot;#value)</td></tr>
+<tr class="memdesc:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breakpoint.  <a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">More...</a><br /></td></tr>
+<tr class="separator:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga5d5bb1527e042be4a9fa5a33f65cc248">__CLZ</a>&#160;&#160;&#160;__builtin_clz</td></tr>
+<tr class="memdesc:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count leading zeros.  <a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">More...</a><br /></td></tr>
+<tr class="separator:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc17e391c13c71702366c67cba39c276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gabc17e391c13c71702366c67cba39c276">__CMSIS_GCC_OUT_REG</a>(r)&#160;&#160;&#160;&quot;=r&quot; (r)</td></tr>
+<tr class="separator:gabc17e391c13c71702366c67cba39c276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d94dee7402367961d2cf0accc00fd97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga9d94dee7402367961d2cf0accc00fd97">__CMSIS_GCC_USE_REG</a>(r)&#160;&#160;&#160;&quot;r&quot; (r)</td></tr>
+<tr class="separator:ga9d94dee7402367961d2cf0accc00fd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397">__BKPT</a>(value)&#160;&#160;&#160;__ASM volatile (&quot;bkpt &quot;#value)</td></tr>
+<tr class="memdesc:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breakpoint.  <a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">More...</a><br /></td></tr>
+<tr class="separator:ga15ea6bd3c507d3e81c3b3a1258e46397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga5d5bb1527e042be4a9fa5a33f65cc248">__CLZ</a>&#160;&#160;&#160;__builtin_clz</td></tr>
+<tr class="memdesc:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count leading zeros.  <a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">More...</a><br /></td></tr>
+<tr class="separator:ga5d5bb1527e042be4a9fa5a33f65cc248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -180,12 +261,16 @@ Variables</h2></td></tr>
 <tr class="separator:gadb2bb33809b6f35ba4d176cbec7c7b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadb2bb33809b6f35ba4d176cbec7c7b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></td></tr>
 <tr class="separator:gadb2bb33809b6f35ba4d176cbec7c7b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb2bb33809b6f35ba4d176cbec7c7b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></td></tr>
+<tr class="separator:gadb2bb33809b6f35ba4d176cbec7c7b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb2bb33809b6f35ba4d176cbec7c7b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></td></tr>
+<tr class="separator:gadb2bb33809b6f35ba4d176cbec7c7b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Access to dedicated instructions </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga15ea6bd3c507d3e81c3b3a1258e46397"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,12 +293,36 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00427">427</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="ga15ea6bd3c507d3e81c3b3a1258e46397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __BKPT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;__breakpoint(value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Breakpoint. </p>
+<p>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="ga15ea6bd3c507d3e81c3b3a1258e46397"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,12 +345,10 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html#l00517">517</a> of file <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga15ea6bd3c507d3e81c3b3a1258e46397"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,12 +371,10 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html#l00517">517</a> of file <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga15ea6bd3c507d3e81c3b3a1258e46397"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,12 +397,62 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00865">865</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="ga15ea6bd3c507d3e81c3b3a1258e46397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __BKPT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;__ASM volatile (&quot;bkpt &quot;#value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Breakpoint. </p>
+<p>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga15ea6bd3c507d3e81c3b3a1258e46397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15ea6bd3c507d3e81c3b3a1258e46397">&#9670;&nbsp;</a></span>__BKPT <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __BKPT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;__ASM volatile (&quot;bkpt &quot;#value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Breakpoint. </p>
+<p>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="ga5d5bb1527e042be4a9fa5a33f65cc248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,12 +472,33 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of leading zeros in value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00465">465</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="ga5d5bb1527e042be4a9fa5a33f65cc248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CLZ&#160;&#160;&#160;__clz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count leading zeros. </p>
+<p>Counts the number of leading zeros of a data value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to count the leading zeros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of leading zeros in value </dd></dl>
 
 </div>
 </div>
 <a id="ga5d5bb1527e042be4a9fa5a33f65cc248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,12 +518,10 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of leading zeros in value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html#l00554">554</a> of file <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga5d5bb1527e042be4a9fa5a33f65cc248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,12 +541,10 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of leading zeros in value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html#l00556">556</a> of file <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga5d5bb1527e042be4a9fa5a33f65cc248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,12 +564,56 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of leading zeros in value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00905">905</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="ga5d5bb1527e042be4a9fa5a33f65cc248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CLZ&#160;&#160;&#160;__builtin_clz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count leading zeros. </p>
+<p>Counts the number of leading zeros of a data value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to count the leading zeros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of leading zeros in value </dd></dl>
+
+</div>
+</div>
+<a id="ga5d5bb1527e042be4a9fa5a33f65cc248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d5bb1527e042be4a9fa5a33f65cc248">&#9670;&nbsp;</a></span>__CLZ <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CLZ&#160;&#160;&#160;__builtin_clz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count leading zeros. </p>
+<p>Counts the number of leading zeros of a data value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to count the leading zeros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of leading zeros in value </dd></dl>
 
 </div>
 </div>
 <a id="gabc17e391c13c71702366c67cba39c276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,12 +628,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html#l00365">365</a> of file <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="gabc17e391c13c71702366c67cba39c276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,12 +646,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html#l00365">365</a> of file <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="gabc17e391c13c71702366c67cba39c276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,12 +664,46 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00746">746</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="gabc17e391c13c71702366c67cba39c276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CMSIS_GCC_OUT_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r</td><td>)</td>
+          <td>&#160;&#160;&#160;&quot;=r&quot; (r)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabc17e391c13c71702366c67cba39c276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc17e391c13c71702366c67cba39c276">&#9670;&nbsp;</a></span>__CMSIS_GCC_OUT_REG <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CMSIS_GCC_OUT_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r</td><td>)</td>
+          <td>&#160;&#160;&#160;&quot;=r&quot; (r)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="ga9d94dee7402367961d2cf0accc00fd97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,12 +718,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html#l00366">366</a> of file <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga9d94dee7402367961d2cf0accc00fd97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,12 +736,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html#l00366">366</a> of file <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga9d94dee7402367961d2cf0accc00fd97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,12 +754,46 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00747">747</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="ga9d94dee7402367961d2cf0accc00fd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CMSIS_GCC_USE_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r</td><td>)</td>
+          <td>&#160;&#160;&#160;&quot;r&quot; (r)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9d94dee7402367961d2cf0accc00fd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d94dee7402367961d2cf0accc00fd97">&#9670;&nbsp;</a></span>__CMSIS_GCC_USE_REG <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CMSIS_GCC_USE_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r</td><td>)</td>
+          <td>&#160;&#160;&#160;&quot;r&quot; (r)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="ga671101179b5943990785f36f8c1e2269"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga671101179b5943990785f36f8c1e2269">&#9670;&nbsp;</a></span>__DMB <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga671101179b5943990785f36f8c1e2269">&#9670;&nbsp;</a></span>__DMB <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,12 +810,30 @@ Variables</h2></td></tr>
 <p>Data Memory Barrier. </p>
 <p>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00366">366</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="ga671101179b5943990785f36f8c1e2269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga671101179b5943990785f36f8c1e2269">&#9670;&nbsp;</a></span>__DMB <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __DMB</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {\</div><div class="line">                   __schedule_barrier();\</div><div class="line">                   __dmb(0xF);\</div><div class="line">                   __schedule_barrier();\</div><div class="line">                } <span class="keywordflow">while</span> (0U)</div></div><!-- fragment -->
+<p>Data Memory Barrier. </p>
+<p>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </p>
 
 </div>
 </div>
 <a id="ga671101179b5943990785f36f8c1e2269"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga671101179b5943990785f36f8c1e2269">&#9670;&nbsp;</a></span>__DMB <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga671101179b5943990785f36f8c1e2269">&#9670;&nbsp;</a></span>__DMB <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,12 +850,30 @@ Variables</h2></td></tr>
 <p>Data Memory Barrier. </p>
 <p>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00799">799</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="ga671101179b5943990785f36f8c1e2269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga671101179b5943990785f36f8c1e2269">&#9670;&nbsp;</a></span>__DMB <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __DMB</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;__builtin_arm_dmb(0xF);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data Memory Barrier. </p>
+<p>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </p>
 
 </div>
 </div>
 <a id="ga067d257a2b34565410acefb5afef2203"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga067d257a2b34565410acefb5afef2203">&#9670;&nbsp;</a></span>__DSB <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga067d257a2b34565410acefb5afef2203">&#9670;&nbsp;</a></span>__DSB <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -578,12 +890,30 @@ Variables</h2></td></tr>
 <p>Data Synchronization Barrier. </p>
 <p>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00355">355</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="ga067d257a2b34565410acefb5afef2203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga067d257a2b34565410acefb5afef2203">&#9670;&nbsp;</a></span>__DSB <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __DSB</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {\</div><div class="line">                   __schedule_barrier();\</div><div class="line">                   __dsb(0xF);\</div><div class="line">                   __schedule_barrier();\</div><div class="line">                } <span class="keywordflow">while</span> (0U)</div></div><!-- fragment -->
+<p>Data Synchronization Barrier. </p>
+<p>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </p>
 
 </div>
 </div>
 <a id="ga067d257a2b34565410acefb5afef2203"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga067d257a2b34565410acefb5afef2203">&#9670;&nbsp;</a></span>__DSB <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga067d257a2b34565410acefb5afef2203">&#9670;&nbsp;</a></span>__DSB <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -600,12 +930,30 @@ Variables</h2></td></tr>
 <p>Data Synchronization Barrier. </p>
 <p>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00791">791</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="ga067d257a2b34565410acefb5afef2203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga067d257a2b34565410acefb5afef2203">&#9670;&nbsp;</a></span>__DSB <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __DSB</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;__builtin_arm_dsb(0xF);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data Synchronization Barrier. </p>
+<p>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </p>
 
 </div>
 </div>
 <a id="gaad233022e850a009fc6f7602be1182f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad233022e850a009fc6f7602be1182f6">&#9670;&nbsp;</a></span>__ISB <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad233022e850a009fc6f7602be1182f6">&#9670;&nbsp;</a></span>__ISB <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,12 +970,30 @@ Variables</h2></td></tr>
 <p>Instruction Synchronization Barrier. </p>
 <p>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00344">344</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="gaad233022e850a009fc6f7602be1182f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad233022e850a009fc6f7602be1182f6">&#9670;&nbsp;</a></span>__ISB <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __ISB</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {\</div><div class="line">                   __schedule_barrier();\</div><div class="line">                   __isb(0xF);\</div><div class="line">                   __schedule_barrier();\</div><div class="line">                } <span class="keywordflow">while</span> (0U)</div></div><!-- fragment -->
+<p>Instruction Synchronization Barrier. </p>
+<p>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </p>
 
 </div>
 </div>
 <a id="gaad233022e850a009fc6f7602be1182f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad233022e850a009fc6f7602be1182f6">&#9670;&nbsp;</a></span>__ISB <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad233022e850a009fc6f7602be1182f6">&#9670;&nbsp;</a></span>__ISB <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -644,12 +1010,30 @@ Variables</h2></td></tr>
 <p>Instruction Synchronization Barrier. </p>
 <p>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00784">784</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="gaad233022e850a009fc6f7602be1182f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad233022e850a009fc6f7602be1182f6">&#9670;&nbsp;</a></span>__ISB <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __ISB</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;__builtin_arm_isb(0xF);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instruction Synchronization Barrier. </p>
+<p>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </p>
 
 </div>
 </div>
 <a id="gabd585ddc865fb9b7f2493af1eee1a572"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd585ddc865fb9b7f2493af1eee1a572">&#9670;&nbsp;</a></span>__NOP <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd585ddc865fb9b7f2493af1eee1a572">&#9670;&nbsp;</a></span>__NOP <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,12 +1047,27 @@ Variables</h2></td></tr>
 <p>No Operation. </p>
 <p>No Operation does nothing. This instruction can be used for code alignment purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00313">313</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="gabd585ddc865fb9b7f2493af1eee1a572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd585ddc865fb9b7f2493af1eee1a572">&#9670;&nbsp;</a></span>__NOP <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __NOP&#160;&#160;&#160;__nop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>No Operation. </p>
+<p>No Operation does nothing. This instruction can be used for code alignment purposes. </p>
 
 </div>
 </div>
 <a id="gabd585ddc865fb9b7f2493af1eee1a572"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd585ddc865fb9b7f2493af1eee1a572">&#9670;&nbsp;</a></span>__NOP <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd585ddc865fb9b7f2493af1eee1a572">&#9670;&nbsp;</a></span>__NOP <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,12 +1081,27 @@ Variables</h2></td></tr>
 <p>No Operation. </p>
 <p>No Operation does nothing. This instruction can be used for code alignment purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00754">754</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="gabd585ddc865fb9b7f2493af1eee1a572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd585ddc865fb9b7f2493af1eee1a572">&#9670;&nbsp;</a></span>__NOP <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __NOP&#160;&#160;&#160;__builtin_arm_nop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>No Operation. </p>
+<p>No Operation does nothing. This instruction can be used for code alignment purposes. </p>
 
 </div>
 </div>
 <a id="ga14f54807872c0f5e05604c4924abfdae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14f54807872c0f5e05604c4924abfdae">&#9670;&nbsp;</a></span>__REV <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14f54807872c0f5e05604c4924abfdae">&#9670;&nbsp;</a></span>__REV <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,12 +1121,33 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00378">378</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="ga14f54807872c0f5e05604c4924abfdae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14f54807872c0f5e05604c4924abfdae">&#9670;&nbsp;</a></span>__REV <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __REV&#160;&#160;&#160;__rev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverse byte order (32 bit) </p>
+<p>Reverses the byte order in integer value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to reverse </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
 
 </div>
 </div>
 <a id="ga14f54807872c0f5e05604c4924abfdae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14f54807872c0f5e05604c4924abfdae">&#9670;&nbsp;</a></span>__REV <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14f54807872c0f5e05604c4924abfdae">&#9670;&nbsp;</a></span>__REV <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -732,12 +1167,33 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00808">808</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="ga14f54807872c0f5e05604c4924abfdae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14f54807872c0f5e05604c4924abfdae">&#9670;&nbsp;</a></span>__REV <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __REV&#160;&#160;&#160;__builtin_bswap32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverse byte order (32 bit) </p>
+<p>Reverses the byte order in integer value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to reverse </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
 
 </div>
 </div>
 <a id="ga4e3acd41e7667cdf65ffcd8c76a8613f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e3acd41e7667cdf65ffcd8c76a8613f">&#9670;&nbsp;</a></span>__REV16</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e3acd41e7667cdf65ffcd8c76a8613f">&#9670;&nbsp;</a></span>__REV16 <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -757,12 +1213,33 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00817">817</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="ga4e3acd41e7667cdf65ffcd8c76a8613f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e3acd41e7667cdf65ffcd8c76a8613f">&#9670;&nbsp;</a></span>__REV16 <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __REV16&#160;&#160;&#160;__builtin_bswap16                           /* ToDo:  ARMCC_V6: check <a class="el" href="serial_8cpp.html#a20c1e3e3859df1c8b9c6649da37ff62e">if</a> __builtin_bswap16 could be used */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverse byte order (16 bit) </p>
+<p>Reverses the byte order in two unsigned short values. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to reverse </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
 
 </div>
 </div>
 <a id="ga95b9bd281ddeda378b85afdb8f2ced86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga95b9bd281ddeda378b85afdb8f2ced86">&#9670;&nbsp;</a></span>__ROR</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95b9bd281ddeda378b85afdb8f2ced86">&#9670;&nbsp;</a></span>__ROR <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -783,12 +1260,34 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Rotated value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00417">417</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="ga95b9bd281ddeda378b85afdb8f2ced86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95b9bd281ddeda378b85afdb8f2ced86">&#9670;&nbsp;</a></span>__ROR <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __ROR&#160;&#160;&#160;__ror</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rotate Right in unsigned value (32 bit) </p>
+<p>Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to rotate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Number of Bits to rotate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rotated value </dd></dl>
 
 </div>
 </div>
 <a id="gaab4f296d0022b4b10dc0976eb22052f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab4f296d0022b4b10dc0976eb22052f9">&#9670;&nbsp;</a></span>__SEV <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab4f296d0022b4b10dc0976eb22052f9">&#9670;&nbsp;</a></span>__SEV <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -802,12 +1301,27 @@ Variables</h2></td></tr>
 <p>Send Event. </p>
 <p>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00335">335</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="gaab4f296d0022b4b10dc0976eb22052f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab4f296d0022b4b10dc0976eb22052f9">&#9670;&nbsp;</a></span>__SEV <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __SEV&#160;&#160;&#160;__sev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send Event. </p>
+<p>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </p>
 
 </div>
 </div>
 <a id="gaab4f296d0022b4b10dc0976eb22052f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab4f296d0022b4b10dc0976eb22052f9">&#9670;&nbsp;</a></span>__SEV <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab4f296d0022b4b10dc0976eb22052f9">&#9670;&nbsp;</a></span>__SEV <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -821,12 +1335,27 @@ Variables</h2></td></tr>
 <p>Send Event. </p>
 <p>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00775">775</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="gaab4f296d0022b4b10dc0976eb22052f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab4f296d0022b4b10dc0976eb22052f9">&#9670;&nbsp;</a></span>__SEV <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __SEV&#160;&#160;&#160;__builtin_arm_sev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send Event. </p>
+<p>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </p>
 
 </div>
 </div>
 <a id="gaac6cc7dd4325d9cb40d3290fa5244b3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">&#9670;&nbsp;</a></span>__WFE <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">&#9670;&nbsp;</a></span>__WFE <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -840,12 +1369,27 @@ Variables</h2></td></tr>
 <p>Wait For Event. </p>
 <p>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00328">328</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="gaac6cc7dd4325d9cb40d3290fa5244b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">&#9670;&nbsp;</a></span>__WFE <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __WFE&#160;&#160;&#160;__wfe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait For Event. </p>
+<p>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </p>
 
 </div>
 </div>
 <a id="gaac6cc7dd4325d9cb40d3290fa5244b3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">&#9670;&nbsp;</a></span>__WFE <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">&#9670;&nbsp;</a></span>__WFE <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -859,12 +1403,27 @@ Variables</h2></td></tr>
 <p>Wait For Event. </p>
 <p>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00768">768</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="gaac6cc7dd4325d9cb40d3290fa5244b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac6cc7dd4325d9cb40d3290fa5244b3d">&#9670;&nbsp;</a></span>__WFE <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __WFE&#160;&#160;&#160;__builtin_arm_wfe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait For Event. </p>
+<p>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </p>
 
 </div>
 </div>
 <a id="gad23bf2b78a9a4524157c9de0d30b7448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad23bf2b78a9a4524157c9de0d30b7448">&#9670;&nbsp;</a></span>__WFI <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad23bf2b78a9a4524157c9de0d30b7448">&#9670;&nbsp;</a></span>__WFI <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -878,12 +1437,27 @@ Variables</h2></td></tr>
 <p>Wait For Interrupt. </p>
 <p>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00320">320</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
+</div>
+</div>
+<a id="gad23bf2b78a9a4524157c9de0d30b7448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad23bf2b78a9a4524157c9de0d30b7448">&#9670;&nbsp;</a></span>__WFI <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __WFI&#160;&#160;&#160;__wfi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait For Interrupt. </p>
+<p>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </p>
 
 </div>
 </div>
 <a id="gad23bf2b78a9a4524157c9de0d30b7448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad23bf2b78a9a4524157c9de0d30b7448">&#9670;&nbsp;</a></span>__WFI <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad23bf2b78a9a4524157c9de0d30b7448">&#9670;&nbsp;</a></span>__WFI <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -897,7 +1471,22 @@ Variables</h2></td></tr>
 <p>Wait For Interrupt. </p>
 <p>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </p>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00760">760</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="gad23bf2b78a9a4524157c9de0d30b7448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad23bf2b78a9a4524157c9de0d30b7448">&#9670;&nbsp;</a></span>__WFI <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __WFI&#160;&#160;&#160;__builtin_arm_wfi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait For Interrupt. </p>
+<p>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </p>
 
 </div>
 </div>
@@ -927,8 +1516,6 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00388">388</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
-
 </div>
 </div>
 <a id="ga8e7a866927d3257a82b884ad14dbef4c"></a>
@@ -955,8 +1542,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reversed value </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00402">402</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
 
 </div>
 </div>
@@ -1040,13 +1625,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Rotated value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc_8h_source.html#l00439">439</a> of file <a class="el" href="cmsis__armcc_8h_source.html">cmsis_armcc.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="gadb2bb33809b6f35ba4d176cbec7c7b75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1056,14 +1639,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">  <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> <a href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html#l00505">cmsis_gcc.h:505</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">  <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> cmsis_gcc.h:505</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html#l00505">505</a> of file <a class="el" href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="gadb2bb33809b6f35ba4d176cbec7c7b75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1073,14 +1654,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> <a href="dialog_2_dialog_s_d_k_2bsp_2include_2cmsis__gcc_8h_source.html#l00505">cmsis_gcc.h:505</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">  <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> cmsis_gcc.h:505</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html#l00505">505</a> of file <a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html">cmsis_gcc.h</a>.</p>
-
 </div>
 </div>
 <a id="gadb2bb33809b6f35ba4d176cbec7c7b75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1090,16 +1669,44 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> <a href="cmsis__armcc___v6_8h_source.html#l00853">cmsis_armcc_V6.h:853</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> cmsis_gcc.h:505</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="cmsis__armcc___v6_8h_source.html#l00853">853</a> of file <a class="el" href="cmsis__armcc___v6_8h_source.html">cmsis_armcc_V6.h</a>.</p>
+</div>
+</div>
+<a id="gadb2bb33809b6f35ba4d176cbec7c7b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[4/5]</span></h2>
 
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> op2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">  <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> cmsis_armcc_V6.h:853</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="gadb2bb33809b6f35ba4d176cbec7c7b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb2bb33809b6f35ba4d176cbec7c7b75">&#9670;&nbsp;</a></span>op2 <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> op2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordflow">return</span> (op1 &gt;&gt; <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>) | (op1 &lt;&lt; (32U - <a class="code" href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a>))</div><div class="ttc" id="group___c_m_s_i_s___core___instruction_interface_html_gadb2bb33809b6f35ba4d176cbec7c7b75"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gadb2bb33809b6f35ba4d176cbec7c7b75">op2</a></div><div class="ttdeci">uint32_t op2</div><div class="ttdef"><b>Definition:</b> cmsis_armcc_V6.h:853</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:35 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:05 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

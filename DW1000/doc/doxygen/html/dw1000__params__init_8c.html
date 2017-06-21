@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>third_party/decawave/dw1000/drivers/dw1000_params_init.c File Reference</title>
+<title>OT-DW1000: openthread-master/third_party/decawave/dw1000/drivers/dw1000_params_init.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_06b407332b717b2644662aab3d72541b.html">decawave</a></li><li class="navelem"><a class="el" href="dir_5c4f6482485c3a7c5dc6931dcb73150a.html">dw1000</a></li><li class="navelem"><a class="el" href="dir_d344e6bde63461ed9d95d0814ad511e5.html">drivers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_7d90705f0e33e4f611d5ec5bfa470328.html">third_party</a></li><li class="navelem"><a class="el" href="dir_3d151e72ea7ff1c836374a2450a96ce0.html">decawave</a></li><li class="navelem"><a class="el" href="dir_8f5e46aa0c1ddfeb345f4b95479ee7b9.html">dw1000</a></li><li class="navelem"><a class="el" href="dir_bae6563d8c9ba99dac7e6315109d3506.html">drivers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -76,9 +77,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="dw1000__regs_8h_source.html">dw1000_regs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dw1000__device__api_8h_source.html">dw1000_device_api.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dw1000__param__types_8h_source.html">dw1000_param_types.h</a>&quot;</code><br />
-</div>
-<p><a href="dw1000__params__init_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a3c97aeebfcbf626d5d01b8b521add912"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="dw1000__device__api_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__params__init_8c.html#a3c97aeebfcbf626d5d01b8b521add912">chan_idx</a> [<a class="el" href="dw1000__param__types_8h.html#a520026c5102e2ddf63ef34cd6189dda4">NUM_CH_SUPPORTED</a>] = {0, 0, 1, 2, 3, 4, 0, 5}</td></tr>
@@ -106,13 +105,11 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DW1000 configuration parameters. </p>
-<hr/>
-<dl class="section attention"><dt>Attention</dt><dd></dd></dl>
-<p>Copyright 2015 (c) DecaWave Ltd, Dublin, Ireland.</p>
-<p>All rights reserved.</p>
-<hr/>
-
-<p class="definition">Definition in file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
+<p>Copyright 2017 Decawave Ltd.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><hr/>
+ <hr/>
 </div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a8ec5815e10a440fb38d1562e74ebfe26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ec5815e10a440fb38d1562e74ebfe26">&#9670;&nbsp;</a></span>agc_config</h2>
@@ -125,12 +122,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    <a class="code" href="dw1000__regs_8h.html#a67ae31369241e086d5f37000e8e1baaf">AGC_TUNE2_VAL</a>,</div><div class="line"></div><div class="line">    { <a class="code" href="dw1000__regs_8h.html#a66f62811af74f309594595c1b6ba2993">AGC_TUNE1_16M</a> , <a class="code" href="dw1000__regs_8h.html#af953c0c10fbe0428f29f037666a21128">AGC_TUNE1_64M</a> }  </div><div class="line">}</div><div class="ttc" id="dw1000__regs_8h_html_a67ae31369241e086d5f37000e8e1baaf"><div class="ttname"><a href="dw1000__regs_8h.html#a67ae31369241e086d5f37000e8e1baaf">AGC_TUNE2_VAL</a></div><div class="ttdeci">#define AGC_TUNE2_VAL</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00590">dw1000_regs.h:590</a></div></div>
-<div class="ttc" id="dw1000__regs_8h_html_a66f62811af74f309594595c1b6ba2993"><div class="ttname"><a href="dw1000__regs_8h.html#a66f62811af74f309594595c1b6ba2993">AGC_TUNE1_16M</a></div><div class="ttdeci">#define AGC_TUNE1_16M</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00583">dw1000_regs.h:583</a></div></div>
-<div class="ttc" id="dw1000__regs_8h_html_af953c0c10fbe0428f29f037666a21128"><div class="ttname"><a href="dw1000__regs_8h.html#af953c0c10fbe0428f29f037666a21128">AGC_TUNE1_64M</a></div><div class="ttdeci">#define AGC_TUNE1_64M</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00584">dw1000_regs.h:584</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    <a class="code" href="dw1000__regs_8h.html#a67ae31369241e086d5f37000e8e1baaf">AGC_TUNE2_VAL</a>,</div><div class="line"></div><div class="line">    { <a class="code" href="dw1000__regs_8h.html#a66f62811af74f309594595c1b6ba2993">AGC_TUNE1_16M</a> , <a class="code" href="dw1000__regs_8h.html#af953c0c10fbe0428f29f037666a21128">AGC_TUNE1_64M</a> }  </div><div class="line">}</div><div class="ttc" id="dw1000__regs_8h_html_a67ae31369241e086d5f37000e8e1baaf"><div class="ttname"><a href="dw1000__regs_8h.html#a67ae31369241e086d5f37000e8e1baaf">AGC_TUNE2_VAL</a></div><div class="ttdeci">#define AGC_TUNE2_VAL</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:600</div></div>
+<div class="ttc" id="dw1000__regs_8h_html_a66f62811af74f309594595c1b6ba2993"><div class="ttname"><a href="dw1000__regs_8h.html#a66f62811af74f309594595c1b6ba2993">AGC_TUNE1_16M</a></div><div class="ttdeci">#define AGC_TUNE1_16M</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:593</div></div>
+<div class="ttc" id="dw1000__regs_8h_html_af953c0c10fbe0428f29f037666a21128"><div class="ttname"><a href="dw1000__regs_8h.html#af953c0c10fbe0428f29f037666a21128">AGC_TUNE1_64M</a></div><div class="ttdeci">#define AGC_TUNE1_64M</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:594</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00065">65</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 <a id="a3c97aeebfcbf626d5d01b8b521add912"></a>
@@ -144,8 +139,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00025">25</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
 
 </div>
 </div>
@@ -161,8 +154,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    {</div><div class="line">        </div><div class="line">        {</div><div class="line">            </div><div class="line">            0x311A002D,</div><div class="line">            </div><div class="line">            0x331A0052,</div><div class="line">            </div><div class="line">            0x351A009A,</div><div class="line">            </div><div class="line">            0x371A011D</div><div class="line">        },</div><div class="line">        </div><div class="line">        {</div><div class="line">            </div><div class="line">            0x313B006B,</div><div class="line">            </div><div class="line">            0x333B00BE,</div><div class="line">            </div><div class="line">            0x353B015E,</div><div class="line">            </div><div class="line">            0x373B0296</div><div class="line">        }</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00101">101</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 <a id="a7688bc6153660b67559098f43cf3d295"></a>
@@ -177,8 +168,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    0x0087, </div><div class="line">    0x008D </div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00095">95</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 <a id="a21a5a43002f9a02226af78d3717aea04"></a>
@@ -192,8 +181,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00073">73</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
 
 </div>
 </div>
@@ -209,8 +196,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00127">127</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 <a id="ac17ccbc0d2a871c6d6e7dd86f26c4974"></a>
@@ -225,8 +210,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { 0x07, 0x04, 0x00, 0x09, 0x1E}, </div><div class="line"></div><div class="line">    { 0x08, 0x05, 0x40, 0x08, 0x26}, </div><div class="line"></div><div class="line">    { 0x09, 0x10, 0x40, 0x08, 0x56}, </div><div class="line"></div><div class="line">    { 0x08, 0x05, 0x40, 0x08, 0x26}, </div><div class="line"></div><div class="line">    { 0x1D, 0x04, 0x00, 0x08, 0xBE}, </div><div class="line"></div><div class="line">    { 0x1D, 0x04, 0x00, 0x08, 0xBE} </div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00039">39</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 <a id="a818a43553162403e0beca1ecb718c9c6"></a>
@@ -240,8 +223,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00054">54</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
 
 </div>
 </div>
@@ -257,8 +238,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    0xD8,   </div><div class="line">    0xBC    </div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00058">58</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 <a id="af5cd4f7d3eeaf7546365db5f92a93e9f"></a>
@@ -273,8 +252,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    </div><div class="line">    {</div><div class="line">        (0x0a), </div><div class="line">        (0x16)  </div><div class="line">    },</div><div class="line">    </div><div class="line">    {</div><div class="line">        (0x01), </div><div class="line">        (0x06), </div><div class="line">    },</div><div class="line">    </div><div class="line">    {</div><div class="line">        (0x01), </div><div class="line">        (0x02), </div><div class="line">    }</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00076">76</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 <a id="aade3df840c2c7fa5ec65499d43b742cc"></a>
@@ -288,21 +265,19 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a88452680b5bd942e4ca079da9037b0ac">RF_TXCTRL_CH1</a>,      </div><div class="line">        <a class="code" href="dw1000__regs_8h.html#aada88f880f1081b9b66161b7d38292b5">RF_TXCTRL_CH2</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a00e7038b280f5b68fb5e84b302c7ed1b">RF_TXCTRL_CH3</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a661e634f27eb304d047228340b3d29d9">RF_TXCTRL_CH4</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a35330aac009e535d2dc4d57463950309">RF_TXCTRL_CH5</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a2b89d9f4a311946c149e7dcc4a6ea896">RF_TXCTRL_CH7</a>,</div><div class="line">}</div><div class="ttc" id="dw1000__regs_8h_html_a2b89d9f4a311946c149e7dcc4a6ea896"><div class="ttname"><a href="dw1000__regs_8h.html#a2b89d9f4a311946c149e7dcc4a6ea896">RF_TXCTRL_CH7</a></div><div class="ttdeci">#define RF_TXCTRL_CH7</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00893">dw1000_regs.h:893</a></div></div>
-<div class="ttc" id="dw1000__regs_8h_html_a661e634f27eb304d047228340b3d29d9"><div class="ttname"><a href="dw1000__regs_8h.html#a661e634f27eb304d047228340b3d29d9">RF_TXCTRL_CH4</a></div><div class="ttdeci">#define RF_TXCTRL_CH4</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00891">dw1000_regs.h:891</a></div></div>
-<div class="ttc" id="dw1000__regs_8h_html_aada88f880f1081b9b66161b7d38292b5"><div class="ttname"><a href="dw1000__regs_8h.html#aada88f880f1081b9b66161b7d38292b5">RF_TXCTRL_CH2</a></div><div class="ttdeci">#define RF_TXCTRL_CH2</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00889">dw1000_regs.h:889</a></div></div>
-<div class="ttc" id="dw1000__regs_8h_html_a35330aac009e535d2dc4d57463950309"><div class="ttname"><a href="dw1000__regs_8h.html#a35330aac009e535d2dc4d57463950309">RF_TXCTRL_CH5</a></div><div class="ttdeci">#define RF_TXCTRL_CH5</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00892">dw1000_regs.h:892</a></div></div>
-<div class="ttc" id="dw1000__regs_8h_html_a00e7038b280f5b68fb5e84b302c7ed1b"><div class="ttname"><a href="dw1000__regs_8h.html#a00e7038b280f5b68fb5e84b302c7ed1b">RF_TXCTRL_CH3</a></div><div class="ttdeci">#define RF_TXCTRL_CH3</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00890">dw1000_regs.h:890</a></div></div>
-<div class="ttc" id="dw1000__regs_8h_html_a88452680b5bd942e4ca079da9037b0ac"><div class="ttname"><a href="dw1000__regs_8h.html#a88452680b5bd942e4ca079da9037b0ac">RF_TXCTRL_CH1</a></div><div class="ttdeci">#define RF_TXCTRL_CH1</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__regs_8h_source.html#l00888">dw1000_regs.h:888</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a88452680b5bd942e4ca079da9037b0ac">RF_TXCTRL_CH1</a>,      </div><div class="line">        <a class="code" href="dw1000__regs_8h.html#aada88f880f1081b9b66161b7d38292b5">RF_TXCTRL_CH2</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a00e7038b280f5b68fb5e84b302c7ed1b">RF_TXCTRL_CH3</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a661e634f27eb304d047228340b3d29d9">RF_TXCTRL_CH4</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a35330aac009e535d2dc4d57463950309">RF_TXCTRL_CH5</a>,</div><div class="line">        <a class="code" href="dw1000__regs_8h.html#a2b89d9f4a311946c149e7dcc4a6ea896">RF_TXCTRL_CH7</a>,</div><div class="line">}</div><div class="ttc" id="dw1000__regs_8h_html_a2b89d9f4a311946c149e7dcc4a6ea896"><div class="ttname"><a href="dw1000__regs_8h.html#a2b89d9f4a311946c149e7dcc4a6ea896">RF_TXCTRL_CH7</a></div><div class="ttdeci">#define RF_TXCTRL_CH7</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:903</div></div>
+<div class="ttc" id="dw1000__regs_8h_html_a661e634f27eb304d047228340b3d29d9"><div class="ttname"><a href="dw1000__regs_8h.html#a661e634f27eb304d047228340b3d29d9">RF_TXCTRL_CH4</a></div><div class="ttdeci">#define RF_TXCTRL_CH4</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:901</div></div>
+<div class="ttc" id="dw1000__regs_8h_html_aada88f880f1081b9b66161b7d38292b5"><div class="ttname"><a href="dw1000__regs_8h.html#aada88f880f1081b9b66161b7d38292b5">RF_TXCTRL_CH2</a></div><div class="ttdeci">#define RF_TXCTRL_CH2</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:899</div></div>
+<div class="ttc" id="dw1000__regs_8h_html_a35330aac009e535d2dc4d57463950309"><div class="ttname"><a href="dw1000__regs_8h.html#a35330aac009e535d2dc4d57463950309">RF_TXCTRL_CH5</a></div><div class="ttdeci">#define RF_TXCTRL_CH5</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:902</div></div>
+<div class="ttc" id="dw1000__regs_8h_html_a00e7038b280f5b68fb5e84b302c7ed1b"><div class="ttname"><a href="dw1000__regs_8h.html#a00e7038b280f5b68fb5e84b302c7ed1b">RF_TXCTRL_CH3</a></div><div class="ttdeci">#define RF_TXCTRL_CH3</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:900</div></div>
+<div class="ttc" id="dw1000__regs_8h_html_a88452680b5bd942e4ca079da9037b0ac"><div class="ttname"><a href="dw1000__regs_8h.html#a88452680b5bd942e4ca079da9037b0ac">RF_TXCTRL_CH1</a></div><div class="ttdeci">#define RF_TXCTRL_CH1</div><div class="ttdef"><b>Definition:</b> dw1000_regs.h:898</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="dw1000__params__init_8c_source.html#l00028">28</a> of file <a class="el" href="dw1000__params__init_8c_source.html">dw1000_params_init.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:30 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:01 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

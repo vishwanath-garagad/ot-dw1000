@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenThread documentation</title>
+<title>OT-DW1000: What is OpenThread?</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -59,68 +60,37 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">OpenThread documentation </div>  </div>
+<div class="title">What is <a class="el" href="namespace_open_thread.html">OpenThread</a>? </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://github.com/openthread/openthread"></a> <a href="https://travis-ci.org/openthread/openthread"></a> <a href="https://ci.appveyor.com/project/jwhui/openthread"></a> <a href="https://codecov.io/gh/openthread/openthread"></a> </p><hr/>
-<p><a class="el" href="namespace_open_thread.html">OpenThread</a> is an open-source implementation of the <a href="http://threadgroup.org/technology/ourtechnology">Thread</a> networking protocol. Nest has released <a class="el" href="namespace_open_thread.html">OpenThread</a> to make the technology used in Nest products more broadly available to developers to accelerate the development of products for the connected home.</p>
-<p>The <a class="el" href="namespace_thread.html">Thread</a> specification defines an IPv6-based reliable, secure and low-power wireless device-to-device communication protocol for home applications. More information about <a class="el" href="namespace_thread.html">Thread</a> can be found on <a href="http://threadgroup.org/">threadgroup.org</a>.</p>
-<h2>Features</h2>
+<div class="textblock"><p><a class="el" href="namespace_open_thread.html">OpenThread</a> is... <a href="http://threadgroup.org/technology/ourtechnology#certifiedproducts"></a></p>
+<p>...an open-source implementation of the <a href="http://threadgroup.org/technology/ourtechnology">Thread</a> networking protocol. Nest has released <a class="el" href="namespace_open_thread.html">OpenThread</a> to make the technology used in Nest products more broadly available to developers to accelerate the development of products for the connected home.</p>
+<p>...OS and platform agnostic, with a narrow platform abstraction layer and a small memory footprint, making it highly portable.</p>
+<p>...a Thread Certified Component, implementing all features defined in the <a href="http://threadgroup.org/technology/ourtechnology#specifications">Thread 1.1.1 specification</a>. This specification defines an IPv6-based reliable, secure and low-power wireless device-to-device communication protocol for home applications.</p>
+<p>More information about Thread can be found on <a href="http://threadgroup.org/">threadgroup.org</a>.</p>
+<h1><a class="anchor" id="mainpage_Openthread"></a>
+OpenThread Features</h1>
+<p><a class="el" href="namespace_open_thread.html">OpenThread</a> implements all features defined in the <a href="http://threadgroup.org/technology/ourtechnology#specifications">Thread 1.1.1 specification</a>, including all Thread networking layers (IPv6, 6LoWPAN, IEEE 802.15.4 with MAC security, Mesh Link Establishment, Mesh Routing) and device roles.</p>
+<p><a class="el" href="namespace_open_thread.html">OpenThread</a> supports both system-on-chip (SoC) and network co-processor (NCP) designs. Other features and enhancements include:</p>
+<p><b>Application</b> <b>support</b> <b>and</b> <b>services:</b> </p>
 <ul>
-<li>Highly portable: OS and platform agnostic with a radio abstraction layer</li>
-<li>Implements the End Device, Router, Leader and Border Router roles</li>
-<li>Small memory footprint</li>
+<li>IPv6 configuration and raw data interface</li>
+<li>UDP sockets</li>
+<li>CoAP client and server</li>
+<li>DHCPv6 client and server</li>
+<li>DNSv6 client</li>
+<li>Command Line Interface (CLI)</li>
 </ul>
-<p><a class="el" href="namespace_open_thread.html">OpenThread</a> implements all <a class="el" href="namespace_thread.html">Thread</a> networking layers including IPv6, 6LoWPAN, IEEE 802.15.4 with MAC security, Mesh Link Establishment, and Mesh Routing.</p>
-<h1>Who is supporting <a class="el" href="namespace_open_thread.html">OpenThread</a></h1>
-<div class="image">
-<img src="doc/images/openthread_contrib.png" alt="OpenThread Contributor Logos"/>
-</div>
-<p>Nest, along with ARM, Atmel, a subsidiary of Microchip Technology, Dialog Semiconductor, Microsoft Corporation, Nordic Semiconductor, Qualcomm Technologies, Inc. (a subsidiary of Qualcomm Incorporated), and Texas Instruments Incorporated are contributing to the ongoing development of <a class="el" href="namespace_open_thread.html">OpenThread</a>.</p>
-<h1>Getting started</h1>
-<p>The easiest way to get started is to run the CLI example in <code>/examples/apps/cli</code>. See the <a class="el" href="compat-1_83_8h.html#aa259673bd7996b881b0754e3d35f09b6">CLI example README</a> for more details.</p>
-<h2>What's included</h2>
-<p>In the repo you'll find the following directories and files:</p>
-<table class="doxtable">
-<tr>
-<th>File/Folder </th><th>Provides  </th></tr>
-<tr>
-<td><code>doc</code> </td><td>Code and protocol docs </td></tr>
-<tr>
-<td><code>etc</code> </td><td>Configuration files for other build systems (e.g. Visual Studio) </td></tr>
-<tr>
-<td><code>examples</code> </td><td>Sample applications and platforms demonstrating <a class="el" href="namespace_open_thread.html">OpenThread</a> </td></tr>
-<tr>
-<td><code>include</code> </td><td>Public API header files </td></tr>
-<tr>
-<td><code>src</code> </td><td>Core implementation of the <a class="el" href="namespace_thread.html">Thread</a> standard and related add-ons </td></tr>
-<tr>
-<td><code>tests</code> </td><td>Unit and <a class="el" href="namespace_thread.html">Thread</a> conformance tests </td></tr>
-<tr>
-<td><code>third_party</code> </td><td>Third-party code used by <a class="el" href="namespace_open_thread.html">OpenThread</a> </td></tr>
-<tr>
-<td><code>tools</code> </td><td>Helpful utilities related to the <a class="el" href="namespace_open_thread.html">OpenThread</a> project </td></tr>
-</table>
-<h2>Documentation</h2>
-<p>The Doxygen reference docs are <a href="http://openthread.github.io/openthread/">hosted online</a> and generated as part of the build.</p>
-<h1>Getting help</h1>
-<p>Submit bugs and feature requests to <a href="https://github.com/openthread/openthread/issues">issue tracker</a>. Usage questions? Post your questions to <a href="http://stackoverflow.com/">Stack Overflow</a> using the <a href="http://stackoverflow.com/questions/tagged/openthread"><code>openthread</code> tag</a>. We also use Google Groups for discussion and announcements:</p>
+<p><b>NCP</b> <b>support:</b> </p>
 <ul>
-<li><a href="https://groups.google.com/forum/#!forum/openthread-announce">openthread-announce</a> - subscribe for release notes and new updates on <a class="el" href="namespace_open_thread.html">OpenThread</a></li>
-<li><a href="https://groups.google.com/forum/#!forum/openthread-users">openthread-users</a> - the best place for users to discuss <a class="el" href="namespace_open_thread.html">OpenThread</a> and interact with the <a class="el" href="namespace_open_thread.html">OpenThread</a> team</li>
-<li><a href="https://groups.google.com/forum/#!forum/openthread-devel">openthread-devel</a> - team members discuss the on-going development of <a class="el" href="namespace_open_thread.html">OpenThread</a></li>
+<li>Spinel - general purpose NCP protocol</li>
+<li><code>wpantund</code> - user-space NCP network interface driver/daemon</li>
+<li>Sniffer support via NCP Spinel nodes </li>
 </ul>
-<h1>Versioning</h1>
-<p><a class="el" href="namespace_open_thread.html">OpenThread</a> follows <a href="http://semver.org/">the Semantic Versioning guidelines</a> for release cycle transparency and to maintain backwards compatibility. <a class="el" href="namespace_open_thread.html">OpenThread</a>'s versioning is independent of the <a class="el" href="namespace_thread.html">Thread</a> protocol specification version but will clearly indicate which version of the specification it currently supports.</p>
-<h1>Contributing</h1>
-<p>See the <a class="el" href="compat-1_83_8h.html#aa259673bd7996b881b0754e3d35f09b6">`CONTRIBUTING.md`</a> file for more information.</p>
-<h1>License</h1>
-<p><a class="el" href="namespace_open_thread.html">OpenThread</a> is released under the [BSD 3-Clause license](LICENSE). See the [<code>LICENSE</code>](LICENSE) file for more information.</p>
-<p>Please only use the <a class="el" href="namespace_open_thread.html">OpenThread</a> name and marks when accurately referencing this software distribution. Do not use the marks in a way that suggests you are endorsed by or otherwise affiliated with Nest, Google, or The <a class="el" href="namespace_thread.html">Thread</a> Group. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:16:50 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:14 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

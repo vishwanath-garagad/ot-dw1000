@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/posix/platform.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/posix/platform.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_a3ede4c2e91cd2158f92405b0a1c280f.html">posix</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_ab5fae8cac44790818d1ce3635d3bac0.html">posix</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,13 +82,10 @@ $(function() {
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;libgen.h&gt;</code><br />
 <code>#include &lt;syslog.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-tasklet_8h_source.html">openthread-tasklet.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="alarm_8h_source.html">platform/alarm.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2uart_8h_source.html">platform/uart.h</a>&gt;</code><br />
-</div>
-<p><a href="examples_2platforms_2posix_2platform_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread/openthread.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tasklet_8h_source.html">openthread/tasklet.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="alarm_8h_source.html">openthread/platform/alarm.h</a>&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a118c6c2e9499e0cfba22b76848b040af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2posix_2platform_8c.html#a118c6c2e9499e0cfba22b76848b040af">PlatformInit</a> (int argc, char *argv[])</td></tr>
@@ -101,13 +99,9 @@ Variables</h2></td></tr>
 <tr class="separator:a70c354f2d0e9b8a656841c0980622915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39cc9570c14505cf5258623c1fe22a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2posix_2platform_8c.html#ab39cc9570c14505cf5258623c1fe22a1">WELLKNOWN_NODE_ID</a> = 34</td></tr>
 <tr class="separator:ab39cc9570c14505cf5258623c1fe22a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6029aa105c68dce292343bd6ff5fe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2posix_2platform_8c.html#acf6029aa105c68dce292343bd6ff5fe1">UartInitialized</a> = <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a5df37b7f02e5cdc7d9412b7f872b8e01">false</a></td></tr>
-<tr class="separator:acf6029aa105c68dce292343bd6ff5fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes the platform-specific initializers. </p>
-
-<p class="definition">Definition in file <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html">platform.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a118c6c2e9499e0cfba22b76848b040af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a118c6c2e9499e0cfba22b76848b040af">&#9670;&nbsp;</a></span>PlatformInit()</h2>
@@ -137,8 +131,6 @@ Variables</h2></td></tr>
 <p>This function performs all platform-specific initialization.</p>
 <p>Function documented in <a class="el" href="platform-cc2650_8h.html">platform-cc2650.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html#l00057">57</a> of file <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html">platform.c</a>.</p>
-
 </div>
 </div>
 <a id="a2ede0f447a8bfba163201b66a401d17a"></a>
@@ -165,8 +157,6 @@ Variables</h2></td></tr>
 </dl>
 <p>Function documented in <a class="el" href="platform-cc2650_8h.html">platform-cc2650.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html#l00086">86</a> of file <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html">platform.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -183,24 +173,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Unique node ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html#l00054">54</a> of file <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html">platform.c</a>.</p>
-
-</div>
-</div>
-<a id="acf6029aa105c68dce292343bd6ff5fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf6029aa105c68dce292343bd6ff5fe1">&#9670;&nbsp;</a></span>UartInitialized</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> UartInitialized = <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a5df37b7f02e5cdc7d9412b7f872b8e01">false</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html#l00084">84</a> of file <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html">platform.c</a>.</p>
-
 </div>
 </div>
 <a id="ab39cc9570c14505cf5258623c1fe22a1"></a>
@@ -216,14 +188,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Well-known Unique ID used by a simulated radio that supports promiscuous mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html#l00055">55</a> of file <a class="el" href="examples_2platforms_2posix_2platform_8c_source.html">platform.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

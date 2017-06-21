@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/drivers/windows/ottmp/adapter.cpp File Reference</title>
+<title>OT-DW1000: openthread-master/examples/drivers/windows/ottmp/adapter.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_757d408b91fe77c0d6541574880c2422.html">drivers</a></li><li class="navelem"><a class="el" href="dir_2241398f140824e7a05e00f2ce66418d.html">windows</a></li><li class="navelem"><a class="el" href="dir_2098636bc8683cc5356da1cf07689079.html">ottmp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_f008ccfebca6b1721ca65dcf50715dd5.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a7733a9637be92d1f239c18e2519fad4.html">windows</a></li><li class="navelem"><a class="el" href="dir_99913d7556e5a94f29732c68ac4f68e5.html">ottmp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,9 +72,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="pch_8hpp_source.html">pch.hpp</a>&quot;</code><br />
 <code>#include &quot;adapter.tmh&quot;</code><br />
-</div>
-<p><a href="adapter_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9a83a8b11f5d435ea6d5a5a8d03f71a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8hpp.html#ad9d4db533e1336118938ba7e0d1af6de">PAGED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a9a83a8b11f5d435ea6d5a5a8d03f71a6">_IRQL_requires_max_</a> (PASSIVE_LEVEL) NDIS_STATUS AdapterInitialize(_In_ NDIS_HANDLE MiniportAdapterHandle</td></tr>
@@ -88,7 +87,7 @@ Functions</h2></td></tr>
 <tr class="separator:a5298c7dadfe7d180498c6c1ca38c132e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa5ecad969a97fcf19db42fba5ac6e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a5aa5ecad969a97fcf19db42fba5ac6e5">memcpy</a> (AdapterGeneral.PermanentMacAddress, &amp;<a class="el" href="device_8cpp.html#a00007a8c02715a1de0f02f2831180066">AdapterContext</a>-&gt;ExtendedAddress, sizeof(<a class="el" href="device_8cpp.html#a00007a8c02715a1de0f02f2831180066">AdapterContext</a>-&gt;ExtendedAddress))</td></tr>
 <tr class="separator:a5aa5ecad969a97fcf19db42fba5ac6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a596156a4285dd480a17f8b5868ea0de5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a596156a4285dd480a17f8b5868ea0de5">while</a> (<a class="el" href="dw1000__types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</td></tr>
+<tr class="memitem:a596156a4285dd480a17f8b5868ea0de5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a596156a4285dd480a17f8b5868ea0de5">while</a> (<a class="el" href="dyld_8c.html#a60b3f18a83fe9b0270baf05ac9e2fbb4aa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>)</td></tr>
 <tr class="separator:a596156a4285dd480a17f8b5868ea0de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e74f432faec992e5dbe8ee29bfa7ba2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a9e74f432faec992e5dbe8ee29bfa7ba2">LogFuncExitNDIS</a> (DRIVER_DEFAULT, <a class="el" href="device_8cpp.html#aefb72b87b8faae31a53395e1f5145500">Status</a>)</td></tr>
 <tr class="separator:a9e74f432faec992e5dbe8ee29bfa7ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +166,7 @@ Variables</h2></td></tr>
 <tr class="separator:a66a799a3547bd21f2973bcb59c045d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4791f45eb751add38c33e5a61c33a25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="device_8cpp.html#a369927f21e1f892a309183ffaeee63ba">AdapterGeneral</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#ac4791f45eb751add38c33e5a61c33a25">IfType</a> = <a class="el" href="hardware_8hpp.html#a5082a64c20b70af286b6200f79ffd731">IF_TYPE_IEEE802154</a></td></tr>
 <tr class="separator:ac4791f45eb751add38c33e5a61c33a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff30eef739edef4fc635bd5848c7d76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="device_8cpp.html#a369927f21e1f892a309183ffaeee63ba">AdapterGeneral</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a1ff30eef739edef4fc635bd5848c7d76">IfConnectorPresent</a> = <a class="el" href="dw1000__types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memitem:a1ff30eef739edef4fc635bd5848c7d76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="device_8cpp.html#a369927f21e1f892a309183ffaeee63ba">AdapterGeneral</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a1ff30eef739edef4fc635bd5848c7d76">IfConnectorPresent</a> = <a class="el" href="dyld_8c.html#a60b3f18a83fe9b0270baf05ac9e2fbb4aa82764c3079aea4e60c80e45befbb839">TRUE</a></td></tr>
 <tr class="separator:a1ff30eef739edef4fc635bd5848c7d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabac9941c294722313baf185335844c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="device_8cpp.html#a369927f21e1f892a309183ffaeee63ba">AdapterGeneral</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#aabac9941c294722313baf185335844c0">SupportedStatistics</a> = <a class="el" href="hardware_8hpp.html#a3469b0a8fb7502dfdb3fa138e637b294">NIC_SUPPORTED_STATISTICS</a></td></tr>
 <tr class="separator:aabac9941c294722313baf185335844c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +186,7 @@ Variables</h2></td></tr>
 <tr class="separator:a966f657c7d70e03ccaab34d970a3e892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad56538bc58ae4dc5f09a43bee1001c46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8hpp.html#ad9d4db533e1336118938ba7e0d1af6de">PAGED</a> _In_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#ad56538bc58ae4dc5f09a43bee1001c46">PNDIS_MINIPORT_RESTART_PARAMETERS</a></td></tr>
 <tr class="separator:ad56538bc58ae4dc5f09a43bee1001c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad45d5ab61a1a29c72458e3e9a5f77ecf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="device_8cpp.html#a00007a8c02715a1de0f02f2831180066">AdapterContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#ad45d5ab61a1a29c72458e3e9a5f77ecf">IsRunning</a> = <a class="el" href="stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></td></tr>
+<tr class="memitem:ad45d5ab61a1a29c72458e3e9a5f77ecf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="device_8cpp.html#a00007a8c02715a1de0f02f2831180066">AdapterContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#ad45d5ab61a1a29c72458e3e9a5f77ecf">IsRunning</a> = <a class="el" href="wrap__stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></td></tr>
 <tr class="separator:ad45d5ab61a1a29c72458e3e9a5f77ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9611b3a00430a86619b5923de30f9fdb"><td class="memItemLeft" align="right" valign="top">return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a></td></tr>
 <tr class="separator:a9611b3a00430a86619b5923de30f9fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,8 +195,6 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This module implements code to manage the NETADAPTER object for the network adapter. </p>
-
-<p class="definition">Definition in file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae4f3bff04e8245d2a0a7d19ae7761366"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4f3bff04e8245d2a0a7d19ae7761366">&#9670;&nbsp;</a></span>_IRQL_requires_()</h2>
@@ -214,8 +211,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00221">221</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -235,8 +230,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="address_8c_source.html#l00032">32</a> of file <a class="el" href="address_8c_source.html">address.c</a>.</p>
-
 </div>
 </div>
 <a id="a5298c7dadfe7d180498c6c1ca38c132e"></a>
@@ -254,8 +247,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00092">92</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -393,8 +384,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00462">462</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a4a0c8e3fdb26639826833231428ae74b"></a>
@@ -428,8 +417,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00497">497</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -470,8 +457,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00372">372</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +504,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">while </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="dw1000__types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="dyld_8c.html#a60b3f18a83fe9b0270baf05ac9e2fbb4aa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -541,8 +526,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00170">170</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a256d81a4ae76cdb853c6a61314a5d994"></a>
@@ -556,10 +539,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    NDIS_STATUS <a class="code" href="adapter_8cpp.html#aefb72b87b8faae31a53395e1f5145500">Status</a></div><div class="ttc" id="adapter_8cpp_html_aefb72b87b8faae31a53395e1f5145500"><div class="ttname"><a href="adapter_8cpp.html#aefb72b87b8faae31a53395e1f5145500">Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> <a href="adapter_8cpp_source.html#l00088">adapter.cpp:88</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    NDIS_STATUS <a class="code" href="adapter_8cpp.html#aefb72b87b8faae31a53395e1f5145500">Status</a></div><div class="ttc" id="adapter_8cpp_html_aefb72b87b8faae31a53395e1f5145500"><div class="ttname"><a href="adapter_8cpp.html#aefb72b87b8faae31a53395e1f5145500">Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> adapter.cpp:88</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00063">63</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a369927f21e1f892a309183ffaeee63ba"></a>
@@ -573,8 +554,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00073">73</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -590,8 +569,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00084">84</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ac79b3a44551d971294973d3591b23f65"></a>
@@ -605,8 +582,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00190">190</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -622,8 +597,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00172">172</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a0f117bfb8032ae50f563d92ade0035cc"></a>
@@ -637,8 +610,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00178">178</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -654,8 +625,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00177">177</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a5fad3b39b46052765e0432f6f9b22f2d"></a>
@@ -669,8 +638,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00171">171</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -686,8 +653,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES AdapterRegistration = { 0 }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00071">71</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1ff30eef739edef4fc635bd5848c7d76"></a>
@@ -697,12 +662,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="device_8cpp.html#a369927f21e1f892a309183ffaeee63ba">AdapterGeneral</a> IfConnectorPresent = <a class="el" href="dw1000__types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
+          <td class="memname"><a class="el" href="device_8cpp.html#a369927f21e1f892a309183ffaeee63ba">AdapterGeneral</a> IfConnectorPresent = <a class="el" href="dyld_8c.html#a60b3f18a83fe9b0270baf05ac9e2fbb4aa82764c3079aea4e60c80e45befbb839">TRUE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00174">174</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -718,8 +681,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00173">173</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aab60cbbe9a81fa58851e31862962712e"></a>
@@ -734,8 +695,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00085">85</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ad45d5ab61a1a29c72458e3e9a5f77ecf"></a>
@@ -745,12 +704,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="device_8cpp.html#a00007a8c02715a1de0f02f2831180066">AdapterContext</a> IsRunning = <a class="el" href="stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></td>
+          <td class="memname"><a class="el" href="device_8cpp.html#a00007a8c02715a1de0f02f2831180066">AdapterContext</a> IsRunning = <a class="el" href="wrap__stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00298">298</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -766,8 +723,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00147">147</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1d4e51ecd4ff19838f26081b5a6c9336"></a>
@@ -781,8 +736,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00161">161</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -798,8 +751,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00149">149</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="af0d1aa65cf14624364282c09ad3db757"></a>
@@ -813,8 +764,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00160">160</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -830,8 +779,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00125">125</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a0ef9f3ae711eeceae90631935ba67ec4"></a>
@@ -845,8 +792,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00123">123</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -862,8 +807,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00127">127</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a9b1d7d390d930d759b408a80f1ab4677"></a>
@@ -877,8 +820,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00128">128</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -894,8 +835,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00110">110</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1395eed11fc63b33a31f9bd6667cb259"></a>
@@ -909,8 +848,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00083">83</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -926,8 +863,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00122">122</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ae957fb64b44917f3b71ab497df089688"></a>
@@ -941,8 +876,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00115">115</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -958,8 +891,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00074">74</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a908265dbc4ad91fe1f09272bfdc62eb7"></a>
@@ -973,10 +904,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    NDIS_STATUS <a class="code" href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a> = NDIS_STATUS_SUCCESS</div><div class="ttc" id="adapter_8cpp_html_a9611b3a00430a86619b5923de30f9fdb"><div class="ttname"><a href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a></div><div class="ttdeci">return status</div><div class="ttdef"><b>Definition:</b> <a href="adapter_8cpp_source.html#l00302">adapter.cpp:302</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    NDIS_STATUS <a class="code" href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a> = NDIS_STATUS_SUCCESS</div><div class="ttc" id="adapter_8cpp_html_a9611b3a00430a86619b5923de30f9fdb"><div class="ttname"><a href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a></div><div class="ttdeci">return status</div><div class="ttdef"><b>Definition:</b> adapter.cpp:302</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00355">355</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ad56538bc58ae4dc5f09a43bee1001c46"></a>
@@ -990,10 +919,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    NDIS_STATUS <a class="code" href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a> = NDIS_STATUS_SUCCESS</div><div class="ttc" id="adapter_8cpp_html_a9611b3a00430a86619b5923de30f9fdb"><div class="ttname"><a href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a></div><div class="ttdeci">return status</div><div class="ttdef"><b>Definition:</b> <a href="adapter_8cpp_source.html#l00302">adapter.cpp:302</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    NDIS_STATUS <a class="code" href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a> = NDIS_STATUS_SUCCESS</div><div class="ttc" id="adapter_8cpp_html_a9611b3a00430a86619b5923de30f9fdb"><div class="ttname"><a href="adapter_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a></div><div class="ttdeci">return status</div><div class="ttdef"><b>Definition:</b> adapter.cpp:302</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00289">289</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a0b0e064409901ac520242973d54a4f2d"></a>
@@ -1007,8 +934,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00148">148</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1024,8 +949,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00201">201</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aca6a2e63ec7736a52c9156244c4aeda2"></a>
@@ -1039,8 +962,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00126">126</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1056,8 +977,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00169">169</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aa4c0a2b244658692c0651cf59871f028"></a>
@@ -1071,8 +990,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00081">81</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1088,8 +1005,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00080">80</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aefb72b87b8faae31a53395e1f5145500"></a>
@@ -1104,8 +1019,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= NdisMSetMiniportAttributes(</div><div class="line">            MiniportAdapterHandle,</div><div class="line">            (PNDIS_MINIPORT_ADAPTER_ATTRIBUTES)&amp;AdapterRegistration)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00088">88</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a9611b3a00430a86619b5923de30f9fdb"></a>
@@ -1119,8 +1032,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00302">302</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1136,8 +1047,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00188">188</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aec61d0d52952ce351bb530afeddbb64e"></a>
@@ -1151,8 +1060,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00189">189</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1168,8 +1075,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00150">150</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a89e6c51b7911351308e1162d348e825e"></a>
@@ -1183,8 +1088,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00176">176</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1200,8 +1103,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00175">175</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aba6d530040b7111b7856fed20e0b944d"></a>
@@ -1215,8 +1116,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00079">79</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1232,14 +1131,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adapter_8cpp_source.html#l00124">124</a> of file <a class="el" href="adapter_8cpp_source.html">adapter.cpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

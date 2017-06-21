@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/drivers/windows/otLwf/filter.h File Reference</title>
+<title>OT-DW1000: openthread-master/examples/drivers/windows/otLwf/filter.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_757d408b91fe77c0d6541574880c2422.html">drivers</a></li><li class="navelem"><a class="el" href="dir_2241398f140824e7a05e00f2ce66418d.html">windows</a></li><li class="navelem"><a class="el" href="dir_a0359699c7e7a236fc9778c284a07817.html">otLwf</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_f008ccfebca6b1721ca65dcf50715dd5.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a7733a9637be92d1f239c18e2519fad4.html">windows</a></li><li class="navelem"><a class="el" href="dir_bfd46bc989430388275c68f6255e9095.html">otLwf</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -108,8 +109,6 @@ Macros</h2></td></tr>
 <tr class="separator:aecc16bb818b09b509271cc8bfebb865a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3815b170cb49e1932ea977e286a2837e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a3815b170cb49e1932ea977e286a2837e">OT_EVENT_TIMER_FIRED</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a3815b170cb49e1932ea977e286a2837e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3091e78eee75f0abe22772d25b6c1c5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a3091e78eee75f0abe22772d25b6c1c5d">MAX_PENDING_MAC_SIZE</a>&#160;&#160;&#160;32</td></tr>
-<tr class="separator:a3091e78eee75f0abe22772d25b6c1c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -198,8 +197,6 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines the structures and functions for the otLwf Filter instance. </p>
-
-<p class="definition">Definition in file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aab9817adcf9533112501a00ef9111587"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab9817adcf9533112501a00ef9111587">&#9670;&nbsp;</a></span>FILTER_ACQUIRE_LOCK</h2>
@@ -226,10 +223,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                           \</div><div class="line">    if (<a class="code" href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a>) { NdisDprAcquireSpinLock(_pLock); }  \</div><div class="line">    else               { NdisAcquireSpinLock(_pLock);    }  \</div><div class="line">}</div><div class="ttc" id="command_8h_html_ae411acbf0d4d6e3666c748d89e9ae770"><div class="ttname"><a href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a></div><div class="ttdeci">_In_ BOOLEAN DispatchLevel</div><div class="ttdef"><b>Definition:</b> <a href="command_8h_source.html#l00069">command.h:69</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                           \</div><div class="line">    if (<a class="code" href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a>) { NdisDprAcquireSpinLock(_pLock); }  \</div><div class="line">    else               { NdisAcquireSpinLock(_pLock);    }  \</div><div class="line">}</div><div class="ttc" id="command_8h_html_ae411acbf0d4d6e3666c748d89e9ae770"><div class="ttname"><a href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a></div><div class="ttdeci">_In_ BOOLEAN DispatchLevel</div><div class="ttdef"><b>Definition:</b> command.h:69</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00056">56</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a5ff38d8b2b0c4c5009728dd514ca8dc2"></a>
@@ -258,8 +253,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00049">49</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="afdb2a1b83968059e97f99af800381336"></a>
@@ -277,8 +270,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00053">53</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -298,8 +289,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00051">51</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a6885e0873721c1133f07e858e264dc5a"></a>
@@ -317,8 +306,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00052">52</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -347,26 +334,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                           \</div><div class="line">    if (<a class="code" href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a>) { NdisDprReleaseSpinLock(_pLock); }  \</div><div class="line">    else               { NdisReleaseSpinLock(_pLock);    }  \</div><div class="line">}</div><div class="ttc" id="command_8h_html_ae411acbf0d4d6e3666c748d89e9ae770"><div class="ttname"><a href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a></div><div class="ttdeci">_In_ BOOLEAN DispatchLevel</div><div class="ttdef"><b>Definition:</b> <a href="command_8h_source.html#l00069">command.h:69</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                           \</div><div class="line">    if (<a class="code" href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a>) { NdisDprReleaseSpinLock(_pLock); }  \</div><div class="line">    else               { NdisReleaseSpinLock(_pLock);    }  \</div><div class="line">}</div><div class="ttc" id="command_8h_html_ae411acbf0d4d6e3666c748d89e9ae770"><div class="ttname"><a href="command_8h.html#ae411acbf0d4d6e3666c748d89e9ae770">DispatchLevel</a></div><div class="ttdeci">_In_ BOOLEAN DispatchLevel</div><div class="ttdef"><b>Definition:</b> command.h:69</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00063">63</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
-</div>
-</div>
-<a id="a3091e78eee75f0abe22772d25b6c1c5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3091e78eee75f0abe22772d25b6c1c5d">&#9670;&nbsp;</a></span>MAX_PENDING_MAC_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_PENDING_MAC_SIZE&#160;&#160;&#160;32</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00114">114</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a3815b170cb49e1932ea977e286a2837e"></a>
@@ -380,8 +349,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00112">112</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -397,8 +364,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00110">110</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="aecc16bb818b09b509271cc8bfebb865a"></a>
@@ -412,8 +377,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00111">111</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -429,8 +392,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00044">44</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a2fbf9fef324275fafc4cf70d8f094fa7"></a>
@@ -444,8 +405,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00047">47</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -539,8 +498,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a70d5ffe51e28da291813644c515c6f99affc6df387d821bfce60cefca4b18dc8e"></a>FilterRunning&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00073">73</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a4266d85f4f7850ef3600766001532376"></a>
@@ -562,8 +519,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a4266d85f4f7850ef3600766001532376ad20a307749488107f1d01ca118c32c2d"></a>OTLWF_DEVICE_CAP_THREAD_1_0&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00082">82</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a2caf8f9671545246117fa87cea937fd1"></a>
@@ -582,8 +537,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a2caf8f9671545246117fa87cea937fd1a66f33c1d17f7bd10f5ae240424f9e074"></a>OTLWF_DEVICE_STATUS_RADIO_MODE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2caf8f9671545246117fa87cea937fd1a3f0280d8b469cbb8ceb8127d3a016375"></a>OTLWF_DEVICE_STATUS_THREAD_MODE&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00102">102</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -622,8 +575,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="command_8c_source.html#l00199">199</a> of file <a class="el" href="command_8c_source.html">command.c</a>.</p>
-
 </div>
 </div>
 <a id="aaa13f8ea7fa1df3e2e262620365315b1"></a>
@@ -641,8 +592,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="address_8c_source.html#l00032">32</a> of file <a class="el" href="address_8c_source.html">address.c</a>.</p>
 
 </div>
 </div>
@@ -672,8 +621,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="address_8c_source.html#l00172">172</a> of file <a class="el" href="address_8c_source.html">address.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -689,8 +636,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00367">367</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a11974842f99fe330c2740c7b4f4b6ad5"></a>
@@ -704,8 +649,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00290">290</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -721,8 +664,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00299">299</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a6c72c4b2d4a782006351b6160a149ad5"></a>
@@ -736,8 +677,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00291">291</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -753,8 +692,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00293">293</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a1f96731b13a56b0f353100811415bfd2"></a>
@@ -768,8 +705,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00298">298</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -785,8 +720,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00292">292</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="adadc8a43a5a8d8c873f20297d9b3f82b"></a>
@@ -800,8 +733,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00296">296</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -817,8 +748,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00295">295</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a243ba81985a7a627108021ae36d217b7"></a>
@@ -832,8 +761,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00297">297</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -849,8 +776,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00294">294</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a0cd63df3ed5d8b27ffec00ecb03a5c7e"></a>
@@ -864,8 +789,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00310">310</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -881,8 +804,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00338">338</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="ad8b3514b5ddebede591281dcf15dc2bc"></a>
@@ -896,8 +817,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00346">346</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -913,8 +832,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00321">321</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 <a id="a6282f891e4b2d2f5bc82f7111c54c323"></a>
@@ -928,8 +845,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00338">338</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
 
 </div>
 </div>
@@ -945,14 +860,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filter_8h_source.html#l00367">367</a> of file <a class="el" href="filter_8h_source.html">filter.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

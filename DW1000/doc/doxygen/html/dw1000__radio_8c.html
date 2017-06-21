@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/dw1000/dw1000_radio.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/dw1000/dw1000_radio.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_54cf2e83e5b87842a7a2d0f9b135db20.html">dw1000</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_5c0f6912ec1f04b679e4805ea1ee3c51.html">dw1000</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,26 +72,24 @@ $(function() {
 <div class="title">dw1000_radio.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="stdbool_8h_source.html">stdbool.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;openthread-config.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="stdbool_8h_source.html">stdbool.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8hpp_source.html">common/logging.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="platform-config_8h_source.html">platform-config.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="logging_8h_source.html">platform/logging.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2radio_8h_source.html">platform/radio.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="diag_8h_source.html">platform/diag.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">openthread/platform/logging.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2openthread_2platform_2radio_8h_source.html">openthread/platform/radio.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="platform_2diag_8h_source.html">openthread/platform/diag.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="openthread-core-config_8h_source.html">openthread-core-config.h</a>&gt;</code><br />
-<code>#include &lt;openthread-config.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8h_source.html">openthread/types.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="dw1000__device__api_8h_source.html">dw1000_device_api.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dw1000__driver_8h_source.html">dw1000_driver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dw1000__radio_8h_source.html">dw1000_radio.h</a>&quot;</code><br />
-</div>
-<p><a href="dw1000__radio_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:aa3f3343dcf960c24707fe2a29b41e738"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__radio_8c.html#aa3f3343dcf960c24707fe2a29b41e738">SHORT_ADDRESS_SIZE</a>&#160;&#160;&#160;2</td></tr>
@@ -101,30 +100,37 @@ Macros</h2></td></tr>
 <tr class="separator:ab7218f824d50a8917383134864877f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb171c547d30ccd9fc938b67f083490"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__radio_8c.html#aebb171c547d30ccd9fc938b67f083490">ACK_HEADER_WITHOUT_PENDING</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:aebb171c547d30ccd9fc938b67f083490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0b2ed630b1fe78942e43852553993a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__radio_8c.html#aa0b2ed630b1fe78942e43852553993a3">SRC_ADDR_TYPE_EXTENDED</a>&#160;&#160;&#160;0xc0</td></tr>
-<tr class="separator:aa0b2ed630b1fe78942e43852553993a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af14f5f966f316736e39da8828676c180"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__radio_8c.html#af14f5f966f316736e39da8828676c180">SRC_ADDR_TYPE_MASK</a>&#160;&#160;&#160;0xc0</td></tr>
-<tr class="separator:af14f5f966f316736e39da8828676c180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2b1da3743a2d670585c3239740858c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__radio_8c.html#af2b1da3743a2d670585c3239740858c8">SRC_ADDR_TYPE_OFFSET</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:af2b1da3743a2d670585c3239740858c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a226ae1962dc45fbfc58892c3f5aa1825"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__radio_8c.html#a226ae1962dc45fbfc58892c3f5aa1825">SRC_ADDR_TYPE_SHORT</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="separator:a226ae1962dc45fbfc58892c3f5aa1825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aac34dfe6c6b73b43a4656c9dce041034"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034a2863251e464d4e2416f2b8eb414d0bcc">IEEE802154_MIN_LENGTH</a> = 5, 
-<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034ac5715a1258af4bae6c122ff103ccebc1">IEEE802154_MAX_LENGTH</a> = 127, 
-<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034a325c2f06e2d3d180cb70c1fb208c43c5">IEEE802154_ACK_LENGTH</a> = 5, 
-<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1ddb4ddb899b414d2b90664a8f379ec8">IEEE802154_FRAME_TYPE_MASK</a> = 0x7, 
+<tr class="memitem:a4790f45dcc812c1b00184a2edccdddf5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a2863251e464d4e2416f2b8eb414d0bcc">IEEE802154_MIN_LENGTH</a> = 5, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5ac5715a1258af4bae6c122ff103ccebc1">IEEE802154_MAX_LENGTH</a> = 127, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a325c2f06e2d3d180cb70c1fb208c43c5">IEEE802154_ACK_LENGTH</a> = 5, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5acd5ec548c6199b61912ed8a15df3b486">IEEE802154_FRAME_TYPE_ACK</a> = 2 &lt;&lt; 0, 
 <br />
-&#160;&#160;<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034acd5ec548c6199b61912ed8a15df3b486">IEEE802154_FRAME_TYPE_ACK</a> = 0x2, 
-<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034ae5534c11221bca4a214293da22fe2065">IEEE802154_FRAME_PENDING</a> = 1 &lt;&lt; 4, 
-<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034a4d61326f9b63e115b2b900d89879f2cc">IEEE802154_ACK_REQUEST</a> = 1 &lt;&lt; 5, 
-<a class="el" href="dw1000__radio_8c.html#aac34dfe6c6b73b43a4656c9dce041034a77b48735c5a54c3ea616b8d09de592f1">IEEE802154_DSN_OFFSET</a> = 2
+&#160;&#160;<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5af2c16bcc694e017e5bed72d9d7d939b6">IEEE802154_FRAME_TYPE_MACCMD</a> = 3 &lt;&lt; 0, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1ddb4ddb899b414d2b90664a8f379ec8">IEEE802154_FRAME_TYPE_MASK</a> = 7 &lt;&lt; 0, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5ac6105e0d71e791f4a3d271f68c1b76fe">IEEE802154_SECURITY_ENABLED</a> = 1 &lt;&lt; 3, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5ae5534c11221bca4a214293da22fe2065">IEEE802154_FRAME_PENDING</a> = 1 &lt;&lt; 4, 
+<br />
+&#160;&#160;<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a4d61326f9b63e115b2b900d89879f2cc">IEEE802154_ACK_REQUEST</a> = 1 &lt;&lt; 5, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1b21442403c3b25803028dbc6b957622">IEEE802154_DST_ADDR_NONE</a> = 0 &lt;&lt; 2, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5ae2f8c7571e6365fc42ae859c0e313a66">IEEE802154_DST_ADDR_SHORT</a> = 2 &lt;&lt; 2, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a847bc55afa0d1a08394fd14ce046dc84">IEEE802154_DST_ADDR_EXT</a> = 3 &lt;&lt; 2, 
+<br />
+&#160;&#160;<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a61f67ebd48f9187d406c6efb6df7d51d">IEEE802154_DST_ADDR_MASK</a> = 3 &lt;&lt; 2, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5ae54f78eac1a21fc47bfcb1a62e6854d3">IEEE802154_SRC_ADDR_NONE</a> = 0 &lt;&lt; 6, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a0db9b0ecfaa0710bd491885da8967612">IEEE802154_SRC_ADDR_SHORT</a> = 2 &lt;&lt; 6, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a01656990235aaaff55a7afefb34d934a">IEEE802154_SRC_ADDR_EXT</a> = 3 &lt;&lt; 6, 
+<br />
+&#160;&#160;<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a94b997a648f4923e12a875d8810a0293">IEEE802154_SRC_ADDR_MASK</a> = 3 &lt;&lt; 6, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a77b48735c5a54c3ea616b8d09de592f1">IEEE802154_DSN_OFFSET</a> = 2, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a48dbca4122e9f8b18d43bb2eeb617327">IEEE802154_DSTPAN_OFFSET</a> = 3, 
+<a class="el" href="dw1000__radio_8c.html#a4790f45dcc812c1b00184a2edccdddf5a80f9a489707e2fcc67ea2148035df957">IEEE802154_DSTADDR_OFFSET</a> = 5
 <br />
  }</td></tr>
-<tr class="separator:aac34dfe6c6b73b43a4656c9dce041034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4790f45dcc812c1b00184a2edccdddf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -148,18 +154,18 @@ Functions</h2></td></tr>
 <tr class="separator:aea43c643e5e42dd50182664cdd645850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf26840dd6a3c6bd1da7156127c8306f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaf26840dd6a3c6bd1da7156127c8306f5">otPlatRadioIsEnabled</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:gaf26840dd6a3c6bd1da7156127c8306f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2f1f79b0fe0bb9015fd996c723ed52e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gad2f1f79b0fe0bb9015fd996c723ed52e">otPlatRadioEnable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:gad2f1f79b0fe0bb9015fd996c723ed52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b14c6db562150d0a80c47ef278e5ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5b14c6db562150d0a80c47ef278e5ab8">otPlatRadioDisable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ga5b14c6db562150d0a80c47ef278e5ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga979f5ee2e63f0cba66f372149b2ac013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga979f5ee2e63f0cba66f372149b2ac013">otPlatRadioSleep</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ga979f5ee2e63f0cba66f372149b2ac013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga063a389dc7d1e68cbe495cc3cff758c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga063a389dc7d1e68cbe495cc3cff758c1">otPlatRadioReceive</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
-<tr class="separator:ga063a389dc7d1e68cbe495cc3cff758c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03fb7cf07043b47e23735e490b6372a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga03fb7cf07043b47e23735e490b6372a0">otPlatRadioTransmit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aPacket)</td></tr>
-<tr class="separator:ga03fb7cf07043b47e23735e490b6372a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe1fdf44907fccdb06be0db517d4fb01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gafe1fdf44907fccdb06be0db517d4fb01">otPlatRadioGetTransmitBuffer</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:gafe1fdf44907fccdb06be0db517d4fb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfe31d09ed784e1799cb43187b302c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gabfe31d09ed784e1799cb43187b302c8d">otPlatRadioEnable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gabfe31d09ed784e1799cb43187b302c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0fef7e3418e4568f9b568f65848eff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gad0fef7e3418e4568f9b568f65848eff0">otPlatRadioDisable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gad0fef7e3418e4568f9b568f65848eff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b64d6357b07b8db540e3679155285b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga4b64d6357b07b8db540e3679155285b2">otPlatRadioSleep</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga4b64d6357b07b8db540e3679155285b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga315627b370d8ff89ea101d6529911be7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga315627b370d8ff89ea101d6529911be7">otPlatRadioReceive</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
+<tr class="separator:ga315627b370d8ff89ea101d6529911be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcd90257ecef86b069b91987c53da694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gadcd90257ecef86b069b91987c53da694">otPlatRadioTransmit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aPacket)</td></tr>
+<tr class="separator:gadcd90257ecef86b069b91987c53da694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeab4fb61100d446642492d8fbe58dea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaaeab4fb61100d446642492d8fbe58dea">otPlatRadioGetTransmitBuffer</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gaaeab4fb61100d446642492d8fbe58dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ac10bba73d06f59af623bbb3349d3fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga4ac10bba73d06f59af623bbb3349d3fb">otPlatRadioGetRssi</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga4ac10bba73d06f59af623bbb3349d3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a5999dadb6ac0ee70a69a960930f132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5a5999dadb6ac0ee70a69a960930f132">otPlatRadioGetCaps</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
@@ -172,24 +178,28 @@ Functions</h2></td></tr>
 <tr class="separator:a6390eec1a0ad511ef04dacda30e9bbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb1f75e02a0c91b2db8e1325e8575861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gabb1f75e02a0c91b2db8e1325e8575861">otPlatRadioEnableSrcMatch</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aEnable)</td></tr>
 <tr class="separator:gabb1f75e02a0c91b2db8e1325e8575861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e1cf45dd77ef0608056f2e9cf992d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5e1cf45dd77ef0608056f2e9cf992d8d">otPlatRadioAddSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
-<tr class="separator:ga5e1cf45dd77ef0608056f2e9cf992d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f24dc46cba2235b6dea0670df50a5c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga3f24dc46cba2235b6dea0670df50a5c2">otPlatRadioAddSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
-<tr class="separator:ga3f24dc46cba2235b6dea0670df50a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga923d941e8a4d37be5d41de6be4fc275f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga923d941e8a4d37be5d41de6be4fc275f">otPlatRadioClearSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
-<tr class="separator:ga923d941e8a4d37be5d41de6be4fc275f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57238173bfc0ad9cce66e999f9ad3234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga57238173bfc0ad9cce66e999f9ad3234">otPlatRadioClearSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
-<tr class="separator:ga57238173bfc0ad9cce66e999f9ad3234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f53926a91fdef11329a8c3b2e3aecfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga8f53926a91fdef11329a8c3b2e3aecfc">otPlatRadioAddSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
+<tr class="separator:ga8f53926a91fdef11329a8c3b2e3aecfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac924003fc3bc21a86ab2e2efbbfdddc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gac924003fc3bc21a86ab2e2efbbfdddc3">otPlatRadioAddSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
+<tr class="separator:gac924003fc3bc21a86ab2e2efbbfdddc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89ec142cb8988bf06b825b9e85879460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga89ec142cb8988bf06b825b9e85879460">otPlatRadioClearSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
+<tr class="separator:ga89ec142cb8988bf06b825b9e85879460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9d428bf1e47845d327d48b910ab6c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga6c9d428bf1e47845d327d48b910ab6c2">otPlatRadioClearSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
+<tr class="separator:ga6c9d428bf1e47845d327d48b910ab6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95d8f1c200b49f481d117765ec7a66d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga95d8f1c200b49f481d117765ec7a66d4">otPlatRadioClearSrcMatchShortEntries</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga95d8f1c200b49f481d117765ec7a66d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f50253b5f4847da0444a001e014ba65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga3f50253b5f4847da0444a001e014ba65">otPlatRadioClearSrcMatchExtEntries</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga3f50253b5f4847da0444a001e014ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3b9ed222f4ad93e1d09e285b57be1ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gae3b9ed222f4ad93e1d09e285b57be1ef">otPlatRadioEnergyScan</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aScanChannel, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aScanDuration)</td></tr>
-<tr class="separator:gae3b9ed222f4ad93e1d09e285b57be1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc070f8dc28f13a78e621b8131f4762"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga9fc070f8dc28f13a78e621b8131f4762">otPlatRadioEnergyScan</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aScanChannel, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aScanDuration)</td></tr>
+<tr class="separator:ga9fc070f8dc28f13a78e621b8131f4762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26b108e2296d5514a2391960b4231d71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dw1000__radio_8c.html#a26b108e2296d5514a2391960b4231d71">GPIOTE_IRQHandler</a> (void)</td></tr>
 <tr class="separator:a26b108e2296d5514a2391960b4231d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga201cd343c329416357a9911245731b1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga201cd343c329416357a9911245731b1c">otPlatRadioPrintBuf</a> (<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *abuffer)</td></tr>
 <tr class="separator:ga201cd343c329416357a9911245731b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a3c8fe726a4ab0b28435b2f7b0bb8dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5a3c8fe726a4ab0b28435b2f7b0bb8dd">otPlatRadioSetDefaultTxPower</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aPower)</td></tr>
+<tr class="separator:ga5a3c8fe726a4ab0b28435b2f7b0bb8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71b5cc59aaead9fc2e42b4907392a664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga71b5cc59aaead9fc2e42b4907392a664">otPlatRadioGetReceiveSensitivity</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga71b5cc59aaead9fc2e42b4907392a664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -202,8 +212,6 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements the <a class="el" href="namespace_open_thread.html">OpenThread</a> platform abstraction for radio communication. </p>
-
-<p class="definition">Definition in file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab7218f824d50a8917383134864877f0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7218f824d50a8917383134864877f0a">&#9670;&nbsp;</a></span>ACK_HEADER_WITH_PENDING</h2>
@@ -216,8 +224,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00059">59</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
 
 </div>
 </div>
@@ -233,8 +239,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00060">60</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 <a id="aaebdbdcb70d0753b6f2c332483cd72a4"></a>
@@ -248,8 +252,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00057">57</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
 
 </div>
 </div>
@@ -265,77 +267,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00056">56</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
-</div>
-</div>
-<a id="aa0b2ed630b1fe78942e43852553993a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0b2ed630b1fe78942e43852553993a3">&#9670;&nbsp;</a></span>SRC_ADDR_TYPE_EXTENDED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SRC_ADDR_TYPE_EXTENDED&#160;&#160;&#160;0xc0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00061">61</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
-</div>
-</div>
-<a id="af14f5f966f316736e39da8828676c180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af14f5f966f316736e39da8828676c180">&#9670;&nbsp;</a></span>SRC_ADDR_TYPE_MASK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SRC_ADDR_TYPE_MASK&#160;&#160;&#160;0xc0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00062">62</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
-</div>
-</div>
-<a id="af2b1da3743a2d670585c3239740858c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b1da3743a2d670585c3239740858c8">&#9670;&nbsp;</a></span>SRC_ADDR_TYPE_OFFSET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SRC_ADDR_TYPE_OFFSET&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00063">63</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
-</div>
-</div>
-<a id="a226ae1962dc45fbfc58892c3f5aa1825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a226ae1962dc45fbfc58892c3f5aa1825">&#9670;&nbsp;</a></span>SRC_ADDR_TYPE_SHORT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SRC_ADDR_TYPE_SHORT&#160;&#160;&#160;0x80</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00064">64</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="aac34dfe6c6b73b43a4656c9dce041034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac34dfe6c6b73b43a4656c9dce041034">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a4790f45dcc812c1b00184a2edccdddf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4790f45dcc812c1b00184a2edccdddf5">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,17 +282,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034a2863251e464d4e2416f2b8eb414d0bcc"></a>IEEE802154_MIN_LENGTH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034ac5715a1258af4bae6c122ff103ccebc1"></a>IEEE802154_MAX_LENGTH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034a325c2f06e2d3d180cb70c1fb208c43c5"></a>IEEE802154_ACK_LENGTH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034a1ddb4ddb899b414d2b90664a8f379ec8"></a>IEEE802154_FRAME_TYPE_MASK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034acd5ec548c6199b61912ed8a15df3b486"></a>IEEE802154_FRAME_TYPE_ACK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034ae5534c11221bca4a214293da22fe2065"></a>IEEE802154_FRAME_PENDING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034a4d61326f9b63e115b2b900d89879f2cc"></a>IEEE802154_ACK_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac34dfe6c6b73b43a4656c9dce041034a77b48735c5a54c3ea616b8d09de592f1"></a>IEEE802154_DSN_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a2863251e464d4e2416f2b8eb414d0bcc"></a>IEEE802154_MIN_LENGTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ac5715a1258af4bae6c122ff103ccebc1"></a>IEEE802154_MAX_LENGTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a325c2f06e2d3d180cb70c1fb208c43c5"></a>IEEE802154_ACK_LENGTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5acd5ec548c6199b61912ed8a15df3b486"></a>IEEE802154_FRAME_TYPE_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5af2c16bcc694e017e5bed72d9d7d939b6"></a>IEEE802154_FRAME_TYPE_MACCMD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a1ddb4ddb899b414d2b90664a8f379ec8"></a>IEEE802154_FRAME_TYPE_MASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ac6105e0d71e791f4a3d271f68c1b76fe"></a>IEEE802154_SECURITY_ENABLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ae5534c11221bca4a214293da22fe2065"></a>IEEE802154_FRAME_PENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a4d61326f9b63e115b2b900d89879f2cc"></a>IEEE802154_ACK_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a1b21442403c3b25803028dbc6b957622"></a>IEEE802154_DST_ADDR_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ae2f8c7571e6365fc42ae859c0e313a66"></a>IEEE802154_DST_ADDR_SHORT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a847bc55afa0d1a08394fd14ce046dc84"></a>IEEE802154_DST_ADDR_EXT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a61f67ebd48f9187d406c6efb6df7d51d"></a>IEEE802154_DST_ADDR_MASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ae54f78eac1a21fc47bfcb1a62e6854d3"></a>IEEE802154_SRC_ADDR_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a0db9b0ecfaa0710bd491885da8967612"></a>IEEE802154_SRC_ADDR_SHORT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a01656990235aaaff55a7afefb34d934a"></a>IEEE802154_SRC_ADDR_EXT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a94b997a648f4923e12a875d8810a0293"></a>IEEE802154_SRC_ADDR_MASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a77b48735c5a54c3ea616b8d09de592f1"></a>IEEE802154_DSN_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a48dbca4122e9f8b18d43bb2eeb617327"></a>IEEE802154_DSTPAN_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a80f9a489707e2fcc67ea2148035df957"></a>IEEE802154_DSTADDR_OFFSET&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00066">66</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
 
 </div>
 </div>
@@ -377,8 +323,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00107">107</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 <a id="aea43c643e5e42dd50182664cdd645850"></a>
@@ -397,8 +341,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Intialization of DW1000 radio peripheral. </p>
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00195">195</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
 
 </div>
 </div>
@@ -419,8 +361,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Function for processing DW1000 Radio. </p>
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00338">338</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 <a id="aa2505cee34ad7057413ca3323f24755f"></a>
@@ -438,8 +378,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00095">95</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
 
 </div>
 </div>
@@ -459,8 +397,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00560">560</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 <a id="a4f39b4a2cba2571c9ec49cd294387417"></a>
@@ -479,8 +415,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00130">130</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -496,8 +430,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00093">93</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 <a id="ad3dee7391afc08d6d2c5c28b271fed5b"></a>
@@ -511,8 +443,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00088">88</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
 
 </div>
 </div>
@@ -528,14 +458,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00089">89</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

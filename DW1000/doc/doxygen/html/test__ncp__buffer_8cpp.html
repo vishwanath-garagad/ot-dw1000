@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tests/unit/test_ncp_buffer.cpp File Reference</title>
+<title>OT-DW1000: openthread-master/tests/unit/test_ncp_buffer.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7711e90abc3d4bd55823d9013a185d04.html">unit</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_8cddc98a40eca39295af8c55be011434.html">tests</a></li><li class="navelem"><a class="el" href="dir_a68a9469982966d32b5c56cd47770a06.html">unit</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -66,63 +67,106 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">test_ncp_buffer.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread/openthread.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="openthread-instance_8h_source.html">openthread-instance.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="message_8hpp_source.html">common/message.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ncp__buffer_8hpp_source.html">ncp/ncp_buffer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="test__util_8h_source.html">test_util.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="message_8hpp_source.html">common/message.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ncp__buffer_8hpp_source.html">ncp/ncp_buffer.hpp</a>&gt;</code><br />
-</div>
-<p><a href="test__ncp__buffer_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_1_1_callback_context.html">CallbackContext</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_1_1_callback_context.html">CallbackContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_thread"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html">Thread</a></td></tr>
+<tr class="memitem:namespaceot"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html">ot</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a65a8130020b0f5722cda500f2e67acc2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_thread.html#a65a8130020b0f5722cda500f2e67acc2afffdf5509602a35244ba4d934d34b167">kTestBufferSize</a> = 101, 
-<a class="el" href="namespace_thread.html#a65a8130020b0f5722cda500f2e67acc2abd3380b89ecbc3be3ebd165394d011c5">kTestIterationAttemps</a> = 120
+<tr class="memitem:ae7c221b877c671251f317a43dbea2583"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceot.html#ae7c221b877c671251f317a43dbea2583afffdf5509602a35244ba4d934d34b167">kTestBufferSize</a> = 2500, 
+<a class="el" href="namespaceot.html#ae7c221b877c671251f317a43dbea2583abd3380b89ecbc3be3ebd165394d011c5">kTestIterationAttemps</a> = 10000, 
+<a class="el" href="namespaceot.html#ae7c221b877c671251f317a43dbea2583a3ba632796407d1f8f7ba04048253b8fb">kTagArraySize</a> = 1000
  }</td></tr>
-<tr class="separator:a65a8130020b0f5722cda500f2e67acc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae7c221b877c671251f317a43dbea2583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa6e789ab8d8c920f2104ee8c183196"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceot.html#a0fa6e789ab8d8c920f2104ee8c183196a6c16c7a8ab0bc7fb57dcb89b27793b61">kFuzTestBufferSize</a> = 2000, 
+<a class="el" href="namespaceot.html#a0fa6e789ab8d8c920f2104ee8c183196afe9ce2c6b6909267aaf94caa32c3dd8f">kFuzTestIterationAttempts</a> = 500000, 
+<a class="el" href="namespaceot.html#a0fa6e789ab8d8c920f2104ee8c183196a07bb979bcb5fbef2473456853c09c98e">kLensArraySize</a> = 500, 
+<a class="el" href="namespaceot.html#a0fa6e789ab8d8c920f2104ee8c183196ad15e08558664c8618c5df8d8a72a6544">kMaxFrameLen</a> = 400, 
+<br />
+&#160;&#160;<a class="el" href="namespaceot.html#a0fa6e789ab8d8c920f2104ee8c183196aa531488aa1e8c6ad54c945c68bde9cba">kReadProbability</a> = 50, 
+<a class="el" href="namespaceot.html#a0fa6e789ab8d8c920f2104ee8c183196ab0169e7fd8b1fa51807172d7ca3f5dba">kUseTrueRandomNumberGenerator</a> = 1
+<br />
+ }</td></tr>
+<tr class="separator:a0fa6e789ab8d8c920f2104ee8c183196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a771858c02348b918466d87d54891aff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a771858c02348b918466d87d54891aff9">BufferDidGetEmptyCallback</a> (void *aContext, NcpFrameBuffer *aNcpBuffer)</td></tr>
-<tr class="separator:a771858c02348b918466d87d54891aff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed6086bb20ecab7ed8253dfc723170d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a3ed6086bb20ecab7ed8253dfc723170d">BufferDidGetNonEmptyCallback</a> (void *aContext, NcpFrameBuffer *aNcpBuffer)</td></tr>
-<tr class="separator:a3ed6086bb20ecab7ed8253dfc723170d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a115507da6ef9a0ab7af51d5f6dabddd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a115507da6ef9a0ab7af51d5f6dabddd9">DumpBuffer</a> (const char *aTextMessage, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aBuffer, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufferLength)</td></tr>
-<tr class="separator:a115507da6ef9a0ab7af51d5f6dabddd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0728d8bac67979866f7f99c04bd59c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#ae0728d8bac67979866f7f99c04bd59c4">ReadAndVerifyContent</a> (NcpFrameBuffer &amp;aNcpBuffer, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aContentBuffer, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufferLength)</td></tr>
-<tr class="separator:ae0728d8bac67979866f7f99c04bd59c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3507065e477954348e3870d1c282d5d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a3507065e477954348e3870d1c282d5d5">WriteTestFrame1</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
-<tr class="separator:a3507065e477954348e3870d1c282d5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8adc2051fc4b5f78cd12108562f719a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a8adc2051fc4b5f78cd12108562f719a2">VerifyAndRemoveFrame1</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
-<tr class="separator:a8adc2051fc4b5f78cd12108562f719a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeffd4ad3369d97ec146e5289110629a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#aeeffd4ad3369d97ec146e5289110629a">WriteTestFrame2</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
-<tr class="separator:aeeffd4ad3369d97ec146e5289110629a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c968b58a03bc25f43b0e265b45ea7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a09c968b58a03bc25f43b0e265b45ea7d">VerifyAndRemoveFrame2</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
-<tr class="separator:a09c968b58a03bc25f43b0e265b45ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe85f53650855e1f963521edc58a7f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#afe85f53650855e1f963521edc58a7f9d">WriteTestFrame3</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
-<tr class="separator:afe85f53650855e1f963521edc58a7f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2acc647505674d8404ed370b70fb6e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#ad2acc647505674d8404ed370b70fb6e9">VerifyAndRemoveFrame3</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
-<tr class="separator:ad2acc647505674d8404ed370b70fb6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56616427c047ccb3cfd9b53b354e97d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a56616427c047ccb3cfd9b53b354e97d9">TestNcpFrameBuffer</a> (void)</td></tr>
+<tr class="memitem:a19150dd4756e661e928e2abbd39a7a05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a19150dd4756e661e928e2abbd39a7a05">ClearTagHistory</a> (void)</td></tr>
+<tr class="separator:a19150dd4756e661e928e2abbd39a7a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8627a18b55f3621380374e0ddfb70fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#ad8627a18b55f3621380374e0ddfb70fc">AddTagToHistory</a> (NcpFrameBuffer::FrameTag aTag)</td></tr>
+<tr class="separator:ad8627a18b55f3621380374e0ddfb70fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0cfbd54131cfa6f9050e877e8665ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#afc0cfbd54131cfa6f9050e877e8665ea">VerifyAndRemoveTagFromHistory</a> (NcpFrameBuffer::FrameTag aTag)</td></tr>
+<tr class="separator:afc0cfbd54131cfa6f9050e877e8665ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda621490f8532dca2fcf29115603711"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#acda621490f8532dca2fcf29115603711">FrameAddedCallback</a> (void *aContext, NcpFrameBuffer::FrameTag aTag, NcpFrameBuffer *aNcpBuffer)</td></tr>
+<tr class="separator:acda621490f8532dca2fcf29115603711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48f434ef23978a42f7c7feb1c688e9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#af48f434ef23978a42f7c7feb1c688e9c">FrameRemovedCallback</a> (void *aContext, NcpFrameBuffer::FrameTag aTag, NcpFrameBuffer *aNcpBuffer)</td></tr>
+<tr class="separator:af48f434ef23978a42f7c7feb1c688e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b1146370d71ecb9bc1f51e4bcc5256"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#aa6b1146370d71ecb9bc1f51e4bcc5256">DumpBuffer</a> (const char *aTextMessage, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aBuffer, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufferLength)</td></tr>
+<tr class="separator:aa6b1146370d71ecb9bc1f51e4bcc5256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9245f6034161bb727bce3a1f39f985ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a9245f6034161bb727bce3a1f39f985ef">ReadAndVerifyContent</a> (NcpFrameBuffer &amp;aNcpBuffer, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aContentBuffer, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufferLength)</td></tr>
+<tr class="separator:a9245f6034161bb727bce3a1f39f985ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6a34e8bbd401a02a62d54db00a047b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a0a6a34e8bbd401a02a62d54db00a047b">WriteTestFrame1</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a0a6a34e8bbd401a02a62d54db00a047b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50610cf43785554d3992c13dd70bf1e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a50610cf43785554d3992c13dd70bf1e7">VerifyAndRemoveFrame1</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a50610cf43785554d3992c13dd70bf1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0734ffa0791aa20e3567c563a9598771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a0734ffa0791aa20e3567c563a9598771">WriteTestFrame2</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a0734ffa0791aa20e3567c563a9598771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12955c13393dd8a963cf3c779edf37ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a12955c13393dd8a963cf3c779edf37ef">VerifyAndRemoveFrame2</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a12955c13393dd8a963cf3c779edf37ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5488433ce89808717917611edd4dc0a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a5488433ce89808717917611edd4dc0a4">WriteTestFrame3</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a5488433ce89808717917611edd4dc0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967f0486b001b3ee037fa104b5c9d636"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a967f0486b001b3ee037fa104b5c9d636">VerifyAndRemoveFrame3</a> (NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a967f0486b001b3ee037fa104b5c9d636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56616427c047ccb3cfd9b53b354e97d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a56616427c047ccb3cfd9b53b354e97d9">TestNcpFrameBuffer</a> (void)</td></tr>
 <tr class="separator:a56616427c047ccb3cfd9b53b354e97d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6779e009397f91c40a6471f0fc1c72a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a6779e009397f91c40a6471f0fc1c72a4">GetRandom</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> max)</td></tr>
+<tr class="separator:a6779e009397f91c40a6471f0fc1c72a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2df478d07c337243349b30a4a0ee2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a2f2df478d07c337243349b30a4a0ee2c">WriteRandomFrame</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aLength, NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a2f2df478d07c337243349b30a4a0ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d3fed37117d616667caca4616914cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a04d3fed37117d616667caca4616914cd">ReadRandomFrame</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aLength, NcpFrameBuffer &amp;aNcpBuffer)</td></tr>
+<tr class="separator:a04d3fed37117d616667caca4616914cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632b25a824f97b6dacff18ebaaefffbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a632b25a824f97b6dacff18ebaaefffbe">TestFuzzNcpFrameBuffer</a> (void)</td></tr>
+<tr class="separator:a632b25a824f97b6dacff18ebaaefffbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__ncp__buffer_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af7731de55c2fc3bd73f1f6c95166a99f"><td class="memItemLeft" align="right" valign="top">CallbackContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#af7731de55c2fc3bd73f1f6c95166a99f">sContext</a></td></tr>
+<tr class="separator:af7731de55c2fc3bd73f1f6c95166a99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21420d2751c0bb5548acda5a75498a35"><td class="memItemLeft" align="right" valign="top">NcpFrameBuffer::FrameTag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a21420d2751c0bb5548acda5a75498a35">sTagHistoryArray</a> [kTagArraySize]</td></tr>
+<tr class="separator:a21420d2751c0bb5548acda5a75498a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcc2198b175f24ea6f1aa2f5e7ba294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a6fcc2198b175f24ea6f1aa2f5e7ba294">sTagHistoryHead</a> = 0</td></tr>
+<tr class="separator:a6fcc2198b175f24ea6f1aa2f5e7ba294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8896ec81ca552d4896e8a581dc504a83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a8896ec81ca552d4896e8a581dc504a83">sTagHistoryTail</a> = 0</td></tr>
+<tr class="separator:a8896ec81ca552d4896e8a581dc504a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b2492f82d021850072a54535b393b0"><td class="memItemLeft" align="right" valign="top">NcpFrameBuffer::FrameTag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a65b2492f82d021850072a54535b393b0">sExpectedRemovedTag</a> = NcpFrameBuffer::kInvalidTag</td></tr>
+<tr class="separator:a65b2492f82d021850072a54535b393b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e7b13a3024700c2dfaffb81dee0ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a59e7b13a3024700c2dfaffb81dee0ac1">sFrameBuffer</a> [kFuzTestBufferSize]</td></tr>
+<tr class="separator:a59e7b13a3024700c2dfaffb81dee0ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13a80bbdcc772dd696d62648d686388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#ab13a80bbdcc772dd696d62648d686388">sFrameBufferTailIndex</a> = 0</td></tr>
+<tr class="separator:ab13a80bbdcc772dd696d62648d686388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
@@ -141,14 +185,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__ncp__buffer_8cpp_source.html#l00465">465</a> of file <a class="el" href="test__ncp__buffer_8cpp_source.html">test_ncp_buffer.cpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:30 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

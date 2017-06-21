@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/drivers/windows/otLwf/thread.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/drivers/windows/otLwf/thread.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,38 +59,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_757d408b91fe77c0d6541574880c2422.html">drivers</a></li><li class="navelem"><a class="el" href="dir_2241398f140824e7a05e00f2ce66418d.html">windows</a></li><li class="navelem"><a class="el" href="dir_a0359699c7e7a236fc9778c284a07817.html">otLwf</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_f008ccfebca6b1721ca65dcf50715dd5.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a7733a9637be92d1f239c18e2519fad4.html">windows</a></li><li class="navelem"><a class="el" href="dir_bfd46bc989430388275c68f6255e9095.html">otLwf</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">thread.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This file implements the <a class="el" href="namespace_thread.html">Thread</a> mode (Radio Miniport) functions required for the <a class="el" href="namespace_open_thread.html">OpenThread</a> library.  
+<p>This file implements the Thread mode (Radio Miniport) functions required for the <a class="el" href="namespace_open_thread.html">OpenThread</a> library.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ot_lwf_2precomp_8h_source.html">precomp.h</a>&quot;</code><br />
 <code>#include &quot;thread.tmh&quot;</code><br />
-</div>
-<p><a href="thread_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a248add49a4e86b5f182785d477b441a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a248add49a4e86b5f182785d477b441a3">OTPLAT_CALLOC_TAG</a>&#160;&#160;&#160;'OTDM'</td></tr>
+<tr class="separator:a248add49a4e86b5f182785d477b441a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c09c44155b92220accaa9abc13d527"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a67c09c44155b92220accaa9abc13d527">BUFFER_POOL_TAG</a>&#160;&#160;&#160;'OTBP'</td></tr>
+<tr class="separator:a67c09c44155b92220accaa9abc13d527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a15f11918348ba172d736f55c7a913bc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a15f11918348ba172d736f55c7a913bc5">_IRQL_requires_max_</a> (PASSIVE_LEVEL)</td></tr>
 <tr class="separator:a15f11918348ba172d736f55c7a913bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ebc4edb990923ac45cf098b02e08be2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a5ebc4edb990923ac45cf098b02e08be2">otPlatCAlloc</a> (size_t aNum, size_t aSize)</td></tr>
-<tr class="separator:a5ebc4edb990923ac45cf098b02e08be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64920a791a87465bf49fa751c7677825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a64920a791a87465bf49fa751c7677825">otPlatFree</a> (void *aPtr)</td></tr>
-<tr class="separator:a64920a791a87465bf49fa751c7677825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa20820ca4e6e1ce8cd47ded9762b14ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__random.html#gaa20820ca4e6e1ce8cd47ded9762b14ca">otPlatRandomGet</a> ()</td></tr>
+<tr class="memitem:gaa20820ca4e6e1ce8cd47ded9762b14ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-random.html#gaa20820ca4e6e1ce8cd47ded9762b14ca">otPlatRandomGet</a> ()</td></tr>
 <tr class="separator:gaa20820ca4e6e1ce8cd47ded9762b14ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad05a02879d22d5fb3f69f523b0667f10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__random.html#gad05a02879d22d5fb3f69f523b0667f10">otPlatRandomSecureGet</a> (<a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aInputLength, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aOutput, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *aOutputLength)</td></tr>
-<tr class="separator:gad05a02879d22d5fb3f69f523b0667f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ddb7caa1abdf39b777002e94054bc7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a6ddb7caa1abdf39b777002e94054bc7e">otSignalTaskletPending</a> (_In_ <a class="el" href="structot_instance.html">otInstance</a> *otCtx)</td></tr>
-<tr class="separator:a6ddb7caa1abdf39b777002e94054bc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09e3cc83c3548fd0a9f4536324276028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-random.html#ga09e3cc83c3548fd0a9f4536324276028">otPlatRandomGetTrue</a> (<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aOutput, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aOutputLength)</td></tr>
+<tr class="separator:ga09e3cc83c3548fd0a9f4536324276028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cb99b7833b927d46c7c9f630ebe551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#ac7cb99b7833b927d46c7c9f630ebe551">otTaskletsSignalPending</a> (_In_ <a class="el" href="structot_instance.html">otInstance</a> *otCtx)</td></tr>
+<tr class="separator:ac7cb99b7833b927d46c7c9f630ebe551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12c0a96e8098df477a86a0390f87ebd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#ac12c0a96e8098df477a86a0390f87ebd">_IRQL_requires_max_</a> (DISPATCH_LEVEL)</td></tr>
 <tr class="separator:ac12c0a96e8098df477a86a0390f87ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3ab534f6ed9887c0858771153e025d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#af3ab534f6ed9887c0858771153e025d0">otLwfStateChangedCallback</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aFlags, _In_ void *aContext)</td></tr>
@@ -104,14 +107,41 @@ Functions</h2></td></tr>
 <tr class="separator:a20c9a43e112a4c37ebaed536aece4904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4f7907e940a42a9f6818ca988dfff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a1c4f7907e940a42a9f6818ca988dfff9">otLwfCommissionerPanIdConflictCallback</a> (<a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPanId, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aChannelMask, _In_ void *aContext)</td></tr>
 <tr class="separator:a1c4f7907e940a42a9f6818ca988dfff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10e0988a6e3f4e64a1902f15c0ab8805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#a10e0988a6e3f4e64a1902f15c0ab8805">otLwfJoinerCallback</a> (<a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> aError, _In_ void *aContext)</td></tr>
-<tr class="separator:a10e0988a6e3f4e64a1902f15c0ab8805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf693a999cf38d1bbe856ee04f96fe6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8c.html#adf693a999cf38d1bbe856ee04f96fe6c">otLwfJoinerCallback</a> (<a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> aError, _In_ void *aContext)</td></tr>
+<tr class="separator:adf693a999cf38d1bbe856ee04f96fe6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file implements the <a class="el" href="namespace_thread.html">Thread</a> mode (Radio Miniport) functions required for the <a class="el" href="namespace_open_thread.html">OpenThread</a> library. </p>
+<div class="textblock"><p>This file implements the Thread mode (Radio Miniport) functions required for the <a class="el" href="namespace_open_thread.html">OpenThread</a> library. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a67c09c44155b92220accaa9abc13d527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c09c44155b92220accaa9abc13d527">&#9670;&nbsp;</a></span>BUFFER_POOL_TAG</h2>
 
-<p class="definition">Definition in file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUFFER_POOL_TAG&#160;&#160;&#160;'OTBP'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a248add49a4e86b5f182785d477b441a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248add49a4e86b5f182785d477b441a3">&#9670;&nbsp;</a></span>OTPLAT_CALLOC_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTPLAT_CALLOC_TAG&#160;&#160;&#160;'OTDM'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a15f11918348ba172d736f55c7a913bc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15f11918348ba172d736f55c7a913bc5">&#9670;&nbsp;</a></span>_IRQL_requires_max_() <span class="overload">[1/2]</span></h2>
 
@@ -127,8 +157,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00038">38</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
 
 </div>
 </div>
@@ -147,8 +175,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00295">295</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
 
 </div>
 </div>
@@ -177,8 +203,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00412">412</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
 
 </div>
 </div>
@@ -220,8 +244,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00496">496</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-
 </div>
 </div>
 <a id="a1c4f7907e940a42a9f6818ca988dfff9"></a>
@@ -256,8 +278,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00521">521</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-
 </div>
 </div>
 <a id="a079a8fb82d838be8e255c646e8c9c10c"></a>
@@ -285,8 +305,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00468">468</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
 
 </div>
 </div>
@@ -316,12 +334,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00440">440</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-
 </div>
 </div>
-<a id="a10e0988a6e3f4e64a1902f15c0ab8805"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10e0988a6e3f4e64a1902f15c0ab8805">&#9670;&nbsp;</a></span>otLwfJoinerCallback()</h2>
+<a id="adf693a999cf38d1bbe856ee04f96fe6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf693a999cf38d1bbe856ee04f96fe6c">&#9670;&nbsp;</a></span>otLwfJoinerCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +345,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void otLwfJoinerCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td>
           <td class="paramname"><em>aError</em>, </td>
         </tr>
         <tr>
@@ -345,8 +361,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00542">542</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
 
 </div>
 </div>
@@ -376,68 +390,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00315">315</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-
 </div>
 </div>
-<a id="a5ebc4edb990923ac45cf098b02e08be2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ebc4edb990923ac45cf098b02e08be2">&#9670;&nbsp;</a></span>otPlatCAlloc()</h2>
+<a id="ac7cb99b7833b927d46c7c9f630ebe551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7cb99b7833b927d46c7c9f630ebe551">&#9670;&nbsp;</a></span>otTaskletsSignalPending()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* otPlatCAlloc </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>aNum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>aSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00215">215</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-
-</div>
-</div>
-<a id="a64920a791a87465bf49fa751c7677825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64920a791a87465bf49fa751c7677825">&#9670;&nbsp;</a></span>otPlatFree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatFree </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>aPtr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00243">243</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-
-</div>
-</div>
-<a id="a6ddb7caa1abdf39b777002e94054bc7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ddb7caa1abdf39b777002e94054bc7e">&#9670;&nbsp;</a></span>otSignalTaskletPending()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otSignalTaskletPending </td>
+          <td class="memname">void otTaskletsSignalPending </td>
           <td>(</td>
           <td class="paramtype">_In_ <a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>otCtx</em></td><td>)</td>
@@ -446,14 +408,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thread_8c_source.html#l00287">287</a> of file <a class="el" href="thread_8c_source.html">thread.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

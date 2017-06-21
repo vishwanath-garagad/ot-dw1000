@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Types</title>
+<title>OT-DW1000: Types</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -63,60 +64,64 @@ $(function() {
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">Types<div class="ingroups"><a class="el" href="group__platform.html">Platform Abstraction</a> &raquo; <a class="el" href="group__radio.html">Radio</a></div></div>  </div>
+<div class="title">Types<div class="ingroups"><a class="el" href="group__platform.html">Platform Abstraction</a> &raquo; <a class="el" href="group__plat-radio.html">Radio</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This module includes the platform abstraction for a radio packet.  
+<p>This module includes the platform abstraction for a radio frame.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_radio_packet.html">RadioPacket</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_radio_frame.html">otRadioFrame</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gaaba4bf6660fc977d5f260bbc4759db49"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#gaaba4bf6660fc977d5f260bbc4759db49">otRadioCaps</a></td></tr>
 <tr class="separator:gaaba4bf6660fc977d5f260bbc4759db49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ec1493a92b716164820cfc6f63d0727"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_radio_packet.html">RadioPacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#ga4ec1493a92b716164820cfc6f63d0727">RadioPacket</a></td></tr>
-<tr class="separator:ga4ec1493a92b716164820cfc6f63d0727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4fc9607be8fe78429890574e85da2e1"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__radio-types.html#gae1ff73e01c49ff0cb218e4efd1b01fbc">PhyState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#gae4fc9607be8fe78429890574e85da2e1">PhyState</a></td></tr>
-<tr class="separator:gae4fc9607be8fe78429890574e85da2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab06907a61c511a92f3fc2bc1514d726b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structot_radio_frame.html">otRadioFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#gab06907a61c511a92f3fc2bc1514d726b">otRadioFrame</a></td></tr>
+<tr class="separator:gab06907a61c511a92f3fc2bc1514d726b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabac8258a680edee8c18b7de660f86880"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda">otRadioState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#gabac8258a680edee8c18b7de660f86880">otRadioState</a></td></tr>
+<tr class="separator:gabac8258a680edee8c18b7de660f86880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga16685eea158879e41b101ca3634de462"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462a7814f5ab606236acae270c705e38304c">kMaxPHYPacketSize</a> = 127, 
-<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462aac68aa0095ba8fbe62f4399af20f356a">kPhyMinChannel</a> = 11, 
-<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462a689ec26cf2ac6ae2817bf368fe7df96f">kPhyMaxChannel</a> = 26, 
-<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462a5a1f12f32a9eae0d14e32a1862d9ac90">kPhySupportedChannelMask</a> = 0xffff &lt;&lt; kPhyMinChannel, 
+<tr class="memitem:gafccd240f973cf154952fb917c9209719"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a4a71c2b96ef99d0f9f6af8beae85071a">OT_RADIO_FRAME_MAX_SIZE</a> = 127, 
+<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719acf9de35f3255b001fa994d99c7bb2bf2">OT_RADIO_CHANNEL_MIN</a> = 11, 
+<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a56a9b73111dcd9a15f5c6c8d54d5fe4d">OT_RADIO_CHANNEL_MAX</a> = 26, 
+<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719adf9b083b349ef09d3f28b7a9dda35c40">OT_RADIO_SUPPORTED_CHANNELS</a> = 0xffff &lt;&lt; OT_RADIO_CHANNEL_MIN, 
 <br />
-&#160;&#160;<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462ae6f1637d0c6947bb3a2b034d31fc9051">kPhySymbolsPerOctet</a> = 2, 
-<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462afe33924e8801f0b816fb9be77240f2e1">kPhyBitRate</a> = 250000, 
-<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462a7449438e43322e142dd3f75291ff9ced">kPhyBitsPerOctet</a> = 8, 
-<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462a7afdaa5b0a2d1188416569103bb66049">kPhyUsPerSymbol</a> = ((kPhyBitsPerOctet / kPhySymbolsPerOctet) * 1000000) / kPhyBitRate, 
+&#160;&#160;<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a46076b5d12c2ad2c11a532aec66dc0fc">OT_RADIO_SYMBOLS_PER_OCTET</a> = 2, 
+<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a51020aa64a3b03169e135accc85fb7f6">OT_RADIO_BIT_RATE</a> = 250000, 
+<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a9ea1c56ebbb853f7c075b356e3b52c00">OT_RADIO_BITS_PER_OCTET</a> = 8, 
+<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a400e0365c213d5c902270b19e3f63b72">OT_RADIO_SYMBOL_TIME</a> = ((OT_RADIO_BITS_PER_OCTET / OT_RADIO_SYMBOLS_PER_OCTET) * 1000000) / OT_RADIO_BIT_RATE, 
 <br />
-&#160;&#160;<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462a095a69d0c6de326b526121b98031b3af">kPhyNoLqi</a> = 0, 
-<a class="el" href="group__radio-types.html#gga16685eea158879e41b101ca3634de462a731834f62c745e082b3ed57679c93528">kPhyInvalidRssi</a> = 127
+&#160;&#160;<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a3216e2bca5ece269a53c505a09def06e">OT_RADIO_LQI_NONE</a> = 0, 
+<a class="el" href="group__radio-types.html#ggafccd240f973cf154952fb917c9209719a11e3d192986996d0901d30811f53bd12">OT_RADIO_RSSI_INVALID</a> = 127
 <br />
  }</td></tr>
-<tr class="separator:ga16685eea158879e41b101ca3634de462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64d6a0cf11075e2ab0079c9d86c34b55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a> { <a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55af71ef7e6e8404c56664ad79012c2ae4c">kRadioCapsNone</a> = 0, 
-<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55a7f68645873c299b0b509b591cece61d4">kRadioCapsAckTimeout</a> = 1, 
-<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55ab5a631b2f466b87b4cd38d785a6f0a83">kRadioCapsEnergyScan</a> = 2, 
-<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55a399d3beaf2c193894784dc40c7559d3d">kRadioCapsTransmitRetries</a> = 4
+<tr class="separator:gafccd240f973cf154952fb917c9209719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64d6a0cf11075e2ab0079c9d86c34b55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a> { <br />
+&#160;&#160;<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55a6d5d517247cb67a374004023245ee374">OT_RADIO_CAPS_NONE</a> = 0, 
+<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55a580a32c195f9a6fe524f5be907c5fe09">OT_RADIO_CAPS_ACK_TIMEOUT</a> = 1, 
+<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55aab09bec5a91c5be306904003abb74734">OT_RADIO_CAPS_ENERGY_SCAN</a> = 2, 
+<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55a97a80e5760039794583709129012a023">OT_RADIO_CAPS_TRANSMIT_RETRIES</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55aa2daca978ba32e2c8d066d6cbba1bef5">OT_RADIO_CAPS_CSMA_BACKOFF</a> = 8
+<br />
  }</td></tr>
 <tr class="separator:ga64d6a0cf11075e2ab0079c9d86c34b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1ff73e01c49ff0cb218e4efd1b01fbc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#gae1ff73e01c49ff0cb218e4efd1b01fbc">PhyState</a> { <a class="el" href="group__radio-types.html#ggae1ff73e01c49ff0cb218e4efd1b01fbca346dadd13ab9e46d5f6d56866a576df6">kStateDisabled</a> = 0, 
-<a class="el" href="group__radio-types.html#ggae1ff73e01c49ff0cb218e4efd1b01fbca9fabfe875b75329bda1501ef955c0647">kStateSleep</a> = 1, 
-<a class="el" href="group__radio-types.html#ggae1ff73e01c49ff0cb218e4efd1b01fbca13e5d21e000df306021abaadc8e3e696">kStateReceive</a> = 2, 
-<a class="el" href="group__radio-types.html#ggae1ff73e01c49ff0cb218e4efd1b01fbcaaaa0dbea3c2cc3fd5bdd5c03f57a6cc5">kStateTransmit</a> = 3
+<tr class="memitem:ga3f89fd47d15047dbcc4137f00dad6dda"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda">otRadioState</a> { <a class="el" href="group__radio-types.html#gga3f89fd47d15047dbcc4137f00dad6ddaa9b3efe34f022fa7d2910c50c7dfeecf7">OT_RADIO_STATE_DISABLED</a> = 0, 
+<a class="el" href="group__radio-types.html#gga3f89fd47d15047dbcc4137f00dad6ddaadb4b4a2db76d98adc47e5fd98d510402">OT_RADIO_STATE_SLEEP</a> = 1, 
+<a class="el" href="group__radio-types.html#gga3f89fd47d15047dbcc4137f00dad6ddaa7a4448f3d781c8b1544bad2f0c8a19e2">OT_RADIO_STATE_RECEIVE</a> = 2, 
+<a class="el" href="group__radio-types.html#gga3f89fd47d15047dbcc4137f00dad6ddaa0ea517fa42708e132829b21eab6dc977">OT_RADIO_STATE_TRANSMIT</a> = 3
  }</td></tr>
-<tr class="separator:gae1ff73e01c49ff0cb218e4efd1b01fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga3f89fd47d15047dbcc4137f00dad6dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This module includes the platform abstraction for a radio packet. </p>
+<p>This module includes the platform abstraction for a radio frame. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaaba4bf6660fc977d5f260bbc4759db49"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaba4bf6660fc977d5f260bbc4759db49">&#9670;&nbsp;</a></span>otRadioCaps</h2>
@@ -133,29 +138,14 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="gae4fc9607be8fe78429890574e85da2e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae4fc9607be8fe78429890574e85da2e1">&#9670;&nbsp;</a></span>PhyState</h2>
+<a id="gab06907a61c511a92f3fc2bc1514d726b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab06907a61c511a92f3fc2bc1514d726b">&#9670;&nbsp;</a></span>otRadioFrame</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="group__radio-types.html#gae1ff73e01c49ff0cb218e4efd1b01fbc">PhyState</a>  <a class="el" href="group__radio-types.html#gae1ff73e01c49ff0cb218e4efd1b01fbc">PhyState</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This structure represents the state of a radio. Initially, a radio is in the Disabled state. </p>
-
-</div>
-</div>
-<a id="ga4ec1493a92b716164820cfc6f63d0727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ec1493a92b716164820cfc6f63d0727">&#9670;&nbsp;</a></span>RadioPacket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_radio_packet.html">RadioPacket</a>  <a class="el" href="struct_radio_packet.html">RadioPacket</a></td>
+          <td class="memname">typedef struct <a class="el" href="structot_radio_frame.html">otRadioFrame</a>  <a class="el" href="structot_radio_frame.html">otRadioFrame</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -163,9 +153,24 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="gabac8258a680edee8c18b7de660f86880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabac8258a680edee8c18b7de660f86880">&#9670;&nbsp;</a></span>otRadioState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda">otRadioState</a>  <a class="el" href="group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda">otRadioState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This structure represents the state of a radio. Initially, a radio is in the Disabled state. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga16685eea158879e41b101ca3634de462"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16685eea158879e41b101ca3634de462">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="gafccd240f973cf154952fb917c9209719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafccd240f973cf154952fb917c9209719">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,27 +181,26 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462a7814f5ab606236acae270c705e38304c"></a>kMaxPHYPacketSize&#160;</td><td class="fielddoc"><p>aMaxPHYPacketSize (IEEE 802.15.4-2006) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a4a71c2b96ef99d0f9f6af8beae85071a"></a>OT_RADIO_FRAME_MAX_SIZE&#160;</td><td class="fielddoc"><p>aMaxPHYPacketSize (IEEE 802.15.4-2006) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462aac68aa0095ba8fbe62f4399af20f356a"></a>kPhyMinChannel&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719acf9de35f3255b001fa994d99c7bb2bf2"></a>OT_RADIO_CHANNEL_MIN&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462a689ec26cf2ac6ae2817bf368fe7df96f"></a>kPhyMaxChannel&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a56a9b73111dcd9a15f5c6c8d54d5fe4d"></a>OT_RADIO_CHANNEL_MAX&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462a5a1f12f32a9eae0d14e32a1862d9ac90"></a>kPhySupportedChannelMask&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719adf9b083b349ef09d3f28b7a9dda35c40"></a>OT_RADIO_SUPPORTED_CHANNELS&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462ae6f1637d0c6947bb3a2b034d31fc9051"></a>kPhySymbolsPerOctet&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a46076b5d12c2ad2c11a532aec66dc0fc"></a>OT_RADIO_SYMBOLS_PER_OCTET&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4-2006 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462afe33924e8801f0b816fb9be77240f2e1"></a>kPhyBitRate&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4 (kilobits per second) </p>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a51020aa64a3b03169e135accc85fb7f6"></a>OT_RADIO_BIT_RATE&#160;</td><td class="fielddoc"><p>2.4 GHz IEEE 802.15.4 (kilobits per second) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462a7449438e43322e142dd3f75291ff9ced"></a>kPhyBitsPerOctet&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462a7afdaa5b0a2d1188416569103bb66049"></a>kPhyUsPerSymbol&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462a095a69d0c6de326b526121b98031b3af"></a>kPhyNoLqi&#160;</td><td class="fielddoc"><p>LQI measurement not supported. </p>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a9ea1c56ebbb853f7c075b356e3b52c00"></a>OT_RADIO_BITS_PER_OCTET&#160;</td><td class="fielddoc"><p>Number of bits per octet. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16685eea158879e41b101ca3634de462a731834f62c745e082b3ed57679c93528"></a>kPhyInvalidRssi&#160;</td><td class="fielddoc"><p>Invalid or unknown RSSI value. </p>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a400e0365c213d5c902270b19e3f63b72"></a>OT_RADIO_SYMBOL_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a3216e2bca5ece269a53c505a09def06e"></a>OT_RADIO_LQI_NONE&#160;</td><td class="fielddoc"><p>LQI measurement not supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggafccd240f973cf154952fb917c9209719a11e3d192986996d0901d30811f53bd12"></a>OT_RADIO_RSSI_INVALID&#160;</td><td class="fielddoc"><p>Invalid or unknown RSSI value. </p>
 </td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="include_2platform_2radio_8h_source.html#l00068">68</a> of file <a class="el" href="include_2platform_2radio_8h_source.html">radio.h</a>.</p>
 
 </div>
 </div>
@@ -213,47 +217,45 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum represents radio capabilities. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55af71ef7e6e8404c56664ad79012c2ae4c"></a>kRadioCapsNone&#160;</td><td class="fielddoc"><p>None. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55a6d5d517247cb67a374004023245ee374"></a>OT_RADIO_CAPS_NONE&#160;</td><td class="fielddoc"><p>None. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55a7f68645873c299b0b509b591cece61d4"></a>kRadioCapsAckTimeout&#160;</td><td class="fielddoc"><p>Radio supports AckTime event. </p>
+<tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55a580a32c195f9a6fe524f5be907c5fe09"></a>OT_RADIO_CAPS_ACK_TIMEOUT&#160;</td><td class="fielddoc"><p>Radio supports AckTime event. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55ab5a631b2f466b87b4cd38d785a6f0a83"></a>kRadioCapsEnergyScan&#160;</td><td class="fielddoc"><p>Radio supports Energy Scans. </p>
+<tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55aab09bec5a91c5be306904003abb74734"></a>OT_RADIO_CAPS_ENERGY_SCAN&#160;</td><td class="fielddoc"><p>Radio supports Energy Scans. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55a399d3beaf2c193894784dc40c7559d3d"></a>kRadioCapsTransmitRetries&#160;</td><td class="fielddoc"><p>Radio supports transmission retry logic with collision avoidance. </p>
+<tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55a97a80e5760039794583709129012a023"></a>OT_RADIO_CAPS_TRANSMIT_RETRIES&#160;</td><td class="fielddoc"><p>Radio supports transmission retry logic with collision avoidance (CSMA). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga64d6a0cf11075e2ab0079c9d86c34b55aa2daca978ba32e2c8d066d6cbba1bef5"></a>OT_RADIO_CAPS_CSMA_BACKOFF&#160;</td><td class="fielddoc"><p>Radio supports CSMA backoff for frame transmission (but no retry). </p>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="include_2platform_2radio_8h_source.html#l00098">98</a> of file <a class="el" href="include_2platform_2radio_8h_source.html">radio.h</a>.</p>
-
 </div>
 </div>
-<a id="gae1ff73e01c49ff0cb218e4efd1b01fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae1ff73e01c49ff0cb218e4efd1b01fbc">&#9670;&nbsp;</a></span>PhyState</h2>
+<a id="ga3f89fd47d15047dbcc4137f00dad6dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f89fd47d15047dbcc4137f00dad6dda">&#9670;&nbsp;</a></span>otRadioState</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__radio-types.html#gae1ff73e01c49ff0cb218e4efd1b01fbc">PhyState</a></td>
+          <td class="memname">enum <a class="el" href="group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda">otRadioState</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This structure represents the state of a radio. Initially, a radio is in the Disabled state. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae1ff73e01c49ff0cb218e4efd1b01fbca346dadd13ab9e46d5f6d56866a576df6"></a>kStateDisabled&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggae1ff73e01c49ff0cb218e4efd1b01fbca9fabfe875b75329bda1501ef955c0647"></a>kStateSleep&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggae1ff73e01c49ff0cb218e4efd1b01fbca13e5d21e000df306021abaadc8e3e696"></a>kStateReceive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggae1ff73e01c49ff0cb218e4efd1b01fbcaaaa0dbea3c2cc3fd5bdd5c03f57a6cc5"></a>kStateTransmit&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3f89fd47d15047dbcc4137f00dad6ddaa9b3efe34f022fa7d2910c50c7dfeecf7"></a>OT_RADIO_STATE_DISABLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3f89fd47d15047dbcc4137f00dad6ddaadb4b4a2db76d98adc47e5fd98d510402"></a>OT_RADIO_STATE_SLEEP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3f89fd47d15047dbcc4137f00dad6ddaa7a4448f3d781c8b1544bad2f0c8a19e2"></a>OT_RADIO_STATE_RECEIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3f89fd47d15047dbcc4137f00dad6ddaa0ea517fa42708e132829b21eab6dc977"></a>OT_RADIO_STATE_TRANSMIT&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="include_2platform_2radio_8h_source.html#l00124">124</a> of file <a class="el" href="include_2platform_2radio_8h_source.html">radio.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:35 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:05 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

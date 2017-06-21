@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>src/ncp/spinel.c File Reference</title>
+<title>OT-DW1000: openthread-master/src/ncp/spinel.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4eeddf84fddd42d44de1574042fba5c7.html">ncp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_e7e04e66d76e31c0e8b2494724c42aa4.html">src</a></li><li class="navelem"><a class="el" href="dir_86262476af27eb8a8012bbe5bf037bf3.html">ncp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,15 +71,15 @@ $(function() {
 <div class="title">spinel.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="spinel_8h_source.html">spinel.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;openthread-config.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="spinel_8h_source.html">spinel.h</a>&quot;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="wrap__string_8h_source.html">utils/wrap_string.h</a>&quot;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
-</div>
-<p><a href="spinel_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &quot;<a class="el" href="wrap__stdbool_8h_source.html">utils/wrap_stdbool.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structva__list__obj.html">va_list_obj</a></td></tr>
@@ -92,8 +93,6 @@ Macros</h2></td></tr>
 <tr class="separator:a2d1678d5a7cc8ce499643f3b8957def4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab785f8a4b851dd5a90665121e2afce04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spinel_8c.html#ab785f8a4b851dd5a90665121e2afce04">assert_printf</a>(fmt, ...)&#160;&#160;&#160;fprintf(stderr, __FILE__ &quot;:%d: &quot; fmt &quot;\n&quot;, __LINE__, __VA_ARGS__)</td></tr>
 <tr class="separator:ab785f8a4b851dd5a90665121e2afce04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bd766a5e6cefc1f45487ca1e870741f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spinel_8c.html#a6bd766a5e6cefc1f45487ca1e870741f">strnlen</a>&#160;&#160;&#160;spinel_strnlen_</td></tr>
-<tr class="separator:a6bd766a5e6cefc1f45487ca1e870741f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cce6b22b65d795f72c617b39dccd218"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spinel_8c.html#a2cce6b22b65d795f72c617b39dccd218">require_action</a>(c,  l,  a)</td></tr>
 <tr class="separator:a2cce6b22b65d795f72c617b39dccd218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c336ea2a3c03e221ca230e50c9f46f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spinel_8c.html#a41c336ea2a3c03e221ca230e50c9f46f">require</a>(c,  l)&#160;&#160;&#160;<a class="el" href="spinel_8c.html#a2cce6b22b65d795f72c617b39dccd218">require_action</a>(c, l, {})</td></tr>
@@ -123,6 +122,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8d4a63130c4c0fb102e77e013d5a9b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ee72644470f74b420dcbed4fce579d5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spinel_8c.html#a0ee72644470f74b420dcbed4fce579d5">spinel_status_to_cstr</a> (<a class="el" href="spinel_8h.html#ab33c83cc8edd79e60506856a19788f5f">spinel_status_t</a> <a class="el" href="serial_8cpp.html#a9611b3a00430a86619b5923de30f9fdb">status</a>)</td></tr>
 <tr class="separator:a0ee72644470f74b420dcbed4fce579d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97a2fdd6547d1e7643e9ebaad2eb35f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spinel_8c.html#af97a2fdd6547d1e7643e9ebaad2eb35f">spinel_capability_to_cstr</a> (unsigned int capability)</td></tr>
+<tr class="separator:af97a2fdd6547d1e7643e9ebaad2eb35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab785f8a4b851dd5a90665121e2afce04"></a>
@@ -151,8 +152,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00094">94</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="a2d1678d5a7cc8ce499643f3b8957def4"></a>
@@ -167,8 +166,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00070">70</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="a888552a5e3c78b5883904cf5d55244ab"></a>
@@ -182,8 +179,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00062">62</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
 
 </div>
 </div>
@@ -212,8 +207,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00131">131</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
 
 </div>
 </div>
@@ -249,27 +242,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <span class="keywordflow">if</span> (!(c)) { \</div><div class="line">        a; \</div><div class="line">        goto l; \</div><div class="line">    } } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00122">122</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
-<a id="a6bd766a5e6cefc1f45487ca1e870741f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bd766a5e6cefc1f45487ca1e870741f">&#9670;&nbsp;</a></span>strnlen</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af97a2fdd6547d1e7643e9ebaad2eb35f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97a2fdd6547d1e7643e9ebaad2eb35f">&#9670;&nbsp;</a></span>spinel_capability_to_cstr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define strnlen&#160;&#160;&#160;spinel_strnlen_</td>
+          <td class="memname">const char* spinel_capability_to_cstr </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>capability</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00110">110</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
 <a id="a0fd593a46c2428565fa93c2bbad04f87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fd593a46c2428565fa93c2bbad04f87">&#9670;&nbsp;</a></span>spinel_datatype_pack()</h2>
 
@@ -307,8 +300,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00847">847</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
 
 </div>
 </div>
@@ -350,8 +341,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00522">522</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="a532432200ee887866e7122457582d272"></a>
@@ -391,8 +380,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00861">861</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
 
 </div>
 </div>
@@ -434,8 +421,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00536">536</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="a8d4a63130c4c0fb102e77e013d5a9b27"></a>
@@ -454,8 +439,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l01258">1258</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="ab080ec9d61c2f8dc6fba62e1a8dec2d4"></a>
@@ -473,8 +456,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00225">225</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
 
 </div>
 </div>
@@ -510,8 +491,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00143">143</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="a57869345ba279b4763d820e92064204b"></a>
@@ -546,8 +525,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00204">204</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="ad8b1f1738acb50e09b44548905a08588"></a>
@@ -565,8 +542,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00175">175</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
 
 </div>
 </div>
@@ -586,8 +561,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l00880">880</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 <a id="a0ee72644470f74b420dcbed4fce579d5"></a>
@@ -606,14 +579,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spinel_8c_source.html#l01287">1287</a> of file <a class="el" href="spinel_8c_source.html">spinel.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:30 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

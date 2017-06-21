@@ -16,11 +16,9 @@ var searchData=
   ['qspi_5fcheck_5fprogram_5ferase_5fin_5fprogress',['qspi_check_program_erase_in_progress',['../group___m_e_m_o_r_y.html#gafe1bcea40bc4f625c748039ff7589350',1,'qspi_check_program_erase_in_progress(void):&#160;qspi_automode.c'],['../group___m_e_m_o_r_y.html#gafe1bcea40bc4f625c748039ff7589350',1,'qspi_check_program_erase_in_progress(void):&#160;qspi_automode.c']]],
   ['qspi_5fresume',['qspi_resume',['../group___m_e_m_o_r_y.html#ga430db73748cd4a26e509efaa8edeab25',1,'qspi_resume(void):&#160;qspi_automode.c'],['../group___m_e_m_o_r_y.html#ga430db73748cd4a26e509efaa8edeab25',1,'qspi_resume(void):&#160;qspi_automode.c']]],
   ['quadec_5fhandler',['QUADEC_Handler',['../vector_8c.html#a89ca46a6f5819a8601e551603500ffc9',1,'vector.c']]],
+  ['query',['Query',['../classot_1_1_dns_1_1_client.html#adab426e51ee2df187d5abf0c0d41be20',1,'ot::Dns::Client']]],
   ['queryioctl',['QueryIOCTL',['../ot_api_8cpp.html#ab4423b64116a0f61adc61a04f362afa5',1,'QueryIOCTL(_In_ otInstance *aInstance, _In_ DWORD dwIoControlCode, _In_ const in *input, _Out_ out *output):&#160;otApi.cpp'],['../ot_api_8cpp.html#ae9062d1268bcf28dc2636fba1e2c513b',1,'QueryIOCTL(_In_ otInstance *aInstance, _In_ DWORD dwIoControlCode, _Out_ out *output):&#160;otApi.cpp']]],
-  ['queue_5fadd',['queue_add',['../classspinel_1_1codec_1_1_wpan_api.html#a3167c99e1aef7a3b037bb5b957614746',1,'spinel::codec::WpanApi']]],
-  ['queue_5fclear',['queue_clear',['../classspinel_1_1codec_1_1_wpan_api.html#a6d2c2b11954f8e99b4b5a7a9c7263ebc',1,'spinel::codec::WpanApi']]],
-  ['queue_5fget',['queue_get',['../classspinel_1_1codec_1_1_wpan_api.html#ac27892024ce90489a2a8293a7fe98377',1,'spinel::codec::WpanApi']]],
-  ['queue_5fregister',['queue_register',['../classspinel_1_1codec_1_1_wpan_api.html#a8d5d9995bf0a7003df8ad2ab13a9a17c',1,'spinel::codec::WpanApi']]],
-  ['queue_5fwait_5ffor_5fprop',['queue_wait_for_prop',['../classspinel_1_1codec_1_1_wpan_api.html#ae19f48c44567226373a7b13a452e1f74',1,'spinel::codec::WpanApi']]],
-  ['queue_5fwait_5fprepare',['queue_wait_prepare',['../classspinel_1_1codec_1_1_wpan_api.html#a4581709d1ff4a454e30650d66c84481d',1,'spinel::codec::WpanApi']]]
+  ['querymetadata',['QueryMetadata',['../classot_1_1_dns_1_1_query_metadata.html#a8b62a080df56491c1b74c908f6ddd048',1,'ot::Dns::QueryMetadata::QueryMetadata(void)'],['../classot_1_1_dns_1_1_query_metadata.html#addda4bb62ee7f39b3788209395814bd3',1,'ot::Dns::QueryMetadata::QueryMetadata(otDnsResponseHandler aHandler, void *aContext)']]],
+  ['question',['Question',['../classot_1_1_dns_1_1_question.html#a0db2e75638a7d6ba4edc34339c819046',1,'ot::Dns::Question']]],
+  ['questionaaaa',['QuestionAaaa',['../classot_1_1_dns_1_1_question_aaaa.html#a40e7381b2710aada06b30251ca12d73d',1,'ot::Dns::QuestionAaaa']]]
 ];

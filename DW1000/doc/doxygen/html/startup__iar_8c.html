@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>third_party/ti/cc26xxware/startup_files/startup_iar.c File Reference</title>
+<title>OT-DW1000: openthread-master/third_party/ti/cc26xxware/startup_files/startup_iar.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_b6fe208a7a21be315c3bff71fe2aa296.html">ti</a></li><li class="navelem"><a class="el" href="dir_0f87a7e18e8ebfd6e62490fd1e1c0c84.html">cc26xxware</a></li><li class="navelem"><a class="el" href="dir_6e7ddfe88d61810ec9fc56040d0b187f.html">startup_files</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_7d90705f0e33e4f611d5ec5bfa470328.html">third_party</a></li><li class="navelem"><a class="el" href="dir_98ac8c727439fdc8220828fe62956c77.html">ti</a></li><li class="navelem"><a class="el" href="dir_b266f455d7f4588573f879947179a957.html">cc26xxware</a></li><li class="navelem"><a class="el" href="dir_f9a999755fc70e9a18ffbe97290f52ba.html">startup_files</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,9 +73,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;intrinsics.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="hw__types_8h_source.html">inc/hw_types.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="setup_8h_source.html">driverlib/setup.h</a>&gt;</code><br />
-</div>
-<p><a href="startup__iar_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a516ff8924be921fa3a1bb7754b1f5734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="startup__iar_8c.html#a516ff8924be921fa3a1bb7754b1f5734">ResetISR</a> (void)</td></tr>
@@ -522,8 +521,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Top-level main for sniffer host-side tool. </pre><pre class="fragment">Top-level main for spinel-cli tool. </pre><pre class="fragment">Run all unit tests for spinel module. </pre> 
-<p class="definition">Definition at line <a class="el" href="test__aes_8cpp_source.html#l00233">233</a> of file <a class="el" href="test__aes_8cpp_source.html">test_aes.cpp</a>.</p>
 
 </div>
 </div>
@@ -600,8 +597,6 @@ Variables</h2></td></tr>
 <p>Forward declaration of the reset ISR and the default fault handlers. </p>
 <p>This is the code that gets called when the processor first starts execution following a reset event. Only the absolutely necessary set is performed, after which the application supplied entry() routine is called. Any fancy actions (such as making decisions based on the reset cause register, and resetting the bits in that register) are left solely in the hands of the application. </p>
 
-<p class="definition">Definition at line <a class="el" href="startup__iar_8c_source.html#l00251">251</a> of file <a class="el" href="startup__iar_8c_source.html">startup_iar.c</a>.</p>
-
 </div>
 </div>
 <a id="ae70538d539b4d9f84abb46af0cb7b6f9"></a>
@@ -640,8 +635,6 @@ Variables</h2></td></tr>
 <p>Interrupt handlers forward declared for register function</p>
 <p>command done handler </p>
 
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2650_2radio_8c_source.html#l01018">1018</a> of file <a class="el" href="platforms_2cc2650_2radio_8c_source.html">radio.c</a>.</p>
-
 </div>
 </div>
 <a id="a05dba527375f8e8be000b647537240da"></a>
@@ -660,8 +653,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>error interrupt handler </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2650_2radio_8c_source.html#l01009">1009</a> of file <a class="el" href="platforms_2cc2650_2radio_8c_source.html">radio.c</a>.</p>
 
 </div>
 </div>
@@ -951,8 +942,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2cc2538_2uart_8c_source.html#l00179">179</a> of file <a class="el" href="examples_2platforms_2cc2538_2uart_8c_source.html">uart.c</a>.</p>
-
 </div>
 </div>
 <a id="a8d806cf88c94bbc599d868b0694f05a2"></a>
@@ -1041,8 +1030,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>The vector table. Note that the proper constructs must be placed on this to ensure that it ends up at physical address 0x0000.0000 or at the start of the program if located at a start address other than 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="startup__iar_8c_source.html#l00183">183</a> of file <a class="el" href="startup__iar_8c_source.html">startup_iar.c</a>.</p>
-
 </div>
 </div>
 <a id="a52da6775361ac1aba9f1ff71efbc2896"></a>
@@ -1064,7 +1051,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:35 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:05 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

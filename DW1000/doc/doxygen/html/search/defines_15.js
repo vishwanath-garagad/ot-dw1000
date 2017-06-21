@@ -1,11 +1,13 @@
 var searchData=
 [
+  ['valid_5fchk_5fgpio_5finfo_5fobject',['VALID_CHK_GPIO_INFO_OBJECT',['../dw__gpio_8c.html#a61bc555dd864cdcc6bd02a534e014487',1,'dw_gpio.c']]],
+  ['valid_5fchk_5fuart_5finfo_5fobject',['VALID_CHK_UART_INFO_OBJECT',['../dw__uart_8c.html#a1de405431d52cf3d7375d77bcedb323a',1,'dw_uart.c']]],
   ['vbat_5faddress',['VBAT_ADDRESS',['../dw1000__device_8c.html#a3196c054383e451ebd660242cb7b2b3a',1,'dw1000_device.c']]],
   ['verbose',['VERBOSE',['../programs_2pkey_2ecdsa_8c.html#a42f8c497a1968074f38bf5055c650dca',1,'ecdsa.c']]],
   ['verify_5fndis_5fobject_5fheader',['VERIFY_NDIS_OBJECT_HEADER',['../oid_8cpp.html#a92ecbb1b640a6cb67996d824c17c71bd',1,'oid.cpp']]],
   ['verify_5fndis_5fobject_5fheader_5fptr',['VERIFY_NDIS_OBJECT_HEADER_PTR',['../oid_8cpp.html#addc9ce03e252e9865dd31f07e5c40004',1,'oid.cpp']]],
   ['verify_5fndis_5frequest_5fobject_5fheader',['VERIFY_NDIS_REQUEST_OBJECT_HEADER',['../oid_8cpp.html#a6ecb46627c57c9a8e52136f5ae7096ee',1,'oid.cpp']]],
-  ['verifyorexit',['VerifyOrExit',['../code__utils_8hpp.html#a97b07c5b705a40172de195f6bf1cbea1',1,'code_utils.hpp']]],
+  ['verifyorexit',['VerifyOrExit',['../code__utils_8hpp.html#a42e32454ca5e456d5ce5a260c735abed',1,'code_utils.hpp']]],
   ['verifyorquit',['VerifyOrQuit',['../test__util_8h.html#a891f9f8c33a09fdd3896af515ea1e372',1,'test_util.h']]],
   ['version',['VERSION',['../openthread-windows-config_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'openthread-windows-config.h']]],
   ['version_5fcheck_5ffeature',['version_check_feature',['../compat-1_83_8h.html#a871dd9649c48464cb27bdc6c71673425',1,'compat-1.3.h']]],

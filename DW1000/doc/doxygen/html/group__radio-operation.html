@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Operation</title>
+<title>OT-DW1000: Operation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -61,7 +62,7 @@ $(function() {
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Operation<div class="ingroups"><a class="el" href="group__platform.html">Platform Abstraction</a> &raquo; <a class="el" href="group__radio.html">Radio</a></div></div>  </div>
+<div class="title">Operation<div class="ingroups"><a class="el" href="group__platform.html">Platform Abstraction</a> &raquo; <a class="el" href="group__plat-radio.html">Radio</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -70,62 +71,70 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad2f1f79b0fe0bb9015fd996c723ed52e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gad2f1f79b0fe0bb9015fd996c723ed52e">otPlatRadioEnable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:gad2f1f79b0fe0bb9015fd996c723ed52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b14c6db562150d0a80c47ef278e5ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5b14c6db562150d0a80c47ef278e5ab8">otPlatRadioDisable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ga5b14c6db562150d0a80c47ef278e5ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafec5df7e4c89e4ba870d79c9775a3e7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda">otRadioState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gafec5df7e4c89e4ba870d79c9775a3e7d">otPlatRadioGetState</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gafec5df7e4c89e4ba870d79c9775a3e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfe31d09ed784e1799cb43187b302c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gabfe31d09ed784e1799cb43187b302c8d">otPlatRadioEnable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gabfe31d09ed784e1799cb43187b302c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0fef7e3418e4568f9b568f65848eff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gad0fef7e3418e4568f9b568f65848eff0">otPlatRadioDisable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gad0fef7e3418e4568f9b568f65848eff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf26840dd6a3c6bd1da7156127c8306f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaf26840dd6a3c6bd1da7156127c8306f5">otPlatRadioIsEnabled</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:gaf26840dd6a3c6bd1da7156127c8306f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga979f5ee2e63f0cba66f372149b2ac013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga979f5ee2e63f0cba66f372149b2ac013">otPlatRadioSleep</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ga979f5ee2e63f0cba66f372149b2ac013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga063a389dc7d1e68cbe495cc3cff758c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga063a389dc7d1e68cbe495cc3cff758c1">otPlatRadioReceive</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
-<tr class="separator:ga063a389dc7d1e68cbe495cc3cff758c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b64d6357b07b8db540e3679155285b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga4b64d6357b07b8db540e3679155285b2">otPlatRadioSleep</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga4b64d6357b07b8db540e3679155285b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga315627b370d8ff89ea101d6529911be7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga315627b370d8ff89ea101d6529911be7">otPlatRadioReceive</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
+<tr class="separator:ga315627b370d8ff89ea101d6529911be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb1f75e02a0c91b2db8e1325e8575861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gabb1f75e02a0c91b2db8e1325e8575861">otPlatRadioEnableSrcMatch</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aEnable)</td></tr>
 <tr class="separator:gabb1f75e02a0c91b2db8e1325e8575861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e1cf45dd77ef0608056f2e9cf992d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5e1cf45dd77ef0608056f2e9cf992d8d">otPlatRadioAddSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
-<tr class="separator:ga5e1cf45dd77ef0608056f2e9cf992d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f24dc46cba2235b6dea0670df50a5c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga3f24dc46cba2235b6dea0670df50a5c2">otPlatRadioAddSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
-<tr class="separator:ga3f24dc46cba2235b6dea0670df50a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga923d941e8a4d37be5d41de6be4fc275f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga923d941e8a4d37be5d41de6be4fc275f">otPlatRadioClearSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
-<tr class="separator:ga923d941e8a4d37be5d41de6be4fc275f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57238173bfc0ad9cce66e999f9ad3234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga57238173bfc0ad9cce66e999f9ad3234">otPlatRadioClearSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
-<tr class="separator:ga57238173bfc0ad9cce66e999f9ad3234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f53926a91fdef11329a8c3b2e3aecfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga8f53926a91fdef11329a8c3b2e3aecfc">otPlatRadioAddSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
+<tr class="separator:ga8f53926a91fdef11329a8c3b2e3aecfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac924003fc3bc21a86ab2e2efbbfdddc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gac924003fc3bc21a86ab2e2efbbfdddc3">otPlatRadioAddSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
+<tr class="separator:gac924003fc3bc21a86ab2e2efbbfdddc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89ec142cb8988bf06b825b9e85879460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga89ec142cb8988bf06b825b9e85879460">otPlatRadioClearSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
+<tr class="separator:ga89ec142cb8988bf06b825b9e85879460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9d428bf1e47845d327d48b910ab6c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga6c9d428bf1e47845d327d48b910ab6c2">otPlatRadioClearSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
+<tr class="separator:ga6c9d428bf1e47845d327d48b910ab6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95d8f1c200b49f481d117765ec7a66d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga95d8f1c200b49f481d117765ec7a66d4">otPlatRadioClearSrcMatchShortEntries</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga95d8f1c200b49f481d117765ec7a66d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f50253b5f4847da0444a001e014ba65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga3f50253b5f4847da0444a001e014ba65">otPlatRadioClearSrcMatchExtEntries</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga3f50253b5f4847da0444a001e014ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75836c10d52472c0dfca98f490c4a5f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga75836c10d52472c0dfca98f490c4a5f7">otPlatRadioReceiveDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aPacket, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> aError)</td></tr>
-<tr class="separator:ga75836c10d52472c0dfca98f490c4a5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe1fdf44907fccdb06be0db517d4fb01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gafe1fdf44907fccdb06be0db517d4fb01">otPlatRadioGetTransmitBuffer</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:gafe1fdf44907fccdb06be0db517d4fb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03fb7cf07043b47e23735e490b6372a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga03fb7cf07043b47e23735e490b6372a0">otPlatRadioTransmit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aPacket)</td></tr>
-<tr class="separator:ga03fb7cf07043b47e23735e490b6372a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f7438e9c7890682dfa76967dc947edd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5f7438e9c7890682dfa76967dc947edd">otPlatRadioTransmitDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aPacket, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aFramePending, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> aError)</td></tr>
-<tr class="separator:ga5f7438e9c7890682dfa76967dc947edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00f23e5fdd33b94627f1cb68a0d91ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga00f23e5fdd33b94627f1cb68a0d91ade">otPlatRadioReceiveDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> aError)</td></tr>
+<tr class="separator:ga00f23e5fdd33b94627f1cb68a0d91ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeab4fb61100d446642492d8fbe58dea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaaeab4fb61100d446642492d8fbe58dea">otPlatRadioGetTransmitBuffer</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gaaeab4fb61100d446642492d8fbe58dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcd90257ecef86b069b91987c53da694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gadcd90257ecef86b069b91987c53da694">otPlatRadioTransmit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame)</td></tr>
+<tr class="separator:gadcd90257ecef86b069b91987c53da694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3535ea41ed81d32998cce061d6f788fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga3535ea41ed81d32998cce061d6f788fc">otPlatRadioTxDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aAckFrame, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> aError)</td></tr>
+<tr class="separator:ga3535ea41ed81d32998cce061d6f788fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7281183aec2df8dd0430cf552e6488e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaa7281183aec2df8dd0430cf552e6488e">otPlatRadioTransmitDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aFramePending, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> aError)</td></tr>
+<tr class="separator:gaa7281183aec2df8dd0430cf552e6488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ac10bba73d06f59af623bbb3349d3fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga4ac10bba73d06f59af623bbb3349d3fb">otPlatRadioGetRssi</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga4ac10bba73d06f59af623bbb3349d3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a5999dadb6ac0ee70a69a960930f132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5a5999dadb6ac0ee70a69a960930f132">otPlatRadioGetCaps</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga5a5999dadb6ac0ee70a69a960930f132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a3c8fe726a4ab0b28435b2f7b0bb8dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5a3c8fe726a4ab0b28435b2f7b0bb8dd">otPlatRadioSetDefaultTxPower</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aPower)</td></tr>
+<tr class="separator:ga5a3c8fe726a4ab0b28435b2f7b0bb8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef6191a2f5c0dd177dc009dae3796e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaef6191a2f5c0dd177dc009dae3796e8e">otPlatRadioGetPromiscuous</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:gaef6191a2f5c0dd177dc009dae3796e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a905ad5c76c5931ee2ef395342f0dca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga0a905ad5c76c5931ee2ef395342f0dca">otPlatRadioSetPromiscuous</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aEnable)</td></tr>
 <tr class="separator:ga0a905ad5c76c5931ee2ef395342f0dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32d56bf3d7825d4ff3f50d6e9c186007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga32d56bf3d7825d4ff3f50d6e9c186007">otPlatDiagRadioTransmitDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aPacket, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aFramePending, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> aError)</td></tr>
-<tr class="separator:ga32d56bf3d7825d4ff3f50d6e9c186007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0be6d07fec8fccc00da07a29d698d6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaa0be6d07fec8fccc00da07a29d698d6d">otPlatDiagRadioReceiveDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aPacket, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> aError)</td></tr>
-<tr class="separator:gaa0be6d07fec8fccc00da07a29d698d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3b9ed222f4ad93e1d09e285b57be1ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gae3b9ed222f4ad93e1d09e285b57be1ef">otPlatRadioEnergyScan</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aScanChannel, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aScanDuration)</td></tr>
-<tr class="separator:gae3b9ed222f4ad93e1d09e285b57be1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb80a809d0eb66480cee3d1802a6680a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaeb80a809d0eb66480cee3d1802a6680a">otPlatDiagRadioTransmitDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aFramePending, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> aError)</td></tr>
+<tr class="separator:gaeb80a809d0eb66480cee3d1802a6680a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1c786ec198169be810d3763a09e9b92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gac1c786ec198169be810d3763a09e9b92">otPlatDiagRadioReceiveDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> aError)</td></tr>
+<tr class="separator:gac1c786ec198169be810d3763a09e9b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc070f8dc28f13a78e621b8131f4762"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga9fc070f8dc28f13a78e621b8131f4762">otPlatRadioEnergyScan</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aScanChannel, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aScanDuration)</td></tr>
+<tr class="separator:ga9fc070f8dc28f13a78e621b8131f4762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65b11fca984c76f2b4bc782cd1e4811a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga65b11fca984c76f2b4bc782cd1e4811a">otPlatRadioEnergyScanDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aEnergyScanMaxRssi)</td></tr>
 <tr class="separator:ga65b11fca984c76f2b4bc782cd1e4811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71b5cc59aaead9fc2e42b4907392a664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga71b5cc59aaead9fc2e42b4907392a664">otPlatRadioGetReceiveSensitivity</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga71b5cc59aaead9fc2e42b4907392a664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga201cd343c329416357a9911245731b1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga201cd343c329416357a9911245731b1c">otPlatRadioPrintBuf</a> (<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer)</td></tr>
 <tr class="separator:ga201cd343c329416357a9911245731b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module includes the platform abstraction for radio operations. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa0be6d07fec8fccc00da07a29d698d6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa0be6d07fec8fccc00da07a29d698d6d">&#9670;&nbsp;</a></span>otPlatDiagRadioReceiveDone()</h2>
+<a id="gac1c786ec198169be810d3763a09e9b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1c786ec198169be810d3763a09e9b92">&#9670;&nbsp;</a></span>otPlatDiagRadioReceiveDone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,13 +148,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td>
-          <td class="paramname"><em>aPacket</em>, </td>
+          <td class="paramtype"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td>
+          <td class="paramname"><em>aFrame</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td>
           <td class="paramname"><em>aError</em>&#160;</td>
         </tr>
         <tr>
@@ -155,22 +164,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The radio driver calls this method to notify <a class="el" href="namespace_open_thread.html">OpenThread</a> diagnostics module of a received packet.</p>
+<p>The radio driver calls this method to notify <a class="el" href="namespace_open_thread.html">OpenThread</a> diagnostics module of a received frame.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aPacket</td><td>A pointer to the received packet or NULL if the receive operation was aborted. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a> when successfully received a frame, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fad2f1e3eb979dd96d0e1f9ef35e601688">kThreadError_Abort</a> when reception was aborted and a frame was not received. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrame</td><td>A pointer to the received frame or NULL if the receive operation failed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td>OT_ERROR_NONE when successfully received a frame, OT_ERROR_ABORT when reception was aborted and a frame was not received, OT_ERROR_NO_BUFS when a frame could not be received due to lack of rx buffer space. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="diag__process_8cpp_source.html#l00400">400</a> of file <a class="el" href="diag__process_8cpp_source.html">diag_process.cpp</a>.</p>
-
 </div>
 </div>
-<a id="ga32d56bf3d7825d4ff3f50d6e9c186007"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga32d56bf3d7825d4ff3f50d6e9c186007">&#9670;&nbsp;</a></span>otPlatDiagRadioTransmitDone()</h2>
+<a id="gaeb80a809d0eb66480cee3d1802a6680a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb80a809d0eb66480cee3d1802a6680a">&#9670;&nbsp;</a></span>otPlatDiagRadioTransmitDone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,8 +191,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td>
-          <td class="paramname"><em>aPacket</em>, </td>
+          <td class="paramtype"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td>
+          <td class="paramname"><em>aFrame</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -196,7 +203,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td>
           <td class="paramname"><em>aError</em>&#160;</td>
         </tr>
         <tr>
@@ -210,25 +217,23 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aPacket</td><td>A pointer to the packet that was transmitted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrame</td><td>A pointer to the frame that was transmitted. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aFramePending</td><td>TRUE if an ACK frame was received and the Frame Pending bit was set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a> when the frame was transmitted, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fa5be4067720a92215d4ea451977b712de">kThreadError_NoAck</a> when the frame was transmitted but no ACK was received, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fa66b2ada6dcb9e04269b303854a2826cf">kThreadError_ChannelAccessFailure</a> when the transmission could not take place due to activity on the channel, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fad2f1e3eb979dd96d0e1f9ef35e601688">kThreadError_Abort</a> when transmission was aborted for other reasons. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td>OT_ERROR_NONE when the frame was transmitted, OT_ERROR_NO_ACK when the frame was transmitted but no ACK was received, OT_ERROR_CHANNEL_ACCESS_FAILURE when the transmission could not take place due to activity on the channel, OT_ERROR_ABORT when transmission was aborted for other reasons. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="diag__process_8cpp_source.html#l00393">393</a> of file <a class="el" href="diag__process_8cpp_source.html">diag_process.cpp</a>.</p>
-
 </div>
 </div>
-<a id="ga3f24dc46cba2235b6dea0670df50a5c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3f24dc46cba2235b6dea0670df50a5c2">&#9670;&nbsp;</a></span>otPlatRadioAddSrcMatchExtEntry()</h2>
+<a id="gac924003fc3bc21a86ab2e2efbbfdddc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac924003fc3bc21a86ab2e2efbbfdddc3">&#9670;&nbsp;</a></span>otPlatRadioAddSrcMatchExtEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioAddSrcMatchExtEntry </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioAddSrcMatchExtEntry </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em>, </td>
@@ -246,7 +251,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adding extended address to the source match table.</p>
+<p>Add an extended address to the source address match table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
@@ -256,25 +261,23 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully added extended address to the source match table. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faa5382c8b434d9cd78f79e12d176fa2ac">kThreadError_NoBufs</a></td><td>No available entry in the source match table.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully added extended address to the source match table. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>No available entry in the source match table.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00695">695</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga5e1cf45dd77ef0608056f2e9cf992d8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e1cf45dd77ef0608056f2e9cf992d8d">&#9670;&nbsp;</a></span>otPlatRadioAddSrcMatchShortEntry()</h2>
+<a id="ga8f53926a91fdef11329a8c3b2e3aecfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f53926a91fdef11329a8c3b2e3aecfc">&#9670;&nbsp;</a></span>otPlatRadioAddSrcMatchShortEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioAddSrcMatchShortEntry </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioAddSrcMatchShortEntry </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em>, </td>
@@ -292,7 +295,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adding short address to the source match table.</p>
+<p>Add a short address to the source address match table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
@@ -302,14 +305,12 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully added short address to the source match table. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faa5382c8b434d9cd78f79e12d176fa2ac">kThreadError_NoBufs</a></td><td>No available entry in the source match table.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully added short address to the source match table. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>No available entry in the source match table.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00671">671</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -328,26 +329,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Removing all the extended addresses from the source match table.</p>
+<p>Clear all the extended/long addresses from source address match table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00766">766</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga57238173bfc0ad9cce66e999f9ad3234"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga57238173bfc0ad9cce66e999f9ad3234">&#9670;&nbsp;</a></span>otPlatRadioClearSrcMatchExtEntry()</h2>
+<a id="ga6c9d428bf1e47845d327d48b910ab6c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c9d428bf1e47845d327d48b910ab6c2">&#9670;&nbsp;</a></span>otPlatRadioClearSrcMatchExtEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioClearSrcMatchExtEntry </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioClearSrcMatchExtEntry </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em>, </td>
@@ -365,7 +365,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Removing extended address to the source match table of the radio.</p>
+<p>Remove an extended address from the source address match table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
@@ -375,14 +375,12 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully removed the extended address from the source match table. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fae47aae9f236f650a4fb8d4c9a60a16be">kThreadError_NoAddress</a></td><td>The extended address is not in source match table.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully removed the extended address from the source match table. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_ADDRESS</td><td>The extended address is not in source address match table.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00735">735</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -401,26 +399,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Removing all the short addresses from the source match table.</p>
+<p>Clear all short addresses from the source address match table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00751">751</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga923d941e8a4d37be5d41de6be4fc275f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga923d941e8a4d37be5d41de6be4fc275f">&#9670;&nbsp;</a></span>otPlatRadioClearSrcMatchShortEntry()</h2>
+<a id="ga89ec142cb8988bf06b825b9e85879460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89ec142cb8988bf06b825b9e85879460">&#9670;&nbsp;</a></span>otPlatRadioClearSrcMatchShortEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioClearSrcMatchShortEntry </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioClearSrcMatchShortEntry </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em>, </td>
@@ -438,7 +435,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Removing short address to the source match table.</p>
+<p>Remove a short address from the source address match table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
@@ -448,25 +445,23 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully removed short address from the source match table. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fae47aae9f236f650a4fb8d4c9a60a16be">kThreadError_NoAddress</a></td><td>The short address is not in source match table.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully removed short address from the source match table. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_ADDRESS</td><td>The short address is not in source address match table.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00719">719</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga5b14c6db562150d0a80c47ef278e5ab8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b14c6db562150d0a80c47ef278e5ab8">&#9670;&nbsp;</a></span>otPlatRadioDisable()</h2>
+<a id="gad0fef7e3418e4568f9b568f65848eff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0fef7e3418e4568f9b568f65848eff0">&#9670;&nbsp;</a></span>otPlatRadioDisable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioDisable </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioDisable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em></td><td>)</td>
@@ -483,24 +478,22 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully transitioned to Disabled.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully transitioned to Disabled.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00228">228</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="gad2f1f79b0fe0bb9015fd996c723ed52e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad2f1f79b0fe0bb9015fd996c723ed52e">&#9670;&nbsp;</a></span>otPlatRadioEnable()</h2>
+<a id="gabfe31d09ed784e1799cb43187b302c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfe31d09ed784e1799cb43187b302c8d">&#9670;&nbsp;</a></span>otPlatRadioEnable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioEnable </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioEnable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em></td><td>)</td>
@@ -517,14 +510,12 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully enabled. </td></tr>
-    <tr><td class="paramname">::kThreadError_Failure</td><td>The radio could not be enabled.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully enabled. </td></tr>
+    <tr><td class="paramname">OT_ERROR_FAILED</td><td>The radio could not be enabled.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00217">217</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -553,28 +544,31 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enable/Disable source match for AutoPend.</p>
+<p>Enable/Disable source address match feature.</p>
+<p>The source address match feature controls how the radio layer decides the "frame pending" bit for acks sent in response to data request commands from children.</p>
+<p>If disabled, the radio layer must set the "frame pending" on all acks to data request commands.</p>
+<p>If enabled, the radio layer uses the source address match table to determine whether to set or clear the "frame
+pending" bit in an ack to a data request command.</p>
+<p>The source address match table provides the list of children for which there is a pending frame. Either a short address or an extended/long address can be added to the source address match table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aEnable</td><td>Enable/disable source match for automatical pending.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aEnable</td><td>Enable/disable source address match feature.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00652">652</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="gae3b9ed222f4ad93e1d09e285b57be1ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae3b9ed222f4ad93e1d09e285b57be1ef">&#9670;&nbsp;</a></span>otPlatRadioEnergyScan()</h2>
+<a id="ga9fc070f8dc28f13a78e621b8131f4762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fc070f8dc28f13a78e621b8131f4762">&#9670;&nbsp;</a></span>otPlatRadioEnergyScan()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioEnergyScan </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioEnergyScan </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em>, </td>
@@ -609,14 +603,12 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully started scanning the channel. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fa063349597cdd5522a1ab6cecdf885588">kThreadError_NotImplemented</a></td><td>The radio doesn't support energy scanning.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully started scanning the channel. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NOT_IMPLEMENTED</td><td>The radio doesn't support energy scanning.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00781">781</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -654,8 +646,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mac_8cpp_source.html#l00265">265</a> of file <a class="el" href="mac_8cpp_source.html">mac.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ga5a5999dadb6ac0ee70a69a960930f132"></a>
@@ -681,9 +671,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The radio capability bit vector. The stack enables or disables some functions based on this value.</dd></dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00337">337</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -716,9 +704,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00343">343</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+</div>
+</div>
+<a id="ga71b5cc59aaead9fc2e42b4907392a664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71b5cc59aaead9fc2e42b4907392a664">&#9670;&nbsp;</a></span>otPlatRadioGetReceiveSensitivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> otPlatRadioGetReceiveSensitivity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
+          <td class="paramname"><em>aInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the radio receive sensitivity value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The radio receive sensitivity value in dBm. </dd></dl>
 
 </div>
 </div>
@@ -745,20 +757,46 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The RSSI in dBm when it is valid. 127 when RSSI is invalid.</dd></dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00331">331</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="gafe1fdf44907fccdb06be0db517d4fb01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafe1fdf44907fccdb06be0db517d4fb01">&#9670;&nbsp;</a></span>otPlatRadioGetTransmitBuffer()</h2>
+<a id="gafec5df7e4c89e4ba870d79c9775a3e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafec5df7e4c89e4ba870d79c9775a3e7d">&#9670;&nbsp;</a></span>otPlatRadioGetState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_radio_packet.html">RadioPacket</a>* otPlatRadioGetTransmitBuffer </td>
+          <td class="memname"><a class="el" href="group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda">otRadioState</a> otPlatRadioGetState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
+          <td class="paramname"><em>aInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get current state of the radio.</p>
+<p>This function is not required by <a class="el" href="namespace_open_thread.html">OpenThread</a>. It may be used for debugging and/or application-specific purposes.</p>
+<dl class="section note"><dt>Note</dt><dd>This function may be not implemented. It does not affect <a class="el" href="namespace_open_thread.html">OpenThread</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Current state of the radio. </dd></dl>
+
+</div>
+</div>
+<a id="gaaeab4fb61100d446642492d8fbe58dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaeab4fb61100d446642492d8fbe58dea">&#9670;&nbsp;</a></span>otPlatRadioGetTransmitBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structot_radio_frame.html">otRadioFrame</a>* otPlatRadioGetTransmitBuffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em></td><td>)</td>
@@ -767,7 +805,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The radio transitions from Transmit to Receive. This method returns a pointer to the transmit buffer.</p>
-<p>The caller forms the IEEE 802.15.4 frame in this buffer then calls <a class="el" href="drivers_2windows_2ot_lwf_2radio_8c.html#aaf595d093e66cd56e2170446e115d103">otPlatRadioTransmit()</a> to request transmission.</p>
+<p>The caller forms the IEEE 802.15.4 frame in this buffer then calls <a class="el" href="drivers_2windows_2ot_lwf_2radio_8c.html#a8f96be517bda65b47f62489f93ce81f7">otPlatRadioTransmit()</a> to request transmission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
@@ -775,9 +813,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the transmit buffer.</dd></dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00325">325</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -803,16 +839,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></td><td>radio is enabled. </td></tr>
-    <tr><td class="paramname"><a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a5df37b7f02e5cdc7d9412b7f872b8e01">false</a></td><td>radio is disabled.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00211">211</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if the radio is enabled, FALSE otherwise.</dd></dl>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -840,18 +868,16 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the size of the buffer </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="dw1000__radio_8c_source.html#l00612">612</a> of file <a class="el" href="dw1000__radio_8c_source.html">dw1000_radio.c</a>.</p>
-
 </div>
 </div>
-<a id="ga063a389dc7d1e68cbe495cc3cff758c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga063a389dc7d1e68cbe495cc3cff758c1">&#9670;&nbsp;</a></span>otPlatRadioReceive()</h2>
+<a id="ga315627b370d8ff89ea101d6529911be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga315627b370d8ff89ea101d6529911be7">&#9670;&nbsp;</a></span>otPlatRadioReceive()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioReceive </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioReceive </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em>, </td>
@@ -879,19 +905,17 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully transitioned to Receive. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faa8280c101a9310dfaf0bf9d49892c025">kThreadError_InvalidState</a></td><td>The radio was disabled or transmitting.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully transitioned to Receive. </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_STATE</td><td>The radio was disabled or transmitting.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00255">255</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga75836c10d52472c0dfca98f490c4a5f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75836c10d52472c0dfca98f490c4a5f7">&#9670;&nbsp;</a></span>otPlatRadioReceiveDone()</h2>
+<a id="ga00f23e5fdd33b94627f1cb68a0d91ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00f23e5fdd33b94627f1cb68a0d91ade">&#9670;&nbsp;</a></span>otPlatRadioReceiveDone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -905,13 +929,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td>
-          <td class="paramname"><em>aPacket</em>, </td>
+          <td class="paramtype"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td>
+          <td class="paramname"><em>aFrame</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td>
           <td class="paramname"><em>aError</em>&#160;</td>
         </tr>
         <tr>
@@ -921,17 +945,52 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The radio driver calls this method to notify <a class="el" href="namespace_open_thread.html">OpenThread</a> of a received packet.</p>
+<p>The radio driver calls this method to notify <a class="el" href="namespace_open_thread.html">OpenThread</a> of a received frame.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aPacket</td><td>A pointer to the received packet or NULL if the receive operation was aborted. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a> when successfully received a frame, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fad2f1e3eb979dd96d0e1f9ef35e601688">kThreadError_Abort</a> when reception was aborted and a frame was not received. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrame</td><td>A pointer to the received frame or NULL if the receive operation failed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td>OT_ERROR_NONE when successfully received a frame, OT_ERROR_ABORT when reception was aborted and a frame was not received, OT_ERROR_NO_BUFS when a frame could not be received due to lack of rx buffer space. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mac_8cpp_source.html#l01197">1197</a> of file <a class="el" href="mac_8cpp_source.html">mac.cpp</a>.</p>
+</div>
+</div>
+<a id="ga5a3c8fe726a4ab0b28435b2f7b0bb8dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a3c8fe726a4ab0b28435b2f7b0bb8dd">&#9670;&nbsp;</a></span>otPlatRadioSetDefaultTxPower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otPlatRadioSetDefaultTxPower </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
+          <td class="paramname"><em>aInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
+          <td class="paramname"><em>aPower</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the radio Tx power used for auto-generated frames.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPower</td><td>The Tx power to use in dBm.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
@@ -968,20 +1027,18 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00349">349</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga979f5ee2e63f0cba66f372149b2ac013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga979f5ee2e63f0cba66f372149b2ac013">&#9670;&nbsp;</a></span>otPlatRadioSleep()</h2>
+<a id="ga4b64d6357b07b8db540e3679155285b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b64d6357b07b8db540e3679155285b2">&#9670;&nbsp;</a></span>otPlatRadioSleep()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioSleep </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioSleep </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em></td><td>)</td>
@@ -998,26 +1055,24 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully transitioned to Sleep. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fa61e9a4d4e64bca043dc999afdf2ca5ba">kThreadError_Busy</a></td><td>The radio was transmitting </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faa8280c101a9310dfaf0bf9d49892c025">kThreadError_InvalidState</a></td><td>The radio was disabled</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully transitioned to Sleep. </td></tr>
+    <tr><td class="paramname">OT_ERROR_BUSY</td><td>The radio was transmitting </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_STATE</td><td>The radio was disabled</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00239">239</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga03fb7cf07043b47e23735e490b6372a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03fb7cf07043b47e23735e490b6372a0">&#9670;&nbsp;</a></span>otPlatRadioTransmit()</h2>
+<a id="gadcd90257ecef86b069b91987c53da694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadcd90257ecef86b069b91987c53da694">&#9670;&nbsp;</a></span>otPlatRadioTransmit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatRadioTransmit </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> otPlatRadioTransmit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
           <td class="paramname"><em>aInstance</em>, </td>
@@ -1025,8 +1080,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td>
-          <td class="paramname"><em>aPacket</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td>
+          <td class="paramname"><em>aFrame</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1036,7 +1091,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This method begins the transmit sequence on the radio.</p>
-<p>The caller must form the IEEE 802.15.4 frame in the buffer provided by <a class="el" href="drivers_2windows_2ot_lwf_2radio_8c.html#a50daa92c6a7c81e62585e4a24fbee13d">otPlatRadioGetTransmitBuffer()</a> before requesting transmission. The channel and transmit power are also included in the <a class="el" href="struct_radio_packet.html">RadioPacket</a> structure.</p>
+<p>The caller must form the IEEE 802.15.4 frame in the buffer provided by <a class="el" href="drivers_2windows_2ot_lwf_2radio_8c.html#a35a10b715c9cd20323f6567a2f24145d">otPlatRadioGetTransmitBuffer()</a> before requesting transmission. The channel and transmit power are also included in the <a class="el" href="structot_radio_frame.html">otRadioFrame</a> structure.</p>
 <p>The transmit sequence consists of:</p><ol type="1">
 <li>Transitioning the radio to Transmit from Receive.</li>
 <li>Transmits the psdu on the given channel and at the given transmit power.</li>
@@ -1044,25 +1099,23 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aPacket</td><td>A pointer to the packet that will be transmitted.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrame</td><td>A pointer to the frame that will be transmitted.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Successfully transitioned to Transmit. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faa8280c101a9310dfaf0bf9d49892c025">kThreadError_InvalidState</a></td><td>The radio was not in the Receive state.</td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully transitioned to Transmit. </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_STATE</td><td>The radio was not in the Receive state.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Function documented in <a class="el" href="include_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="platforms_2cc2538_2radio_8c_source.html#l00274">274</a> of file <a class="el" href="platforms_2cc2538_2radio_8c_source.html">radio.c</a>.</p>
+<p>Function documented in <a class="el" href="include_2openthread_2platform_2radio_8h.html" title="This file defines the radio interface for OpenThread. ">platform/radio.h</a> </p>
 
 </div>
 </div>
-<a id="ga5f7438e9c7890682dfa76967dc947edd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5f7438e9c7890682dfa76967dc947edd">&#9670;&nbsp;</a></span>otPlatRadioTransmitDone()</h2>
+<a id="gaa7281183aec2df8dd0430cf552e6488e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7281183aec2df8dd0430cf552e6488e">&#9670;&nbsp;</a></span>otPlatRadioTransmitDone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1076,8 +1129,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td>
-          <td class="paramname"><em>aPacket</em>, </td>
+          <td class="paramtype"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td>
+          <td class="paramname"><em>aFrame</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1088,7 +1141,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td>
           <td class="paramname"><em>aError</em>&#160;</td>
         </tr>
         <tr>
@@ -1098,25 +1151,73 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The radio driver calls this method to notify <a class="el" href="namespace_open_thread.html">OpenThread</a> that the transmission has completed.</p>
+<p>The radio driver calls this method to notify <a class="el" href="namespace_open_thread.html">OpenThread</a> that the transmission has completed, this function is going to be deprecated, new add platfroms should not use this callback function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aPacket</td><td>A pointer to the packet that was transmitted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrame</td><td>A pointer to the frame that was transmitted. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aFramePending</td><td>TRUE if an ACK frame was received and the Frame Pending bit was set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a> when the frame was transmitted, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fa5be4067720a92215d4ea451977b712de">kThreadError_NoAck</a> when the frame was transmitted but no ACK was received, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fa66b2ada6dcb9e04269b303854a2826cf">kThreadError_ChannelAccessFailure</a> when the transmission could not take place due to activity on the channel, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fad2f1e3eb979dd96d0e1f9ef35e601688">kThreadError_Abort</a> when transmission was aborted for other reasons. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td>OT_ERROR_NONE when the frame was transmitted, OT_ERROR_NO_ACK when the frame was transmitted but no ACK was received, OT_ERROR_CHANNEL_ACCESS_FAILURE when the transmission could not take place due to activity on the channel, OT_ERROR_ABORT when transmission was aborted for other reasons. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mac_8cpp_source.html#l00799">799</a> of file <a class="el" href="mac_8cpp_source.html">mac.cpp</a>.</p>
+</div>
+</div>
+<a id="ga3535ea41ed81d32998cce061d6f788fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3535ea41ed81d32998cce061d6f788fc">&#9670;&nbsp;</a></span>otPlatRadioTxDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otPlatRadioTxDone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
+          <td class="paramname"><em>aInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td>
+          <td class="paramname"><em>aFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td>
+          <td class="paramname"><em>aAckFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td>
+          <td class="paramname"><em>aError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The radio driver calls this method to notify <a class="el" href="namespace_open_thread.html">OpenThread</a> that the transmission has completed, this callback pass up the ACK frame, new add platforms should use this callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrame</td><td>A pointer to the frame that was transmitted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aAckFrame</td><td>A pointer to the ACK frame, NULL if no ACK was received. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aError</td><td>OT_ERROR_NONE when the frame was transmitted, OT_ERROR_NO_ACK when the frame was transmitted but no ACK was received, OT_ERROR_CHANNEL_ACCESS_FAILURE when the transmission could not take place due to activity on the channel, OT_ERROR_ABORT when transmission was aborted for other reasons. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:35 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:05 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/nrf52840/diag.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/nrf52840/diag.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_47c6147ddd2b49bc163ea9cdad9335ed.html">nrf52840</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_babcd410c7a4a46c5ea012c1de521087.html">nrf52840</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,14 +76,12 @@ $(function() {
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;inttypes.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="diag_8h_source.html">platform/diag.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="alarm_8h_source.html">platform/alarm.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2radio_8h_source.html">platform/radio.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="platform_2diag_8h_source.html">openthread/platform/diag.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="alarm_8h_source.html">openthread/platform/alarm.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2openthread_2platform_2radio_8h_source.html">openthread/platform/radio.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8hpp_source.html">common/logging.hpp</a>&gt;</code><br />
-</div>
-<p><a href="nrf52840_2diag_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;<a class="el" href="code__utils_8h_source.html">utils/code_utils.h</a>&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_platform_diag_command.html">PlatformDiagCommand</a></td></tr>
@@ -92,19 +91,19 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga04d5de6f345cfc3f543241991e9ac89c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#ga04d5de6f345cfc3f543241991e9ac89c">otPlatDiagProcess</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, int argc, char *argv[], char *aOutput, size_t aOutputMaxLen)</td></tr>
+<tr class="memitem:ga04d5de6f345cfc3f543241991e9ac89c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#ga04d5de6f345cfc3f543241991e9ac89c">otPlatDiagProcess</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, int argc, char *argv[], char *aOutput, size_t aOutputMaxLen)</td></tr>
 <tr class="separator:ga04d5de6f345cfc3f543241991e9ac89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac43ce755f483330b1caaa62d45c87bd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#gac43ce755f483330b1caaa62d45c87bd3">otPlatDiagModeSet</a> (<a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aMode)</td></tr>
+<tr class="memitem:gac43ce755f483330b1caaa62d45c87bd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#gac43ce755f483330b1caaa62d45c87bd3">otPlatDiagModeSet</a> (<a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aMode)</td></tr>
 <tr class="separator:gac43ce755f483330b1caaa62d45c87bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9dbb920bd0361e88c9a9b22cf18ee254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#ga9dbb920bd0361e88c9a9b22cf18ee254">otPlatDiagModeGet</a> ()</td></tr>
+<tr class="memitem:ga9dbb920bd0361e88c9a9b22cf18ee254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#ga9dbb920bd0361e88c9a9b22cf18ee254">otPlatDiagModeGet</a> ()</td></tr>
 <tr class="separator:ga9dbb920bd0361e88c9a9b22cf18ee254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79201e61064c699a3b226a7fd01ef265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#ga79201e61064c699a3b226a7fd01ef265">otPlatDiagChannelSet</a> (<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
+<tr class="memitem:ga79201e61064c699a3b226a7fd01ef265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#ga79201e61064c699a3b226a7fd01ef265">otPlatDiagChannelSet</a> (<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
 <tr class="separator:ga79201e61064c699a3b226a7fd01ef265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8e12f8bde28a00a9e6c2cbc5ae137e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#gae8e12f8bde28a00a9e6c2cbc5ae137e5">otPlatDiagTxPowerSet</a> (<a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aTxPower)</td></tr>
+<tr class="memitem:gae8e12f8bde28a00a9e6c2cbc5ae137e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#gae8e12f8bde28a00a9e6c2cbc5ae137e5">otPlatDiagTxPowerSet</a> (<a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aTxPower)</td></tr>
 <tr class="separator:gae8e12f8bde28a00a9e6c2cbc5ae137e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga842222bad4dc7569306bf19271ad43cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#ga842222bad4dc7569306bf19271ad43cf">otPlatDiagRadioReceived</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aFrame, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> aError)</td></tr>
-<tr class="separator:ga842222bad4dc7569306bf19271ad43cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70284beb449e6a1fa956f08761122cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#ga70284beb449e6a1fa956f08761122cc4">otPlatDiagAlarmCallback</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memitem:gac385f5586fad4e11c1195cab996f3450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#gac385f5586fad4e11c1195cab996f3450">otPlatDiagRadioReceived</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> aError)</td></tr>
+<tr class="separator:gac385f5586fad4e11c1195cab996f3450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70284beb449e6a1fa956f08761122cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#ga70284beb449e6a1fa956f08761122cc4">otPlatDiagAlarmCallback</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga70284beb449e6a1fa956f08761122cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -125,14 +124,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    {<span class="stringliteral">&quot;listen&quot;</span>, &amp;processListen },</div><div class="line">    {<span class="stringliteral">&quot;transmit&quot;</span>, &amp;processTransmit },</div><div class="line">    {<span class="stringliteral">&quot;id&quot;</span>, &amp;processID }</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="nrf52840_2diag_8c_source.html#l00195">195</a> of file <a class="el" href="nrf52840_2diag_8c_source.html">diag.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

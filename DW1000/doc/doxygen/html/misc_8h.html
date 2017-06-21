@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>include/platform/misc.h File Reference</title>
+<title>OT-DW1000: openthread-master/include/openthread/platform/misc.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ac186d3e8926949364e5821f25491cc3.html">platform</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_61d5b5043cdae76d6d92e24d2958a5cb.html">include</a></li><li class="navelem"><a class="el" href="dir_c799c50edf1c744cd55002f04a278732.html">openthread</a></li><li class="navelem"><a class="el" href="dir_e147634c1c0e69856cd4e206277ac627.html">platform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,170 +74,46 @@ $(function() {
 <p>This file includes platform abstractions for miscellaneous behaviors.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8h_source.html">openthread/types.h</a>&gt;</code><br />
 </div>
 <p><a href="misc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a0cba84283c1ab3c6aa37c143e9a552c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a> { <br />
-&#160;&#160;<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8a82b784469366da574b4fdc23e8a27963">kPlatResetReason_PowerOn</a> = 0, 
-<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8a7deed152fa2edb473f56a88231e3b12d">kPlatResetReason_External</a> = 1, 
-<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8a1f0da3b789ff2aa8b3d003a2c50dc9b6">kPlatResetReason_Software</a> = 2, 
-<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8a8050e859ef62b4915e010aa88aea29f0">kPlatResetReason_Fault</a> = 3, 
+<tr class="memitem:ga0cba84283c1ab3c6aa37c143e9a552c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-misc.html#ga0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a> { <br />
+&#160;&#160;<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8aafd289d7b4aad2db925b90db1328ca98">OT_PLAT_RESET_REASON_POWER_ON</a> = 0, 
+<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8a1ab678261e9f629cee2c44c8b4ab5ec9">OT_PLAT_RESET_REASON_EXTERNAL</a> = 1, 
+<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8abb1d6f2b12e3894e019f069c2688fa15">OT_PLAT_RESET_REASON_SOFTWARE</a> = 2, 
+<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8ae8e71d7128ce714dd75bb60a10e6c40b">OT_PLAT_RESET_REASON_FAULT</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8aa2cbbed149d09e3d05cf2ec9a7425388">kPlatResetReason_Crash</a> = 4, 
-<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8a3047eaf89b9b013e063eae6bc371bbbd">kPlatResetReason_Assert</a> = 5, 
-<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8a79eaa88ba77470f3a56b049f59c46513">kPlatResetReason_Other</a> = 6, 
-<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8ad4d67cac224e03ecbd999ce82e0e5a3e">kPlatResetReason_Unknown</a> = 7, 
+&#160;&#160;<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8aca405ae4a1f6b4a9dcee899936410caa">OT_PLAT_RESET_REASON_CRASH</a> = 4, 
+<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8a5fcb6e382928d53aad4a8b26c5e11fe0">OT_PLAT_RESET_REASON_ASSERT</a> = 5, 
+<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8a6d4081fdbd8b462afcbb2ee4909bdcec">OT_PLAT_RESET_REASON_OTHER</a> = 6, 
+<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8a472c8bf0f4c139aeb1f5c14da8015e36">OT_PLAT_RESET_REASON_UNKNOWN</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8ade0fa6b88a275f37763bbe14f4155cfc">kPlatResetReason_Watchdog</a> = 8, 
-<a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8a3b60f43e7653f1e5458ba7a2261f6a25">kPlatResetReason_Count</a>
+&#160;&#160;<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8a18c76ac149b9b628e9c1c19bfb42bd22">OT_PLAT_RESET_REASON_WATCHDOG</a> = 8, 
+<a class="el" href="group__plat-misc.html#gga0cba84283c1ab3c6aa37c143e9a552c8a1862c415e63af9af3a078183299aefdb">OT_PLAT_RESET_REASON_COUNT</a>
 <br />
  }</td></tr>
-<tr class="separator:a0cba84283c1ab3c6aa37c143e9a552c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga0cba84283c1ab3c6aa37c143e9a552c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6e5e33121dff7942b201db3cc37e9e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8h.html#a6e5e33121dff7942b201db3cc37e9e86">otPlatReset</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:a6e5e33121dff7942b201db3cc37e9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26ce83d07357b4c94234a5c12aff289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8h.html#ab26ce83d07357b4c94234a5c12aff289">otPlatGetResetReason</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ab26ce83d07357b4c94234a5c12aff289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8eafcfd4eeee8736e39188d0dcc362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc_8h.html#a3c8eafcfd4eeee8736e39188d0dcc362">otPlatAssertFail</a> (const char *aFilename, int aLineNumber)</td></tr>
-<tr class="separator:a3c8eafcfd4eeee8736e39188d0dcc362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e5e33121dff7942b201db3cc37e9e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-misc.html#ga6e5e33121dff7942b201db3cc37e9e86">otPlatReset</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga6e5e33121dff7942b201db3cc37e9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab26ce83d07357b4c94234a5c12aff289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__plat-misc.html#ga0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-misc.html#gab26ce83d07357b4c94234a5c12aff289">otPlatGetResetReason</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gab26ce83d07357b4c94234a5c12aff289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c8eafcfd4eeee8736e39188d0dcc362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-misc.html#ga3c8eafcfd4eeee8736e39188d0dcc362">otPlatAssertFail</a> (const char *aFilename, int aLineNumber)</td></tr>
+<tr class="separator:ga3c8eafcfd4eeee8736e39188d0dcc362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3486dee13cc2cb36bb233ebb2c94583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-misc.html#gaf3486dee13cc2cb36bb233ebb2c94583">otPlatWakeHost</a> (void)</td></tr>
+<tr class="separator:gaf3486dee13cc2cb36bb233ebb2c94583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes platform abstractions for miscellaneous behaviors. </p>
-
-<p class="definition">Definition in file <a class="el" href="misc_8h_source.html">misc.h</a>.</p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a0cba84283c1ab3c6aa37c143e9a552c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cba84283c1ab3c6aa37c143e9a552c8">&#9670;&nbsp;</a></span>otPlatResetReason</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Enumeration of possible reset reason codes.</p>
-<p>These are in the same order as the Spinel reset reason codes. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8a82b784469366da574b4fdc23e8a27963"></a>kPlatResetReason_PowerOn&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8a7deed152fa2edb473f56a88231e3b12d"></a>kPlatResetReason_External&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8a1f0da3b789ff2aa8b3d003a2c50dc9b6"></a>kPlatResetReason_Software&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8a8050e859ef62b4915e010aa88aea29f0"></a>kPlatResetReason_Fault&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8aa2cbbed149d09e3d05cf2ec9a7425388"></a>kPlatResetReason_Crash&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8a3047eaf89b9b013e063eae6bc371bbbd"></a>kPlatResetReason_Assert&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8a79eaa88ba77470f3a56b049f59c46513"></a>kPlatResetReason_Other&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8ad4d67cac224e03ecbd999ce82e0e5a3e"></a>kPlatResetReason_Unknown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8ade0fa6b88a275f37763bbe14f4155cfc"></a>kPlatResetReason_Watchdog&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0cba84283c1ab3c6aa37c143e9a552c8a3b60f43e7653f1e5458ba7a2261f6a25"></a>kPlatResetReason_Count&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="misc_8h_source.html#l00060">60</a> of file <a class="el" href="misc_8h_source.html">misc.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a3c8eafcfd4eeee8736e39188d0dcc362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c8eafcfd4eeee8736e39188d0dcc362">&#9670;&nbsp;</a></span>otPlatAssertFail()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatAssertFail </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>aFilename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aLineNumber</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function provides a platform specific implementation for assert.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aFilename</td><td>The name of the file where the assert occurred. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLineNumber</td><td>The line number in the file where the assert occurred. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab26ce83d07357b4c94234a5c12aff289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab26ce83d07357b4c94234a5c12aff289">&#9670;&nbsp;</a></span>otPlatGetResetReason()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a> otPlatGetResetReason </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function returns the reason for the last platform reset.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Function documented in <a class="el" href="misc_8h.html" title="This file includes platform abstractions for miscellaneous behaviors. ">platform/misc.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2538_2misc_8c_source.html#l00039">39</a> of file <a class="el" href="cc2538_2misc_8c_source.html">misc.c</a>.</p>
-
-</div>
-</div>
-<a id="a6e5e33121dff7942b201db3cc37e9e86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e5e33121dff7942b201db3cc37e9e86">&#9670;&nbsp;</a></span>otPlatReset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatReset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function performs a software reset on the platform, if supported.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Function documented in <a class="el" href="misc_8h.html" title="This file includes platform abstractions for miscellaneous behaviors. ">platform/misc.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2538_2misc_8c_source.html#l00033">33</a> of file <a class="el" href="cc2538_2misc_8c_source.html">misc.c</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

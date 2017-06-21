@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/nrf52840/platform.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/nrf52840/platform.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_47c6147ddd2b49bc163ea9cdad9335ed.html">nrf52840</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_babcd410c7a4a46c5ea012c1de521087.html">nrf52840</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,28 +69,25 @@ $(function() {
 <div class="title">platform.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="logging_8h_source.html">platform/logging.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2uart_8h_source.html">platform/uart.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="logging_8h_source.html">openthread/platform/logging.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="nrf__drv__clock_8h_source.html">drivers/nrf_drv_clock.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="platform-nrf5_8h_source.html">platform-nrf5.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="openthread-core-config_8h_source.html">openthread-core-config.h</a>&gt;</code><br />
 <code>#include &lt;openthread-config.h&gt;</code><br />
-</div>
-<p><a href="examples_2platforms_2nrf52840_2platform_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4464d4205cf92370b8d5077d93bc48a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2platform_8c.html#a4464d4205cf92370b8d5077d93bc48a6">__cxa_pure_virtual</a> (void)</td></tr>
 <tr class="separator:a4464d4205cf92370b8d5077d93bc48a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a118c6c2e9499e0cfba22b76848b040af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2platform_8c.html#a118c6c2e9499e0cfba22b76848b040af">PlatformInit</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a118c6c2e9499e0cfba22b76848b040af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cbb2b082e2e26d4f454d82ba9fc9fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2platform_8c.html#af6cbb2b082e2e26d4f454d82ba9fc9fe">PlatformDeinit</a> (void)</td></tr>
+<tr class="separator:af6cbb2b082e2e26d4f454d82ba9fc9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ede0f447a8bfba163201b66a401d17a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2platform_8c.html#a2ede0f447a8bfba163201b66a401d17a">PlatformProcessDrivers</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:a2ede0f447a8bfba163201b66a401d17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes the platform-specific initializers. </p>
-
-<p class="definition">Definition in file <a class="el" href="examples_2platforms_2nrf52840_2platform_8c_source.html">platform.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a4464d4205cf92370b8d5077d93bc48a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4464d4205cf92370b8d5077d93bc48a6">&#9670;&nbsp;</a></span>__cxa_pure_virtual()</h2>
@@ -107,7 +105,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2platform_8c_source.html#l00048">48</a> of file <a class="el" href="examples_2platforms_2nrf52840_2platform_8c_source.html">platform.c</a>.</p>
+</div>
+</div>
+<a id="af6cbb2b082e2e26d4f454d82ba9fc9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cbb2b082e2e26d4f454d82ba9fc9fe">&#9670;&nbsp;</a></span>PlatformDeinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlatformDeinit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function performs all platform-specific deinitialization. </p>
 
 </div>
 </div>
@@ -139,8 +154,6 @@ Functions</h2></td></tr>
 <p>This function performs all platform-specific initialization.</p>
 <p>Function documented in <a class="el" href="platform-cc2650_8h.html">platform-cc2650.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2platform_8c_source.html#l00050">50</a> of file <a class="el" href="examples_2platforms_2nrf52840_2platform_8c_source.html">platform.c</a>.</p>
-
 </div>
 </div>
 <a id="a2ede0f447a8bfba163201b66a401d17a"></a>
@@ -167,14 +180,12 @@ Functions</h2></td></tr>
 </dl>
 <p>Function documented in <a class="el" href="platform-cc2650_8h.html">platform-cc2650.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2platform_8c_source.html#l00076">76</a> of file <a class="el" href="examples_2platforms_2nrf52840_2platform_8c_source.html">platform.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

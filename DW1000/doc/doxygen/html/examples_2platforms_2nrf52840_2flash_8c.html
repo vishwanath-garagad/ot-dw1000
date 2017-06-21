@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/nrf52840/flash.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/nrf52840/flash.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_47c6147ddd2b49bc163ea9cdad9335ed.html">nrf52840</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_babcd410c7a4a46c5ea012c1de521087.html">nrf52840</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,15 +74,13 @@ $(function() {
 <div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="alarm_8h_source.html">platform/alarm.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8h_source.html">openthread/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="alarm_8h_source.html">openthread/platform/alarm.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="examples_2platforms_2utils_2flash_8h_source.html">utils/flash.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="code__utils_8h_source.html">utils/code_utils.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="nrf__nvmc_8h_source.html">hal/nrf_nvmc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="platform-nrf5_8h_source.html">platform-nrf5.h</a>&quot;</code><br />
-</div>
-<p><a href="examples_2platforms_2nrf52840_2flash_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a3f5991339fd9b6486a4840c010c3bdc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#a3f5991339fd9b6486a4840c010c3bdc6">FLASH_PAGE_ADDR_MASK</a>&#160;&#160;&#160;0xFFFFF000</td></tr>
@@ -95,14 +94,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a64dfd1d8c0c3c1e44fb08b3437c03138"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#a64dfd1d8c0c3c1e44fb08b3437c03138">utilsFlashInit</a> (void)</td></tr>
-<tr class="separator:a64dfd1d8c0c3c1e44fb08b3437c03138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599c70e2586161909b68399ccf9df378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#a599c70e2586161909b68399ccf9df378">utilsFlashInit</a> (void)</td></tr>
+<tr class="separator:a599c70e2586161909b68399ccf9df378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a221c1a07198e4a3cab9b27d6829169ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#a221c1a07198e4a3cab9b27d6829169ca">utilsFlashGetSize</a> (void)</td></tr>
 <tr class="separator:a221c1a07198e4a3cab9b27d6829169ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d76e5a37b749210577b624962eb8fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#aa9d76e5a37b749210577b624962eb8fe">utilsFlashErasePage</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aAddress)</td></tr>
-<tr class="separator:aa9d76e5a37b749210577b624962eb8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ebb441a421448dc12b3e835c326d79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#a11ebb441a421448dc12b3e835c326d79">utilsFlashStatusWait</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aTimeout)</td></tr>
-<tr class="separator:a11ebb441a421448dc12b3e835c326d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4cb926c464be39be969ab65b201334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#add4cb926c464be39be969ab65b201334">utilsFlashErasePage</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aAddress)</td></tr>
+<tr class="separator:add4cb926c464be39be969ab65b201334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca859991e64d16a8b5504dbf4c2e11ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#aca859991e64d16a8b5504dbf4c2e11ad">utilsFlashStatusWait</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aTimeout)</td></tr>
+<tr class="separator:aca859991e64d16a8b5504dbf4c2e11ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac074034136e76831eade7d30c3f25b18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#ac074034136e76831eade7d30c3f25b18">utilsFlashWrite</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aAddress, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aData, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aSize)</td></tr>
 <tr class="separator:ac074034136e76831eade7d30c3f25b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c5e0ee8f545825295095ed0656c558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2nrf52840_2flash_8c.html#a40c5e0ee8f545825295095ed0656c558">utilsFlashRead</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aAddress, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aData, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aSize)</td></tr>
@@ -128,8 +127,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00047">47</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
-
 </div>
 </div>
 <a id="a3f5991339fd9b6486a4840c010c3bdc6"></a>
@@ -143,8 +140,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00044">44</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
 
 </div>
 </div>
@@ -160,8 +155,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00045">45</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
-
 </div>
 </div>
 <a id="af1d930a7d0095b0aecd978f97f1334bf"></a>
@@ -176,19 +169,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00046">46</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa9d76e5a37b749210577b624962eb8fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9d76e5a37b749210577b624962eb8fe">&#9670;&nbsp;</a></span>utilsFlashErasePage()</h2>
+<a id="add4cb926c464be39be969ab65b201334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4cb926c464be39be969ab65b201334">&#9670;&nbsp;</a></span>utilsFlashErasePage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> utilsFlashErasePage </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> utilsFlashErasePage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>aAddress</em></td><td>)</td>
@@ -206,14 +197,12 @@ Variables</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>Erase flash operation is started. </td></tr>
-    <tr><td class="paramname">kThreadError_Failed</td><td>Erase flash operation is not started. </td></tr>
-    <tr><td class="paramname">kThreadError_InvalidArgs</td><td>aAddress is out of range of flash or not aligend. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Erase flash operation is started. </td></tr>
+    <tr><td class="paramname">OT_ERROR_FAILED</td><td>Erase flash operation is not started. </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_ARGS</td><td>aAddress is out of range of flash or not aligend. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00068">68</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
 
 </div>
 </div>
@@ -235,18 +224,16 @@ Variables</h2></td></tr>
 <p>Get the size of flash that can be read/write by the caller. The usable flash size is always the multiple of flash page size.</p>
 <dl class="section return"><dt>Returns</dt><dd>The size of the flash. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00063">63</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
-
 </div>
 </div>
-<a id="a64dfd1d8c0c3c1e44fb08b3437c03138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64dfd1d8c0c3c1e44fb08b3437c03138">&#9670;&nbsp;</a></span>utilsFlashInit()</h2>
+<a id="a599c70e2586161909b68399ccf9df378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a599c70e2586161909b68399ccf9df378">&#9670;&nbsp;</a></span>utilsFlashInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> utilsFlashInit </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> utilsFlashInit </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -257,14 +244,12 @@ Variables</h2></td></tr>
 <p>Perform any initialization for flash driver.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9faad5780f7d9de1820e280b293330ea137">kThreadError_None</a></td><td>Initialize flash driver success. </td></tr>
-    <tr><td class="paramname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9fab13aaec895178d063d25eb32f346c9b2">kThreadError_Failed</a></td><td>Initialize flash driver fail.</td></tr>
+    <tr><td class="paramname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49aa9ef65960404a1f6fdeed9be3ef885da">OT_ERROR_NONE</a></td><td>Initialize flash driver success. </td></tr>
+    <tr><td class="paramname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49aef577f3803f81443a3c9a99c0e1b0fcd">OT_ERROR_FAILED</a></td><td>Initialize flash driver fail.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>this file only implements stubs for the function calls. There is not enough space on the cc2650 to support NV as an SoC. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00054">54</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
 
 </div>
 </div>
@@ -311,18 +296,16 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The actual size of octets read to buffer. It is expected the same as aSize, and may be less than aSize. 0 indicates that something wrong happens when reading. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00121">121</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
-
 </div>
 </div>
-<a id="a11ebb441a421448dc12b3e835c326d79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11ebb441a421448dc12b3e835c326d79">&#9670;&nbsp;</a></span>utilsFlashStatusWait()</h2>
+<a id="aca859991e64d16a8b5504dbf4c2e11ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca859991e64d16a8b5504dbf4c2e11ad">&#9670;&nbsp;</a></span>utilsFlashStatusWait()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> utilsFlashStatusWait </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> utilsFlashStatusWait </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>aTimeout</em></td><td>)</td>
@@ -339,13 +322,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>Flash is ready for any operation. </td></tr>
-    <tr><td class="paramname">kThreadError_Busy</td><td>Flash is busy. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Flash is ready for any operation. </td></tr>
+    <tr><td class="paramname">OT_ERROR_BUSY</td><td>Flash is busy. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00079">79</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
 
 </div>
 </div>
@@ -392,8 +373,6 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The actual size of octets write to flash. It is expected the same as aSize, and may be less than aSize. 0 indicates that something wrong happens when writing. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html#l00108">108</a> of file <a class="el" href="examples_2platforms_2nrf52840_2flash_8c_source.html">flash.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -428,7 +407,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

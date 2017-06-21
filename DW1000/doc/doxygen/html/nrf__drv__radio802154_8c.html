@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>third_party/NordicSemiconductor/drivers/nrf_drv_radio802154.c File Reference</title>
+<title>OT-DW1000: openthread-master/third_party/NordicSemiconductor/drivers/nrf_drv_radio802154.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_dd28405d1d51d11eb48092474bb51a18.html">NordicSemiconductor</a></li><li class="navelem"><a class="el" href="dir_e6ca249f62c99ea7fad4a8e829a16cf2.html">drivers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_7d90705f0e33e4f611d5ec5bfa470328.html">third_party</a></li><li class="navelem"><a class="el" href="dir_c6ade4d90365b8764d7643f056295237.html">NordicSemiconductor</a></li><li class="navelem"><a class="el" href="dir_8830a909936acc6391e78b86448992eb.html">drivers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -83,9 +84,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="nrf__radio_8h_source.html">hal/nrf_radio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_nordic_semiconductor_2cmsis_2cmsis__gcc_8h_source.html">cmsis/cmsis_gcc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="platform-nrf5_8h_source.html">platform-nrf5.h</a>&quot;</code><br />
-</div>
-<p><a href="nrf__drv__radio802154_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrx__buffer__t.html">rx_buffer_t</a></td></tr>
@@ -215,6 +214,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a68fcf39d5d61d799968b8f39e6da0605"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrf__drv__radio802154_8c.html#a68fcf39d5d61d799968b8f39e6da0605">nrf_drv_radio802154_channel_get</a> (void)</td></tr>
 <tr class="memdesc:a68fcf39d5d61d799968b8f39e6da0605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get channel on which the radio operates right now.  <a href="#a68fcf39d5d61d799968b8f39e6da0605">More...</a><br /></td></tr>
 <tr class="separator:a68fcf39d5d61d799968b8f39e6da0605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0922594a7bbc64bfedf2c434d93de6af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrf__drv__radio802154_8c.html#a0922594a7bbc64bfedf2c434d93de6af">nrf_drv_radio802154_ack_tx_power_set</a> (<a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> power)</td></tr>
+<tr class="memdesc:a0922594a7bbc64bfedf2c434d93de6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set transmit power used for ACK frames.  <a href="#a0922594a7bbc64bfedf2c434d93de6af">More...</a><br /></td></tr>
+<tr class="separator:a0922594a7bbc64bfedf2c434d93de6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e193a0f507221fa46163b49abca29c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrf__drv__radio802154_8c.html#a0e193a0f507221fa46163b49abca29c1">nrf_drv_radio802154_pan_id_set</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *p_pan_id)</td></tr>
 <tr class="memdesc:a0e193a0f507221fa46163b49abca29c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PAN Id used by this device.  <a href="#a0e193a0f507221fa46163b49abca29c1">More...</a><br /></td></tr>
 <tr class="separator:a0e193a0f507221fa46163b49abca29c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,8 +227,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:a309311990fa2b1dfe0e9a97320d4c92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Short Address of this device.  <a href="#a309311990fa2b1dfe0e9a97320d4c92d">More...</a><br /></td></tr>
 <tr class="separator:a309311990fa2b1dfe0e9a97320d4c92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad15e32e97892b3afa4d9da94d093f93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrf__drv__radio802154_8c.html#ad15e32e97892b3afa4d9da94d093f93c">nrf_drv_radio802154_init</a> (void)</td></tr>
-<tr class="memdesc:ad15e32e97892b3afa4d9da94d093f93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module contains generic 802.15.4 radio driver for nRF SoC devices.  <a href="#ad15e32e97892b3afa4d9da94d093f93c">More...</a><br /></td></tr>
+<tr class="memdesc:ad15e32e97892b3afa4d9da94d093f93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize 802.15.4 driver.  <a href="#ad15e32e97892b3afa4d9da94d093f93c">More...</a><br /></td></tr>
 <tr class="separator:ad15e32e97892b3afa4d9da94d093f93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80a4393ce0c8082503b64d1798f8c57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrf__drv__radio802154_8c.html#ae80a4393ce0c8082503b64d1798f8c57">nrf_drv_radio802154_deinit</a> (void)</td></tr>
+<tr class="memdesc:ae80a4393ce0c8082503b64d1798f8c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize 802.15.4 driver.  <a href="#ae80a4393ce0c8082503b64d1798f8c57">More...</a><br /></td></tr>
+<tr class="separator:ae80a4393ce0c8082503b64d1798f8c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06750a1bf380484ea57a588da6b7b6e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrf__drv__radio802154_8h.html#ac0f653addcf279da13d5dbfc5320e4f8">nrf_drv_radio802154_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrf__drv__radio802154_8c.html#a06750a1bf380484ea57a588da6b7b6e4">nrf_drv_radio802154_state_get</a> (void)</td></tr>
+<tr class="memdesc:a06750a1bf380484ea57a588da6b7b6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current state of the radio.  <a href="#a06750a1bf380484ea57a588da6b7b6e4">More...</a><br /></td></tr>
+<tr class="separator:a06750a1bf380484ea57a588da6b7b6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06b0c0c0f1f20f278bce26af6e30328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrf__drv__radio802154_8c.html#ab06b0c0c0f1f20f278bce26af6e30328">nrf_drv_radio802154_sleep</a> (void)</td></tr>
 <tr class="memdesc:ab06b0c0c0f1f20f278bce26af6e30328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change radio state to Sleep.  <a href="#ab06b0c0c0f1f20f278bce26af6e30328">More...</a><br /></td></tr>
 <tr class="separator:ab06b0c0c0f1f20f278bce26af6e30328"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,8 +278,6 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements the nrf 802.15.4 radio driver. </p>
-
-<p class="definition">Definition in file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab7218f824d50a8917383134864877f0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7218f824d50a8917383134864877f0a">&#9670;&nbsp;</a></span>ACK_HEADER_WITH_PENDING</h2>
@@ -284,8 +290,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00057">57</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -301,8 +305,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00058">58</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a69de7b8253f21cfeffae028cb21a788c"></a>
@@ -316,8 +318,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00060">60</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -333,8 +333,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00061">61</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a3d6fca3d1d141774b0731d326e12700f"></a>
@@ -348,8 +346,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00062">62</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -365,8 +361,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00117">117</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a26b6fd4f89ebf18b77e57d49b7f99b30"></a>
@@ -380,8 +374,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00113">113</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -397,8 +389,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00115">115</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a294b587d460b14170d2ce3f4da9083ce"></a>
@@ -412,8 +402,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00099">99</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -429,8 +417,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00087">87</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a4193f399cfecf510bd0f451145d5c73e"></a>
@@ -444,8 +430,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00088">88</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -461,8 +445,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00067">67</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="aa166a1fd3f68193c950b3a3c47b04dcf"></a>
@@ -476,8 +458,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00063">63</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -493,8 +473,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00064">64</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="ae317d52091bec49722566844fb4fa421"></a>
@@ -508,8 +486,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00065">65</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -525,8 +501,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00066">66</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a99dddc01554f806952af38ce88347016"></a>
@@ -540,8 +514,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00068">68</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -557,8 +529,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00096">96</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a93cb0e8ac8f302be4d9afb527653ce42"></a>
@@ -572,8 +542,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00069">69</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -589,8 +557,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00070">70</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="aedcc0cab0de419493e0cbd0a88587320"></a>
@@ -604,8 +570,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00071">71</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -621,8 +585,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00072">72</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a6974baccb7f0c46c81873d49e6869528"></a>
@@ -636,8 +598,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00073">73</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -653,8 +613,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00074">74</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a85f63c7bcc30846b0f687349363dc05b"></a>
@@ -668,8 +626,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00075">75</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -685,8 +641,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00076">76</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a879456c3b8e2853f7044d764e9c180d4"></a>
@@ -700,8 +654,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00097">97</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -717,8 +669,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00090">90</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a8c746b0208845dac2bf464dc8a77d82f"></a>
@@ -732,8 +682,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00091">91</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -749,8 +697,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00092">92</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a036660ee24e11299f576c4686e6dd2da"></a>
@@ -764,8 +710,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00104">104</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -781,8 +725,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00102">102</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="ae0ba0d1092fd9ac02527a2cd6535ae3c"></a>
@@ -796,8 +738,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00078">78</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -813,8 +753,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00077">77</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="af45db8d5be7dcb51e67345f49c1d5096"></a>
@@ -829,8 +767,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00079">79</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a809d416c9881148468214ebe2835f9b1"></a>
@@ -844,8 +780,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00094">94</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -865,8 +799,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00121">121</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="aa3f3343dcf960c24707fe2a29b41e738"></a>
@@ -880,8 +812,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00095">95</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -897,8 +827,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00123">123</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a297cd3968971cb65bf3a8fd7424c4654"></a>
@@ -912,8 +840,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00085">85</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -929,8 +855,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00084">84</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="aa0b2ed630b1fe78942e43852553993a3"></a>
@@ -944,8 +868,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00080">80</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -961,8 +883,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00081">81</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="af2b1da3743a2d670585c3239740858c8"></a>
@@ -976,8 +896,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00082">82</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -993,8 +911,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00083">83</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="ab05641f25a3dac90174224459fff2c3d"></a>
@@ -1008,8 +924,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00111">111</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -1025,8 +939,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00108">108</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="aeb54113de795d56827cb8aaf52c74129"></a>
@@ -1040,8 +952,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00106">106</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -1069,8 +979,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a756adac824be7fdeeac3026997c04711acf1a971ffa8855c06c4bd5cb931f12da"></a>RADIO_STATE_ED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00146">146</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -1090,7 +998,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01610">1610</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
+</div>
+</div>
+<a id="a0922594a7bbc64bfedf2c434d93de6af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0922594a7bbc64bfedf2c434d93de6af">&#9670;&nbsp;</a></span>nrf_drv_radio802154_ack_tx_power_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrf_drv_radio802154_ack_tx_power_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
+          <td class="paramname"><em>power</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set transmit power used for ACK frames. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">power</td><td>Transmit power [dBm]. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1123,8 +1055,6 @@ addresses and Pan Id of this device.</h1>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01019">1019</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a5b8bceed89867f226713f501de27adea"></a>
@@ -1154,8 +1084,6 @@ memory management</h1>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00998">998</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a68fcf39d5d61d799968b8f39e6da0605"></a>
@@ -1176,7 +1104,26 @@ memory management</h1>
 
 <p>Get channel on which the radio operates right now. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00890">890</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
+</div>
+</div>
+<a id="ae80a4393ce0c8082503b64d1798f8c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80a4393ce0c8082503b64d1798f8c57">&#9670;&nbsp;</a></span>nrf_drv_radio802154_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrf_drv_radio802154_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinitialize 802.15.4 driver. </p>
+<p>Deinitialize radio peripheral and reset it to the default state. </p>
 
 </div>
 </div>
@@ -1220,8 +1167,6 @@ memory management</h1>
 <dd>
 false If the driver could not schedule the energy detection procedure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01104">1104</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a72b53caf698c248401d19ae5cb3fd955"></a>
@@ -1249,8 +1194,6 @@ false If the driver could not schedule the energy detection procedure. </dd></dl
 </dl>
 <p>This function makes copy of the address. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00900">900</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="ad15e32e97892b3afa4d9da94d093f93c"></a>
@@ -1269,12 +1212,9 @@ false If the driver could not schedule the energy detection procedure. </dd></dl
       </table>
 </div><div class="memdoc">
 
-<p>This module contains generic 802.15.4 radio driver for nRF SoC devices. </p>
-<p>Initialize 802.15.4 driver.</p>
+<p>Initialize 802.15.4 driver. </p>
 <dl class="section note"><dt>Note</dt><dd>This function shall be called once, before any other function from this module.</dd></dl>
 <p>Initialize radio peripheral to Sleep state. </p>
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00910">910</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -1304,8 +1244,6 @@ addresses and Pan Id of this device.</h1>
   </dd>
 </dl>
 <p>This function makes copy of the PAN Id. </p>
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00895">895</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -1351,8 +1289,6 @@ addresses and Pan Id of this device.</h1>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01062">1062</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a214800b7a320e4e59d7898d0482b8552"></a>
@@ -1378,8 +1314,6 @@ addresses and Pan Id of this device.</h1>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01092">1092</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -1426,8 +1360,6 @@ addresses and Pan Id of this device.</h1>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01024">1024</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="abc1ec91631fdb8711c4517dbdef1c243"></a>
@@ -1454,8 +1386,6 @@ addresses and Pan Id of this device.</h1>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01009">1009</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -1486,8 +1416,6 @@ mode.</h1>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01014">1014</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a382c398883fe2bda0ea6eeb6d16b1fb3"></a>
@@ -1516,8 +1444,6 @@ mode.</h1>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00941">941</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a286cbd71ae27c4cdab02f08729d3d660"></a>
@@ -1538,8 +1464,6 @@ mode.</h1>
 
 <p>Get result of last RSSI measurement. </p>
 <dl class="section return"><dt>Returns</dt><dd>RSSI measurement result [dBm]. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01003">1003</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
 
 </div>
 </div>
@@ -1568,8 +1492,6 @@ mode.</h1>
 </dl>
 <p>This function makes copy of the address. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00905">905</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="ab06b0c0c0f1f20f278bce26af6e30328"></a>
@@ -1589,6 +1511,31 @@ mode.</h1>
 </div><div class="memdoc">
 
 <p>Change radio state to Sleep. </p>
+<dl class="section note"><dt>Note</dt><dd>This function should be called only if radio is in Receive state.</dd></dl>
+<p>Sleep state is the lowest power state. In this state radio cannot transmit or receive frames.</p>
+<dl class="section return"><dt>Returns</dt><dd>true If the radio changes it's state to low power mode. </dd>
+<dd>
+false If the driver could not schedule changing state. </dd></dl>
+
+</div>
+</div>
+<a id="a06750a1bf380484ea57a588da6b7b6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06750a1bf380484ea57a588da6b7b6e4">&#9670;&nbsp;</a></span>nrf_drv_radio802154_state_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nrf__drv__radio802154_8h.html#ac0f653addcf279da13d5dbfc5320e4f8">nrf_drv_radio802154_state_t</a> nrf_drv_radio802154_state_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current state of the radio. </p>
 <h1><a class="anchor" id="Functions"></a>
 to request FSM transitions.</h1>
 <pre class="fragment">     receive()       transmit()
@@ -1597,13 +1544,7 @@ Sleep         Receive         Transmit
      &lt;-------- |  /|\&lt;--------
       sleep()  |   |   receive() / transmitted() / busy_channel()
                |   |
-</pre><p> energy_detection() | | energy_detected() |/ | Energy detection </p><dl class="section note"><dt>Note</dt><dd>This function should be called only if radio is in Receive state.</dd></dl>
-<p>Sleep state is the lowest power state. In this state radio cannot transmit or receive frames.</p>
-<dl class="section return"><dt>Returns</dt><dd>true If the radio changes it's state to low power mode. </dd>
-<dd>
-false If the driver could not schedule changing state. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00918">918</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
+</pre><p> energy_detection() | | energy_detected() |/ | Energy detection </p>
 
 </div>
 </div>
@@ -1654,8 +1595,6 @@ false If the driver could not schedule changing state. </dd></dl>
 <dd>
 false If the driver could not schedule the transmission procedure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l00991">991</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 <a id="a069017076901874ae563e04dbd958d9b"></a>
@@ -1674,14 +1613,12 @@ false If the driver could not schedule the transmission procedure. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrf__drv__radio802154_8c_source.html#l01112">1112</a> of file <a class="el" href="nrf__drv__radio802154_8c_source.html">nrf_drv_radio802154.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:33 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:03 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/drivers/windows/otLwf/datapath.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/drivers/windows/otLwf/datapath.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_757d408b91fe77c0d6541574880c2422.html">drivers</a></li><li class="navelem"><a class="el" href="dir_2241398f140824e7a05e00f2ce66418d.html">windows</a></li><li class="navelem"><a class="el" href="dir_a0359699c7e7a236fc9778c284a07817.html">otLwf</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_f008ccfebca6b1721ca65dcf50715dd5.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a7733a9637be92d1f239c18e2519fad4.html">windows</a></li><li class="navelem"><a class="el" href="dir_bfd46bc989430388275c68f6255e9095.html">otLwf</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,9 +75,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ot_lwf_2precomp_8h_source.html">precomp.h</a>&quot;</code><br />
 <code>#include &quot;datapath.tmh&quot;</code><br />
-</div>
-<p><a href="datapath_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a4754637586410360c63ca453645a671d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#a4754637586410360c63ca453645a671d">otLogLineLength</a>&#160;&#160;&#160;32</td></tr>
@@ -92,21 +91,19 @@ Functions</h2></td></tr>
 <tr class="separator:a3168104de924a2800ba354a8161def9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee15f54dd142885bed6b68f0227a7425"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#aee15f54dd142885bed6b68f0227a7425">FilterSendNetBufferLists</a> (NDIS_HANDLE FilterModuleContext, PNET_BUFFER_LIST <a class="el" href="serial_8hpp.html#a927f7fca0b8dafe0f3366c5907f71771">NetBufferLists</a>, NDIS_PORT_NUMBER PortNumber, ULONG SendFlags)</td></tr>
 <tr class="separator:aee15f54dd142885bed6b68f0227a7425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f6754cb565e8c528251efcd305fac5"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#ac4f6754cb565e8c528251efcd305fac5">FilterCancelSendNetBufferLists</a> (NDIS_HANDLE FilterModuleContext, PVOID <a class="el" href="thread_8h.html#af997c76950af5f4405fc28b4b2334f85">CancelId</a>)</td></tr>
+<tr class="memitem:ac4f6754cb565e8c528251efcd305fac5"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#ac4f6754cb565e8c528251efcd305fac5">FilterCancelSendNetBufferLists</a> (NDIS_HANDLE FilterModuleContext, PVOID <a class="el" href="examples_2drivers_2windows_2ot_lwf_2thread_8h.html#af997c76950af5f4405fc28b4b2334f85">CancelId</a>)</td></tr>
 <tr class="separator:ac4f6754cb565e8c528251efcd305fac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67961533057f3751fe61e83cf5ffd481"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#a67961533057f3751fe61e83cf5ffd481">FilterReturnNetBufferLists</a> (NDIS_HANDLE FilterModuleContext, PNET_BUFFER_LIST <a class="el" href="serial_8hpp.html#a927f7fca0b8dafe0f3366c5907f71771">NetBufferLists</a>, ULONG ReturnFlags)</td></tr>
 <tr class="separator:a67961533057f3751fe61e83cf5ffd481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea24184835e350839d5f0111f58b8c4e"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#aea24184835e350839d5f0111f58b8c4e">FilterReceiveNetBufferLists</a> (NDIS_HANDLE FilterModuleContext, PNET_BUFFER_LIST <a class="el" href="serial_8hpp.html#a927f7fca0b8dafe0f3366c5907f71771">NetBufferLists</a>, NDIS_PORT_NUMBER PortNumber, ULONG NumberOfNetBufferLists, ULONG ReceiveFlags)</td></tr>
 <tr class="separator:aea24184835e350839d5f0111f58b8c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66df553791b419e6fae569ef6eaa74eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#a66df553791b419e6fae569ef6eaa74eb">otLwfReceiveIp6DatagramCallback</a> (_In_ <a class="el" href="group__messages.html#ga461fb1347aeb99b1d4aab520915e121e">otMessage</a> aMessage, _In_ void *aContext)</td></tr>
-<tr class="separator:a66df553791b419e6fae569ef6eaa74eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696998dc1818e9d80f752c903dd57430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#a696998dc1818e9d80f752c903dd57430">otLwfReceiveIp6DatagramCallback</a> (_In_ <a class="el" href="structot_message.html">otMessage</a> *aMessage, _In_ void *aContext)</td></tr>
+<tr class="separator:a696998dc1818e9d80f752c903dd57430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12c0a96e8098df477a86a0390f87ebd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datapath_8c.html#ac12c0a96e8098df477a86a0390f87ebd">_IRQL_requires_max_</a> (DISPATCH_LEVEL)</td></tr>
 <tr class="separator:ac12c0a96e8098df477a86a0390f87ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements the functions required for handling NetBufferLists in the data path. </p>
-
-<p class="definition">Definition in file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4754637586410360c63ca453645a671d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4754637586410360c63ca453645a671d">&#9670;&nbsp;</a></span>otLogLineLength</h2>
@@ -119,8 +116,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00047">47</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
 
 </div>
 </div>
@@ -140,8 +135,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00570">570</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
 
 </div>
 </div>
@@ -170,8 +163,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00237">237</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
 
 </div>
 </div>
@@ -219,8 +210,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00330">330</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
-
 </div>
 </div>
 <a id="a67961533057f3751fe61e83cf5ffd481"></a>
@@ -254,8 +243,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00273">273</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
 
 </div>
 </div>
@@ -297,8 +284,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00142">142</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
-
 </div>
 </div>
 <a id="a3168104de924a2800ba354a8161def9f"></a>
@@ -333,8 +318,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00079">79</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
-
 </div>
 </div>
 <a id="a0f4eb1ab86eb7705d2100a9505bfcd8a"></a>
@@ -363,12 +346,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00051">51</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
-
 </div>
 </div>
-<a id="a66df553791b419e6fae569ef6eaa74eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66df553791b419e6fae569ef6eaa74eb">&#9670;&nbsp;</a></span>otLwfReceiveIp6DatagramCallback()</h2>
+<a id="a696998dc1818e9d80f752c903dd57430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696998dc1818e9d80f752c903dd57430">&#9670;&nbsp;</a></span>otLwfReceiveIp6DatagramCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +357,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void otLwfReceiveIp6DatagramCallback </td>
           <td>(</td>
-          <td class="paramtype">_In_ <a class="el" href="group__messages.html#ga461fb1347aeb99b1d4aab520915e121e">otMessage</a>&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="structot_message.html">otMessage</a> *&#160;</td>
           <td class="paramname"><em>aMessage</em>, </td>
         </tr>
         <tr>
@@ -392,8 +373,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00422">422</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
 
 </div>
 </div>
@@ -413,14 +392,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="datapath_8c_source.html#l00041">41</a> of file <a class="el" href="datapath_8c_source.html">datapath.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

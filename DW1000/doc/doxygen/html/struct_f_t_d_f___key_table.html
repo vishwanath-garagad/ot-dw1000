@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FTDF_KeyTable Struct Reference</title>
+<title>OT-DW1000: FTDF_KeyTable Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -82,8 +83,6 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Key table. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>As followes an example how to initialize a key table for usage with FTDF_SET_REQUEST: <div class="fragment"><div class="line"><a class="code" href="struct_f_t_d_f___key_id_lookup_descriptor.html">FTDF_KeyIdLookupDescriptor</a>  lookupDescriptorsKey1[ ] = </div><div class="line">         { { 2, { 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef }, 7, 0, 0 0 },</div><div class="line">           { 0, { 0, 0, 0, 0, 0, 0, 0, 0 }, 0, 2, 0x1234, 0x0001 } };</div><div class="line"><a class="code" href="struct_f_t_d_f___key_id_lookup_descriptor.html">FTDF_KeyIdLookupDescriptor</a>  lookupDescriptorsKey2[ ] = </div><div class="line">         { { 1, { 0, 0, 0, 0, 0, 0, 0, 0 }, 5, 0, 0, 0 } };</div><div class="line"><a class="code" href="group___f_t_d_f.html#gaecc0d981fdf8c985cb0d2506ad029f19">FTDF_DeviceDescriptorHandle</a> deviceDescriptorHandlesKey1[ ] = { 0, 2 };</div><div class="line"><a class="code" href="group___f_t_d_f.html#gaecc0d981fdf8c985cb0d2506ad029f19">FTDF_DeviceDescriptorHandle</a> deviceDescriptorHandlesKey2[ ] = { 1 };</div><div class="line"><a class="code" href="struct_f_t_d_f___key_usage_descriptor.html">FTDF_KeyUsageDescriptor</a>     keyUsageDescriptorKey1[ ] = { { 1, 0 }, { 3, 4 } };</div><div class="line"><a class="code" href="struct_f_t_d_f___key_usage_descriptor.html">FTDF_KeyUsageDescriptor</a>     keyUsageDescriptorKey2[ ] = { { 1, 0 } };</div><div class="line"><a class="code" href="struct_f_t_d_f___key_descriptor.html">FTDF_KeyDescriptor</a>          <a class="code" href="struct_f_t_d_f___key_table.html#aa5be63f20475b824ff73e3c754135ccd">keyDescriptors</a>[ ] = </div><div class="line">         { { <span class="keyword">sizeof</span>( lookupDescriptorsKey1 ) / <span class="keyword">sizeof</span>( <a class="code" href="struct_f_t_d_f___key_id_lookup_descriptor.html">FTDF_KeyIdLookupDescriptor</a> ),</div><div class="line">             lookupDescriptorsKey1,</div><div class="line">             <span class="keyword">sizeof</span>( deviceDescriptorHandlesKey1 ) / <span class="keyword">sizeof</span>( <a class="code" href="group___f_t_d_f.html#gaecc0d981fdf8c985cb0d2506ad029f19">FTDF_DeviceDescriptorHandle</a> ),</div><div class="line">             deviceDescriptorHandlesKey1,</div><div class="line">             <span class="keyword">sizeof</span>( keyUsageDescriptorKey1 ) / <span class="keyword">sizeof</span>( <a class="code" href="struct_f_t_d_f___key_usage_descriptor.html">FTDF_KeyUsageDescriptor</a> ),</div><div class="line">             keyUsageDescriptorKey1,</div><div class="line">             { 0x7e, 0x37, 0x2d, 0x41, 0xdf, 0x74, 0x72, 0x3f, 0x4c, 0x3a, 0xa7, 0x53, 0xa1, 0x11, 0x46, 0x8b } },</div><div class="line">           { <span class="keyword">sizeof</span>( lookupDescriptorsKey2 ) / <span class="keyword">sizeof</span>( <a class="code" href="struct_f_t_d_f___key_id_lookup_descriptor.html">FTDF_KeyIdLookupDescriptor</a> ),</div><div class="line">             lookupDescriptorsKey2,</div><div class="line">             <span class="keyword">sizeof</span>( deviceDescriptorHandlesKey2 ) / <span class="keyword">sizeof</span>( <a class="code" href="group___f_t_d_f.html#gaecc0d981fdf8c985cb0d2506ad029f19">FTDF_DeviceDescriptorHandle</a> ),</div><div class="line">             deviceDescriptorHandlesKey2,</div><div class="line">             <span class="keyword">sizeof</span>( keyUsageDescriptorKey2 ) / <span class="keyword">sizeof</span>( <a class="code" href="struct_f_t_d_f___key_usage_descriptor.html">FTDF_KeyUsageDescriptor</a> ),</div><div class="line">             keyUsageDescriptorKey1,</div><div class="line">             { 0xdf, 0x74, 0x72, 0x3f, 0x7e, 0x37, 0x2d, 0x41, 0x4c, 0x3a, 0xa1, 0x11, 0x46, 0x8, 0xa7, 0x53b } } };</div><div class="line"><a class="code" href="struct_f_t_d_f___key_table.html">FTDF_KeyTable</a>               keyTable =</div><div class="line">          { <span class="keyword">sizeof</span>( <a class="code" href="struct_f_t_d_f___key_table.html#aa5be63f20475b824ff73e3c754135ccd">keyDescriptors</a> ) / <span class="keyword">sizeof</span>( <a class="code" href="struct_f_t_d_f___key_descriptor.html">FTDF_KeyDescriptor</a> ), keyDescriptors };</div></div><!-- fragment --> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ftdf_8h_source.html#l01738">1738</a> of file <a class="el" href="ftdf_8h_source.html">ftdf.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="aa5be63f20475b824ff73e3c754135ccd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5be63f20475b824ff73e3c754135ccd">&#9670;&nbsp;</a></span>keyDescriptors</h2>
@@ -98,8 +97,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to the first key descriptor entry. </p>
-
-<p class="definition">Definition at line <a class="el" href="ftdf_8h_source.html#l01743">1743</a> of file <a class="el" href="ftdf_8h_source.html">ftdf.h</a>.</p>
 
 </div>
 </div>
@@ -117,17 +114,15 @@ Data Fields</h2></td></tr>
 
 <p>Number of key descriptors in the key table. </p>
 
-<p class="definition">Definition at line <a class="el" href="ftdf_8h_source.html#l01741">1741</a> of file <a class="el" href="ftdf_8h_source.html">ftdf.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>third_party/dialog/DialogSDK/interfaces/ftdf/include/<a class="el" href="ftdf_8h_source.html">ftdf.h</a></li>
+<li>openthread-master/third_party/dialog/DialogSDK/interfaces/ftdf/include/<a class="el" href="ftdf_8h_source.html">ftdf.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:38 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

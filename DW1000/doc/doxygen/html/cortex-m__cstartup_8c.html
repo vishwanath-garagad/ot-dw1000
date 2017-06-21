@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/da15000/cortex-m_cstartup.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/da15000/cortex-m_cstartup.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_086eb0e0153009edec82f26e135b9c98.html">da15000</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_9fcc9f0902580323f852f7e5b19d45ec.html">da15000</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,9 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
-</div>
-<p><a href="cortex-m__cstartup_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:afaf1f84f7d25a3702b24efe50ca3893f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cortex-m__cstartup_8c.html#afaf1f84f7d25a3702b24efe50ca3893f">__NAKED</a>&#160;&#160;&#160;<a class="el" href="struct____attribute____.html">__attribute__</a>((naked))</td></tr>
@@ -118,8 +117,6 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ARM Cortex-M generic cstartup.</p>
 <p>Setup RAM as needed based on GCC linker script sections. </p>
-
-<p class="definition">Definition in file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="afaf1f84f7d25a3702b24efe50ca3893f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afaf1f84f7d25a3702b24efe50ca3893f">&#9670;&nbsp;</a></span>__NAKED</h2>
@@ -132,8 +129,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="cortex-m__cstartup_8c_source.html#l00038">38</a> of file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
 
 </div>
 </div>
@@ -149,8 +144,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cortex-m__cstartup_8c_source.html#l00040">40</a> of file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
-
 </div>
 </div>
 <a id="a3e40e4c553fc11588f7a4c2a19e789e0"></a>
@@ -164,8 +157,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="cortex-m__cstartup_8c_source.html#l00039">39</a> of file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
 
 </div>
 </div>
@@ -185,8 +176,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="cstartup_8c_source.html#l00043">43</a> of file <a class="el" href="cstartup_8c_source.html">cstartup.c</a>.</p>
 
 </div>
 </div>
@@ -209,8 +198,6 @@ Variables</h2></td></tr>
 <p>This function calls all of the needed startup routines and then branches to the main process.</p>
 <p>This contains the very first instructions that are run on boot. </p>
 
-<p class="definition">Definition at line <a class="el" href="cortex-m__cstartup_8c_source.html#l00101">101</a> of file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
-
 </div>
 </div>
 <a id="a4faa79a98a76045364452226189b88f8"></a>
@@ -229,8 +216,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cortex-m__cstartup_8c_source.html#l00085">85</a> of file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
-
 </div>
 </div>
 <a id="ae750fc5052044ee9ea034578ae646fe9"></a>
@@ -247,8 +232,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="cortex-m__cstartup_8c_source.html#l00072">72</a> of file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
 
 </div>
 </div>
@@ -267,8 +250,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cortex-m__cstartup_8c_source.html#l00057">57</a> of file <a class="el" href="cortex-m__cstartup_8c_source.html">cortex-m_cstartup.c</a>.</p>
-
 </div>
 </div>
 <a id="a6288eba0f8e8ad3ab1544ad731eb7667"></a>
@@ -280,13 +261,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void main </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Top-level main for sniffer host-side tool. </pre><pre class="fragment">Top-level main for spinel-cli tool. </pre><pre class="fragment">Run all unit tests for spinel module. </pre> 
-<p class="definition">Definition at line <a class="el" href="test__aes_8cpp_source.html#l00233">233</a> of file <a class="el" href="test__aes_8cpp_source.html">test_aes.cpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +372,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

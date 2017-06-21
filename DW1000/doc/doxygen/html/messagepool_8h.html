@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>include/platform/messagepool.h File Reference</title>
+<title>OT-DW1000: openthread-master/include/openthread/platform/messagepool.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,12 +59,11 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ac186d3e8926949364e5821f25491cc3.html">platform</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_61d5b5043cdae76d6d92e24d2958a5cb.html">include</a></li><li class="navelem"><a class="el" href="dir_c799c50edf1c744cd55002f04a278732.html">openthread</a></li><li class="navelem"><a class="el" href="dir_e147634c1c0e69856cd4e206277ac627.html">platform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">messagepool.h File Reference</div>  </div>
@@ -73,34 +73,28 @@ $(function() {
 <p>This file includes the platform abstraction for the message pool.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="message_8h_source.html">openthread/message.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8h_source.html">openthread/types.h</a>&gt;</code><br />
 </div>
 <p><a href="messagepool_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_buffer_header.html">BufferHeader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga85299399a9aa45b3c0e8884580b0ee9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__messagepool.html#ga85299399a9aa45b3c0e8884580b0ee9d">otPlatMessagePoolInit</a> (<a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aMinNumFreeBuffers, size_t aBufferSize)</td></tr>
-<tr class="separator:ga85299399a9aa45b3c0e8884580b0ee9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaace295aeb7e8a066adfefe5b606b2062"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_buffer_header.html">BufferHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__messagepool.html#gaace295aeb7e8a066adfefe5b606b2062">otPlatMessagePoolNew</a> (void)</td></tr>
-<tr class="separator:gaace295aeb7e8a066adfefe5b606b2062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ca231baf06f852de7c190c5591ff0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__messagepool.html#ga7ca231baf06f852de7c190c5591ff0bf">otPlatMessagePoolFree</a> (struct <a class="el" href="struct_buffer_header.html">BufferHeader</a> *aBuffer)</td></tr>
-<tr class="separator:ga7ca231baf06f852de7c190c5591ff0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa104d70afa7f5ad449f5d0e0724769a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__messagepool.html#gaa104d70afa7f5ad449f5d0e0724769a0">otPlatMessagePoolNumFreeBuffers</a> (void)</td></tr>
-<tr class="separator:gaa104d70afa7f5ad449f5d0e0724769a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c1c14021785a73591e9cbb8811ade16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-messagepool.html#ga2c1c14021785a73591e9cbb8811ade16">otPlatMessagePoolInit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aMinNumFreeBuffers, size_t aBufferSize)</td></tr>
+<tr class="separator:ga2c1c14021785a73591e9cbb8811ade16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd2dc63f9c7e63e3a47e6d238da08db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structot_message.html">otMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-messagepool.html#gacd2dc63f9c7e63e3a47e6d238da08db7">otPlatMessagePoolNew</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gacd2dc63f9c7e63e3a47e6d238da08db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadba33144728bfcfe93afb38a0053470c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-messagepool.html#gadba33144728bfcfe93afb38a0053470c">otPlatMessagePoolFree</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_message.html">otMessage</a> *aBuffer)</td></tr>
+<tr class="separator:gadba33144728bfcfe93afb38a0053470c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae03532b717e942b3590ec5804dbd0f5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-messagepool.html#gae03532b717e942b3590ec5804dbd0f5c">otPlatMessagePoolNumFreeBuffers</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gae03532b717e942b3590ec5804dbd0f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes the platform abstraction for the message pool. </p>
-
-<p class="definition">Definition in file <a class="el" href="messagepool_8h_source.html">messagepool.h</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

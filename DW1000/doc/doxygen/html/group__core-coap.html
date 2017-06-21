@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CoAP</title>
+<title>OT-DW1000: Core-coap</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -64,9 +65,10 @@ $(function() {
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#var-members">Variables</a> &#124;
+<a href="#friend-members">Friends</a>  </div>
   <div class="headertitle">
-<div class="title">CoAP<div class="ingroups"><a class="el" href="group__core.html">Core</a></div></div>  </div>
+<div class="title">Core-coap</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -75,108 +77,224 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_1_1_coap_1_1_coap_base.html">CoapBase</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_coap_1_1_coap_metadata.html">CoapMetadata</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_1_1_coap_1_1_header.html">Header</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_1_1_coap_1_1_resource.html">Resource</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_coap_1_1_enqueued_response_header.html">EnqueuedResponseHeader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_1_1_coap_1_1_server.html">Server</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_coap_1_1_responses_queue.html">ResponsesQueue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_coap_1_1_coap.html">Coap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_coap_1_1_header.html">Header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab8a4e6e393f69fa728d45d5dc66a3cf7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gab8a4e6e393f69fa728d45d5dc66a3cf7">SenderFunction</a>) (void *aContext, <a class="el" href="class_thread_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="class_thread_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
-<tr class="separator:gab8a4e6e393f69fa728d45d5dc66a3cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c9dc931f8be5c3e7fd1899fcc1f219b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga1c9dc931f8be5c3e7fd1899fcc1f219b">ReceiverFunction</a>) (void *aContext, <a class="el" href="class_thread_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="class_thread_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
-<tr class="separator:ga1c9dc931f8be5c3e7fd1899fcc1f219b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c461aa30881a1a2966b5f68ec5dedc4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga2c461aa30881a1a2966b5f68ec5dedc4">Interceptor</a>) (const <a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo, void *aContext)</td></tr>
+<tr class="separator:ga2c461aa30881a1a2966b5f68ec5dedc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga157d5577a5b2f5986037d0d09c7dc77d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__core-coap.html#gga157d5577a5b2f5986037d0d09c7dc77da95d78df50af5b4a9b88b79616a3c8eea">kMeshCoPMessagePriority</a> = Message::kPriorityHigh
+<tr class="memitem:gaa156d1cebb38c8a65846c4d9c006012a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aabe47dfab017607600c9e236b78b96074">kAckTimeout</a> = OPENTHREAD_CONFIG_COAP_ACK_TIMEOUT, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa77631f0da89eb205adfeff31cfc3d9bd">kAckRandomFactorNumerator</a> = OPENTHREAD_CONFIG_COAP_ACK_RANDOM_FACTOR_NUMERATOR, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aae9c625cc7f4ca0fc5b296a0e86b3acec">kAckRandomFactorDenominator</a> = OPENTHREAD_CONFIG_COAP_ACK_RANDOM_FACTOR_DENOMINATOR, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa4a25aa9ee1d365c1d6524199f66d0423">kMaxRetransmit</a> = OPENTHREAD_CONFIG_COAP_MAX_RETRANSMIT, 
+<br />
+&#160;&#160;<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa55502accb16539c14648806f23a1182e">kNStart</a> = 1, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aacfa9e2a37e8673e2a7a55d89ab722245">kDefaultLeisure</a> = 5, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aaa7be44021b11d2596481ab4a94f577fb">kProbingRate</a> = 1, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa18f41a115d9dd084f71e76e8bc072fc1">kMaxTransmitSpan</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa6fae2641ad4d33e25f6c55c70b98e3fd">kMaxTransmitWait</a>, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aac4119d840587a5914ec99f3bfec94dc8">kMaxLatency</a> = 100, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa428d241c0fdb7f2361f2b6b1015b20af">kProcessingDelay</a> = kAckTimeout, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aaac3c5201976f1f3ce8ff205821f64a1a">kMaxRtt</a> = 2 * kMaxLatency + kProcessingDelay, 
+<br />
+&#160;&#160;<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa265f40b9a6451052cd27309c37f0d510">kExchangeLifetime</a> = kMaxTransmitSpan + 2 * (kMaxLatency) + kProcessingDelay, 
+<a class="el" href="group__core-coap.html#ggaa156d1cebb38c8a65846c4d9c006012aa874cd6bc01fbbf8878f7bc402a60fd87">kNonLifetime</a> = kMaxTransmitSpan + kMaxLatency
+<br />
  }</td></tr>
-<tr class="separator:ga157d5577a5b2f5986037d0d09c7dc77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:gaa156d1cebb38c8a65846c4d9c006012a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8654c714018c6241d9ebd01f3fb5a26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__core-coap.html#ggaf8654c714018c6241d9ebd01f3fb5a26a0b012d16c2b1fce2a40309e8141c584c">kMaxReceivedUriPath</a> = 32
+ }</td></tr>
+<tr class="separator:gaf8654c714018c6241d9ebd01f3fb5a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9f7384f81df56d2078fd4b07c884ed5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga9f7384f81df56d2078fd4b07c884ed5c">CoapBase</a> (<a class="el" href="class_thread_1_1_ip6_1_1_udp.html">Ip6::Udp</a> &amp;aUdp, <a class="el" href="group__core-coap.html#gab8a4e6e393f69fa728d45d5dc66a3cf7">SenderFunction</a> aSender, <a class="el" href="group__core-coap.html#ga1c9dc931f8be5c3e7fd1899fcc1f219b">ReceiverFunction</a> aReceiver)</td></tr>
-<tr class="separator:ga9f7384f81df56d2078fd4b07c884ed5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga430a8189824499d1373bcd7c3c4c508f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_1_1_message.html">Message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga430a8189824499d1373bcd7c3c4c508f">NewMessage</a> (const <a class="el" href="class_thread_1_1_coap_1_1_header.html">Header</a> &amp;aHeader)</td></tr>
-<tr class="separator:ga430a8189824499d1373bcd7c3c4c508f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91ca4339c310ccc5f20ada5aa51f6b5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_1_1_message.html">Message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga91ca4339c310ccc5f20ada5aa51f6b5d">NewMeshCoPMessage</a> (const <a class="el" href="class_thread_1_1_coap_1_1_header.html">Header</a> &amp;aHeader)</td></tr>
-<tr class="separator:ga91ca4339c310ccc5f20ada5aa51f6b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42335fe91e28937933c9e6b970d96221"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga42335fe91e28937933c9e6b970d96221">CoapMetadata</a> (void)</td></tr>
+<tr class="separator:ga42335fe91e28937933c9e6b970d96221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d2854197ec024f8706026fa150e0ab7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga2d2854197ec024f8706026fa150e0ab7">CoapMetadata</a> (<a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aConfirmable, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo, <a class="el" href="group__api-coap.html#gab8499b3ffda42fb24225be7c603be788">otCoapResponseHandler</a> aHandler, void *aContext)</td></tr>
+<tr class="separator:ga2d2854197ec024f8706026fa150e0ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga784ee0fe972ace4053500a9cfe101516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga784ee0fe972ace4053500a9cfe101516">AppendTo</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage) const</td></tr>
+<tr class="separator:ga784ee0fe972ace4053500a9cfe101516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadde174acb4f517ea8d0715bcb2fff25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaadde174acb4f517ea8d0715bcb2fff25">ReadFrom</a> (const <a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage)</td></tr>
+<tr class="separator:gaadde174acb4f517ea8d0715bcb2fff25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07f5b6396e06ecb38abe6ceea9a3a777"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga07f5b6396e06ecb38abe6ceea9a3a777">UpdateIn</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage) const</td></tr>
+<tr class="separator:ga07f5b6396e06ecb38abe6ceea9a3a777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06c3bd976ed4cca8dd7f25e9357a0714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga06c3bd976ed4cca8dd7f25e9357a0714">IsEarlier</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aTime) const</td></tr>
+<tr class="separator:ga06c3bd976ed4cca8dd7f25e9357a0714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa769998376888ead3242d8eb85d2918d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaa769998376888ead3242d8eb85d2918d">IsLater</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aTime) const</td></tr>
+<tr class="separator:gaa769998376888ead3242d8eb85d2918d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8737280422d556b7109413fe68521f9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga8737280422d556b7109413fe68521f9b">Resource</a> (const char *aUriPath, <a class="el" href="group__api-coap.html#ga715c68f6100fb5331bd5877e7a09cce4">otCoapRequestHandler</a> aHandler, void *aContext)</td></tr>
+<tr class="separator:ga8737280422d556b7109413fe68521f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfa2e73a54a651b58b68a228f0831cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gacfa2e73a54a651b58b68a228f0831cdf">GetNext</a> (void) const</td></tr>
+<tr class="separator:gacfa2e73a54a651b58b68a228f0831cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b86a89af6b553a416153bd89896fbcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga3b86a89af6b553a416153bd89896fbcf">EnqueuedResponseHeader</a> (void)</td></tr>
+<tr class="separator:ga3b86a89af6b553a416153bd89896fbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga528b0c934fff7e262eecda1111d2b5aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga528b0c934fff7e262eecda1111d2b5aa">EnqueuedResponseHeader</a> (const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:ga528b0c934fff7e262eecda1111d2b5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga784ee0fe972ace4053500a9cfe101516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga784ee0fe972ace4053500a9cfe101516">AppendTo</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage) const</td></tr>
+<tr class="separator:ga784ee0fe972ace4053500a9cfe101516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadde174acb4f517ea8d0715bcb2fff25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaadde174acb4f517ea8d0715bcb2fff25">ReadFrom</a> (const <a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage)</td></tr>
+<tr class="separator:gaadde174acb4f517ea8d0715bcb2fff25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14fdbf9efd6c05e63ff843def8ebdc3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga14fdbf9efd6c05e63ff843def8ebdc3c">RemoveFrom</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage)</td></tr>
+<tr class="separator:ga14fdbf9efd6c05e63ff843def8ebdc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06c3bd976ed4cca8dd7f25e9357a0714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga06c3bd976ed4cca8dd7f25e9357a0714">IsEarlier</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aTime) const</td></tr>
+<tr class="separator:ga06c3bd976ed4cca8dd7f25e9357a0714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab39ae1cfe72ecaae8d58f32b5fbf504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaab39ae1cfe72ecaae8d58f32b5fbf504">GetRemainingTime</a> (void) const</td></tr>
+<tr class="separator:gaab39ae1cfe72ecaae8d58f32b5fbf504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c6193c085bda603adf8bd22297b3b0b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga9c6193c085bda603adf8bd22297b3b0b">GetMessageInfo</a> (void) const</td></tr>
+<tr class="separator:ga9c6193c085bda603adf8bd22297b3b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fdbe01d01c67ae7513cc178ea65265d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga1fdbe01d01c67ae7513cc178ea65265d">ResponsesQueue</a> (<a class="el" href="classot_1_1_thread_netif.html">ThreadNetif</a> &amp;aNetif)</td></tr>
+<tr class="separator:ga1fdbe01d01c67ae7513cc178ea65265d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ac811bc3728d22b12d57a96787e6d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga6ac811bc3728d22b12d57a96787e6d2f">EnqueueResponse</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:ga6ac811bc3728d22b12d57a96787e6d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae3023a3c6cbcd0fe843d1d413305f31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaae3023a3c6cbcd0fe843d1d413305f31">DequeueOldestResponse</a> (void)</td></tr>
+<tr class="separator:gaae3023a3c6cbcd0fe843d1d413305f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac80297ed4fa6fab22d8a66b1074239de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gac80297ed4fa6fab22d8a66b1074239de">DequeueAllResponses</a> (void)</td></tr>
+<tr class="separator:gac80297ed4fa6fab22d8a66b1074239de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b30b1b7a16e44a2e52199fadbf5b29a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga4b30b1b7a16e44a2e52199fadbf5b29a">GetMatchedResponseCopy</a> (const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;aHeader, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo, <a class="el" href="classot_1_1_message.html">Message</a> **aResponse)</td></tr>
+<tr class="separator:ga4b30b1b7a16e44a2e52199fadbf5b29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dd76ededc78540faaaf487aa7c92956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga6dd76ededc78540faaaf487aa7c92956">GetMatchedResponseCopy</a> (const <a class="el" href="classot_1_1_message.html">Message</a> &amp;aRequest, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo, <a class="el" href="classot_1_1_message.html">Message</a> **aResponse)</td></tr>
+<tr class="separator:ga6dd76ededc78540faaaf487aa7c92956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e231d9fb9c5c1a2be4c082374316529"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classot_1_1_message_queue.html">MessageQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga9e231d9fb9c5c1a2be4c082374316529">GetResponses</a> (void) const</td></tr>
+<tr class="separator:ga9e231d9fb9c5c1a2be4c082374316529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6b45023bc1b77714bebb73c9e4bed0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaa6b45023bc1b77714bebb73c9e4bed0d">Coap</a> (<a class="el" href="classot_1_1_thread_netif.html">ThreadNetif</a> &amp;aNetif)</td></tr>
+<tr class="separator:gaa6b45023bc1b77714bebb73c9e4bed0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga414e61c0e4a2f84894b14164c6fc6ae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga414e61c0e4a2f84894b14164c6fc6ae0">Start</a> (<a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aPort)</td></tr>
+<tr class="separator:ga414e61c0e4a2f84894b14164c6fc6ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00099ac7491d29c48884862c67f912fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga00099ac7491d29c48884862c67f912fb">Stop</a> (void)</td></tr>
+<tr class="separator:ga00099ac7491d29c48884862c67f912fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa85d206ccfd410cdc6e2e6718cff1bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaa85d206ccfd410cdc6e2e6718cff1bb4">GetPort</a> (void)</td></tr>
 <tr class="separator:gaa85d206ccfd410cdc6e2e6718cff1bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02eb05be69bc8b84c586f3807371cdc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga02eb05be69bc8b84c586f3807371cdc7">Start</a> (const <a class="el" href="class_thread_1_1_ip6_1_1_sock_addr.html">Ip6::SockAddr</a> &amp;aSockAddr)</td></tr>
-<tr class="separator:ga02eb05be69bc8b84c586f3807371cdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c52975dd59e329a5bfcb079add14341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga1c52975dd59e329a5bfcb079add14341">Stop</a> (void)</td></tr>
-<tr class="separator:ga1c52975dd59e329a5bfcb079add14341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ab8c27b0db31f972b5e232fec0d56d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga3ab8c27b0db31f972b5e232fec0d56d2">AddResource</a> (<a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a> &amp;aResource)</td></tr>
+<tr class="separator:ga3ab8c27b0db31f972b5e232fec0d56d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4145baa17d84a99c0fae354d4e14af5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga4145baa17d84a99c0fae354d4e14af5a">RemoveResource</a> (<a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a> &amp;aResource)</td></tr>
+<tr class="separator:ga4145baa17d84a99c0fae354d4e14af5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga248b4a39e20113e2f2beba62d233cb23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga248b4a39e20113e2f2beba62d233cb23">SetDefaultHandler</a> (<a class="el" href="group__api-coap.html#ga715c68f6100fb5331bd5877e7a09cce4">otCoapRequestHandler</a> aHandler, void *aContext)</td></tr>
+<tr class="separator:ga248b4a39e20113e2f2beba62d233cb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebab0dd87289d14727a556fb77056782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classot_1_1_message.html">Message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaebab0dd87289d14727a556fb77056782">NewMessage</a> (const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;aHeader, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aPriority=kDefaultCoapMessagePriority)</td></tr>
+<tr class="separator:gaebab0dd87289d14727a556fb77056782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55087c9eceaf69e7a5dda9642364c70c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga55087c9eceaf69e7a5dda9642364c70c">SendMessage</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo, <a class="el" href="group__api-coap.html#gab8499b3ffda42fb24225be7c603be788">otCoapResponseHandler</a> aHandler=<a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, void *aContext=<a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</td></tr>
+<tr class="separator:ga55087c9eceaf69e7a5dda9642364c70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c1d6ef448464582fa30330defcaae9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga2c1d6ef448464582fa30330defcaae9c">SendReset</a> (<a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;aRequestHeader, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:ga2c1d6ef448464582fa30330defcaae9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7298e484f9f5921b991669ac80408298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga7298e484f9f5921b991669ac80408298">SendHeaderResponse</a> (<a class="el" href="group__api-coap.html#ga9aa05cbbcfa6954cb13e4745b8cec424">Header::Code</a> aCode, const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;aRequestHeader, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:ga7298e484f9f5921b991669ac80408298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd0be974961bbcbca75f669c3d75bb86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gadd0be974961bbcbca75f669c3d75bb86">SendAck</a> (<a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;aRequestHeader, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:gadd0be974961bbcbca75f669c3d75bb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43612428ce8f8f23d12a8368346cbffe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga43612428ce8f8f23d12a8368346cbffe">SendEmptyAck</a> (const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;aRequestHeader, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:ga43612428ce8f8f23d12a8368346cbffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga008e5c89bad61a560d0d2c671e026589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga008e5c89bad61a560d0d2c671e026589">SendNotFound</a> (const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;aRequestHeader, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:ga008e5c89bad61a560d0d2c671e026589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad80978ff7d675aa79803a0da5989439c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gad80978ff7d675aa79803a0da5989439c">AbortTransaction</a> (<a class="el" href="group__api-coap.html#gab8499b3ffda42fb24225be7c603be788">otCoapResponseHandler</a> aHandler, void *aContext)</td></tr>
+<tr class="separator:gad80978ff7d675aa79803a0da5989439c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c7aa362c47de6f390dcdc23121a6d54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga2c7aa362c47de6f390dcdc23121a6d54">SetInterceptor</a> (<a class="el" href="group__core-coap.html#ga2c461aa30881a1a2966b5f68ec5dedc4">Interceptor</a> aInterceptor, void *aContext)</td></tr>
+<tr class="separator:ga2c7aa362c47de6f390dcdc23121a6d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac208054328dadb53920ff4e94f929ab0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classot_1_1_message_queue.html">MessageQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gac208054328dadb53920ff4e94f929ab0">GetRequestMessages</a> (void) const</td></tr>
+<tr class="separator:gac208054328dadb53920ff4e94f929ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae6d69accf4252e7578263055a78322c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classot_1_1_message_queue.html">MessageQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaae6d69accf4252e7578263055a78322c">GetCachedResponses</a> (void) const</td></tr>
+<tr class="separator:gaae6d69accf4252e7578263055a78322c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba8d3e1fa743c63745e5687cdca8af1c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaba8d3e1fa743c63745e5687cdca8af1c">Send</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:gaba8d3e1fa743c63745e5687cdca8af1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c8c1da0955f447e99d1da0b7b27538b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga6c8c1da0955f447e99d1da0b7b27538b">Receive</a> (<a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td></tr>
+<tr class="separator:ga6c8c1da0955f447e99d1da0b7b27538b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga9ca23350d5c5c434fd34d16aef6b124f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_1_1_ip6_1_1_udp_socket.html">Ip6::UdpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga9ca23350d5c5c434fd34d16aef6b124f">mSocket</a></td></tr>
+<tr class="memitem:ga37aa37b4960d0b87013f0250c2792d50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__plat-toolchain.html#gaba6ad63129c3a790957a9b149a65891b">OT_TOOL_PACKED_BEGIN</a> class <a class="el" href="classot_1_1_coap_1_1_coap_metadata.html">ot::Coap::CoapMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga37aa37b4960d0b87013f0250c2792d50">OT_TOOL_PACKED_END</a></td></tr>
+<tr class="separator:ga37aa37b4960d0b87013f0250c2792d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab109ede15d5f80801392bda5b46c7128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classot_1_1_thread_netif.html">ThreadNetif</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gab109ede15d5f80801392bda5b46c7128">mNetif</a></td></tr>
+<tr class="separator:gab109ede15d5f80801392bda5b46c7128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ca23350d5c5c434fd34d16aef6b124f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classot_1_1_ip6_1_1_udp_socket.html">Ip6::UdpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#ga9ca23350d5c5c434fd34d16aef6b124f">mSocket</a></td></tr>
 <tr class="separator:ga9ca23350d5c5c434fd34d16aef6b124f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa8b1c6adfb416184ff8d3fd1b9916aaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core-coap.html#gab8a4e6e393f69fa728d45d5dc66a3cf7">SenderFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gaa8b1c6adfb416184ff8d3fd1b9916aaa">mSender</a></td></tr>
-<tr class="separator:gaa8b1c6adfb416184ff8d3fd1b9916aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf57d9a90ed48eea1c34a2c8fb2a853e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core-coap.html#ga1c9dc931f8be5c3e7fd1899fcc1f219b">ReceiverFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gacf57d9a90ed48eea1c34a2c8fb2a853e">mReceiver</a></td></tr>
-<tr class="separator:gacf57d9a90ed48eea1c34a2c8fb2a853e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friend-members"></a>
+Friends</h2></td></tr>
+<tr class="memitem:gafa28f990289c7e9c65b6a696e336325c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gafa28f990289c7e9c65b6a696e336325c">Coap</a></td></tr>
+<tr class="separator:gafa28f990289c7e9c65b6a696e336325c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa28f990289c7e9c65b6a696e336325c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-coap.html#gafa28f990289c7e9c65b6a696e336325c">Coap</a></td></tr>
+<tr class="separator:gafa28f990289c7e9c65b6a696e336325c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module includes definitions for CoAP. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga1c9dc931f8be5c3e7fd1899fcc1f219b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c9dc931f8be5c3e7fd1899fcc1f219b">&#9670;&nbsp;</a></span>ReceiverFunction</h2>
+<a id="ga2c461aa30881a1a2966b5f68ec5dedc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c461aa30881a1a2966b5f68ec5dedc4">&#9670;&nbsp;</a></span>Interceptor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(*  ReceiverFunction) (void *aContext, <a class="el" href="class_thread_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="class_thread_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td>
+          <td class="memname">typedef <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>(*  Interceptor) (const <a class="el" href="classot_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo, void *aContext)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function pointer is called when CoAP client/server receives a message.</p>
+<p>This function pointer is called before CoAP server processing a CoAP packets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>A pointer to arbitrary context information. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the received message. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>A reference to the message info associated with <code>aMessage</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message. @param [in] aMessageInfo A reference to the message info associated with <code>aMessage</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>A pointer to arbitrary context information.</td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00084">84</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
-
-</div>
-</div>
-<a id="gab8a4e6e393f69fa728d45d5dc66a3cf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8a4e6e393f69fa728d45d5dc66a3cf7">&#9670;&nbsp;</a></span>SenderFunction</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>(*  SenderFunction) (void *aContext, <a class="el" href="class_thread_1_1_message.html">Message</a> &amp;aMessage, const <a class="el" href="class_thread_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;aMessageInfo)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function pointer is called when CoAP client/server wants to send a message.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>A pointer to arbitrary context information. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message to send. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>A reference to the message info associated with <code>aMessage</code>. </td></tr>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Server should continue processing this message, other return values indicates the server should stop processing this message. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NOT_TMF</td><td>The message is not a TMF message. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00074">74</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga157d5577a5b2f5986037d0d09c7dc77d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga157d5577a5b2f5986037d0d09c7dc77d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="gaa156d1cebb38c8a65846c4d9c006012a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa156d1cebb38c8a65846c4d9c006012a">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Protocol Constants (RFC 7252). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aabe47dfab017607600c9e236b78b96074"></a>kAckTimeout&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa77631f0da89eb205adfeff31cfc3d9bd"></a>kAckRandomFactorNumerator&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aae9c625cc7f4ca0fc5b296a0e86b3acec"></a>kAckRandomFactorDenominator&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa4a25aa9ee1d365c1d6524199f66d0423"></a>kMaxRetransmit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa55502accb16539c14648806f23a1182e"></a>kNStart&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aacfa9e2a37e8673e2a7a55d89ab722245"></a>kDefaultLeisure&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aaa7be44021b11d2596481ab4a94f577fb"></a>kProbingRate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa18f41a115d9dd084f71e76e8bc072fc1"></a>kMaxTransmitSpan&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa6fae2641ad4d33e25f6c55c70b98e3fd"></a>kMaxTransmitWait&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aac4119d840587a5914ec99f3bfec94dc8"></a>kMaxLatency&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa428d241c0fdb7f2361f2b6b1015b20af"></a>kProcessingDelay&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aaac3c5201976f1f3ce8ff205821f64a1a"></a>kMaxRtt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa265f40b9a6451052cd27309c37f0d510"></a>kExchangeLifetime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa156d1cebb38c8a65846c4d9c006012aa874cd6bc01fbbf8878f7bc402a60fd87"></a>kNonLifetime&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf8654c714018c6241d9ebd01f3fb5a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8654c714018c6241d9ebd01f3fb5a26">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,16 +305,90 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga157d5577a5b2f5986037d0d09c7dc77da95d78df50af5b4a9b88b79616a3c8eea"></a>kMeshCoPMessagePriority&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf8654c714018c6241d9ebd01f3fb5a26a0b012d16c2b1fce2a40309e8141c584c"></a>kMaxReceivedUriPath&#160;</td><td class="fielddoc"><p>Maximum supported URI path on received messages. </p>
+</td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00053">53</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9f7384f81df56d2078fd4b07c884ed5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9f7384f81df56d2078fd4b07c884ed5c">&#9670;&nbsp;</a></span>CoapBase()</h2>
+<a id="gad80978ff7d675aa79803a0da5989439c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad80978ff7d675aa79803a0da5989439c">&#9670;&nbsp;</a></span>AbortTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> AbortTransaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__api-coap.html#gab8499b3ffda42fb24225be7c603be788">otCoapResponseHandler</a>&#160;</td>
+          <td class="paramname"><em>aHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>aContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method aborts CoAP transactions associated with given handler and context.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHandler</td><td>A function pointer that should be called when the transaction ends. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>A pointer to arbitrary context information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully aborted CoAP transactions. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NOT_FOUND</td><td>CoAP transaction associated with given handler was not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3ab8c27b0db31f972b5e232fec0d56d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ab8c27b0db31f972b5e232fec0d56d2">&#9670;&nbsp;</a></span>AddResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> AddResource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a> &amp;&#160;</td>
+          <td class="paramname"><em>aResource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method adds a resource to the CoAP server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aResource</td><td>A reference to the resource.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully added <code>aResource</code>. </td></tr>
+    <tr><td class="paramname">OT_ERROR_ALREADY</td><td>The <code>aResource</code> was already added. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga784ee0fe972ace4053500a9cfe101516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga784ee0fe972ace4053500a9cfe101516">&#9670;&nbsp;</a></span>AppendTo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,27 +397,11 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_thread_1_1_coap_1_1_coap_base.html">CoapBase</a> </td>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> AppendTo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_thread_1_1_ip6_1_1_udp.html">Ip6::Udp</a> &amp;&#160;</td>
-          <td class="paramname"><em>aUdp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core-coap.html#gab8a4e6e393f69fa728d45d5dc66a3cf7">SenderFunction</a>&#160;</td>
-          <td class="paramname"><em>aSender</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__core-coap.html#ga1c9dc931f8be5c3e7fd1899fcc1f219b">ReceiverFunction</a>&#160;</td>
-          <td class="paramname"><em>aReceiver</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -234,17 +410,484 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This constructor initializes the object.</p>
+<p>This method appends request data to the message.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aUdp</td><td>A reference to the UDP object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aSender</td><td>A pointer to a function for sending messages. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aReceiver</td><td>A pointer to a function for handling received messages. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully appended the bytes. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Insufficient available buffers to grow the message. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00094">94</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
+</div>
+</div>
+<a id="ga784ee0fe972ace4053500a9cfe101516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga784ee0fe972ace4053500a9cfe101516">&#9670;&nbsp;</a></span>AppendTo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> AppendTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method append metadata to the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully appended the bytes. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Insufficient available buffers to grow the message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa6b45023bc1b77714bebb73c9e4bed0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6b45023bc1b77714bebb73c9e4bed0d">&#9670;&nbsp;</a></span>Coap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_coap.html">Coap</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_thread_netif.html">ThreadNetif</a> &amp;&#160;</td>
+          <td class="paramname"><em>aNetif</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This constructor initializes the object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aNetif</td><td>A reference to the Netif object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga42335fe91e28937933c9e6b970d96221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42335fe91e28937933c9e6b970d96221">&#9670;&nbsp;</a></span>CoapMetadata() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_coap_metadata.html">CoapMetadata</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default constructor for the object. </p>
+
+</div>
+</div>
+<a id="ga2d2854197ec024f8706026fa150e0ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d2854197ec024f8706026fa150e0ab7">&#9670;&nbsp;</a></span>CoapMetadata() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_coap_metadata.html">CoapMetadata</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td>
+          <td class="paramname"><em>aConfirmable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__api-coap.html#gab8499b3ffda42fb24225be7c603be788">otCoapResponseHandler</a>&#160;</td>
+          <td class="paramname"><em>aHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>aContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This constructor initializes the object with specific values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aConfirmable</td><td>Information if the request is confirmable or not. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>Addressing information. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHandler</td><td>Pointer to a handler function for the response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>Context for the handler function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac80297ed4fa6fab22d8a66b1074239de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac80297ed4fa6fab22d8a66b1074239de">&#9670;&nbsp;</a></span>DequeueAllResponses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DequeueAllResponses </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove all responses from the cache. </p>
+
+</div>
+</div>
+<a id="gaae3023a3c6cbcd0fe843d1d413305f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae3023a3c6cbcd0fe843d1d413305f31">&#9670;&nbsp;</a></span>DequeueOldestResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DequeueOldestResponse </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the oldest response from the cache. </p>
+
+</div>
+</div>
+<a id="ga3b86a89af6b553a416153bd89896fbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b86a89af6b553a416153bd89896fbcf">&#9670;&nbsp;</a></span>EnqueuedResponseHeader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_enqueued_response_header.html">EnqueuedResponseHeader</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default constructor creating empty object. </p>
+
+</div>
+</div>
+<a id="ga528b0c934fff7e262eecda1111d2b5aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga528b0c934fff7e262eecda1111d2b5aa">&#9670;&nbsp;</a></span>EnqueuedResponseHeader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_enqueued_response_header.html">EnqueuedResponseHeader</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor creating object with valid dequeue time and message info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info containing source endpoint identification. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6ac811bc3728d22b12d57a96787e6d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ac811bc3728d22b12d57a96787e6d2f">&#9670;&nbsp;</a></span>EnqueueResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnqueueResponse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add given response to the cache.</p>
+<p>If matching response (the same <a class="el" href="classot_1_1_message.html">Message</a> ID, source endpoint address and port) exists in the cache given response is not added. The CoAP response is copied before it is added to the cache.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>The CoAP response to add to the cache. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info corresponding to <code>aMessage</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaae6d69accf4252e7578263055a78322c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae6d69accf4252e7578263055a78322c">&#9670;&nbsp;</a></span>GetCachedResponses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classot_1_1_message_queue.html">MessageQueue</a>&amp; GetCachedResponses </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method returns a reference to the cached response list.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the cached response list. </dd></dl>
+
+</div>
+</div>
+<a id="ga4b30b1b7a16e44a2e52199fadbf5b29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b30b1b7a16e44a2e52199fadbf5b29a">&#9670;&nbsp;</a></span>GetMatchedResponseCopy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> GetMatchedResponseCopy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
+          <td class="paramname"><em>aHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> **&#160;</td>
+          <td class="paramname"><em>aResponse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a copy of CoAP response from the cache that matches given <a class="el" href="classot_1_1_message.html">Message</a> ID and source endpoint.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHeader</td><td>The CoAP message header containing <a class="el" href="classot_1_1_message.html">Message</a> ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info containing source endpoint address and port. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aResponse</td><td>A pointer to a copy of a cached CoAP response matching given arguments.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Matching response found and successfully created a copy. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Matching response found but there is not sufficient buffer to create a copy. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NOT_FOUND</td><td>Matching response not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6dd76ededc78540faaaf487aa7c92956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6dd76ededc78540faaaf487aa7c92956">&#9670;&nbsp;</a></span>GetMatchedResponseCopy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> GetMatchedResponseCopy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> **&#160;</td>
+          <td class="paramname"><em>aResponse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a copy of CoAP response from the cache that matches given <a class="el" href="classot_1_1_message.html">Message</a> ID and source endpoint.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRequest</td><td>The CoAP message containing <a class="el" href="classot_1_1_message.html">Message</a> ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info containing source endpoint address and port. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aResponse</td><td>A pointer to a copy of a cached CoAP response matching given arguments.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Matching response found and successfully created a copy. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Matching response found but there is not sufficient buffer to create a copy. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NOT_FOUND</td><td>Matching response not found. </td></tr>
+    <tr><td class="paramname">OT_ERROR_PARSE</td><td>Could not parse CoAP header in the request message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9c6193c085bda603adf8bd22297b3b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c6193c085bda603adf8bd22297b3b0b">&#9670;&nbsp;</a></span>GetMessageInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a>&amp; GetMessageInfo </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method returns the message info of cached CoAP response.</p>
+<dl class="section return"><dt>Returns</dt><dd>The message info of the cached CoAP response. </dd></dl>
+
+</div>
+</div>
+<a id="gacfa2e73a54a651b58b68a228f0831cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfa2e73a54a651b58b68a228f0831cdf">&#9670;&nbsp;</a></span>GetNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a>* GetNext </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method returns a pointer to the next resource.</p>
+<dl class="section return"><dt>Returns</dt><dd>A Pointer to the next resource. </dd></dl>
 
 </div>
 </div>
@@ -271,71 +914,246 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method returns a port number used by CoAP client.</p>
+<p>This method returns a port number used by CoAP service.</p>
 <dl class="section return"><dt>Returns</dt><dd>A port number. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00125">125</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
-
 </div>
 </div>
-<a id="ga91ca4339c310ccc5f20ada5aa51f6b5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga91ca4339c310ccc5f20ada5aa51f6b5d">&#9670;&nbsp;</a></span>NewMeshCoPMessage()</h2>
+<a id="gaab39ae1cfe72ecaae8d58f32b5fbf504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab39ae1cfe72ecaae8d58f32b5fbf504">&#9670;&nbsp;</a></span>GetRemainingTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_thread_1_1_message.html">Message</a> * NewMeshCoPMessage </td>
+          <td class="memname"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> GetRemainingTime </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_thread_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
-          <td class="paramname"><em>aHeader</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method creates a new <a class="el" href="namespace_thread_1_1_mesh_co_p.html">MeshCoP</a> message with a CoAP header.</p>
+<p>This method returns number of milliseconds in which the message should be sent.</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of milliseconds in which the message should be sent. </dd></dl>
+
+</div>
+</div>
+<a id="gac208054328dadb53920ff4e94f929ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac208054328dadb53920ff4e94f929ab0">&#9670;&nbsp;</a></span>GetRequestMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classot_1_1_message_queue.html">MessageQueue</a>&amp; GetRequestMessages </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method returns a reference to the request message list.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the request message list. </dd></dl>
+
+</div>
+</div>
+<a id="ga9e231d9fb9c5c1a2be4c082374316529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e231d9fb9c5c1a2be4c082374316529">&#9670;&nbsp;</a></span>GetResponses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classot_1_1_message_queue.html">MessageQueue</a>&amp; GetResponses </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a reference to the cached CoAP responses queue.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the cached CoAP responses queue. </dd></dl>
+
+</div>
+</div>
+<a id="ga06c3bd976ed4cca8dd7f25e9357a0714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06c3bd976ed4cca8dd7f25e9357a0714">&#9670;&nbsp;</a></span>IsEarlier() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> IsEarlier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>aTime</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method checks if the message shall be sent before the given time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aHeader</td><td>A reference to a CoAP header that is used to create the message.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aTime</td><td>A time to compare.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="namespace_thread_1_1_mesh_co_p.html">MeshCoP</a> message or NULL if failed to allocate message. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8cpp_source.html#l00055">55</a> of file <a class="el" href="coap__base_8cpp_source.html">coap_base.cpp</a>.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>If the message shall be sent before the given time. </td></tr>
+    <tr><td class="paramname">FALSE</td><td>Otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ga430a8189824499d1373bcd7c3c4c508f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga430a8189824499d1373bcd7c3c4c508f">&#9670;&nbsp;</a></span>NewMessage()</h2>
+<a id="ga06c3bd976ed4cca8dd7f25e9357a0714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06c3bd976ed4cca8dd7f25e9357a0714">&#9670;&nbsp;</a></span>IsEarlier() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> IsEarlier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>aTime</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method checks if the message shall be sent before the given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aTime</td><td>A time to compare.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>If the message shall be sent before the given time. </td></tr>
+    <tr><td class="paramname">FALSE</td><td>Otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa769998376888ead3242d8eb85d2918d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa769998376888ead3242d8eb85d2918d">&#9670;&nbsp;</a></span>IsLater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> IsLater </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>aTime</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method checks if the message shall be sent after the given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aTime</td><td>A time to compare.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>If the message shall be sent after the given time. </td></tr>
+    <tr><td class="paramname">FALSE</td><td>Otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaebab0dd87289d14727a556fb77056782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebab0dd87289d14727a556fb77056782">&#9670;&nbsp;</a></span>NewMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_thread_1_1_message.html">Message</a> * NewMessage </td>
+          <td class="memname"><a class="el" href="classot_1_1_message.html">Message</a> * NewMessage </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_thread_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
-          <td class="paramname"><em>aHeader</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
+          <td class="paramname"><em>aHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>aPriority</em> = <code>kDefaultCoapMessagePriority</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This method creates a new message with a CoAP header.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aHeader</td><td>A reference to a CoAP header that is used to create the message.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHeader</td><td>A reference to a CoAP header that is used to create the message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPrority</td><td>The message priority level.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the message or NULL if failed to allocate message. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="coap__base_8cpp_source.html#l00040">40</a> of file <a class="el" href="coap__base_8cpp_source.html">coap_base.cpp</a>.</p>
-
 </div>
 </div>
-<a id="ga02eb05be69bc8b84c586f3807371cdc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02eb05be69bc8b84c586f3807371cdc7">&#9670;&nbsp;</a></span>Start()</h2>
+<a id="gaadde174acb4f517ea8d0715bcb2fff25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadde174acb4f517ea8d0715bcb2fff25">&#9670;&nbsp;</a></span>ReadFrom() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,26 +1162,32 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> Start </td>
+          <td class="memname"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ReadFrom </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_thread_1_1_ip6_1_1_sock_addr.html">Ip6::SockAddr</a> &amp;&#160;</td>
-          <td class="paramname"><em>aSockAddr</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8cpp_source.html#l00067">67</a> of file <a class="el" href="coap__base_8cpp_source.html">coap_base.cpp</a>.</p>
+<p>This method reads request data from the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes read. </dd></dl>
 
 </div>
 </div>
-<a id="ga1c52975dd59e329a5bfcb079add14341"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c52975dd59e329a5bfcb079add14341">&#9670;&nbsp;</a></span>Stop()</h2>
+<a id="gaadde174acb4f517ea8d0715bcb2fff25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadde174acb4f517ea8d0715bcb2fff25">&#9670;&nbsp;</a></span>ReadFrom() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,27 +1196,735 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> Stop </td>
+          <td class="memname"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ReadFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method reads request data from the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes read. </dd></dl>
+
+</div>
+</div>
+<a id="ga6c8c1da0955f447e99d1da0b7b27538b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c8c1da0955f447e99d1da0b7b27538b">&#9670;&nbsp;</a></span>Receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method receives a message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the received message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>A reference to the message info associated with <code>aMessage</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classot_1_1_coap_1_1_coap_secure.html#a6c8c1da0955f447e99d1da0b7b27538b">CoapSecure</a>.</p>
+
+</div>
+</div>
+<a id="ga14fdbf9efd6c05e63ff843def8ebdc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14fdbf9efd6c05e63ff843def8ebdc3c">&#9670;&nbsp;</a></span>RemoveFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RemoveFrom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method removes metadata from the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4145baa17d84a99c0fae354d4e14af5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4145baa17d84a99c0fae354d4e14af5a">&#9670;&nbsp;</a></span>RemoveResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveResource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a> &amp;&#160;</td>
+          <td class="paramname"><em>aResource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method removes a resource from the CoAP server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aResource</td><td>A reference to the resource. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8737280422d556b7109413fe68521f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8737280422d556b7109413fe68521f9b">&#9670;&nbsp;</a></span>Resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_resource.html">Resource</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>aUriPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__api-coap.html#ga715c68f6100fb5331bd5877e7a09cce4">otCoapRequestHandler</a>&#160;</td>
+          <td class="paramname"><em>aHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>aContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This constructor initializes the resource.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aUriPath</td><td>A pointer to a NULL-terminated string for the Uri-Path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHandler</td><td>A function pointer that is called when receiving a CoAP message for <code>aUriPath</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>A pointer to arbitrary context information. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1fdbe01d01c67ae7513cc178ea65265d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1fdbe01d01c67ae7513cc178ea65265d">&#9670;&nbsp;</a></span>ResponsesQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classot_1_1_coap_1_1_responses_queue.html">ResponsesQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_thread_netif.html">ThreadNetif</a> &amp;&#160;</td>
+          <td class="paramname"><em>aNetif</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default class constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aNetif</td><td>A reference to the network interface that CoAP server should be assigned to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaba8d3e1fa743c63745e5687cdca8af1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba8d3e1fa743c63745e5687cdca8af1c">&#9670;&nbsp;</a></span>Send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> Send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method send a message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message to send. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>A reference to the message info associated with <code>aMessage</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gadd0be974961bbcbca75f669c3d75bb86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd0be974961bbcbca75f669c3d75bb86">&#9670;&nbsp;</a></span>SendAck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> SendAck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
+          <td class="paramname"><em>aRequestHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method sends a CoAP ACK empty message which is used in Separate Response for confirmable requests.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRequestHeader</td><td>A reference to the CoAP <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> that was used in CoAP request. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info corresponding to the CoAP request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully enqueued the CoAP response message. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Insufficient buffers available to send the CoAP response. </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_ARGS</td><td>The <code>aRequestHeader</code> header is not of confirmable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga43612428ce8f8f23d12a8368346cbffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43612428ce8f8f23d12a8368346cbffe">&#9670;&nbsp;</a></span>SendEmptyAck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> SendEmptyAck </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
+          <td class="paramname"><em>aRequestHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method sends a CoAP ACK message on which a dummy CoAP response is piggybacked.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRequestHeader</td><td>A reference to the CoAP <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> that was used in CoAP request. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info corresponding to the CoAP request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully enqueued the CoAP response message. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Insufficient buffers available to send the CoAP response. </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_ARGS</td><td>The <code>aRequestHeader</code> header is not of confirmable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga7298e484f9f5921b991669ac80408298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7298e484f9f5921b991669ac80408298">&#9670;&nbsp;</a></span>SendHeaderResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> SendHeaderResponse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__api-coap.html#ga9aa05cbbcfa6954cb13e4745b8cec424">Header::Code</a>&#160;</td>
+          <td class="paramname"><em>aCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
+          <td class="paramname"><em>aRequestHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method sends header-only CoAP response message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aCode</td><td>The CoAP code of this response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRequestHeader</td><td>A reference to the CoAP <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> that was used in CoAP request. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info corresponding to the CoAP request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully enqueued the CoAP response message. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Insufficient buffers available to send the CoAP response. </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_ARGS</td><td>The <code>aRequestHeader</code> header is not of confirmable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga55087c9eceaf69e7a5dda9642364c70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55087c9eceaf69e7a5dda9642364c70c">&#9670;&nbsp;</a></span>SendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> SendMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__api-coap.html#gab8499b3ffda42fb24225be7c603be788">otCoapResponseHandler</a>&#160;</td>
+          <td class="paramname"><em>aHandler</em> = <code><a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>aContext</em> = <code><a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method sends a CoAP message.</p>
+<p>If a response for a request is expected, respective function and context information should be provided. If no response is expected, these arguments should be NULL pointers. If <a class="el" href="classot_1_1_message.html">Message</a> Id was not set in the header (equal to 0), this function will assign unique <a class="el" href="classot_1_1_message.html">Message</a> Id to the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message to send. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>A reference to the message info associated with <code>aMessage</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHandler</td><td>A function pointer that shall be called on response reception or time-out. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>A pointer to arbitrary context information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully sent CoAP message. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Failed to allocate retransmission data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga008e5c89bad61a560d0d2c671e026589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga008e5c89bad61a560d0d2c671e026589">&#9670;&nbsp;</a></span>SendNotFound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> SendNotFound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
+          <td class="paramname"><em>aRequestHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method sends a header-only CoAP message to indicate no resource matched for the request.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRequestHeader</td><td>A reference to the CoAP <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> that was used in CoAP request. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info corresponding to the CoAP request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully enqueued the CoAP response message. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Insufficient buffers available to send the CoAP response. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2c1d6ef448464582fa30330defcaae9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c1d6ef448464582fa30330defcaae9c">&#9670;&nbsp;</a></span>SendReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> SendReset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> &amp;&#160;</td>
+          <td class="paramname"><em>aRequestHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classot_1_1_ip6_1_1_message_info.html">Ip6::MessageInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessageInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method sends a CoAP reset message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRequestHeader</td><td>A reference to the CoAP <a class="el" href="classot_1_1_coap_1_1_header.html">Header</a> that was used in CoAP request. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessageInfo</td><td>The message info corresponding to the CoAP request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully enqueued the CoAP response message. </td></tr>
+    <tr><td class="paramname">OT_ERROR_NO_BUFS</td><td>Insufficient buffers available to send the CoAP response. </td></tr>
+    <tr><td class="paramname">OT_ERROR_INVALID_ARGS</td><td>The <code>aRequestHeader</code> header is not of confirmable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga248b4a39e20113e2f2beba62d233cb23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga248b4a39e20113e2f2beba62d233cb23">&#9670;&nbsp;</a></span>SetDefaultHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDefaultHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__api-coap.html#ga715c68f6100fb5331bd5877e7a09cce4">otCoapRequestHandler</a>&#160;</td>
+          <td class="paramname"><em>aHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>aContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2c7aa362c47de6f390dcdc23121a6d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c7aa362c47de6f390dcdc23121a6d54">&#9670;&nbsp;</a></span>SetInterceptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetInterceptor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__core-coap.html#ga2c461aa30881a1a2966b5f68ec5dedc4">Interceptor</a>&#160;</td>
+          <td class="paramname"><em>aInterceptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>aContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method sets interceptor to be called before processing a CoAP packet.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInterceptor</td><td>A pointer to the interceptor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aContext</td><td>A pointer to arbitrary context information. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga414e61c0e4a2f84894b14164c6fc6ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga414e61c0e4a2f84894b14164c6fc6ae0">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> Start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>aPort</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method starts the CoAP service.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPort</td><td>The local UDP port to bind to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully started the CoAP service. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga00099ac7491d29c48884862c67f912fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00099ac7491d29c48884862c67f912fb">&#9670;&nbsp;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a> Stop </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+<p>This method stops the CoAP service.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OT_ERROR_NONE</td><td>Successfully stopped the CoAP service. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga07f5b6396e06ecb38abe6ceea9a3a777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07f5b6396e06ecb38abe6ceea9a3a777">&#9670;&nbsp;</a></span>UpdateIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UpdateIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classot_1_1_message.html">Message</a> &amp;&#160;</td>
+          <td class="paramname"><em>aMessage</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8cpp_source.html#l00078">78</a> of file <a class="el" href="coap__base_8cpp_source.html">coap_base.cpp</a>.</p>
+<p>This method updates request data in the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMessage</td><td>A reference to the message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes updated. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="gacf57d9a90ed48eea1c34a2c8fb2a853e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf57d9a90ed48eea1c34a2c8fb2a853e">&#9670;&nbsp;</a></span>mReceiver</h2>
+<a id="gab109ede15d5f80801392bda5b46c7128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab109ede15d5f80801392bda5b46c7128">&#9670;&nbsp;</a></span>mNetif</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +1933,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__core-coap.html#ga1c9dc931f8be5c3e7fd1899fcc1f219b">ReceiverFunction</a> mReceiver</td>
+          <td class="memname"><a class="el" href="classot_1_1_thread_netif.html">ThreadNetif</a>&amp; mNetif</td>
         </tr>
       </table>
   </td>
@@ -410,32 +1942,6 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00133">133</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
-
-</div>
-</div>
-<a id="gaa8b1c6adfb416184ff8d3fd1b9916aaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa8b1c6adfb416184ff8d3fd1b9916aaa">&#9670;&nbsp;</a></span>mSender</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__core-coap.html#gab8a4e6e393f69fa728d45d5dc66a3cf7">SenderFunction</a> mSender</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00132">132</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -449,7 +1955,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_thread_1_1_ip6_1_1_udp_socket.html">Ip6::UdpSocket</a> mSocket</td>
+          <td class="memname"><a class="el" href="classot_1_1_ip6_1_1_udp_socket.html">Ip6::UdpSocket</a> mSocket</td>
         </tr>
       </table>
   </td>
@@ -459,14 +1965,71 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="coap__base_8hpp_source.html#l00131">131</a> of file <a class="el" href="coap__base_8hpp_source.html">coap_base.hpp</a>.</p>
+</div>
+</div>
+<a id="ga37aa37b4960d0b87013f0250c2792d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37aa37b4960d0b87013f0250c2792d50">&#9670;&nbsp;</a></span>OT_TOOL_PACKED_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__plat-toolchain.html#gaba6ad63129c3a790957a9b149a65891b">OT_TOOL_PACKED_BEGIN</a> class <a class="el" href="classot_1_1_coap_1_1_coap_metadata.html">ot::Coap::CoapMetadata</a>  OT_TOOL_PACKED_END</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends</h2>
+<a id="gafa28f990289c7e9c65b6a696e336325c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa28f990289c7e9c65b6a696e336325c">&#9670;&nbsp;</a></span>Coap <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classot_1_1_coap_1_1_coap.html">Coap</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafa28f990289c7e9c65b6a696e336325c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa28f990289c7e9c65b6a696e336325c">&#9670;&nbsp;</a></span>Coap <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classot_1_1_coap_1_1_coap.html">Coap</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:35 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:05 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

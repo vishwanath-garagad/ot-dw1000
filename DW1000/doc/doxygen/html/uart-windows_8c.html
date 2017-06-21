@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/posix/uart-windows.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/posix/uart-windows.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_a3ede4c2e91cd2158f92405b0a1c280f.html">posix</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_ab5fae8cac44790818d1ce3635d3bac0.html">posix</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,20 +70,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="platform-posix_8h_source.html">platform-posix.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2uart_8h_source.html">platform/uart.h</a>&gt;</code><br />
-</div>
-<p><a href="uart-windows_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &quot;<a class="el" href="include_2openthread_2platform_2uart_8h_source.html">openthread/platform/uart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="code__utils_8h_source.html">utils/code_utils.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a25064fcc49711ea4f56dc56b1588b692"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___p_l_a_t_f_o_r_m.html#gac27fd9ffb05852d9565cec8b81e64401">DWORD</a> WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart-windows_8c.html#a25064fcc49711ea4f56dc56b1588b692">windowsUartWorkerThread</a> (_In_ LPVOID lpThreadParameter)</td></tr>
 <tr class="separator:a25064fcc49711ea4f56dc56b1588b692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0428e2db563f7eff99e95e023bbad9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#gaf0428e2db563f7eff99e95e023bbad9b">otPlatUartEnable</a> (void)</td></tr>
-<tr class="separator:gaf0428e2db563f7eff99e95e023bbad9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca043d018d46dbd87e90666be8ea984a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#gaca043d018d46dbd87e90666be8ea984a">otPlatUartDisable</a> (void)</td></tr>
-<tr class="separator:gaca043d018d46dbd87e90666be8ea984a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad58e7a5af0edc4e5d6dca23839f0235e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#gad58e7a5af0edc4e5d6dca23839f0235e">otPlatUartSend</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aBuf, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufLength)</td></tr>
-<tr class="separator:gad58e7a5af0edc4e5d6dca23839f0235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaca17740d688a902bf9be238bdde208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#gaeaca17740d688a902bf9be238bdde208">otPlatUartEnable</a> (void)</td></tr>
+<tr class="separator:gaeaca17740d688a902bf9be238bdde208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49a8e33830c329e93fd3fb232e01331b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#ga49a8e33830c329e93fd3fb232e01331b">otPlatUartDisable</a> (void)</td></tr>
+<tr class="separator:ga49a8e33830c329e93fd3fb232e01331b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7252c036cf89b0337e88578d74874210"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#ga7252c036cf89b0337e88578d74874210">otPlatUartSend</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aBuf, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufLength)</td></tr>
+<tr class="separator:ga7252c036cf89b0337e88578d74874210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23cc0ca243f20ff4c738ca8f0d12867e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart-windows_8c.html#a23cc0ca243f20ff4c738ca8f0d12867e">platformUartUpdateFdSet</a> (fd_set *aReadFdSet, fd_set *aWriteFdSet, fd_set *aErrorFdSet, int *aMaxFd)</td></tr>
 <tr class="separator:a23cc0ca243f20ff4c738ca8f0d12867e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea693caaf5dcd3a514982a46eafd3314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart-windows_8c.html#aea693caaf5dcd3a514982a46eafd3314">platformUartProcess</a> (void)</td></tr>
@@ -105,8 +105,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This function performs radio driver processing. </p>
-
-<p class="definition">Definition at line <a class="el" href="uart-windows_8c_source.html#l00135">135</a> of file <a class="el" href="uart-windows_8c_source.html">uart-windows.c</a>.</p>
 
 </div>
 </div>
@@ -157,8 +155,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="uart-windows_8c_source.html#l00126">126</a> of file <a class="el" href="uart-windows_8c_source.html">uart-windows.c</a>.</p>
-
 </div>
 </div>
 <a id="a25064fcc49711ea4f56dc56b1588b692"></a>
@@ -177,14 +173,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uart-windows_8c_source.html#l00037">37</a> of file <a class="el" href="uart-windows_8c_source.html">uart-windows.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

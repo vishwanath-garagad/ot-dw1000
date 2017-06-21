@@ -1,11 +1,16 @@
 var searchData=
 [
+  ['adc0_5firqn',['ADC0_IRQn',['../group___interrupt__vector__numbers.html#gga666eb0caeb12ec0e281415592ae89083a08b6c660bfe015ac0842ca95510420eb',1,'MKW41Z4.h']]],
+  ['adc_5fgain',['ADC_GAIN',['../group__xcvr.html#ggac7203c4a23983b6b5f01c3e286d51551ab9cb452d9eb4c1d9dc143dbf789ff9bb',1,'ifr_radio.h']]],
+  ['adc_5fgain_5ftrim_5ffailed',['ADC_GAIN_TRIM_FAILED',['../group__xcvr.html#gga14f77b27a6b87dc042534dc1a2e1e92ba4fbfee11a6cf5681ab1a4b855726abc7',1,'ifr_radio.h']]],
   ['adc_5firqn',['ADC_IRQn',['../group__nrf52840.html#gga7e1129cd8a196f4284d41db3e82ad5c8a4d69175258ae261dd545001e810421b3',1,'DA14680BA.h']]],
-  ['arm_5fmath_5fargument_5ferror',['ARM_MATH_ARGUMENT_ERROR',['../arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a74897e18d4b8f62b12a7d8a01dd2bb35',1,'arm_math.h']]],
-  ['arm_5fmath_5flength_5ferror',['ARM_MATH_LENGTH_ERROR',['../arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a9ae74d7f8a53aec0512ae8f0a421e0e1',1,'arm_math.h']]],
-  ['arm_5fmath_5fnaninf',['ARM_MATH_NANINF',['../arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6ac55996aaf19245238a8f57a91aeaefcc',1,'arm_math.h']]],
-  ['arm_5fmath_5fsingular',['ARM_MATH_SINGULAR',['../arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a91509ea9c819dbd592ac13a6b05382dc',1,'arm_math.h']]],
-  ['arm_5fmath_5fsize_5fmismatch',['ARM_MATH_SIZE_MISMATCH',['../arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a7071b92f1f6bc3c5c312a237ea91105b',1,'arm_math.h']]],
-  ['arm_5fmath_5fsuccess',['ARM_MATH_SUCCESS',['../arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a9f8b2a10bd827fb4600e77d455902eb0',1,'arm_math.h']]],
-  ['arm_5fmath_5ftest_5ffailure',['ARM_MATH_TEST_FAILURE',['../arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a09457f2be656b35015fd6d36202fa376',1,'arm_math.h']]]
+  ['ant_5fll',['ANT_LL',['../group__xcvr.html#gga88e31e3d7d0a3246998847dd79e7f8b4a0bf0752008c89a8cdb7ad3f65f9f0f53',1,'fsl_xcvr.h']]],
+  ['ant_5fmode',['ANT_MODE',['../group__xcvr.html#gga7b606b7db0e5c73bf6be9fab68010b1fa97575677e51a36b61f48760f56c494ce',1,'fsl_xcvr.h']]],
+  ['arm_5fmath_5fargument_5ferror',['ARM_MATH_ARGUMENT_ERROR',['../_nordic_semiconductor_2cmsis_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a74897e18d4b8f62b12a7d8a01dd2bb35',1,'ARM_MATH_ARGUMENT_ERROR():&#160;arm_math.h'],['../nxp_2_c_m_s_i_s_2_include_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a74897e18d4b8f62b12a7d8a01dd2bb35',1,'ARM_MATH_ARGUMENT_ERROR():&#160;arm_math.h']]],
+  ['arm_5fmath_5flength_5ferror',['ARM_MATH_LENGTH_ERROR',['../_nordic_semiconductor_2cmsis_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a9ae74d7f8a53aec0512ae8f0a421e0e1',1,'ARM_MATH_LENGTH_ERROR():&#160;arm_math.h'],['../nxp_2_c_m_s_i_s_2_include_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a9ae74d7f8a53aec0512ae8f0a421e0e1',1,'ARM_MATH_LENGTH_ERROR():&#160;arm_math.h']]],
+  ['arm_5fmath_5fnaninf',['ARM_MATH_NANINF',['../_nordic_semiconductor_2cmsis_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6ac55996aaf19245238a8f57a91aeaefcc',1,'ARM_MATH_NANINF():&#160;arm_math.h'],['../nxp_2_c_m_s_i_s_2_include_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6ac55996aaf19245238a8f57a91aeaefcc',1,'ARM_MATH_NANINF():&#160;arm_math.h']]],
+  ['arm_5fmath_5fsingular',['ARM_MATH_SINGULAR',['../_nordic_semiconductor_2cmsis_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a91509ea9c819dbd592ac13a6b05382dc',1,'ARM_MATH_SINGULAR():&#160;arm_math.h'],['../nxp_2_c_m_s_i_s_2_include_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a91509ea9c819dbd592ac13a6b05382dc',1,'ARM_MATH_SINGULAR():&#160;arm_math.h']]],
+  ['arm_5fmath_5fsize_5fmismatch',['ARM_MATH_SIZE_MISMATCH',['../_nordic_semiconductor_2cmsis_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a7071b92f1f6bc3c5c312a237ea91105b',1,'ARM_MATH_SIZE_MISMATCH():&#160;arm_math.h'],['../nxp_2_c_m_s_i_s_2_include_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a7071b92f1f6bc3c5c312a237ea91105b',1,'ARM_MATH_SIZE_MISMATCH():&#160;arm_math.h']]],
+  ['arm_5fmath_5fsuccess',['ARM_MATH_SUCCESS',['../_nordic_semiconductor_2cmsis_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a9f8b2a10bd827fb4600e77d455902eb0',1,'ARM_MATH_SUCCESS():&#160;arm_math.h'],['../nxp_2_c_m_s_i_s_2_include_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a9f8b2a10bd827fb4600e77d455902eb0',1,'ARM_MATH_SUCCESS():&#160;arm_math.h']]],
+  ['arm_5fmath_5ftest_5ffailure',['ARM_MATH_TEST_FAILURE',['../_nordic_semiconductor_2cmsis_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a09457f2be656b35015fd6d36202fa376',1,'ARM_MATH_TEST_FAILURE():&#160;arm_math.h'],['../nxp_2_c_m_s_i_s_2_include_2arm__math_8h.html#a5e459c6409dfcd2927bb8a57491d7cf6a09457f2be656b35015fd6d36202fa376',1,'ARM_MATH_TEST_FAILURE():&#160;arm_math.h']]]
 ];

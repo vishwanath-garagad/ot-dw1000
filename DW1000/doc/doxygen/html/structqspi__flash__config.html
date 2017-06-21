@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>qspi_flash_config Struct Reference</title>
+<title>OT-DW1000: qspi_flash_config Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -123,8 +124,6 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>QSPI Flash configuration structure. </p>
 <p>This struct is used to define a driver for a specific QSPI flash.</p>
 <dl class="section note"><dt>Note</dt><dd>The struct instance must be declared as static const for this to work </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00098">98</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a9f2bd368cf4fdffcff98be632f912894"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f2bd368cf4fdffcff98be632f912894">&#9670;&nbsp;</a></span>address_size</h2>
@@ -138,8 +137,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Whether the flash works in 24- or 32-bit addressing mode </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00137">137</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -156,8 +153,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Whether the break sequence, that puts flash out of the continuous mode, is one or two bytes long (the break byte is 0xFF) </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00138">138</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="a95c5976009c1255c048305b3695971f8"></a>
@@ -172,8 +167,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Perform extra steps needed when command entry mode is deactivated </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00104">104</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -190,8 +183,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>The Flash JEDEC device type (Cmd 0x9F, 3rd byte) </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00116">116</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="ab9c960832b7e834e6657e0c6ab4c3d8a"></a>
@@ -206,8 +197,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The Flash JEDEC device type (Cmd 0x9F, 2nd byte) </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00115">115</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -224,8 +213,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>The bit to check when reading the erase progress </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00127">127</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="a55e83aaebd3b57729a8128360fcb618c"></a>
@@ -240,8 +227,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The active state (true: high, false: low) of the bit above </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00128">128</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -258,8 +243,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>The Flash erase opcode to use </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00117">117</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="a12e0dcb0cd184bb8b2d323145d02c8e1"></a>
@@ -274,8 +257,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The Flash erase resume opcode to use </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00119">119</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -292,8 +273,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>The Flash erase suspend opcode to use </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00118">118</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="a19bcc06dd31e8e5db702a1e03c6603e1"></a>
@@ -308,8 +287,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The extra byte to transmit, when in "Performance mode" (send once is 1), that tells the flash that it should stay in this continuous, performance mode </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00134">134</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -326,8 +303,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Return the number of dummy bytes currently needed (they may e.g. change when the clock changes) </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00109">109</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="abd8e3f8ae060dc6866b0851eac52fe65"></a>
@@ -342,8 +317,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Flash-specific initialization </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00100">100</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -360,8 +333,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Check if flash is in erase/program suspend state </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00101">101</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="aa3ab82403f13fd141bb8a58a99f1c919"></a>
@@ -376,8 +347,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The Flash JEDEC vendor ID (Cmd 0x9F, 1st byte) This (and the device_type/device_density) are needed for flash autodetection </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00112">112</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -394,8 +363,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>The Flash page program opcode to use </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00120">120</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="a1a4276b4bf7455baba4f84cddb11db32"></a>
@@ -410,8 +377,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This is the time, in usec, needed for the flash to go to power down, after the Power Down command is issued </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00146">146</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -428,8 +393,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>If true, the address will be transmitted in QUAD mode when writing a page. Otherwise, it will be transmitted in single mode </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00121">121</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="adfdbdce4d5238f758ea11c2ca16faa2f"></a>
@@ -444,8 +407,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The opcode to use to check if erase is in progress (Usually the Read Status Reg opcode (0x5)) </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00124">124</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -462,8 +423,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>This is the time, in usec, needed for the flash to exit the power down mode, after the Release Power Down command is issued </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00148">148</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="aba49f7f3f6768feb6715ad142cfbf64e"></a>
@@ -478,8 +437,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>If set to 1, the "Performance mode" (or burst, or continuous; differs per vendor) will be used for read accesses. In this mode, the read opcode is only sent once, and subsequent accesses only transfer the address </p>
-
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00130">130</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
 
 </div>
 </div>
@@ -496,8 +453,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Perform Flash configuration when system clock is changed (e.g. change dummy bytes or QSPIC clock divider </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00106">106</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <a id="a3ce29d4992856e23f2213c5f8f7b3fa6"></a>
@@ -513,17 +468,15 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>The QSPIC microcode to use to setup the flash on wakeup. This is automatically used by the QSPI Controller after wakeup, and before CPU starts code execution. This is different based on whether flash was active, in deep power down or completely off while the system was sleeping </p>
 
-<p class="definition">Definition at line <a class="el" href="qspi__common_8h_source.html#l00141">141</a> of file <a class="el" href="qspi__common_8h_source.html">qspi_common.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>third_party/dialog/DialogSDK/bsp/memory/include/<a class="el" href="qspi__common_8h_source.html">qspi_common.h</a></li>
+<li>openthread-master/third_party/dialog/DialogSDK/bsp/memory/include/<a class="el" href="qspi__common_8h_source.html">qspi_common.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:39 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['taskletscheduler',['TaskletScheduler',['../class_thread_1_1_tasklet.html#adea5d939e8bd9b033261ff8e1aeb34b5',1,'Thread::Tasklet']]],
-  ['timer',['Timer',['../class_thread_1_1_timer_scheduler.html#a50de43af5bed41f30c071d8cce0e81bc',1,'Thread::TimerScheduler']]],
-  ['timerscheduler',['TimerScheduler',['../class_thread_1_1_timer.html#a43d76786a59ea584a149228c3cd3b5f3',1,'Thread::Timer']]]
+  ['udp',['Udp',['../classot_1_1_ip6_1_1_udp_socket.html#a0b089f130535ba7381f3d31254ae1989',1,'ot::Ip6::UdpSocket']]],
+  ['udpsocket',['UdpSocket',['../classot_1_1_ip6_1_1_udp.html#ae128c6687ced82c6157c5f865f8dec5c',1,'ot::Ip6::Udp']]]
 ];

@@ -1,13 +1,12 @@
 var searchData=
 [
+  ['tasklets',['Tasklets',['../group__api-tasklets.html',1,'']]],
+  ['thread',['Thread',['../group__api-thread.html',1,'']]],
   ['trace_20port_20interface_20_28tpi_29',['Trace Port Interface (TPI)',['../group___c_m_s_i_s___t_p_i.html',1,'']]],
-  ['test',['Test',['../group__config-test.html',1,'']]],
   ['tlvs',['TLVs',['../group__core-mle-tlvs.html',1,'']]],
   ['tlvs',['TLVs',['../group__core-netdata-tlvs.html',1,'']]],
-  ['tasklet',['Tasklet',['../group__core-tasklet.html',1,'']]],
-  ['tcp',['TCP',['../group__core-tcp.html',1,'']]],
-  ['timer',['Timer',['../group__core-timer.html',1,'']]],
   ['transform_20functions',['Transform Functions',['../group__group_transforms.html',1,'']]],
+  ['toolchain',['Toolchain',['../group__plat-toolchain.html',1,'(Global Namespace)'],['../group___t_o_o_l_c_h_a_i_n.html',1,'(Global Namespace)']]],
   ['types',['Types',['../group__radio-types.html',1,'']]],
   ['tcp_2fip_20communication_20module',['TCP/IP communication module',['../group__tcpip__communication__module.html',1,'']]],
   ['tcs_5fhandler',['TCS_HANDLER',['../group___t_c_s___h_a_n_d_l_e_r.html',1,'']]],
@@ -15,6 +14,13 @@ var searchData=
   ['timer0',['Timer0',['../group___timer0.html',1,'']]],
   ['timer1',['Timer1',['../group___timer1.html',1,'']]],
   ['timer_5fapi',['Timer_api',['../group__timer__api.html',1,'']]],
-  ['toolchain',['Toolchain',['../group__toolchain.html',1,'']]],
-  ['trng_5fapi',['Trng_api',['../group__trng__api.html',1,'']]]
+  ['tpm',['Tpm',['../group__tpm.html',1,'']]],
+  ['tpm_20peripheral_20access_20layer',['TPM Peripheral Access Layer',['../group___t_p_m___peripheral___access___layer.html',1,'']]],
+  ['tpm_20register_20masks',['TPM Register Masks',['../group___t_p_m___register___masks.html',1,'']]],
+  ['trng_5fapi',['Trng_api',['../group__trng__api.html',1,'']]],
+  ['trng_20peripheral_20access_20layer',['TRNG Peripheral Access Layer',['../group___t_r_n_g___peripheral___access___layer.html',1,'']]],
+  ['trng_20register_20masks',['TRNG Register Masks',['../group___t_r_n_g___register___masks.html',1,'']]],
+  ['tsi_20peripheral_20access_20layer',['TSI Peripheral Access Layer',['../group___t_s_i___peripheral___access___layer.html',1,'']]],
+  ['tsi_20register_20masks',['TSI Register Masks',['../group___t_s_i___register___masks.html',1,'']]],
+  ['tsi_5fv4_5fdriver',['Tsi_v4_driver',['../group__tsi__v4__driver.html',1,'']]]
 ];

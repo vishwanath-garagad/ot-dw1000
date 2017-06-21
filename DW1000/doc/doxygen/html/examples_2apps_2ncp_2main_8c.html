@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/apps/ncp/main.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/apps/ncp/main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_6350c740cb9014d075c83151f75e1317.html">apps</a></li><li class="navelem"><a class="el" href="dir_ca1c684fc03fb0b39f773d60c3e43cfb.html">ncp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_a9f2b62de9dde88bb4da7804c41078ec.html">apps</a></li><li class="navelem"><a class="el" href="dir_dc262253767d781c6780e7649697e194.html">ncp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,20 +70,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;openthread-config.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-core-config_8h_source.html">openthread-core-config.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-diag_8h_source.html">openthread-diag.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-tasklet_8h_source.html">openthread-tasklet.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="debug_8hpp_source.html">common/debug.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ncp_8h_source.html">ncp/ncp.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2platform_8h_source.html">platform/platform.h</a>&gt;</code><br />
-</div>
-<p><a href="examples_2apps_2ncp_2main_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="diag_8h_source.html">openthread/diag.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ncp_8h_source.html">openthread/ncp.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread/openthread.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2openthread_2platform_2platform_8h_source.html">openthread/platform/platform.h</a>&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga04d5608ac68a78eb3e8fc167587c61f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__execution.html#ga04d5608ac68a78eb3e8fc167587c61f3">otSignalTaskletPending</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ga04d5608ac68a78eb3e8fc167587c61f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga504d39f61afb73805cb9452695fdbdb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-tasklets.html#ga504d39f61afb73805cb9452695fdbdb0">otTaskletsSignalPending</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga504d39f61afb73805cb9452695fdbdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2apps_2ncp_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -113,14 +110,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2apps_2ncp_2main_8c_source.html#l00048">48</a> of file <a class="el" href="examples_2apps_2ncp_2main_8c_source.html">main.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

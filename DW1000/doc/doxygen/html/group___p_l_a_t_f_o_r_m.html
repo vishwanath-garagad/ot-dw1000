@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PLATFORM</title>
+<title>OT-DW1000: PLATFORM</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -429,8 +430,6 @@ Variables</h2></td></tr>
 
 <p>Attribute to tell the compiler to consider a symbol as externally visible (for LTO) </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00285">285</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaf5700b532b8e7f829551aaf46f65e21e"></a>
@@ -447,8 +446,6 @@ Variables</h2></td></tr>
 
 <p>Zero-initialized data retained memory attribute. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00250">250</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga751c4468561a16a0a14d7b6cd43a0e7f"></a>
@@ -462,8 +459,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00251">251</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -481,8 +476,6 @@ Variables</h2></td></tr>
 
 <p>Text retained memory attribute. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00272">272</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga38ee533ae9188f1a75a8fe77dd9da354"></a>
@@ -498,8 +491,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constant data retained memory attribute. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00266">266</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -517,8 +508,6 @@ Variables</h2></td></tr>
 
 <p>Initialized data retained memory attribute. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00256">256</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga75c79a2c4c4cd12162511174c2c92c12"></a>
@@ -535,8 +524,6 @@ Variables</h2></td></tr>
 
 <p>Uninitialized data retained memory attribute. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00261">261</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga3e40e4c553fc11588f7a4c2a19e789e0"></a>
@@ -552,8 +539,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Attribute to tell the compiler to consider a symbol as used. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00280">280</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -583,8 +568,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00229">229</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga413035e66653b8a8405a878f52a5f18f"></a>
@@ -602,13 +585,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                hw_cpm_assert_trigger_gpio();                                   \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">                else {                                                                          \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; bkpt 2 &quot;</span> );                                  \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> <a href="bsp__definitions_8h_source.html#l00074">bsp_definitions.h:74</a></div></div>
-<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> <a href="custom__config__qspi_8h_source.html#l00056">custom_config_qspi.h:56</a></div></div>
-<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> <a href="_d_a14680_b_a_8h_source.html#l07460">DA14680BA.h:7460</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                hw_cpm_assert_trigger_gpio();                                   \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">                else {                                                                          \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; bkpt 2 &quot;</span> );                                  \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> bsp_definitions.h:74</div></div>
+<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> custom_config_qspi.h:56</div></div>
+<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> DA14680BA.h:7460</div></div>
 </div><!-- fragment -->
 <p>Assert as error macro. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00327">327</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -627,14 +608,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">                else {                                                                          \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; bkpt 2 &quot;</span> );                                  \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> <a href="bsp__definitions_8h_source.html#l00074">bsp_definitions.h:74</a></div></div>
-<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> <a href="custom__config__qspi_8h_source.html#l00056">custom_config_qspi.h:56</a></div></div>
-<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> <a href="_d_a14680_b_a_8h_source.html#l07460">DA14680BA.h:7460</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">                else {                                                                          \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; bkpt 2 &quot;</span> );                                  \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> bsp_definitions.h:74</div></div>
+<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> custom_config_qspi.h:56</div></div>
+<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> DA14680BA.h:7460</div></div>
 </div><!-- fragment -->
 <p>Assert as error macro when the system is still uninitialized. </p>
 <dl class="section note"><dt>Note</dt><dd>The SW cursor is not activated. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00366">366</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -653,14 +632,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                hw_cpm_assert_trigger_gpio();                                   \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> <a href="bsp__definitions_8h_source.html#l00074">bsp_definitions.h:74</a></div></div>
-<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> <a href="custom__config__qspi_8h_source.html#l00056">custom_config_qspi.h:56</a></div></div>
-<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> <a href="_d_a14680_b_a_8h_source.html#l07460">DA14680BA.h:7460</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                hw_cpm_assert_trigger_gpio();                                   \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> bsp_definitions.h:74</div></div>
+<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> custom_config_qspi.h:56</div></div>
+<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> DA14680BA.h:7460</div></div>
 </div><!-- fragment -->
 <p>Assert as warning macro. </p>
 <dl class="section note"><dt>Note</dt><dd>Active only while in development mode </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00311">311</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -679,14 +656,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> <a href="bsp__definitions_8h_source.html#l00074">bsp_definitions.h:74</a></div></div>
-<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> <a href="custom__config__qspi_8h_source.html#l00056">custom_config_qspi.h:56</a></div></div>
-<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> <a href="_d_a14680_b_a_8h_source.html#l07460">DA14680BA.h:7460</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                       \</div><div class="line">                if (<a class="code" href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a> == <a class="code" href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a>) {                                 \</div><div class="line">                        if (!(a)) {                                                             \</div><div class="line">                                __asm <span class="keyword">volatile</span> ( <span class="stringliteral">&quot; cpsid i &quot;</span> );                                 \</div><div class="line">                                GPREG-&gt;SET_FREEZE_REG = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a>;      \</div><div class="line">                                do {} <span class="keywordflow">while</span>(1);                                                 \</div><div class="line">                        }                                                                       \</div><div class="line">                }                                                                               \</div><div class="line">        }</div><div class="ttc" id="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s_html_ga482aeb53333bfb4d1538af73e60cd6b3"><div class="ttname"><a href="group___b_s_p___c_o_n_f_i_g___d_e_f_i_n_i_t_i_o_n_s.html#ga482aeb53333bfb4d1538af73e60cd6b3">DEVELOPMENT_MODE</a></div><div class="ttdeci">#define DEVELOPMENT_MODE</div><div class="ttdef"><b>Definition:</b> bsp_definitions.h:74</div></div>
+<div class="ttc" id="custom__config__qspi_8h_html_a445ba61c09fdc6f774b11f61945782d0"><div class="ttname"><a href="custom__config__qspi_8h.html#a445ba61c09fdc6f774b11f61945782d0">dg_configIMAGE_SETUP</a></div><div class="ttdeci">#define dg_configIMAGE_SETUP</div><div class="ttdef"><b>Definition:</b> custom_config_qspi.h:56</div></div>
+<div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga265b42319c8220b5a385070bc9456514"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga265b42319c8220b5a385070bc9456514">GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</a></div><div class="ttdeci">#define GPREG_SET_FREEZE_REG_FRZ_WDOG_Msk</div><div class="ttdef"><b>Definition:</b> DA14680BA.h:7460</div></div>
 </div><!-- fragment -->
 <p>Assert as warning macro when the system is still uninitialized. </p>
 <dl class="section note"><dt>Note</dt><dd>Active only while in development mode. The SW cursor is not activated. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00350">350</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -702,8 +677,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00714">714</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga601923eba46784638244c1ebf2622a2a"></a>
@@ -717,8 +690,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00715">715</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -734,8 +705,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00725">725</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga2cda1debde057b596766eba6a76daca0"></a>
@@ -749,8 +718,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00726">726</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -766,8 +733,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00727">727</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga965dc1748ab1cf91426bd04a2fe16ecf"></a>
@@ -781,8 +746,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00728">728</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -798,8 +761,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00729">729</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gae40f5db1c57c98c6db42f15e0a56f03a"></a>
@@ -813,8 +774,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00730">730</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -830,8 +789,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00732">732</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga27fe52b845a36280f50414ab4a00f74f"></a>
@@ -845,8 +802,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00733">733</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -862,8 +817,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00734">734</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga9ce58ae33c478370e59c915b04b05381"></a>
@@ -877,8 +830,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00735">735</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -894,8 +845,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00716">716</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga83aaba3456aa46dfefe199fe6264d8dc"></a>
@@ -909,8 +858,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00736">736</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -926,8 +873,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00737">737</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gafdaa01ee37bdcd01ea44dbab6a30fd0d"></a>
@@ -941,8 +886,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00738">738</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -958,8 +901,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00739">739</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga96cfb019bda32752ff4c8b8244aa6ea0"></a>
@@ -973,8 +914,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00741">741</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -990,8 +929,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00742">742</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga4f97a8963cc15a1a50521d855b8a1331"></a>
@@ -1005,8 +942,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00743">743</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1022,8 +957,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00744">744</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga4361544977e96fb8eb8387ff0feaf6b6"></a>
@@ -1037,8 +970,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00745">745</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1054,8 +985,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00746">746</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga8e44574a8a8becc885b05f3bc367ef6a"></a>
@@ -1069,8 +998,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00717">717</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1086,8 +1013,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00747">747</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gadfb09898dca36071e32cb1fbeec479e5"></a>
@@ -1101,8 +1026,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00748">748</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1118,8 +1041,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00718">718</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gae692bc3df48028ceb1ddc2534a993bb8"></a>
@@ -1133,8 +1054,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00719">719</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1150,8 +1069,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00720">720</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaa6b8f3261ae9e2e1043380c192f7b5f0"></a>
@@ -1165,8 +1082,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00721">721</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1182,8 +1097,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00723">723</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga3aa20ab5eb33383fa31b0e94f4401cdf"></a>
@@ -1197,8 +1110,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00724">724</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1239,12 +1150,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (((<a class="code" href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (v) &lt;&lt; (base ## _ ## reg ## _ ## field ## _Pos)) &amp; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Msk)))</div><div class="ttc" id="dw1000__device__api_8h_html_a05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__device__api_8h_source.html#l00032">dw1000_device_api.h:32</a></div></div>
-<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> <a href="sdk__defs_8h_source.html#l00752">sdk_defs.h:752</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (((<a class="code" href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (v) &lt;&lt; (base ## _ ## reg ## _ ## field ## _Pos)) &amp; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Msk)))</div><div class="ttc" id="dw1000__device__api_8h_html_a05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> dw1000_device_api.h:42</div></div>
+<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> sdk_defs.h:752</div></div>
 </div><!-- fragment -->
 <p>Sets 16-bit wide register bits, indicated by the field, to a value v. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00661">661</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1285,12 +1194,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a>) (((<a class="code" href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a>) (v) &lt;&lt; (base ## _ ## reg ## _ ## field ## _Pos)) &amp; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Msk)))</div><div class="ttc" id="dw1000__device__api_8h_html_a4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__device__api_8h_source.html#l00039">dw1000_device_api.h:39</a></div></div>
-<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> <a href="sdk__defs_8h_source.html#l00754">sdk_defs.h:754</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a>) (((<a class="code" href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a>) (v) &lt;&lt; (base ## _ ## reg ## _ ## field ## _Pos)) &amp; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Msk)))</div><div class="ttc" id="dw1000__device__api_8h_html_a4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> dw1000_device_api.h:49</div></div>
+<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> sdk_defs.h:754</div></div>
 </div><!-- fragment -->
 <p>Sets 32-bit wide register bits, indicated by the field, to a value v. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00668">668</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1319,11 +1226,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga608ff4ad72c45c07c6652557469e590a">_BLACK_ORCA_IC_VERSION</a>(BLACK_ORCA_IC_REV_##revision, \</div><div class="line">                        BLACK_ORCA_IC_STEP_##stepping)</div><div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga608ff4ad72c45c07c6652557469e590a"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga608ff4ad72c45c07c6652557469e590a">_BLACK_ORCA_IC_VERSION</a></div><div class="ttdeci">#define _BLACK_ORCA_IC_VERSION(revision, stepping)</div><div class="ttdef"><b>Definition:</b> <a href="sdk__defs_8h_source.html#l00229">sdk_defs.h:229</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga608ff4ad72c45c07c6652557469e590a">_BLACK_ORCA_IC_VERSION</a>(BLACK_ORCA_IC_REV_##revision, \</div><div class="line">                        BLACK_ORCA_IC_STEP_##stepping)</div><div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga608ff4ad72c45c07c6652557469e590a"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga608ff4ad72c45c07c6652557469e590a">_BLACK_ORCA_IC_VERSION</a></div><div class="ttdeci">#define _BLACK_ORCA_IC_VERSION(revision, stepping)</div><div class="ttdef"><b>Definition:</b> sdk_defs.h:229</div></div>
 </div><!-- fragment -->
 <p>Convenience macro to create the full chip version from revision and stepping. It takes letters as arguments. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00236">236</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1341,8 +1246,6 @@ Variables</h2></td></tr>
 
 <p>The chip version that we compile for. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00243">243</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaf3ae01a5a88cb8bc1778d2c95dd29d25"></a>
@@ -1357,8 +1260,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00289">289</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga51e1ae1aaf9c15d50f884ff840184328"></a>
@@ -1372,8 +1273,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00290">290</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1409,8 +1308,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00432">432</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gac1e8a42306d8e67cb94ca31c3956ee78"></a>
@@ -1424,8 +1321,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00476">476</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1445,8 +1340,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00483">483</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gae4d034cce6be9948bd5088d381ae8e8d"></a>
@@ -1460,11 +1353,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                REG_CLR_BIT(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, SYS_CTRL_REG, DEBUGGER_ENABLE); \</div><div class="line">        } <span class="keywordflow">while</span>(0)</div><div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga8e621f82483ffe95b93525d1c3c3b319"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a></div><div class="ttdeci">#define CRG_TOP</div><div class="ttdef"><b>Definition:</b> <a href="_d_a14680_b_a_8h_source.html#l12081">DA14680BA.h:12081</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                REG_CLR_BIT(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, SYS_CTRL_REG, DEBUGGER_ENABLE); \</div><div class="line">        } <span class="keywordflow">while</span>(0)</div><div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga8e621f82483ffe95b93525d1c3c3b319"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a></div><div class="ttdeci">#define CRG_TOP</div><div class="ttdef"><b>Definition:</b> DA14680BA.h:12081</div></div>
 </div><!-- fragment -->
 <p>Macro to disable the debugger. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00699">699</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1479,11 +1370,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                REG_SET_BIT(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, SYS_CTRL_REG, DEBUGGER_ENABLE); \</div><div class="line">        } <span class="keywordflow">while</span>(0)</div><div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga8e621f82483ffe95b93525d1c3c3b319"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a></div><div class="ttdeci">#define CRG_TOP</div><div class="ttdef"><b>Definition:</b> <a href="_d_a14680_b_a_8h_source.html#l12081">DA14680BA.h:12081</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                REG_SET_BIT(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, SYS_CTRL_REG, DEBUGGER_ENABLE); \</div><div class="line">        } <span class="keywordflow">while</span>(0)</div><div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_ga8e621f82483ffe95b93525d1c3c3b319"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a></div><div class="ttdeci">#define CRG_TOP</div><div class="ttdef"><b>Definition:</b> DA14680BA.h:12081</div></div>
 </div><!-- fragment -->
 <p>Macro to enable the debugger. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00690">690</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1524,12 +1413,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (((<a class="code" href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (v)) &amp; (base ## _ ## reg ## _ ## field ## _Msk)) &gt;&gt; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Pos))</div><div class="ttc" id="dw1000__device__api_8h_html_a05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__device__api_8h_source.html#l00032">dw1000_device_api.h:32</a></div></div>
-<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> <a href="sdk__defs_8h_source.html#l00752">sdk_defs.h:752</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (((<a class="code" href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>) (v)) &amp; (base ## _ ## reg ## _ ## field ## _Msk)) &gt;&gt; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Pos))</div><div class="ttc" id="dw1000__device__api_8h_html_a05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="dw1000__device__api_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> dw1000_device_api.h:42</div></div>
+<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> sdk_defs.h:752</div></div>
 </div><!-- fragment -->
 <p>Reads 16-bit wide register bits, indicated by the field, to a variable v. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00675">675</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1570,12 +1457,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a>) (((<a class="code" href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a>) (v)) &amp; (base ## _ ## reg ## _ ## field ## _Msk)) &gt;&gt; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Pos))</div><div class="ttc" id="dw1000__device__api_8h_html_a4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__device__api_8h_source.html#l00039">dw1000_device_api.h:39</a></div></div>
-<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> <a href="sdk__defs_8h_source.html#l00754">sdk_defs.h:754</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a>) (((<a class="code" href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a>) (v)) &amp; (base ## _ ## reg ## _ ## field ## _Msk)) &gt;&gt; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Pos))</div><div class="ttc" id="dw1000__device__api_8h_html_a4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="dw1000__device__api_8h.html#a4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> dw1000_device_api.h:49</div></div>
+<div class="ttc" id="group___p_l_a_t_f_o_r_m_html_ga4b435a49c74bb91f284f075e63416cb6"><div class="ttname"><a href="group___p_l_a_t_f_o_r_m.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a></div><div class="ttdeci">unsigned long uint32</div><div class="ttdef"><b>Definition:</b> sdk_defs.h:754</div></div>
 </div><!-- fragment -->
 <p>Reads 32-bit wide register bits, indicated by the field, to a variable v. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00682">682</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1593,13 +1478,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                            \</div><div class="line">                unsigned <span class="keywordtype">int</span> __l_irq_rest;                                     \</div><div class="line">                __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;mrs   %0, primask  \n\t&quot;</span>                               \</div><div class="line">                              <span class="stringliteral">&quot;mov   r1, $1     \n\t&quot;</span>                                   \</div><div class="line">                              <span class="stringliteral">&quot;msr   primask, r1  \n\t&quot;</span>                                 \</div><div class="line">                              : <span class="stringliteral">&quot;=r&quot;</span> (__l_irq_rest)                                     \</div><div class="line">                              :                                                         \</div><div class="line">                              : <span class="stringliteral">&quot;r1&quot;</span>                                                    \</div><div class="line">                              );                                                        \</div><div class="line">               DBG_CONFIGURE_HIGH(<a class="code" href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a>, CMNDBG_CRITICAL_SECTION);</div><div class="ttc" id="group___b_s_p___d_e_b_u_g_html_ga7c1a5ded5051498b1cdda20bb01fe890"><div class="ttname"><a href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a></div><div class="ttdeci">#define CMN_TIMING_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="bsp__debug_8h_source.html#l00217">bsp_debug.h:217</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                            \</div><div class="line">                unsigned <span class="keywordtype">int</span> __l_irq_rest;                                     \</div><div class="line">                __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;mrs   %0, primask  \n\t&quot;</span>                               \</div><div class="line">                              <span class="stringliteral">&quot;mov   r1, $1     \n\t&quot;</span>                                   \</div><div class="line">                              <span class="stringliteral">&quot;msr   primask, r1  \n\t&quot;</span>                                 \</div><div class="line">                              : <span class="stringliteral">&quot;=r&quot;</span> (__l_irq_rest)                                     \</div><div class="line">                              :                                                         \</div><div class="line">                              : <span class="stringliteral">&quot;r1&quot;</span>                                                    \</div><div class="line">                              );                                                        \</div><div class="line">               DBG_CONFIGURE_HIGH(<a class="code" href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a>, CMNDBG_CRITICAL_SECTION);</div><div class="ttc" id="group___b_s_p___d_e_b_u_g_html_ga7c1a5ded5051498b1cdda20bb01fe890"><div class="ttname"><a href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a></div><div class="ttdeci">#define CMN_TIMING_DEBUG</div><div class="ttdef"><b>Definition:</b> bsp_debug.h:217</div></div>
 </div><!-- fragment -->
 <p>Macro to disable all interrupts. </p>
 <p>This macro must always be used with <a class="el" href="group___p_l_a_t_f_o_r_m.html#gaafb58c366b3a81872748702d26f51c06" title="Macro to restore all interrupts. ">GLOBAL_INT_RESTORE()</a>. E.g.</p>
 <div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#gaf2dc82b4be76ae6c4c54d167412d643a">GLOBAL_INT_DISABLE</a>();</div><div class="line"> ... code to be executed with interrupts disabled ...</div><div class="line">GLOBAL_INT_RESTORE();</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___p_l_a_t_f_o_r_m.html#gaafb58c366b3a81872748702d26f51c06" title="Macro to restore all interrupts. ">GLOBAL_INT_RESTORE</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00396">396</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1617,13 +1500,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (__l_irq_rest == 0) {                                                \</div><div class="line">                        DBG_CONFIGURE_LOW(<a class="code" href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a>, CMNDBG_CRITICAL_SECTION);   \</div><div class="line">                }                                                                       \</div><div class="line">                __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;msr   primask, %0  \n\t&quot;</span>                               \</div><div class="line">                                                          :                             \</div><div class="line">                                                          : <span class="stringliteral">&quot;r&quot;</span> (__l_irq_rest)          \</div><div class="line">                                                          :                             \</div><div class="line">                                                          );                            \</div><div class="line">        } <span class="keywordflow">while</span>(0)</div><div class="ttc" id="group___b_s_p___d_e_b_u_g_html_ga7c1a5ded5051498b1cdda20bb01fe890"><div class="ttname"><a href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a></div><div class="ttdeci">#define CMN_TIMING_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="bsp__debug_8h_source.html#l00217">bsp_debug.h:217</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (__l_irq_rest == 0) {                                                \</div><div class="line">                        DBG_CONFIGURE_LOW(<a class="code" href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a>, CMNDBG_CRITICAL_SECTION);   \</div><div class="line">                }                                                                       \</div><div class="line">                __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;msr   primask, %0  \n\t&quot;</span>                               \</div><div class="line">                                                          :                             \</div><div class="line">                                                          : <span class="stringliteral">&quot;r&quot;</span> (__l_irq_rest)          \</div><div class="line">                                                          :                             \</div><div class="line">                                                          );                            \</div><div class="line">        } <span class="keywordflow">while</span>(0)</div><div class="ttc" id="group___b_s_p___d_e_b_u_g_html_ga7c1a5ded5051498b1cdda20bb01fe890"><div class="ttname"><a href="group___b_s_p___d_e_b_u_g.html#ga7c1a5ded5051498b1cdda20bb01fe890">CMN_TIMING_DEBUG</a></div><div class="ttdeci">#define CMN_TIMING_DEBUG</div><div class="ttdef"><b>Definition:</b> bsp_debug.h:217</div></div>
 </div><!-- fragment -->
 <p>Macro to restore all interrupts. </p>
 <p>This macro must always be used after <a class="el" href="group___p_l_a_t_f_o_r_m.html#gaf2dc82b4be76ae6c4c54d167412d643a" title="Macro to disable all interrupts. ">GLOBAL_INT_DISABLE()</a>. E.g.</p>
 <div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#gaf2dc82b4be76ae6c4c54d167412d643a">GLOBAL_INT_DISABLE</a>();</div><div class="line"> ... code to be executed with interrupts disabled ...</div><div class="line">GLOBAL_INT_RESTORE();</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___p_l_a_t_f_o_r_m.html#gaf2dc82b4be76ae6c4c54d167412d643a" title="Macro to disable all interrupts. ">GLOBAL_INT_DISABLE</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00421">421</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1645,8 +1526,6 @@ Variables</h2></td></tr>
 
 <p>Address is in the CACHE RAM region. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00217">217</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga0efc45c75ed56a86014f2400ed31656c"></a>
@@ -1666,8 +1545,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Address is in the OTP memory region. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00202">202</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1689,8 +1566,6 @@ Variables</h2></td></tr>
 
 <p>Address is in the OTP Controller memory region. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00207">207</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gae6c0554b51a9bc7c14615a4ae1e68e29"></a>
@@ -1710,8 +1585,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Address is in the QSPI Controller memory region. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00227">227</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1733,8 +1606,6 @@ Variables</h2></td></tr>
 
 <p>Address is in the QSPI Flash memory region. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00222">222</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga71162e2f11fb769054de4163e1b9f2de"></a>
@@ -1754,8 +1625,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Address is in the remapped memory region. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00192">192</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1777,8 +1646,6 @@ Variables</h2></td></tr>
 
 <p>Address is in the ROM region. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00197">197</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaa1c2faafc57fe370a78a9bee8d0dc140"></a>
@@ -1798,8 +1665,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Address is in the SYSTEM RAM region. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00212">212</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1838,8 +1703,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00448">448</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaab72334522f5598b30c86125dd5e34cd"></a>
@@ -1856,8 +1719,6 @@ Variables</h2></td></tr>
 
 <p>CACHE RAM base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00152">152</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga646525de8cb85a72651a1e2ee6c1e44c"></a>
@@ -1871,8 +1732,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00153">153</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1890,8 +1749,6 @@ Variables</h2></td></tr>
 
 <p>CACHE RAM size (128KiB). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00158">158</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga71cf219c1720c4af2486c9a0ac54b43d"></a>
@@ -1907,8 +1764,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ECC engine microcode base address. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00180">180</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1926,8 +1781,6 @@ Variables</h2></td></tr>
 
 <p>OTP memory base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00130">130</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga91237e5b0b8a5b9db114ea6c76757170"></a>
@@ -1941,8 +1794,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00131">131</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -1960,8 +1811,6 @@ Variables</h2></td></tr>
 
 <p>OTP memory size (256KiB). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00136">136</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gab51cc131f0485366adf6bff8b848a79f"></a>
@@ -1978,8 +1827,6 @@ Variables</h2></td></tr>
 
 <p>OTP Controller base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00124">124</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga9e6c815a5e76647819f9ffe3aad83d76"></a>
@@ -1993,8 +1840,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00125">125</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2012,8 +1857,6 @@ Variables</h2></td></tr>
 
 <p>QSPI Controller base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00174">174</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga0db7895b160b3879edde352098d08540"></a>
@@ -2027,8 +1870,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00175">175</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2046,8 +1887,6 @@ Variables</h2></td></tr>
 
 <p>QSPI Flash base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00163">163</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaead9ffd04f0c2602f4b60d9c4655e83b"></a>
@@ -2061,8 +1900,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00164">164</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2080,8 +1917,6 @@ Variables</h2></td></tr>
 
 <p>QSPI Flash memory size (63MiB). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00169">169</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga2e63f9241acaed92fb263c8159e9b6c7"></a>
@@ -2098,8 +1933,6 @@ Variables</h2></td></tr>
 
 <p>Remapped device base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00102">102</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gabacfc92a71f1f5e1362acbcf59601497"></a>
@@ -2113,8 +1946,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00103">103</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2132,8 +1963,6 @@ Variables</h2></td></tr>
 
 <p>Remapped device memory size (64MiB). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00108">108</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga441c4881c9c0aa6b3c0072e04dc9d2ab"></a>
@@ -2150,8 +1979,6 @@ Variables</h2></td></tr>
 
 <p>ROM base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00113">113</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gac678b3e0f2af66f122e9049e64955cc4"></a>
@@ -2165,8 +1992,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00114">114</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2184,8 +2009,6 @@ Variables</h2></td></tr>
 
 <p>ROM memory size (256KiB). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00119">119</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga5d4a91b481bc05afef9d3754735b1cfa"></a>
@@ -2202,8 +2025,6 @@ Variables</h2></td></tr>
 
 <p>SYSTEM RAM base address. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00141">141</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga8fcc644c708a05bc6cbb53f181f21e2b"></a>
@@ -2217,8 +2038,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00142">142</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2236,8 +2055,6 @@ Variables</h2></td></tr>
 
 <p>SYSTEM RAM size (128KiB). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00147">147</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga1d76b7ae01b9ed0d86db61a6704afb73"></a>
@@ -2253,8 +2070,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>TRNG FIFO address. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00185">185</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2293,8 +2108,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00440">440</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga1c3b05b5c7387312af52fbbfc7706a3f"></a>
@@ -2311,8 +2124,6 @@ Variables</h2></td></tr>
 
 <p>Optimized memcpy. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00494">494</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga0bbce94f5ad4369b0f63c6c35a5767f1"></a>
@@ -2328,8 +2139,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Optimized memmove. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00499">499</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2367,8 +2176,6 @@ Variables</h2></td></tr>
 
 <p>Optimized memset. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00504">504</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga6a64ebac64a517c780504a987654a6c5"></a>
@@ -2405,8 +2212,6 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                base-&gt;reg &amp;= ~(base##_##reg##_##field##_Msk); \</div><div class="line">         } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Clear a bit of a register. </p>
 <p>e.g. </p><div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga6a64ebac64a517c780504a987654a6c5">REG_CLR_BIT</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, CLK_TMR_REG, TMR1_ENABLE);</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00640">640</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga9469a1eeaa8c9a65da3bd25be8600042"></a>
@@ -2449,8 +2254,6 @@ Variables</h2></td></tr>
 
 <p>Clear register field value. </p>
 <p>Clears a register field value (aimed to be used with local variables). e.g. </p><div class="fragment"><div class="line"><a class="code" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tmp;</div><div class="line"></div><div class="line">tmp = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>-&gt;TRIM_CTRL_REG;</div><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga9469a1eeaa8c9a65da3bd25be8600042">REG_CLR_FIELD</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, TRIM_CTRL_REG, XTAL_COUNT_N, tmp);</div><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga9469a1eeaa8c9a65da3bd25be8600042">REG_CLR_FIELD</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, TRIM_CTRL_REG, XTAL_TRIM_SELECT, tmp);</div><div class="line"><a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>-&gt;TRIM_CTRL_REG = tmp;</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00583">583</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga5d220e32cfaaa73483dde00f280176b8"></a>
@@ -2493,8 +2296,6 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">((var &amp; (base ## _ ## reg ## _ ## field ## _Msk)) &gt;&gt; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Pos))</div></div><!-- fragment -->
 <p>Access register field value. </p>
 <p>Returns a register field value (aimed to be used with local variables). e.g. </p><div class="fragment"><div class="line"><a class="code" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tmp;</div><div class="line"><span class="keywordtype">int</span> counter;</div><div class="line">tmp = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>-&gt;TRIM_CTRL_REG;</div><div class="line">counter = <a class="code" href="group___p_l_a_t_f_o_r_m.html#ga5d220e32cfaaa73483dde00f280176b8">REG_GET_FIELD</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, TRIM_CTRL_REG, XTAL_COUNT_N, tmp);</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00544">544</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga9fb2882a2b00041e2c0b138aee1cb188"></a>
@@ -2531,8 +2332,6 @@ Variables</h2></td></tr>
 
 <p>Return the value of a register field. </p>
 <p>e.g. </p><div class="fragment"><div class="line"><a class="code" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> val;</div><div class="line"></div><div class="line">val = <a class="code" href="group___p_l_a_t_f_o_r_m.html#ga9fb2882a2b00041e2c0b138aee1cb188">REG_GETF</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, TRIM_CTRL_REG, XTAL_COUNT_N);</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00598">598</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gad64513d546ff37ecf97e5c3ef2df9adc"></a>
@@ -2569,8 +2368,6 @@ Variables</h2></td></tr>
 
 <p>Access register field mask. </p>
 <p>Returns a register field mask (aimed to be used with local variables). e.g. </p><div class="fragment"><div class="line"><a class="code" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tmp;</div><div class="line"></div><div class="line">tmp = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>-&gt;SYS_STAT_REG;</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (tmp &amp; <a class="code" href="group___p_l_a_t_f_o_r_m.html#gad64513d546ff37ecf97e5c3ef2df9adc">REG_MSK</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, SYS_STAT_REG, XTAL16_TRIM_READY)) {</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00520">520</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga27a0786cb376d85351ff955620660150"></a>
@@ -2608,8 +2405,6 @@ Variables</h2></td></tr>
 <p>Access register field position. </p>
 <p>Returns a register field position (aimed to be used with local variables). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00528">528</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gab56605baef38ed520d44270ee49753c7"></a>
@@ -2646,8 +2441,6 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                base-&gt;reg |= (1 &lt;&lt; (base##_##reg##_##field##_Pos)); \</div><div class="line">         } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Set a bit of a register. </p>
 <p>e.g. </p><div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#gab56605baef38ed520d44270ee49753c7">REG_SET_BIT</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, CLK_TMR_REG, TMR1_ENABLE);</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00625">625</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga329760b67dbf98c65bbf5bad97f87fbd"></a>
@@ -2696,8 +2489,6 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">var = ((var &amp; ~((base ## _ ## reg ## _ ## field ## _Msk))) | \</div><div class="line">                (((val) &lt;&lt; (base ## _ ## reg ## _ ## field ## _Pos)) &amp; \</div><div class="line">                (base ## _ ## reg ## _ ## field ## _Msk)))</div></div><!-- fragment -->
 <p>Set register field value. </p>
 <p>Sets a register field value (aimed to be used with local variables). e.g. </p><div class="fragment"><div class="line"><a class="code" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tmp;</div><div class="line"></div><div class="line">tmp = <a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>-&gt;TRIM_CTRL_REG;</div><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga329760b67dbf98c65bbf5bad97f87fbd">REG_SET_FIELD</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, TRIM_CTRL_REG, XTAL_COUNT_N, tmp, 10);</div><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga329760b67dbf98c65bbf5bad97f87fbd">REG_SET_FIELD</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, TRIM_CTRL_REG, XTAL_TRIM_SELECT, tmp, 2);</div><div class="line"><a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>-&gt;TRIM_CTRL_REG = tmp;</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00563">563</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gab0bc5ce38f71bdff6368a89318522c7e"></a>
@@ -2740,8 +2531,6 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                base-&gt;reg = (base-&gt;reg &amp; ~(mask)) | ((value) &amp; (mask)); \</div><div class="line">        } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Sets register bits, indicated by the mask, to a value. </p>
 <p>e.g. </p><div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#gab0bc5ce38f71bdff6368a89318522c7e">REG_SET_MASKED</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#gabaca55faf14a3cd359824855a74cb23c">RFCU_POWER</a>, RF_CNTRL_TIMER_5_REG, 0xFF00, 0x1818);</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00653">653</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga2c24255a359fa8ba8baaa2f689b9caa8"></a>
@@ -2784,8 +2573,6 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">base-&gt;reg = ((base-&gt;reg &amp; ~(base##_##reg##_##field##_Msk)) | \</div><div class="line">                ((base##_##reg##_##field##_Msk) &amp; ((new_val) &lt;&lt; (base##_##reg##_##field##_Pos))))</div></div><!-- fragment -->
 <p>Set the value of a register field. </p>
 <p>e.g. </p><div class="fragment"><div class="line"><a class="code" href="group___p_l_a_t_f_o_r_m.html#ga2c24255a359fa8ba8baaa2f689b9caa8">REG_SETF</a>(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#ga8e621f82483ffe95b93525d1c3c3b319">CRG_TOP</a>, TRIM_CTRL_REG, XTAL_COUNT_N, new_value);</div><div class="line">...</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00611">611</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaf6198455afa6a89373541e18377bfa69"></a>
@@ -2811,8 +2598,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00458">458</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2840,8 +2625,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00469">469</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaf625fb71778643eca2ef8b415ddaf747"></a>
@@ -2855,11 +2638,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                REG_SET_BIT(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#gaa387177f15146f1cba9ce80fffbab5f6">GPREG</a>, DEBUG_REG, SW_RESET); \</div><div class="line">        } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_gaa387177f15146f1cba9ce80fffbab5f6"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#gaa387177f15146f1cba9ce80fffbab5f6">GPREG</a></div><div class="ttdeci">#define GPREG</div><div class="ttdef"><b>Definition:</b> <a href="_d_a14680_b_a_8h_source.html#l12090">DA14680BA.h:12090</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                REG_SET_BIT(<a class="code" href="group___device___peripheral___registers___d_a14680_b_a.html#gaa387177f15146f1cba9ce80fffbab5f6">GPREG</a>, DEBUG_REG, SW_RESET); \</div><div class="line">        } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group___device___peripheral___registers___d_a14680_b_a_html_gaa387177f15146f1cba9ce80fffbab5f6"><div class="ttname"><a href="group___device___peripheral___registers___d_a14680_b_a.html#gaa387177f15146f1cba9ce80fffbab5f6">GPREG</a></div><div class="ttdeci">#define GPREG</div><div class="ttdef"><b>Definition:</b> DA14680BA.h:12090</div></div>
 </div><!-- fragment -->
 <p>Macro to cause a software reset. </p>
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00709">709</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2895,8 +2676,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00187">187</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -2912,8 +2691,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00760">760</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gac27fd9ffb05852d9565cec8b81e64401"></a>
@@ -2927,8 +2704,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00763">763</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2944,8 +2719,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00761">761</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga4355d16fcf9f644c9ac84293f0b1801f"></a>
@@ -2959,8 +2732,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00753">753</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -2976,8 +2747,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00755">755</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaecfc3c54bd29ad5964e1c1c3ccbf89df"></a>
@@ -2991,8 +2760,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00757">757</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -3008,8 +2775,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00751">751</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga05f6b0ae8f6a6e135b0e290c25fe0e4e"></a>
@@ -3023,8 +2788,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00752">752</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -3040,8 +2803,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00754">754</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="ga29940ae63ec06c9998bba873e25407ad"></a>
@@ -3055,8 +2816,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00756">756</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -3072,8 +2831,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00750">750</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gab02ddd9fd345cd5683633ae90ab41a0b"></a>
@@ -3087,8 +2844,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00762">762</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
 
 </div>
 </div>
@@ -3213,8 +2968,6 @@ Variables</h2></td></tr>
 
 <p>Get the chip version of the system, at runtime. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdk__defs_8h_source.html#l00295">295</a> of file <a class="el" href="sdk__defs_8h_source.html">sdk_defs.h</a>.</p>
-
 </div>
 </div>
 <a id="gaf09c5bd34d2cb3d52be86e43a7d6d483"></a>
@@ -3253,7 +3006,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:37 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:06 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

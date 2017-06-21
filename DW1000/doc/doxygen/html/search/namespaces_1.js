@@ -93,6 +93,7 @@ var searchData=
   ['router_5f5_5f1_5f9',['router_5_1_9',['../namespacecases_1_1router__5__1__9.html',1,'cases']]],
   ['router_5f5_5f2_5f1',['router_5_2_1',['../namespacecases_1_1router__5__2__1.html',1,'cases']]],
   ['router_5f5_5f2_5f6',['router_5_2_6',['../namespacecases_1_1router__5__2__6.html',1,'cases']]],
+  ['router_5f5_5f2_5f7',['router_5_2_7',['../namespacecases_1_1router__5__2__7.html',1,'cases']]],
   ['router_5f5_5f3_5f1',['router_5_3_1',['../namespacecases_1_1router__5__3__1.html',1,'cases']]],
   ['router_5f5_5f3_5f10',['router_5_3_10',['../namespacecases_1_1router__5__3__10.html',1,'cases']]],
   ['router_5f5_5f3_5f11',['router_5_3_11',['../namespacecases_1_1router__5__3__11.html',1,'cases']]],

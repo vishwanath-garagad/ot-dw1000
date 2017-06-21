@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>src/ncp/ncp_base.cpp File Reference</title>
+<title>OT-DW1000: openthread-master/src/ncp/ncp_base.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4eeddf84fddd42d44de1574042fba5c7.html">ncp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_e7e04e66d76e31c0e8b2494724c42aa4.html">src</a></li><li class="navelem"><a class="el" href="dir_86262476af27eb8a8012bbe5bf037bf3.html">ncp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,24 +73,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;openthread-config.h&gt;</code><br />
-<code>#include &lt;assert.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ncp_8h_source.html">ncp/ncp.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ncp__base_8hpp_source.html">ncp/ncp_base.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ip6_8hpp_source.html">net/ip6.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-diag_8h_source.html">openthread-diag.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-instance_8h_source.html">openthread-instance.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="ncp__base_8hpp_source.html">ncp_base.hpp</a>&quot;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2radio_8h_source.html">platform/radio.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="misc_8h_source.html">platform/misc.h</a>&gt;</code><br />
-</div>
-<p><a href="ncp__base_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="diag_8h_source.html">openthread/diag.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="icmp6_8h_source.html">openthread/icmp6.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ncp_8h_source.html">openthread/ncp.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread/openthread.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="misc_8h_source.html">openthread/platform/misc.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2openthread_2platform_2radio_8h_source.html">openthread/platform/radio.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="openthread-instance_8h_source.html">openthread-instance.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="debug_8hpp_source.html">common/debug.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ip6_8hpp_source.html">net/ip6.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_thread"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html">Thread</a></td></tr>
+<tr class="memitem:namespaceot"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html">ot</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -107,33 +107,31 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aa35bbc7be42569ff9ba436cf05942ce6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_thread.html#aa35bbc7be42569ff9ba436cf05942ce6a66465c629b53ce5241a0a40b06c73343">kThreadMode_RxOnWhenIdle</a> = (1 &lt;&lt; 3), 
-<a class="el" href="namespace_thread.html#aa35bbc7be42569ff9ba436cf05942ce6a61f8cf972886042eeb1c9209cf7c65f3">kThreadMode_SecureDataRequest</a> = (1 &lt;&lt; 2), 
-<a class="el" href="namespace_thread.html#aa35bbc7be42569ff9ba436cf05942ce6ae8c9e35f76447ee7ad5b53a36d8814d7">kThreadMode_FullFunctionDevice</a> = (1 &lt;&lt; 1), 
-<a class="el" href="namespace_thread.html#aa35bbc7be42569ff9ba436cf05942ce6a86bb67e4a0e31443460395799604c916">kThreadMode_FullNetworkData</a> = (1 &lt;&lt; 0)
+<tr class="memitem:aa2baea0e4a061cf7eda1c9589fd7c4fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceot.html#aa2baea0e4a061cf7eda1c9589fd7c4fea66465c629b53ce5241a0a40b06c73343">kThreadMode_RxOnWhenIdle</a> = (1 &lt;&lt; 3), 
+<a class="el" href="namespaceot.html#aa2baea0e4a061cf7eda1c9589fd7c4fea61f8cf972886042eeb1c9209cf7c65f3">kThreadMode_SecureDataRequest</a> = (1 &lt;&lt; 2), 
+<a class="el" href="namespaceot.html#aa2baea0e4a061cf7eda1c9589fd7c4feae8c9e35f76447ee7ad5b53a36d8814d7">kThreadMode_FullFunctionDevice</a> = (1 &lt;&lt; 1), 
+<a class="el" href="namespaceot.html#aa2baea0e4a061cf7eda1c9589fd7c4fea86bb67e4a0e31443460395799604c916">kThreadMode_FullNetworkData</a> = (1 &lt;&lt; 0)
  }</td></tr>
-<tr class="separator:aa35bbc7be42569ff9ba436cf05942ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa2baea0e4a061cf7eda1c9589fd7c4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6cf6bf89b27f9bb0c33071630205c4b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a6cf6bf89b27f9bb0c33071630205c4b7">HasOnly1BitSet</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aValue)</td></tr>
-<tr class="separator:a6cf6bf89b27f9bb0c33071630205c4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422ce6f2a936e05a50e0aff0401a30c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html#a422ce6f2a936e05a50e0aff0401a30c2">IndexOfMSB</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aValue)</td></tr>
-<tr class="separator:a422ce6f2a936e05a50e0aff0401a30c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a525ce21ede544e3c8743cf8cdb96e20c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ncp__base_8cpp.html#a525ce21ede544e3c8743cf8cdb96e20c">otNcpStreamWrite</a> (int aStreamId, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aDataPtr, int aDataLen)</td></tr>
-<tr class="memdesc:a525ce21ede544e3c8743cf8cdb96e20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to the host via a specific stream.  <a href="#a525ce21ede544e3c8743cf8cdb96e20c">More...</a><br /></td></tr>
-<tr class="separator:a525ce21ede544e3c8743cf8cdb96e20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6abe1f56116ddaab8369d482a4840cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ncp__base_8cpp.html#a6abe1f56116ddaab8369d482a4840cd5">otNcpRegisterLegacyHandlers</a> (const <a class="el" href="structot_ncp_legacy_handlers.html">otNcpLegacyHandlers</a> *aHandlers)</td></tr>
-<tr class="separator:a6abe1f56116ddaab8369d482a4840cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a323f56744f68c94d9dfbddc009857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ncp__base_8cpp.html#a86a323f56744f68c94d9dfbddc009857">otNcpHandleDidReceiveNewLegacyUlaPrefix</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aUlaPrefix)</td></tr>
-<tr class="separator:a86a323f56744f68c94d9dfbddc009857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a196cd1f08554965093a20cbc3d75dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ncp__base_8cpp.html#a3a196cd1f08554965093a20cbc3d75dd">otNcpHandleLegacyNodeDidJoin</a> (const <a class="el" href="structot_ext_address.html">otExtAddress</a> *aExtAddr)</td></tr>
-<tr class="separator:a3a196cd1f08554965093a20cbc3d75dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507ff521186da7c29ecd36689d1fcb8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#a507ff521186da7c29ecd36689d1fcb8f">HasOnly1BitSet</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aValue)</td></tr>
+<tr class="separator:a507ff521186da7c29ecd36689d1fcb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe0fbc15a41316f7183e7ea469f2d902"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html#afe0fbc15a41316f7183e7ea469f2d902">IndexOfMSB</a> (<a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aValue)</td></tr>
+<tr class="separator:afe0fbc15a41316f7183e7ea469f2d902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bf9c9fcc1d94d1b53dcd3bf4e5f85ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-ncp.html#ga5bf9c9fcc1d94d1b53dcd3bf4e5f85ae">otNcpStreamWrite</a> (int aStreamId, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aDataPtr, int aDataLen)</td></tr>
+<tr class="memdesc:ga5bf9c9fcc1d94d1b53dcd3bf4e5f85ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to the host via a specific stream.  <a href="group__api-ncp.html#ga5bf9c9fcc1d94d1b53dcd3bf4e5f85ae">More...</a><br /></td></tr>
+<tr class="separator:ga5bf9c9fcc1d94d1b53dcd3bf4e5f85ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6abe1f56116ddaab8369d482a4840cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-ncp.html#ga6abe1f56116ddaab8369d482a4840cd5">otNcpRegisterLegacyHandlers</a> (const <a class="el" href="structot_ncp_legacy_handlers.html">otNcpLegacyHandlers</a> *aHandlers)</td></tr>
+<tr class="separator:ga6abe1f56116ddaab8369d482a4840cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86a323f56744f68c94d9dfbddc009857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-ncp.html#ga86a323f56744f68c94d9dfbddc009857">otNcpHandleDidReceiveNewLegacyUlaPrefix</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aUlaPrefix)</td></tr>
+<tr class="separator:ga86a323f56744f68c94d9dfbddc009857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a196cd1f08554965093a20cbc3d75dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-ncp.html#ga3a196cd1f08554965093a20cbc3d75dd">otNcpHandleLegacyNodeDidJoin</a> (const <a class="el" href="structot_ext_address.html">otExtAddress</a> *aExtAddr)</td></tr>
+<tr class="separator:ga3a196cd1f08554965093a20cbc3d75dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements a Spinel interface to the <a class="el" href="namespace_open_thread.html">OpenThread</a> stack. </p>
-
-<p class="definition">Definition in file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aaedd7829f77e704ebbc7729865d18639"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaedd7829f77e704ebbc7729865d18639">&#9670;&nbsp;</a></span>IGNORE_RETURN_VALUE</h2>
@@ -151,8 +149,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l00074">74</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ad46f57405e8070710640603948705057"></a>
@@ -166,8 +162,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l00060">60</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
 
 </div>
 </div>
@@ -183,8 +177,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l00062">62</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a4203a5fce758950a5a25a42b790ac901"></a>
@@ -198,8 +190,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l00061">61</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
 
 </div>
 </div>
@@ -215,141 +205,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l00072">72</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a86a323f56744f68c94d9dfbddc009857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86a323f56744f68c94d9dfbddc009857">&#9670;&nbsp;</a></span>otNcpHandleDidReceiveNewLegacyUlaPrefix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otNcpHandleDidReceiveNewLegacyUlaPrefix </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aUlaPrefix</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This callback is invoked by the legacy stack to notify that the legacy ULA prefix has changed. </p>
-
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l05934">5934</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a3a196cd1f08554965093a20cbc3d75dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a196cd1f08554965093a20cbc3d75dd">&#9670;&nbsp;</a></span>otNcpHandleLegacyNodeDidJoin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otNcpHandleLegacyNodeDidJoin </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structot_ext_address.html">otExtAddress</a> *&#160;</td>
-          <td class="paramname"><em>aExtAddr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This callback is invoked by the legacy stack to notify that a new legacy node did join the network. </p>
-
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l05943">5943</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6abe1f56116ddaab8369d482a4840cd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6abe1f56116ddaab8369d482a4840cd5">&#9670;&nbsp;</a></span>otNcpRegisterLegacyHandlers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otNcpRegisterLegacyHandlers </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structot_ncp_legacy_handlers.html">otNcpLegacyHandlers</a> *&#160;</td>
-          <td class="paramname"><em>aHandlers</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This method registers a set of legacy handlers with NCP.</p>
-<p>The set of handlers provided by the struct <code>aHandlers</code> are used by NCP code to start/stop legacy network. The <code>aHandlers</code> can be NULL to disable legacy support on NCP. Individual handlers in the given handlers struct can also be NULL.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aHandlers</td><td>A pointer to a handler struct. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l05925">5925</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a525ce21ede544e3c8743cf8cdb96e20c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a525ce21ede544e3c8743cf8cdb96e20c">&#9670;&nbsp;</a></span>otNcpStreamWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otNcpStreamWrite </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aStreamId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aDataPtr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aDataLen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send data to the host via a specific stream. </p>
-<p>This function attempts to send the given data to the host using the given aStreamId. This is useful for reporting error messages, implementing debug/diagnostic consoles, and potentially other types of datastreams.</p>
-<p>The write either is accepted in its entirety or rejected. Partial writes are not attempted.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aStreamId</td><td>A numeric identifier for the stream to write to. If set to '0', will default to the debug stream. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aDataPtr</td><td>A pointer to the data to send on the stream. If aDataLen is non-zero, this param MUST NOT be NULL. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aDataLen</td><td>The number of bytes of data from aDataPtr to send.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The data was queued for delivery to the host. </td></tr>
-    <tr><td class="paramname">kThreadError_Busy</td><td>There are not enough resources to complete this request. This is usually a temporary condition. </td></tr>
-    <tr><td class="paramname">kThreadError_InvalidArgs</td><td>The given aStreamId was invalid. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="ncp__base_8cpp_source.html#l05909">5909</a> of file <a class="el" href="ncp__base_8cpp_source.html">ncp_base.cpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:30 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

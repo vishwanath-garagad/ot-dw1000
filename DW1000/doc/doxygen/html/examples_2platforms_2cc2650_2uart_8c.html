@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/cc2650/uart.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/cc2650/uart.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_655d755f7bc12c8e28168363582226c6.html">cc2650</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_a0f61a6e737d64e606668288a5521fa3.html">cc2650</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,35 +75,33 @@ $(function() {
 <code>#include &lt;<a class="el" href="prcm_8h_source.html">driverlib/prcm.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ioc_8h_source.html">driverlib/ioc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sys__ctrl_8h_source.html">driverlib/sys_ctrl.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="code__utils_8hpp_source.html">common/code_utils.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2uart_8h_source.html">platform/uart.h</a>&gt;</code><br />
-</div>
-<p><a href="examples_2platforms_2cc2650_2uart_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;<a class="el" href="types_8h_source.html">openthread/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="code__utils_8h_source.html">utils/code_utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2openthread_2platform_2uart_8h_source.html">openthread/platform/uart.h</a>&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5d76b81b0ad4c19007a781d4edb8181f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="examples_2platforms_2cc2650_2uart_8c.html#a5d76b81b0ad4c19007a781d4edb8181fad2055de0fc1baecdceeba192e0b880f0">CC2650_RECV_CIRC_BUFF_SIZE</a> = 256
+<tr class="memitem:a0ed680fdb405e7195d9f14032851eebb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="examples_2platforms_2cc2650_2uart_8c.html#a0ed680fdb405e7195d9f14032851eebbad2055de0fc1baecdceeba192e0b880f0">CC2650_RECV_CIRC_BUFF_SIZE</a> = 256
  }</td></tr>
-<tr class="separator:a5d76b81b0ad4c19007a781d4edb8181f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0ed680fdb405e7195d9f14032851eebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a571d8f240a5ef70fb7bbab7cc340f177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2cc2650_2uart_8c.html#a571d8f240a5ef70fb7bbab7cc340f177">UART0_intHandler</a> (void)</td></tr>
 <tr class="memdesc:a571d8f240a5ef70fb7bbab7cc340f177"><td class="mdescLeft">&#160;</td><td class="mdescRight">the interrupt handler for the uart interrupt vector  <a href="#a571d8f240a5ef70fb7bbab7cc340f177">More...</a><br /></td></tr>
 <tr class="separator:a571d8f240a5ef70fb7bbab7cc340f177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0428e2db563f7eff99e95e023bbad9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#gaf0428e2db563f7eff99e95e023bbad9b">otPlatUartEnable</a> (void)</td></tr>
-<tr class="separator:gaf0428e2db563f7eff99e95e023bbad9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca043d018d46dbd87e90666be8ea984a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#gaca043d018d46dbd87e90666be8ea984a">otPlatUartDisable</a> (void)</td></tr>
-<tr class="separator:gaca043d018d46dbd87e90666be8ea984a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad58e7a5af0edc4e5d6dca23839f0235e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#gad58e7a5af0edc4e5d6dca23839f0235e">otPlatUartSend</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aBuf, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufLength)</td></tr>
-<tr class="separator:gad58e7a5af0edc4e5d6dca23839f0235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaca17740d688a902bf9be238bdde208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#gaeaca17740d688a902bf9be238bdde208">otPlatUartEnable</a> (void)</td></tr>
+<tr class="separator:gaeaca17740d688a902bf9be238bdde208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49a8e33830c329e93fd3fb232e01331b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#ga49a8e33830c329e93fd3fb232e01331b">otPlatUartDisable</a> (void)</td></tr>
+<tr class="separator:ga49a8e33830c329e93fd3fb232e01331b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7252c036cf89b0337e88578d74874210"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#ga7252c036cf89b0337e88578d74874210">otPlatUartSend</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aBuf, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aBufLength)</td></tr>
+<tr class="separator:ga7252c036cf89b0337e88578d74874210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03ac93af21d356060b703ee1808bb931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2platforms_2cc2650_2uart_8c.html#a03ac93af21d356060b703ee1808bb931">cc2650UartProcess</a> (void)</td></tr>
 <tr class="separator:a03ac93af21d356060b703ee1808bb931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a5d76b81b0ad4c19007a781d4edb8181f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d76b81b0ad4c19007a781d4edb8181f">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a0ed680fdb405e7195d9f14032851eebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed680fdb405e7195d9f14032851eebb">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,10 +115,8 @@ Functions</h2></td></tr>
 <dd>
 make sure that data being sent is not in a volatile area </dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d76b81b0ad4c19007a781d4edb8181fad2055de0fc1baecdceeba192e0b880f0"></a>CC2650_RECV_CIRC_BUFF_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0ed680fdb405e7195d9f14032851eebbad2055de0fc1baecdceeba192e0b880f0"></a>CC2650_RECV_CIRC_BUFF_SIZE&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2cc2650_2uart_8c_source.html#l00047">47</a> of file <a class="el" href="examples_2platforms_2cc2650_2uart_8c_source.html">uart.c</a>.</p>
 
 </div>
 </div>
@@ -141,8 +138,6 @@ make sure that data being sent is not in a volatile area </dd></dl>
 </div><div class="memdoc">
 <p>Function documented in <a class="el" href="platform-cc2650_8h.html">platform-cc2650.h</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2cc2650_2uart_8c_source.html#l00173">173</a> of file <a class="el" href="examples_2platforms_2cc2650_2uart_8c_source.html">uart.c</a>.</p>
-
 </div>
 </div>
 <a id="a571d8f240a5ef70fb7bbab7cc340f177"></a>
@@ -163,14 +158,12 @@ make sure that data being sent is not in a volatile area </dd></dl>
 
 <p>the interrupt handler for the uart interrupt vector </p>
 
-<p class="definition">Definition at line <a class="el" href="examples_2platforms_2cc2650_2uart_8c_source.html#l00182">182</a> of file <a class="el" href="examples_2platforms_2cc2650_2uart_8c_source.html">uart.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

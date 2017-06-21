@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Globals</title>
+<title>OT-DW1000: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -80,7 +81,7 @@ $(function() {
 : <a class="el" href="dw1000__regs_8h.html#a844ed833bb0123afe27039903ec61d79">dw1000_regs.h</a>
 </li>
 <li>waitTime
-: <a class="el" href="thread_8h.html#a085bcc99d7e2f3f706663793312dd4ba">thread.h</a>
+: <a class="el" href="examples_2drivers_2windows_2ot_lwf_2thread_8h.html#a085bcc99d7e2f3f706663793312dd4ba">thread.h</a>
 </li>
 <li>WAKEUP
 : <a class="el" href="group___device___peripheral___registers___d_a14680_b_a.html#ga5edeeb916b04a7f5430e95b0a2801b6e">DA14680BA.h</a>
@@ -873,13 +874,13 @@ $(function() {
 : <a class="el" href="startup__gcc_8c.html#a57a52d4688d3860bfa73a52b433079e5">startup_gcc.c</a>
 </li>
 <li>WELLKNOWN_NODE_ID
-: <a class="el" href="platform-posix_8h.html#ab39cc9570c14505cf5258623c1fe22a1">platform-posix.h</a>
-, <a class="el" href="examples_2platforms_2posix_2platform_8c.html#ab39cc9570c14505cf5258623c1fe22a1">platform.c</a>
+: <a class="el" href="examples_2platforms_2posix_2platform_8c.html#ab39cc9570c14505cf5258623c1fe22a1">platform.c</a>
+, <a class="el" href="platform-posix_8h.html#ab39cc9570c14505cf5258623c1fe22a1">platform-posix.h</a>
 </li>
 <li>while()
-: <a class="el" href="serial_8cpp.html#a9db30c19513c898d4292f3b640f1270f">serial.cpp</a>
+: <a class="el" href="device_8cpp.html#a596156a4285dd480a17f8b5868ea0de5">device.cpp</a>
 , <a class="el" href="adapter_8cpp.html#a596156a4285dd480a17f8b5868ea0de5">adapter.cpp</a>
-, <a class="el" href="device_8cpp.html#a596156a4285dd480a17f8b5868ea0de5">device.cpp</a>
+, <a class="el" href="serial_8cpp.html#a9db30c19513c898d4292f3b640f1270f">serial.cpp</a>
 </li>
 <li>WINBOND_ID
 : <a class="el" href="group___m_e_m_o_r_y.html#ga8f7cd0c96ae06a9b5e8c74e8d541c33a">qspi_w25q80ew.h</a>
@@ -900,14 +901,23 @@ $(function() {
 <li>WORD
 : <a class="el" href="group___p_l_a_t_f_o_r_m.html#gab02ddd9fd345cd5683633ae90ab41a0b">sdk_defs.h</a>
 </li>
+<li>workaround_cc2650_rom
+: <a class="el" href="sha256__alt_8c.html#a63f19b26a71ef8655af97f5a88b24d5a">sha256_alt.c</a>
+</li>
 <li>WPP_CONTROL_GUIDS
 : <a class="el" href="logging-windows_8h.html#af9215df4a5adfe2e66e850036e7526b6">logging-windows.h</a>
 </li>
-<li>WPP_LEVEL_FLAGS__POST
-: <a class="el" href="logging-windows_8h.html#a8abc706d22fb0f944ad966c01c33f113">logging-windows.h</a>
+<li>WPP_LEVEL_FLAGS_CTX_ENABLED
+: <a class="el" href="logging-windows_8h.html#ab1c7d0d0f93014d2f3a5a6e085e8e8eb">logging-windows.h</a>
 </li>
-<li>WPP_LEVEL_FLAGS__PRE
-: <a class="el" href="logging-windows_8h.html#a6d3526590c3f855d78b3c0b6486bd973">logging-windows.h</a>
+<li>WPP_LEVEL_FLAGS_CTX_EXP_ENABLED
+: <a class="el" href="logging-windows_8h.html#ac77705083f74fc4f1195b7fca84d0615">logging-windows.h</a>
+</li>
+<li>WPP_LEVEL_FLAGS_CTX_EXP_LOGGER
+: <a class="el" href="logging-windows_8h.html#a21908853120441edf87fdc105307f65c">logging-windows.h</a>
+</li>
+<li>WPP_LEVEL_FLAGS_CTX_LOGGER
+: <a class="el" href="logging-windows_8h.html#a43a7ff7171568665746083e40db978ce">logging-windows.h</a>
 </li>
 <li>WPP_LEVEL_FLAGS_ENABLED
 : <a class="el" href="logging-windows_8h.html#a78036e3b4c998e108aaca52e8459bc0e">logging-windows.h</a>
@@ -921,49 +931,57 @@ $(function() {
 <li>WPP_LEVEL_FLAGS_LOGGER
 : <a class="el" href="logging-windows_8h.html#a41b266293ae01129a0ae6d24769cc53e">logging-windows.h</a>
 </li>
-<li>WPP_LEVEL_FLAGS_PRE
-: <a class="el" href="logging-windows_8h.html#a16ff5dd93ba0cd77dc42ef185a4393d6">logging-windows.h</a>
-</li>
 <li>WPP_LOGIPV6
 : <a class="el" href="logging-windows_8h.html#a7bd2dbd15855b0c5f2b638d06017774f">logging-windows.h</a>
 </li>
 <li>WPP_NAME
-: <a class="el" href="dhcp6__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dhcp6_server.cpp</a>
-, <a class="el" href="network__data__leader_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">network_data_leader.cpp</a>
-, <a class="el" href="network__data_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">network_data.cpp</a>
-, <a class="el" href="address__resolver_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">address_resolver.cpp</a>
-, <a class="el" href="network__diagnostic_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">network_diagnostic.cpp</a>
-, <a class="el" href="network__data__leader__ftd_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">network_data_leader_ftd.cpp</a>
-, <a class="el" href="panid__query__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">panid_query_client.cpp</a>
-, <a class="el" href="icmp6_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">icmp6.cpp</a>
-, <a class="el" href="message_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">message.cpp</a>
-, <a class="el" href="mac_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">mac.cpp</a>
-, <a class="el" href="joiner_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">joiner.cpp</a>
-, <a class="el" href="energy__scan__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">energy_scan_server.cpp</a>
-, <a class="el" href="announce__begin__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">announce_begin_server.cpp</a>
-, <a class="el" href="announce__begin__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">announce_begin_client.cpp</a>
-, <a class="el" href="secure__coap__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">secure_coap_server.cpp</a>
-, <a class="el" href="logging_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">logging.cpp</a>
-, <a class="el" href="timer_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">timer.cpp</a>
-, <a class="el" href="mesh__forwarder_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">mesh_forwarder.cpp</a>
-, <a class="el" href="ip6_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">ip6.cpp</a>
-, <a class="el" href="dhcp6__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dhcp6_client.cpp</a>
-, <a class="el" href="dtls_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dtls.cpp</a>
-, <a class="el" href="panid__query__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">panid_query_server.cpp</a>
-, <a class="el" href="mle_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">mle.cpp</a>
-, <a class="el" href="openthread_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">openthread.cpp</a>
-, <a class="el" href="leader_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">leader.cpp</a>
-, <a class="el" href="commissioner_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">commissioner.cpp</a>
+: <a class="el" href="ip6_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">ip6.cpp</a>
+, <a class="el" href="thread__ftd__api_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">thread_ftd_api.cpp</a>
+, <a class="el" href="border__agent__proxy_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">border_agent_proxy.cpp</a>
+, <a class="el" href="tasklet__api_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">tasklet_api.cpp</a>
+, <a class="el" href="coap_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">coap.cpp</a>
 , <a class="el" href="energy__scan__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">energy_scan_client.cpp</a>
-, <a class="el" href="dataset__manager__ftd_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dataset_manager_ftd.cpp</a>
-, <a class="el" href="secure__coap__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">secure_coap_client.cpp</a>
+, <a class="el" href="instance__api_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">instance_api.cpp</a>
+, <a class="el" href="commissioner_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">commissioner.cpp</a>
+, <a class="el" href="announce__begin__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">announce_begin_client.cpp</a>
+, <a class="el" href="mesh__forwarder_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">mesh_forwarder.cpp</a>
+, <a class="el" href="dtls_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dtls.cpp</a>
+, <a class="el" href="network__data__leader_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">network_data_leader.cpp</a>
+, <a class="el" href="network__diagnostic_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">network_diagnostic.cpp</a>
 , <a class="el" href="dataset__manager_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dataset_manager.cpp</a>
-, <a class="el" href="mle__router_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">mle_router.cpp</a>
-, <a class="el" href="joiner__router_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">joiner_router.cpp</a>
+, <a class="el" href="coap__secure_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">coap_secure.cpp</a>
+, <a class="el" href="joiner_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">joiner.cpp</a>
+, <a class="el" href="dhcp6__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dhcp6_server.cpp</a>
+, <a class="el" href="announce__begin__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">announce_begin_server.cpp</a>
+, <a class="el" href="src__match__controller_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">src_match_controller.cpp</a>
+, <a class="el" href="data__poll__manager_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">data_poll_manager.cpp</a>
+, <a class="el" href="message_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">message.cpp</a>
+, <a class="el" href="network__data_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">network_data.cpp</a>
+, <a class="el" href="ip6__api_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">ip6_api.cpp</a>
+, <a class="el" href="thread__api_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">thread_api.cpp</a>
+, <a class="el" href="topology_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">topology.cpp</a>
+, <a class="el" href="logging_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">logging.cpp</a>
+, <a class="el" href="mac_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">mac.cpp</a>
+, <a class="el" href="icmp6_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">icmp6.cpp</a>
+, <a class="el" href="panid__query__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">panid_query_server.cpp</a>
+, <a class="el" href="dhcp6__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">dhcp6_client.cpp</a>
+, <a class="el" href="energy__scan__server_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">energy_scan_server.cpp</a>
+, <a class="el" href="timer_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">timer.cpp</a>
+, <a class="el" href="panid__query__client_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">panid_query_client.cpp</a>
+, <a class="el" href="mle_8cpp.html#a02ea32929cc78ee79cc2ad2b31360704">mle.cpp</a>
+</li>
+<li>WRAP_EXTERN_C
+: <a class="el" href="wrap__string_8h.html#a02fcd353b9d1c4eb89a96311bb46818e">wrap_string.h</a>
+</li>
+<li>WRDI
+: <a class="el" href="group___b_o_a_r_d___e_m_s_k___d_r_v___s_p_i_f_l_a_s_h.html#gacb229428140f30a6f8b6fa2ebb3fb6f0">spiflash.c</a>
+</li>
+<li>WREN
+: <a class="el" href="group___b_o_a_r_d___e_m_s_k___d_r_v___s_p_i_f_l_a_s_h.html#ga53dec1d28a7c7b24b2d56c058f7e140a">spiflash.c</a>
 </li>
 <li>writetoLCD()
-: <a class="el" href="dw1000__spi_8h.html#abd6781896fe6311c7cf3a11a6dbde704">dw1000_spi.h</a>
-, <a class="el" href="dw1000__spi_8c.html#abd6781896fe6311c7cf3a11a6dbde704">dw1000_spi.c</a>
+: <a class="el" href="dw1000__spi_8c.html#abd6781896fe6311c7cf3a11a6dbde704">dw1000_spi.c</a>
+, <a class="el" href="dw1000__spi_8h.html#abd6781896fe6311c7cf3a11a6dbde704">dw1000_spi.h</a>
 </li>
 <li>writetospi()
 : <a class="el" href="dw1000__device__api_8h.html#a06c4b1c25fcbdb5dc0c92d6f89797513">dw1000_device_api.h</a>
@@ -971,11 +989,17 @@ $(function() {
 <li>writetospi_serial()
 : <a class="el" href="dw1000__spi_8c.html#aba7bf065506fc4fa01c7db8e3dc784ba">dw1000_spi.c</a>
 </li>
+<li>WRONG_RADIO_ID_DETECTED
+: <a class="el" href="group__xcvr.html#gga57b005dcbc0dea0da7b5f5a8d08fbabca748b0396513961f274f4c701a04f5881">fsl_xcvr.h</a>
+</li>
+<li>WRSR
+: <a class="el" href="group___b_o_a_r_d___e_m_s_k___d_r_v___s_p_i_f_l_a_s_h.html#ga29d01dca16eb0a060d2efd567b58b47a">spiflash.c</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:54 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:15 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>otCoapHeader Struct Reference</title>
+<title>OT-DW1000: otCoapHeader Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -61,50 +62,61 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">otCoapHeader Struct Reference<div class="ingroups"><a class="el" href="group__api.html">API</a> &raquo; <a class="el" href="group__coap.html">CoAP</a></div></div>  </div>
+<div class="title">otCoapHeader Struct Reference<div class="ingroups"><a class="el" href="group__api.html">API</a> &raquo; <a class="el" href="group__api-addons.html">Add-Ons</a> &raquo; <a class="el" href="group__api-coap.html">CoAP</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="coap_8h_source.html">coap.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for otCoapHeader:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structot_coap_header.png" usemap="#otCoapHeader_map" alt=""/>
   <map id="otCoapHeader_map" name="otCoapHeader_map">
-<area href="class_thread_1_1_coap_1_1_header.html" alt="Header" shape="rect" coords="0,56,94,80"/>
+<area href="classot_1_1_coap_1_1_header.html" alt="Header" shape="rect" coords="0,56,94,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a55030cb051acf8b71777eacef7f42a97"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a682e87fb5d62f1f5ac38bd35fcf73553"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:abbb9ef4ba7a0ef9541790a20d7cefc9e"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a09ae60f5fd169408bf594ec272d2b8d6"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
 <tr class="memitem:af3f1bc78f9b3d875244def585de7a810"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;&#160;&#160;<a class="el" href="structot_coap_header.html#af3f1bc78f9b3d875244def585de7a810">mVersionTypeToken</a></td></tr>
+<tr class="memdesc:af3f1bc78f9b3d875244def585de7a810"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CoAP Version, Type, and Token Length.  <a href="#af3f1bc78f9b3d875244def585de7a810">More...</a><br /></td></tr>
 <tr class="separator:af3f1bc78f9b3d875244def585de7a810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71b914fd665f0f5f73c5a3f14969b6c6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;&#160;&#160;<a class="el" href="structot_coap_header.html#a71b914fd665f0f5f73c5a3f14969b6c6">mCode</a></td></tr>
+<tr class="memdesc:a71b914fd665f0f5f73c5a3f14969b6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CoAP Code.  <a href="#a71b914fd665f0f5f73c5a3f14969b6c6">More...</a><br /></td></tr>
 <tr class="separator:a71b914fd665f0f5f73c5a3f14969b6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7004cb1b920b06afcd20c197256ec46e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;&#160;&#160;<a class="el" href="structot_coap_header.html#a7004cb1b920b06afcd20c197256ec46e">mMessageId</a></td></tr>
+<tr class="memdesc:a7004cb1b920b06afcd20c197256ec46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CoAP Message ID.  <a href="#a7004cb1b920b06afcd20c197256ec46e">More...</a><br /></td></tr>
 <tr class="separator:a7004cb1b920b06afcd20c197256ec46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a682e87fb5d62f1f5ac38bd35fcf73553"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structot_coap_header.html#a682e87fb5d62f1f5ac38bd35fcf73553">mFields</a></td></tr>
-<tr class="separator:a682e87fb5d62f1f5ac38bd35fcf73553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387d8047a2c05b9fa58aba72727f2559"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;&#160;&#160;<a class="el" href="structot_coap_header.html#a387d8047a2c05b9fa58aba72727f2559">mBytes</a> [<a class="el" href="group__coap.html#ga992d74eb79ad648055e635ae7327e17e">OT_COAP_HEADER_MAX_LENGTH</a>]</td></tr>
+<tr class="memitem:a09ae60f5fd169408bf594ec272d2b8d6"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structot_coap_header.html#a09ae60f5fd169408bf594ec272d2b8d6">mFields</a></td></tr>
+<tr class="memdesc:a09ae60f5fd169408bf594ec272d2b8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a CoAP base header.  <a href="#a09ae60f5fd169408bf594ec272d2b8d6">More...</a><br /></td></tr>
+<tr class="separator:a09ae60f5fd169408bf594ec272d2b8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387d8047a2c05b9fa58aba72727f2559"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;&#160;&#160;<a class="el" href="structot_coap_header.html#a387d8047a2c05b9fa58aba72727f2559">mBytes</a> [<a class="el" href="group__api-coap.html#ga992d74eb79ad648055e635ae7327e17e">OT_COAP_HEADER_MAX_LENGTH</a>]</td></tr>
+<tr class="memdesc:a387d8047a2c05b9fa58aba72727f2559"><td class="mdescLeft">&#160;</td><td class="mdescRight">The raw byte encoding for the CoAP header.  <a href="#a387d8047a2c05b9fa58aba72727f2559">More...</a><br /></td></tr>
 <tr class="separator:a387d8047a2c05b9fa58aba72727f2559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55030cb051acf8b71777eacef7f42a97"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_header.html#a55030cb051acf8b71777eacef7f42a97">mHeader</a></td></tr>
-<tr class="separator:a55030cb051acf8b71777eacef7f42a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb9ef4ba7a0ef9541790a20d7cefc9e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_header.html#abbb9ef4ba7a0ef9541790a20d7cefc9e">mHeader</a></td></tr>
+<tr class="memdesc:abbb9ef4ba7a0ef9541790a20d7cefc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CoAP header encoding.  <a href="#abbb9ef4ba7a0ef9541790a20d7cefc9e">More...</a><br /></td></tr>
+<tr class="separator:abbb9ef4ba7a0ef9541790a20d7cefc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c11bb1c84c714e1a41f22def5defcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_header.html#af1c11bb1c84c714e1a41f22def5defcc">mHeaderLength</a></td></tr>
+<tr class="memdesc:af1c11bb1c84c714e1a41f22def5defcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CoAP header length (bytes)  <a href="#af1c11bb1c84c714e1a41f22def5defcc">More...</a><br /></td></tr>
 <tr class="separator:af1c11bb1c84c714e1a41f22def5defcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe1ba0970c402f9adb9474450b7c9d0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_header.html#afe1ba0970c402f9adb9474450b7c9d0a">mOptionLast</a></td></tr>
+<tr class="memdesc:afe1ba0970c402f9adb9474450b7c9d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last CoAP Option Number value.  <a href="#afe1ba0970c402f9adb9474450b7c9d0a">More...</a><br /></td></tr>
 <tr class="separator:afe1ba0970c402f9adb9474450b7c9d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8de6786df86cfea76f32fa997848bf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_header.html#ad8de6786df86cfea76f32fa997848bf6">mFirstOptionOffset</a></td></tr>
+<tr class="memdesc:ad8de6786df86cfea76f32fa997848bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The byte offset for the first CoAP Option.  <a href="#ad8de6786df86cfea76f32fa997848bf6">More...</a><br /></td></tr>
+<tr class="separator:ad8de6786df86cfea76f32fa997848bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aacb4e71c43227e0fbd70041de61fbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_header.html#a4aacb4e71c43227e0fbd70041de61fbc">mNextOptionOffset</a></td></tr>
+<tr class="memdesc:a4aacb4e71c43227e0fbd70041de61fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The byte offset for the next CoAP Option.  <a href="#a4aacb4e71c43227e0fbd70041de61fbc">More...</a><br /></td></tr>
 <tr class="separator:a4aacb4e71c43227e0fbd70041de61fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336138e4593349a7143f4249d9ae41ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structot_coap_option.html">otCoapOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_header.html#a336138e4593349a7143f4249d9ae41ac">mOption</a></td></tr>
+<tr class="memdesc:a336138e4593349a7143f4249d9ae41ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure representing the current CoAP Option.  <a href="#a336138e4593349a7143f4249d9ae41ac">More...</a><br /></td></tr>
 <tr class="separator:a336138e4593349a7143f4249d9ae41ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure represents a CoAP header. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00111">111</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a387d8047a2c05b9fa58aba72727f2559"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a387d8047a2c05b9fa58aba72727f2559">&#9670;&nbsp;</a></span>mBytes</h2>
@@ -113,12 +125,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mBytes[<a class="el" href="group__coap.html#ga992d74eb79ad648055e635ae7327e17e">OT_COAP_HEADER_MAX_LENGTH</a>]</td>
+          <td class="memname"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mBytes[<a class="el" href="group__api-coap.html#ga992d74eb79ad648055e635ae7327e17e">OT_COAP_HEADER_MAX_LENGTH</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00121">121</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The raw byte encoding for the CoAP header. </p>
 
 </div>
 </div>
@@ -134,12 +146,12 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00118">118</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The CoAP Code. </p>
 
 </div>
 </div>
-<a id="a682e87fb5d62f1f5ac38bd35fcf73553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a682e87fb5d62f1f5ac38bd35fcf73553">&#9670;&nbsp;</a></span>mFields</h2>
+<a id="a09ae60f5fd169408bf594ec272d2b8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ae60f5fd169408bf594ec272d2b8d6">&#9670;&nbsp;</a></span>mFields</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,10 +162,28 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Structure representing a CoAP base header. </p>
+
 </div>
 </div>
-<a id="a55030cb051acf8b71777eacef7f42a97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55030cb051acf8b71777eacef7f42a97">&#9670;&nbsp;</a></span>mHeader</h2>
+<a id="ad8de6786df86cfea76f32fa997848bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8de6786df86cfea76f32fa997848bf6">&#9670;&nbsp;</a></span>mFirstOptionOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> mFirstOptionOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The byte offset for the first CoAP Option. </p>
+
+</div>
+</div>
+<a id="abbb9ef4ba7a0ef9541790a20d7cefc9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb9ef4ba7a0ef9541790a20d7cefc9e">&#9670;&nbsp;</a></span>mHeader</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,6 +193,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The CoAP header encoding. </p>
 
 </div>
 </div>
@@ -178,7 +210,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00123">123</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The CoAP header length (bytes) </p>
 
 </div>
 </div>
@@ -194,7 +226,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00119">119</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The CoAP Message ID. </p>
 
 </div>
 </div>
@@ -210,7 +242,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00125">125</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The byte offset for the next CoAP Option. </p>
 
 </div>
 </div>
@@ -226,7 +258,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00126">126</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>A structure representing the current CoAP Option. </p>
 
 </div>
 </div>
@@ -242,7 +274,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00124">124</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The last CoAP Option Number value. </p>
 
 </div>
 </div>
@@ -258,17 +290,17 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00117">117</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The CoAP Version, Type, and Token Length. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a></li>
+<li>openthread-master/include/openthread/<a class="el" href="coap_8h_source.html">coap.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:39 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['radio_5fstate_5ft',['radio_state_t',['../nrf__drv__radio802154_8c.html#a756adac824be7fdeeac3026997c04711',1,'nrf_drv_radio802154.c']]],
-  ['radiopendingevents',['RadioPendingEvents',['../platforms_2nrf52840_2radio_8c.html#a2306690246eb52daca248a94f044f1a5',1,'radio.c']]],
-  ['reattachstate',['ReattachState',['../group__core-mle-core.html#ga69ab4ff4f0e290d8e2a468b1e58141f1',1,'Thread::Mle::Mle']]]
+  ['packagetype_5ft',['PackageType_t',['../group___chip_info.html#ga70f24a88295000f5298db4c64a41005a',1,'chipinfo.h']]],
+  ['parentrequeststate',['ParentRequestState',['../group__core-mle-core.html#gaca46746cecd184250e5791f770aa1ac1',1,'ot::Mle::Mle']]],
+  ['polynomial',['Polynomial',['../classot_1_1_crc16.html#aa31105459019feb381a823ed72572a78',1,'ot::Crc16']]],
+  ['protocol',['Protocol',['../namespaceot.html#aac39b55be6469395f55ff0292ad8184c',1,'ot']]],
+  ['protocolbitvector_5ft',['ProtocolBitVector_t',['../group___chip_info.html#ga0cde93b0e82006e581d06f4b0562fdce',1,'chipinfo.h']]]
 ];

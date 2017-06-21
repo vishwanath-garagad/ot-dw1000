@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Data Fields - Variables</title>
+<title>OT-DW1000: Data Fields - Variables</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -77,12 +78,14 @@ $(function() {
 , <a class="el" href="structarm__pid__instance__q15.html#aeb897c84724b56948e4222aca8d0e1f4">arm_pid_instance_q15</a>
 , <a class="el" href="structarm__pid__instance__q31.html#aeb897c84724b56948e4222aca8d0e1f4">arm_pid_instance_q31</a>
 , <a class="el" href="struct_f_i_c_r___t_e_m_p___type.html#a8eac49276a078e8b40d7ef387698b670">FICR_TEMP_Type</a>
+, <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gacb6a1bc3db8fa6148894140daa6b97e1">I2C_Type</a>
 , <a class="el" href="struct_n_r_f___t_e_m_p___type.html#ae361fec6739db2066aeb60cec359b591">NRF_TEMP_Type</a>
 </li>
 <li>A2
 : <a class="el" href="structarm__pid__instance__f32.html#a5b00947275caf079f351271bf41573fe">arm_pid_instance_f32</a>
 , <a class="el" href="structarm__pid__instance__q31.html#a4ae945f839719fb2c04c978724b78ebb">arm_pid_instance_q31</a>
 , <a class="el" href="struct_f_i_c_r___t_e_m_p___type.html#adcc338f2fc393224e15619c0ae5b5df7">FICR_TEMP_Type</a>
+, <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gae8436760942c43a7f6b6b8561803dfd7">I2C_Type</a>
 , <a class="el" href="struct_n_r_f___t_e_m_p___type.html#a28f452d77256ee37f73a526bc908a7e5">NRF_TEMP_Type</a>
 </li>
 <li>A3
@@ -97,8 +100,14 @@ $(function() {
 : <a class="el" href="struct_f_i_c_r___t_e_m_p___type.html#a2df22631fbffdf105d928b0b380323d6">FICR_TEMP_Type</a>
 , <a class="el" href="struct_n_r_f___t_e_m_p___type.html#ac4d094145025107beae1575b561731c3">NRF_TEMP_Type</a>
 </li>
+<li>AADSZ
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gafe37298e67ad42560476e8ac909b5ee5">LTC_Type</a>
+</li>
 <li>aatset
 : <a class="el" href="structdwt__callback__data__t.html#a7549813331cfdf08243e7a3420380967">dwt_callback_data_t</a>
+</li>
+<li>ABFSR
+: <a class="el" href="struct_s_c_b___type.html#aa104b9e01b129abe3de43c439916f655">SCB_Type</a>
 </li>
 <li>abort
 : <a class="el" href="structspi__control__block__t.html#a8165e274d7e5bc5044912035c4a59dc4">spi_control_block_t</a>
@@ -138,6 +147,9 @@ $(function() {
 <li>ack_request
 : <a class="el" href="classthread-cert_1_1mac802154_1_1_mac_header.html#acdf359d518ebf972c801771f7472c4cd">MacHeader</a>
 </li>
+<li>ACKDELAY
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga3447a725cbf156b6efbf12893750f9ce">ZLL_Type</a>
+</li>
 <li>ackPayload
 : <a class="el" href="struct_f_t_d_f___data_confirm.html#ae477222f7908ad02f19804f801cc878b">FTDF_DataConfirm</a>
 </li>
@@ -156,6 +168,9 @@ $(function() {
 <li>active
 : <a class="el" href="structmbedtls__ssl__ticket__context.html#a8b27935047c6e270fb9711329943d92f">mbedtls_ssl_ticket_context</a>
 </li>
+<li>ACTIVE_DELAY
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga7bac57e5cdb5101045bf1a9e98458b73">RSIM_Type</a>
+</li>
 <li>ACTIVE_OPERATIONAL_DATASET
 : <a class="el" href="classthread-cert_1_1mle_1_1_tlv_type.html#a0bbcf0f5c3c3fd8b8c3a706da15519c7">TlvType</a>
 </li>
@@ -165,11 +180,20 @@ $(function() {
 <li>ACTIVE_TIMESTAMP
 : <a class="el" href="classthread-cert_1_1mle_1_1_tlv_type.html#abfa1253f0edbb2859dd2f4cc512bf3cf">TlvType</a>
 </li>
+<li>activeBlockSize
+: <a class="el" href="struct__flash__operation__config.html#a7bde70c9645241bf75eabc3cffd5a972">_flash_operation_config</a>
+</li>
+<li>activeFunctionCount
+: <a class="el" href="struct__flash__execute__in__ram__function__config.html#a117b7a2a9cf9fdb06661d7163c33b2af">_flash_execute_in_ram_function_config</a>
+</li>
 <li>ActiveScanCallbacks
 : <a class="el" href="structot_api_instance.html#a24668f757cca960a7aceee98a3f596aa">otApiInstance</a>
 </li>
 <li>ActiveScanPayload
 : <a class="el" href="struct___o_t_l_w_f___n_o_t_i_f_i_c_a_t_i_o_n.html#a696e43791e0860e461fd0f774af5def4">_OTLWF_NOTIFICATION</a>
+</li>
+<li>activeSectorSize
+: <a class="el" href="struct__flash__operation__config.html#a2608d4d2b12f2787ec689e9d8fa9cedb">_flash_operation_config</a>
 </li>
 <li>activetimestamp
 : <a class="el" href="class_open_thread_1_1_open_thread.html#a92bbf8d6ddb470ea653bb187f6ec1252">OpenThread</a>
@@ -180,9 +204,15 @@ $(function() {
 <li>Adapter
 : <a class="el" href="struct___o_t_t_m_p___a_d_a_p_t_e_r___c_o_n_t_e_x_t.html#a6f1f235ef85a06c144491fca32da4766">_OTTMP_ADAPTER_CONTEXT</a>
 </li>
+<li>AdapterArrival
+: <a class="el" href="classot_1_1sealed.html#a29cbff00acb44c84a19f5394d868ffc3">sealed</a>
+</li>
 <li>AdapterContext
 : <a class="el" href="struct___o_t_t_m_p___d_e_v_i_c_e___c_o_n_t_e_x_t.html#a256d81a4ae76cdb853c6a61314a5d994">_OTTMP_DEVICE_CONTEXT</a>
 , <a class="el" href="struct___w_d_f___d_e_v_i_c_e___i_n_f_o.html#a256d81a4ae76cdb853c6a61314a5d994">_WDF_DEVICE_INFO</a>
+</li>
+<li>AdapterRemoval
+: <a class="el" href="classot_1_1sealed.html#aec62f8a3ab3a14291ed791950d5d39a1">sealed</a>
 </li>
 <li>add_len
 : <a class="el" href="structmbedtls__gcm__context.html#a23feeea9de0da68d2b0af87a49c2dc69">mbedtls_gcm_context</a>
@@ -203,13 +233,13 @@ $(function() {
 : <a class="el" href="struct_n_r_f___q_s_p_i___type.html#abac4d102a5b5d28f12b84abf41bc5889">NRF_QSPI_Type</a>
 </li>
 <li>addrConf
-: <a class="el" href="structrfc___c_m_d___p_r_o_p___r_x___a_d_v__s.html#a85e79ee0617b15e4d7e73b76125eaed0">rfc_CMD_PROP_RX_ADV_s</a>
+: <a class="el" href="structrfc___c_m_d___p_r_o_p___r_x___a_d_v__s.html#aff3ad1654fb5e1d9c79e65d06d498649">rfc_CMD_PROP_RX_ADV_s</a>
 </li>
 <li>Address
 : <a class="el" href="struct___o_t_l_w_f___a_d_d_r___e_v_e_n_t.html#a5a68a09dac2720e9ac416eda3e591762">_OTLWF_ADDR_EVENT</a>
 </li>
 <li>address
-: <a class="el" href="structlt__dlsymlist.html#ab96816d317aa5196e2ef198d9a8d621b">lt_dlsymlist</a>
+: <a class="el" href="structlt__dlsymlist.html#a1816fd36586eddfffb4a60d1b907c9bc">lt_dlsymlist</a>
 </li>
 <li>ADDRESS
 : <a class="el" href="struct_n_r_f___t_w_i___type.html#a030c954e597b84e3c43a19151d4a6a59">NRF_TWI_Type</a>
@@ -252,6 +282,9 @@ $(function() {
 <li>addressInd
 : <a class="el" href="structrfc__prop_rx_status__s.html#ae013702ccab7f014df8a3be9afc6e325">rfc_propRxStatus_s</a>
 </li>
+<li>addressingMode
+: <a class="el" href="struct__i2c__slave__config.html#a2e946f1dfdd24a753f4c55a6ff3cc2e5">_i2c_slave_config</a>
+</li>
 <li>addrList
 : <a class="el" href="struct_f_t_d_f___beacon_notify_indication.html#a5019cacf30e6a04a66a59aa69a65fb36">FTDF_BeaconNotifyIndication</a>
 </li>
@@ -279,7 +312,7 @@ $(function() {
 : <a class="el" href="struct_s_c_b___type.html#a72572af6d5dece4947453aeabd52575f">SCB_Type</a>
 </li>
 <li>advConfig
-: <a class="el" href="structrfc__ble_adv_par__s.html#a32662b204c75ba052d1a8346484274c5">rfc_bleAdvPar_s</a>
+: <a class="el" href="structrfc__ble_adv_par__s.html#a0574c0caa8d006f6017965d73728184d">rfc_bleAdvPar_s</a>
 </li>
 <li>AdvertiseDefaultRoute
 : <a class="el" href="struct___n_l___i_n_t_e_r_f_a_c_e___r_w.html#afc7af6be2217f081d3e6e2555eab6c22">_NL_INTERFACE_RW</a>
@@ -305,11 +338,104 @@ $(function() {
 <li>AFSR
 : <a class="el" href="struct_s_c_b___type.html#a3ef0057e48fdef798f2ee12125a80d9f">SCB_Type</a>
 </li>
+<li>AGC_CTRL_0
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga37937349dfc11724ac88793ac806583e">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_ctrl_0_init
+: <a class="el" href="struct__xcvr__common__config.html#a00659ef34283de2d6b1febffd043b513">_xcvr_common_config</a>
+, <a class="el" href="struct__xcvr__mode__config.html#a00659ef34283de2d6b1febffd043b513">_xcvr_mode_config</a>
+</li>
+<li>AGC_CTRL_1
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga5c8482ac8cc4434b966119289b7f6d46">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_ctrl_1_init_26mhz
+: <a class="el" href="struct__xcvr__common__config.html#ade0e5da3f654c903b4af66d45d49f31c">_xcvr_common_config</a>
+, <a class="el" href="struct__xcvr__datarate__config.html#ade0e5da3f654c903b4af66d45d49f31c">_xcvr_datarate_config</a>
+</li>
+<li>agc_ctrl_1_init_32mhz
+: <a class="el" href="struct__xcvr__common__config.html#a5b4a257964de487695f0841fcc18c064">_xcvr_common_config</a>
+, <a class="el" href="struct__xcvr__datarate__config.html#a5b4a257964de487695f0841fcc18c064">_xcvr_datarate_config</a>
+</li>
+<li>AGC_CTRL_2
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gab584e916fc24f71277dcaba4b35dbadb">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_ctrl_2_init_26mhz
+: <a class="el" href="struct__xcvr__mode__datarate__config.html#a08b62ae1ab4590492ee1a56a822916c8">_xcvr_mode_datarate_config</a>
+</li>
+<li>agc_ctrl_2_init_32mhz
+: <a class="el" href="struct__xcvr__mode__datarate__config.html#ab9a825bd0d9a51dc3032e862bee79507">_xcvr_mode_datarate_config</a>
+</li>
+<li>AGC_CTRL_3
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gaf334e262746cc7d883ad625d986ec28f">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_ctrl_3_init
+: <a class="el" href="struct__xcvr__common__config.html#a9a1300f9763cf46e95ff069199e0d370">_xcvr_common_config</a>
+</li>
+<li>AGC_GAIN_TBL_03_00
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga5d68db1f3966628f7a16b2238864b39c">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_gain_tbl_03_00_init
+: <a class="el" href="struct__xcvr__common__config.html#a9ee0aed35dc236eaea4c2d274a4759b0">_xcvr_common_config</a>
+</li>
+<li>AGC_GAIN_TBL_07_04
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga0d786fe85811c7d5c0b96a6f799f9247">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_gain_tbl_07_04_init
+: <a class="el" href="struct__xcvr__common__config.html#a90bb1a251d2a0ce48723971fcf2f46e9">_xcvr_common_config</a>
+</li>
+<li>AGC_GAIN_TBL_11_08
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gae4f7f07f93219f0ff37acb93e9e7e501">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_gain_tbl_11_08_init
+: <a class="el" href="struct__xcvr__common__config.html#aa5d2ce2c70aabc1ee946330892012d87">_xcvr_common_config</a>
+</li>
+<li>AGC_GAIN_TBL_15_12
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga63a2ddec8d810583d8415108f3f68ec9">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_gain_tbl_15_12_init
+: <a class="el" href="struct__xcvr__common__config.html#a9c072283929f7e47e295fc09ea67cdcd">_xcvr_common_config</a>
+</li>
+<li>AGC_GAIN_TBL_19_16
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga260c16f0ee5ea055bc9c0b29e845288f">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_gain_tbl_19_16_init
+: <a class="el" href="struct__xcvr__common__config.html#a5a2408a61d2e278a55db848d8d054bed">_xcvr_common_config</a>
+</li>
+<li>AGC_GAIN_TBL_23_20
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gafdf693c8d54b9cd9643419f0f688409e">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_gain_tbl_23_20_init
+: <a class="el" href="struct__xcvr__common__config.html#a26b88e170add845e4a9c509d911e1ac3">_xcvr_common_config</a>
+</li>
+<li>AGC_GAIN_TBL_26_24
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga23e2ca5037bbf969dfbf874196bdb98a">XCVR_RX_DIG_Type</a>
+</li>
+<li>agc_gain_tbl_26_24_init
+: <a class="el" href="struct__xcvr__common__config.html#a3beabb72e6c57c9fbef6293ba8717cb9">_xcvr_common_config</a>
+</li>
+<li>AGC_MAN_AGC_IDX
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gaab11611391574fdfaaed26b02292575e">XCVR_RX_DIG_Type</a>
+</li>
+<li>AGC_STAT
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga4cefb9eac54a96c84312a8b9ed3d216f">XCVR_RX_DIG_Type</a>
+</li>
+<li>AHBPCR
+: <a class="el" href="struct_s_c_b___type.html#a209b4026c2994d0e18e883aa9af5c3cc">SCB_Type</a>
+</li>
+<li>AHBSCR
+: <a class="el" href="struct_s_c_b___type.html#a25bb4ac449a4122217e2ca74b9ad4e3e">SCB_Type</a>
+</li>
 <li>AIRCR
 : <a class="el" href="struct_s_c_b___type.html#a9b6ccd9c0c0865f8facad77ea37240b0">SCB_Type</a>
 </li>
+<li>algo
+: <a class="el" href="struct__ltc__hash__ctx__internal.html#a4af219fed94f1ca705991617e364c27e">_ltc_hash_ctx_internal</a>
+</li>
 <li>ALIGN
 : <a class="el" href="struct_i2_s___c_o_n_f_i_g___type.html#a953f5eabc7fcc3cf9ade0d67cc6320d4">I2S_CONFIG_Type</a>
+</li>
+<li>allocated
+: <a class="el" href="structsrc_match_entry.html#a1bdc374dc38908c70ed24a978ecfd22e">srcMatchEntry</a>
 </li>
 <li>allow_legacy_renegotiation
 : <a class="el" href="structmbedtls__ssl__config.html#adb796c49f3f6e9a6d20e944a0f94c634">mbedtls_ssl_config</a>
@@ -360,11 +486,29 @@ $(function() {
 , <a class="el" href="struct_u_s_b_d___i_s_o_i_n___type.html#a318cc54d912fdb84c85fb867199b35b3">USBD_ISOIN_Type</a>
 , <a class="el" href="struct_u_s_b_d___i_s_o_o_u_t___type.html#a318cc54d912fdb84c85fb867199b35b3">USBD_ISOOUT_Type</a>
 </li>
+<li>ana_rx_bba
+: <a class="el" href="struct__xcvr__mode__datarate__config.html#a01827194b68b1d3c5b06c514dbc3141a">_xcvr_mode_datarate_config</a>
+</li>
+<li>ana_rx_tza
+: <a class="el" href="struct__xcvr__mode__datarate__config.html#ac37371b6c3cd7e7097d0dfe42c0bdd0a">_xcvr_mode_datarate_config</a>
+</li>
 <li>ANA_STATUS_REG
 : <a class="el" href="struct_c_r_g___t_o_p___type.html#a75043eb7d33975c0cc19d5c3a9282c30">CRG_TOP_Type</a>
 </li>
+<li>ana_sy_ctrl1
+: <a class="el" href="struct__xcvr__common__config.html#a978ee913a3b77842bc04f9f1af3b96d2">_xcvr_common_config</a>
+</li>
+<li>ana_sy_ctrl2
+: <a class="el" href="struct__xcvr__mode__datarate__config.html#aca8dc83db4fa99e0c3c13dd3ed65ea07">_xcvr_mode_datarate_config</a>
+</li>
+<li>ANA_TEST
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gae4d259931e234bf408fca72100a725da">RSIM_Type</a>
+</li>
 <li>ANA_TEST_REG
 : <a class="el" href="struct_a_n_a_m_i_s_c___type.html#af653490a50e2743f1b1f61b4fe18a863">ANAMISC_Type</a>
+</li>
+<li>ANA_TRIM
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gae54d1ab3217e26de3d72490aecc5295c">RSIM_Type</a>
 </li>
 <li>ANADETECT
 : <a class="el" href="struct_n_r_f___l_p_c_o_m_p___type.html#a8ab1c75f9014c645b4ba9953f4cc2c67">NRF_LPCOMP_Type</a>
@@ -375,6 +519,12 @@ $(function() {
 </li>
 <li>ANNOUNCE
 : <a class="el" href="classthread-cert_1_1mle_1_1_command_type.html#ae8df11afa84cff3c2eb13984771e5081">CommandType</a>
+</li>
+<li>ANT_SLEEP
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gacee8e08fc7716cb8e21188973748654f">RSIM_Type</a>
+</li>
+<li>ANT_WAKE
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga74cb1f1a2696803592f8c6ca130a3985">RSIM_Type</a>
 </li>
 <li>antennaCals
 : <a class="el" href="structdwt__local__data__t.html#ad5cd6013b0e1ce4eaeeadc61de291a52">dwt_local_data_t</a>
@@ -408,11 +558,20 @@ $(function() {
 <li>arc4_disabled
 : <a class="el" href="structmbedtls__ssl__config.html#a5691241728b9d162bbff17b4bd2d1480">mbedtls_ssl_config</a>
 </li>
+<li>arena
+: <a class="el" href="structmallinfo.html#a79200c7739bcd93e03f760a5cdeeeaa5">mallinfo</a>
+</li>
 <li>ARFE
 : <a class="el" href="structdwt__deviceentcnts__t.html#a5a23d6b64c0e891a362aed9391ca1096">dwt_deviceentcnts_t</a>
 </li>
+<li>argc
+: <a class="el" href="structmain__args.html#ad1447518f4372828b8435ae82e48499e">main_args</a>
+</li>
 <li>Args
 : <a class="el" href="struct___s_p_i_n_e_l___g_e_t___p_r_o_p___c_o_n_t_e_x_t.html#aaca599f4ab87112e5ecc9b08fa52e39b">_SPINEL_GET_PROP_CONTEXT</a>
+</li>
+<li>argv
+: <a class="el" href="structmain__args.html#abd1a2cf54950f450187ef24c1cdcac0c">main_args</a>
 </li>
 <li>ASN
 : <a class="el" href="struct_f_t_d_f___pib.html#ab0cb5c98adf9679cd094eb287a6286ef">FTDF_Pib</a>
@@ -422,6 +581,9 @@ $(function() {
 </li>
 <li>asn1_len
 : <a class="el" href="structmbedtls__oid__descriptor__t.html#ad126b77d200f904e29fe7f2201df059b">mbedtls_oid_descriptor_t</a>
+</li>
+<li>assoc
+: <a class="el" href="structcache__config.html#a8a59d27eef9061148e90e247ee57f0e4">cache_config</a>
 </li>
 <li>associatedMember
 : <a class="el" href="struct_f_t_d_f___orphan_response.html#a5ff31e4197046be65889b628ad76de00">FTDF_OrphanResponse</a>
@@ -436,6 +598,16 @@ $(function() {
 : <a class="el" href="struct_f_t_d_f___associate_confirm.html#a5daa8b05969c3dbce623d4a48e80617c">FTDF_AssociateConfirm</a>
 , <a class="el" href="struct_f_t_d_f___associate_response.html#a5daa8b05969c3dbce623d4a48e80617c">FTDF_AssociateResponse</a>
 </li>
+<li>ATCVH
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga168419f9fd3337173f29d6dde2133745">MCG_Type</a>
+</li>
+<li>ATCVL
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga9659cfc372d5156510bdda5bb491fdbb">MCG_Type</a>
+</li>
+<li>ATTR
+: <a class="el" href="struct__edma__tcd.html#ae655267e67e5ed42554564818a5422a1">_edma_tcd</a>
+, <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gae655267e67e5ed42554564818a5422a1">DMA_Type</a>
+</li>
 <li>attributeDefs
 : <a class="el" href="struct_p_i_b_attribute_table.html#a6ef97773b38fd0b0116b49766fbee231">PIBAttributeTable</a>
 </li>
@@ -444,6 +616,9 @@ $(function() {
 </li>
 <li>authmode
 : <a class="el" href="structmbedtls__ssl__config.html#abb8388c055f9ebb1897b557de4ce6f1f">mbedtls_ssl_config</a>
+</li>
+<li>AUTHSTAT
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga6f9beed9e0ae16bedb9f0681140527fc">MTB_Type</a>
 </li>
 <li>auto_dut
 : <a class="el" href="classautothreadharness_1_1harness__case_1_1_harness_case.html#af2e9072193aa072430f0ab784a0d8bdf">HarnessCase</a>
@@ -454,9 +629,6 @@ $(function() {
 <li>autoAckEn
 : <a class="el" href="structrfc___c_m_d___i_e_e_e___m_o_d___f_i_l_t__s.html#a57531f5c738f25fbec4e266192143be2">rfc_CMD_IEEE_MOD_FILT_s</a>
 , <a class="el" href="structrfc___c_m_d___i_e_e_e___r_x__s.html#a57531f5c738f25fbec4e266192143be2">rfc_CMD_IEEE_RX_s</a>
-</li>
-<li>autoAddresses
-: <a class="el" href="classspinel_1_1codec_1_1_spinel_property_handler.html#ae15a55581400cb97c2d1cd298425e81d">SpinelPropertyHandler</a>
 </li>
 <li>AUTOCOLRESCONFIG
 : <a class="el" href="struct_n_r_f___n_f_c_t___type.html#a7197660fa17499c93f0f9dc05d73fe73">NRF_NFCT_Type</a>
@@ -480,6 +652,21 @@ $(function() {
 <li>aux_sec_header
 : <a class="el" href="classthread-cert_1_1mac802154_1_1_mac_header.html#a7492d7a521403ff88dd33dcfeed24fad">MacHeader</a>
 </li>
+<li>AUXPLL_FCAL_CNT1_0
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gab629688c2c5ab4c9e8ba790907d5e1c7">XCVR_RX_DIG_Type</a>
+</li>
+<li>AUXPLL_FCAL_CNT3_2
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga4cb0f5267c7ec315d4923610042111a6">XCVR_RX_DIG_Type</a>
+</li>
+<li>AUXPLL_FCAL_CNT5_4
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga4c4f3a161bc3719ef9435978711ebfff">XCVR_RX_DIG_Type</a>
+</li>
+<li>AUXPLL_FCAL_CNT6
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#gac91477a36f8fc0472d7453160223cd3f">XCVR_RX_DIG_Type</a>
+</li>
+<li>AUXPLL_FCAL_CTRL
+: <a class="el" href="group___x_c_v_r___z_b_d_e_m___peripheral___access___layer.html#ga38982a25559e6d8f28481d13fe5dd5d6">XCVR_RX_DIG_Type</a>
+</li>
 <li>Available
 : <a class="el" href="struct___o_t_l_w_f___n_o_t_i_f_i_c_a_t_i_o_n.html#a087562df9369687481170ba30ddb400b">_OTLWF_NOTIFICATION</a>
 </li>
@@ -490,7 +677,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:53 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:14 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

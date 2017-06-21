@@ -1,8 +1,24 @@
 var searchData=
 [
-  ['packagetype_5ft',['PackageType_t',['../group___chip_info.html#ga70f24a88295000f5298db4c64a41005a',1,'chipinfo.h']]],
-  ['parentrequeststate',['ParentRequestState',['../group__core-mle-core.html#gaca46746cecd184250e5791f770aa1ac1',1,'Thread::Mle::Mle']]],
-  ['phystate',['PhyState',['../group__radio-types.html#gae1ff73e01c49ff0cb218e4efd1b01fbc',1,'radio.h']]],
-  ['polynomial',['Polynomial',['../class_thread_1_1_crc16.html#aa31105459019feb381a823ed72572a78',1,'Thread::Crc16']]],
-  ['protocolbitvector_5ft',['ProtocolBitVector_t',['../group___chip_info.html#ga0cde93b0e82006e581d06f4b0562fdce',1,'chipinfo.h']]]
+  ['ot_5fmp_5fmode',['OT_MP_MODE',['../ot_o_i_d_8h.html#a14455923b4e249671352a11f0e233900',1,'otOID.h']]],
+  ['ot_5fradio_5fcapability',['OT_RADIO_CAPABILITY',['../ot_o_i_d_8h.html#a1300eaef9b6e58828a5327e44f9128a1',1,'otOID.h']]],
+  ['otcoapcode',['otCoapCode',['../group__api-coap.html#ga9aa05cbbcfa6954cb13e4745b8cec424',1,'coap.h']]],
+  ['otcoapoptiontype',['otCoapOptionType',['../group__api-coap.html#gaf99e791d0ec85184953d11f33fcdc8fd',1,'coap.h']]],
+  ['otcoaptype',['otCoapType',['../group__api-coap.html#ga33033483fa0eeb32532d9034cfafe97c',1,'coap.h']]],
+  ['otcommissionerstate',['otCommissionerState',['../group__api-commissioner.html#ga66faa041c266867350162885db687ec3',1,'commissioner.h']]],
+  ['otdevicerole',['otDeviceRole',['../types_8h.html#a46bf439d509e082c14fade133dc681af',1,'types.h']]],
+  ['oterror',['otError',['../types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49',1,'types.h']]],
+  ['oticmp6code',['otIcmp6Code',['../group__api-icmp6.html#gaa450e86d1ce189d9e63fbac579b7ed52',1,'icmp6.h']]],
+  ['oticmp6type',['otIcmp6Type',['../group__api-icmp6.html#ga46eca7be8d616e02e989eabee82aed74',1,'icmp6.h']]],
+  ['otlinkmodeflags',['otLinkModeFlags',['../namespaceot.html#a52f748a99c3781fccc62f408bbc97d82',1,'ot']]],
+  ['otlogregion',['otLogRegion',['../group__plat-logging.html#gaee25d56d067df60b93f75b2ff587668c',1,'logging.h']]],
+  ['otlwf_5fdevice_5fcapability',['OTLWF_DEVICE_CAPABILITY',['../filter_8h.html#a4266d85f4f7850ef3600766001532376',1,'filter.h']]],
+  ['otlwf_5fdevice_5fstatus',['OTLWF_DEVICE_STATUS',['../filter_8h.html#a2caf8f9671545246117fa87cea937fd1',1,'filter.h']]],
+  ['otmeshcoptlvtype',['otMeshcopTlvType',['../types_8h.html#a8c40a8d1b44523163be6dafa7d0ab2b4',1,'types.h']]],
+  ['otnetifinterfaceid',['otNetifInterfaceId',['../types_8h.html#a7cc3801495f48d8c607d65e913becd3a',1,'types.h']]],
+  ['otplatresetreason',['otPlatResetReason',['../group__plat-misc.html#ga0cba84283c1ab3c6aa37c143e9a552c8',1,'misc.h']]],
+  ['otradiocaps',['otRadioCaps',['../group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55',1,'radio.h']]],
+  ['otradiostate',['otRadioState',['../group__radio-types.html#ga3f89fd47d15047dbcc4137f00dad6dda',1,'radio.h']]],
+  ['otroutepreference',['otRoutePreference',['../types_8h.html#a6085e64b90c7645b8d206edad0b14e1c',1,'types.h']]],
+  ['otthreadstate',['otThreadState',['../namespaceot.html#a833ee71fec1261616d93a609736d5d00',1,'ot']]]
 ];

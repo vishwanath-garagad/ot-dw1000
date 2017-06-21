@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>otCoapResource Struct Reference</title>
+<title>OT-DW1000: otCoapResource Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -61,36 +62,38 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">otCoapResource Struct Reference<div class="ingroups"><a class="el" href="group__api.html">API</a> &raquo; <a class="el" href="group__coap.html">CoAP</a></div></div>  </div>
+<div class="title">otCoapResource Struct Reference<div class="ingroups"><a class="el" href="group__api.html">API</a> &raquo; <a class="el" href="group__api-addons.html">Add-Ons</a> &raquo; <a class="el" href="group__api-coap.html">CoAP</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="coap_8h_source.html">coap.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for otCoapResource:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structot_coap_resource.png" usemap="#otCoapResource_map" alt=""/>
   <map id="otCoapResource_map" name="otCoapResource_map">
-<area href="class_thread_1_1_coap_1_1_resource.html" alt="Resource" shape="rect" coords="0,56,106,80"/>
+<area href="classot_1_1_coap_1_1_resource.html" alt="Resource" shape="rect" coords="0,56,106,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a8261a3aac2508e5e88d2b8ee7ce9388e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_resource.html#a8261a3aac2508e5e88d2b8ee7ce9388e">mUriPath</a></td></tr>
+<tr class="memdesc:a8261a3aac2508e5e88d2b8ee7ce9388e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URI Path string.  <a href="#a8261a3aac2508e5e88d2b8ee7ce9388e">More...</a><br /></td></tr>
 <tr class="separator:a8261a3aac2508e5e88d2b8ee7ce9388e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83aafe8078c130bded342f2552190b6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coap.html#gaa708fdf1ad81fe389425a5826396f7fa">otCoapRequestHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_resource.html#a83aafe8078c130bded342f2552190b6c">mHandler</a></td></tr>
+<tr class="memitem:a83aafe8078c130bded342f2552190b6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-coap.html#ga715c68f6100fb5331bd5877e7a09cce4">otCoapRequestHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_resource.html#a83aafe8078c130bded342f2552190b6c">mHandler</a></td></tr>
+<tr class="memdesc:a83aafe8078c130bded342f2552190b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback for handling a received request.  <a href="#a83aafe8078c130bded342f2552190b6c">More...</a><br /></td></tr>
 <tr class="separator:a83aafe8078c130bded342f2552190b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814892b21f57b7e896333599602ffbc3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_resource.html#a814892b21f57b7e896333599602ffbc3">mContext</a></td></tr>
+<tr class="memdesc:a814892b21f57b7e896333599602ffbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application-specific context.  <a href="#a814892b21f57b7e896333599602ffbc3">More...</a><br /></td></tr>
 <tr class="separator:a814892b21f57b7e896333599602ffbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c23b75a664f5cc8927774d2eff4448b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structot_coap_resource.html">otCoapResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_coap_resource.html#a4c23b75a664f5cc8927774d2eff4448b">mNext</a></td></tr>
+<tr class="memdesc:a4c23b75a664f5cc8927774d2eff4448b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next CoAP resource in the list.  <a href="#a4c23b75a664f5cc8927774d2eff4448b">More...</a><br /></td></tr>
 <tr class="separator:a4c23b75a664f5cc8927774d2eff4448b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure represents a CoAP resource. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00162">162</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a814892b21f57b7e896333599602ffbc3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a814892b21f57b7e896333599602ffbc3">&#9670;&nbsp;</a></span>mContext</h2>
@@ -104,7 +107,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00166">166</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>Application-specific context. </p>
 
 </div>
 </div>
@@ -115,12 +118,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__coap.html#gaa708fdf1ad81fe389425a5826396f7fa">otCoapRequestHandler</a> mHandler</td>
+          <td class="memname"><a class="el" href="group__api-coap.html#ga715c68f6100fb5331bd5877e7a09cce4">otCoapRequestHandler</a> mHandler</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00165">165</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The callback for handling a received request. </p>
 
 </div>
 </div>
@@ -136,7 +139,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00167">167</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The next CoAP resource in the list. </p>
 
 </div>
 </div>
@@ -152,17 +155,17 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="openthread-coap_8h_source.html#l00164">164</a> of file <a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a>.</p>
+<p>The URI Path string. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="openthread-coap_8h_source.html">openthread-coap.h</a></li>
+<li>openthread-master/include/openthread/<a class="el" href="coap_8h_source.html">coap.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:39 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

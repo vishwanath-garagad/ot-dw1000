@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>src/core/common/code_utils.hpp File Reference</title>
+<title>OT-DW1000: openthread-master/src/core/common/code_utils.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_34b4cee2b5900b653deb3438fc906cf4.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_e7e04e66d76e31c0e8b2494724c42aa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4ca71ea08edab0ee9a604b83c61d680d.html">core</a></li><li class="navelem"><a class="el" href="dir_e7633c461746b73ae9ff9f96bae48b38.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,7 +69,7 @@ $(function() {
 <div class="title">code_utils.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="stdbool_8h_source.html">stdbool.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="wrap__stdbool_8h_source.html">utils/wrap_stdbool.h</a>&quot;</code><br />
 </div>
 <p><a href="code__utils_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -78,19 +79,17 @@ Macros</h2></td></tr>
 <tr class="separator:aac0ec111840180cfb8c52fd1126d1ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e37ca1d81caaadea43c9d0e103ad53b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#a2e37ca1d81caaadea43c9d0e103ad53b">otDEFINE_ALIGNED_VAR</a>(name,  size,  align_type)&#160;&#160;&#160;align_type name[(((size) + (sizeof (align_type) - 1)) / sizeof (align_type))]</td></tr>
 <tr class="separator:a2e37ca1d81caaadea43c9d0e103ad53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c8d1fee5dea7c7a5a25759719adbf15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#a5c8d1fee5dea7c7a5a25759719adbf15">SuccessOrExit</a>(ERR)</td></tr>
-<tr class="separator:a5c8d1fee5dea7c7a5a25759719adbf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b07c5b705a40172de195f6bf1cbea1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#a97b07c5b705a40172de195f6bf1cbea1">VerifyOrExit</a>(COND,  ACTION)</td></tr>
-<tr class="separator:a97b07c5b705a40172de195f6bf1cbea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d90ad12fb508f30107b1931f970ab1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#ae0d90ad12fb508f30107b1931f970ab1">SuccessOrExit</a>(aStatus)</td></tr>
+<tr class="separator:ae0d90ad12fb508f30107b1931f970ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e32454ca5e456d5ce5a260c735abed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#a42e32454ca5e456d5ce5a260c735abed">VerifyOrExit</a>(aCondition, ...)</td></tr>
+<tr class="separator:a42e32454ca5e456d5ce5a260c735abed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5d26b95c8540322013b11b942f3121e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#aa5d26b95c8540322013b11b942f3121e">ExitNow</a>(...)</td></tr>
 <tr class="separator:aa5d26b95c8540322013b11b942f3121e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5fbc391f216a67e83794e3bff2a3850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#aa5fbc391f216a67e83794e3bff2a3850">IgnoreReturnValue</a>(statement)</td></tr>
-<tr class="separator:aa5fbc391f216a67e83794e3bff2a3850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34faeeede1771cc0f72099e5e7369905"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__utils_8hpp.html#a34faeeede1771cc0f72099e5e7369905">IgnoreReturnValue</a>(aStatement)</td></tr>
+<tr class="separator:a34faeeede1771cc0f72099e5e7369905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes macros for validating runtime conditions. </p>
-
-<p class="definition">Definition in file <a class="el" href="code__utils_8hpp_source.html">code_utils.hpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa5d26b95c8540322013b11b942f3121e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5d26b95c8540322013b11b942f3121e">&#9670;&nbsp;</a></span>ExitNow</h2>
@@ -107,13 +106,19 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                          \</div><div class="line">    __VA_ARGS__;                                \</div><div class="line">    goto exit;                                  \</div><div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="code__utils_8hpp_source.html#l00065">65</a> of file <a class="el" href="code__utils_8hpp_source.html">code_utils.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                          \</div><div class="line">    {                                           \</div><div class="line">        __VA_ARGS__;                            \</div><div class="line">        goto exit;                              \</div><div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment --><p>This unconditionally executes <em></em>... and branches to the local label 'exit'.</p>
+<dl class="section note"><dt>Note</dt><dd>The use of this interface implies neither success nor failure for the overall exit status of the enclosing function body.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>An optional expression or block to execute when the assertion fails. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aa5fbc391f216a67e83794e3bff2a3850"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5fbc391f216a67e83794e3bff2a3850">&#9670;&nbsp;</a></span>IgnoreReturnValue</h2>
+<a id="a34faeeede1771cc0f72099e5e7369905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34faeeede1771cc0f72099e5e7369905">&#9670;&nbsp;</a></span>IgnoreReturnValue</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,14 +127,12 @@ Macros</h2></td></tr>
           <td class="memname">#define IgnoreReturnValue</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">statement</td><td>)</td>
+          <td class="paramname">aStatement</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                         \</div><div class="line">    if (statement) {}                          \</div><div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="code__utils_8hpp_source.html#l00078">78</a> of file <a class="el" href="code__utils_8hpp_source.html">code_utils.hpp</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                         \</div><div class="line">    {                                          \</div><div class="line">        if (aStatement) {}                     \</div><div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aac0ec111840180cfb8c52fd1126d1ee1"></a>
@@ -157,8 +160,6 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="code__utils_8hpp_source.html#l00040">40</a> of file <a class="el" href="code__utils_8hpp_source.html">code_utils.hpp</a>.</p>
 
 </div>
 </div>
@@ -194,12 +195,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__utils_8hpp_source.html#l00044">44</a> of file <a class="el" href="code__utils_8hpp_source.html">code_utils.hpp</a>.</p>
-
 </div>
 </div>
-<a id="a5c8d1fee5dea7c7a5a25759719adbf15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c8d1fee5dea7c7a5a25759719adbf15">&#9670;&nbsp;</a></span>SuccessOrExit</h2>
+<a id="ae0d90ad12fb508f30107b1931f970ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d90ad12fb508f30107b1931f970ab1">&#9670;&nbsp;</a></span>SuccessOrExit</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,18 +207,23 @@ Macros</h2></td></tr>
           <td class="memname">#define SuccessOrExit</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">ERR</td><td>)</td>
+          <td class="paramname">aStatus</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                          \</div><div class="line">    if ((ERR) != 0) {                           \</div><div class="line">      goto exit;                                \</div><div class="line">    }                                           \</div><div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="code__utils_8hpp_source.html#l00048">48</a> of file <a class="el" href="code__utils_8hpp_source.html">code_utils.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                              \</div><div class="line">    {                                               \</div><div class="line">        if ((aStatus) != 0)                         \</div><div class="line">        {                                           \</div><div class="line">            goto exit;                              \</div><div class="line">        }                                           \</div><div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment --><p>This checks for the specified status, which is expected to commonly be successful, and branches to the local label 'exit' if the status is unsuccessful.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aStatus</td><td>A scalar status to be evaluated against zero (0). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a97b07c5b705a40172de195f6bf1cbea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97b07c5b705a40172de195f6bf1cbea1">&#9670;&nbsp;</a></span>VerifyOrExit</h2>
+<a id="a42e32454ca5e456d5ce5a260c735abed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e32454ca5e456d5ce5a260c735abed">&#9670;&nbsp;</a></span>VerifyOrExit</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,13 +232,13 @@ Macros</h2></td></tr>
           <td class="memname">#define VerifyOrExit</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">COND, </td>
+          <td class="paramname">aCondition, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">ACTION&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -243,15 +247,21 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                          \</div><div class="line">    if (!(COND)) {                              \</div><div class="line">      ACTION;                                   \</div><div class="line">      goto exit;                                \</div><div class="line">    }                                           \</div><div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="code__utils_8hpp_source.html#l00056">56</a> of file <a class="el" href="code__utils_8hpp_source.html">code_utils.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                \</div><div class="line">    {                                                 \</div><div class="line">        if (!(aCondition))                            \</div><div class="line">        {                                             \</div><div class="line">            __VA_ARGS__;                              \</div><div class="line">            goto exit;                                \</div><div class="line">        }                                             \</div><div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment --><p>This checks for the specified condition, which is expected to commonly be true, and both executes <em></em>... and branches to the local label 'exit' if the condition is false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aCondition</td><td>A Boolean expression to be evaluated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>An expression or block to execute when the assertion fails. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

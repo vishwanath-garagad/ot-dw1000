@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/drivers/windows/ottmp/hdlc.cpp File Reference</title>
+<title>OT-DW1000: openthread-master/examples/drivers/windows/ottmp/hdlc.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_757d408b91fe77c0d6541574880c2422.html">drivers</a></li><li class="navelem"><a class="el" href="dir_2241398f140824e7a05e00f2ce66418d.html">windows</a></li><li class="navelem"><a class="el" href="dir_2098636bc8683cc5356da1cf07689079.html">ottmp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_f008ccfebca6b1721ca65dcf50715dd5.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a7733a9637be92d1f239c18e2519fad4.html">windows</a></li><li class="navelem"><a class="el" href="dir_99913d7556e5a94f29732c68ac4f68e5.html">ottmp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,9 +73,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="pch_8hpp_source.html">pch.hpp</a>&quot;</code><br />
 <code>#include &quot;hdlc.tmh&quot;</code><br />
-</div>
-<p><a href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a6b7b47dd702d9e331586d485013fd1ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a6b7b47dd702d9e331586d485013fd1eaa451148c0c6c72a65e2b58ee88aa1a73e">kInitFcs</a> = 0xffff, 
@@ -97,7 +96,7 @@ Functions</h2></td></tr>
 <tr class="separator:a003347004601a2479f890f9d5a4a3535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94d5ee63ad05f05b27c2834d6a35d494"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a94d5ee63ad05f05b27c2834d6a35d494">HdlcEncodeByte</a> (_In_ UCHAR aByte, _Inout_ ULONG &amp;<a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#ae585c130754b017932e384fe2c5c1057">Offset</a>, _In_ ULONG <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#a2a7681db6419ed8260d429294e94037c">EncodedBufferLength</a>, <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#ad87765e8ec7219f8276e941e48415cf6">_Out_writes_bytes_</a>(<a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#a2a7681db6419ed8260d429294e94037c">EncodedBufferLength</a>) PUCHAR <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a597612c7fd4e0c84d63a6a2bd423f999">EncodedBuffer</a>)</td></tr>
 <tr class="separator:a94d5ee63ad05f05b27c2834d6a35d494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc22291697f9af6274b1271f8afa6ea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#adc22291697f9af6274b1271f8afa6ea0">_Success_</a> (return==<a class="el" href="stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>) <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> HdlcEncodeBuffer(<a class="el" href="tunnel_8h.html#af9b3d8e148f93d17c025642265a85ef8">_In_reads_bytes_</a>(<a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#a7149cbca15b2e31430c8611fa016f570">DecodedBufferLength</a>) PUCHAR <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#a344144ee84c4a85d140f36d73224bb50">DecodedBuffer</a></td></tr>
+<tr class="memitem:adc22291697f9af6274b1271f8afa6ea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#adc22291697f9af6274b1271f8afa6ea0">_Success_</a> (return==<a class="el" href="wrap__stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>) <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> HdlcEncodeBuffer(<a class="el" href="tunnel_8h.html#af9b3d8e148f93d17c025642265a85ef8">_In_reads_bytes_</a>(<a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#a7149cbca15b2e31430c8611fa016f570">DecodedBufferLength</a>) PUCHAR <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#a344144ee84c4a85d140f36d73224bb50">DecodedBuffer</a></td></tr>
 <tr class="separator:adc22291697f9af6274b1271f8afa6ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87765e8ec7219f8276e941e48415cf6"><td class="memItemLeft" align="right" valign="top">_In_ ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#ad87765e8ec7219f8276e941e48415cf6">_Out_writes_bytes_</a> (<a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8hpp.html#a2a7681db6419ed8260d429294e94037c">EncodedBufferLength</a>) PUCHAR <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a597612c7fd4e0c84d63a6a2bd423f999">EncodedBuffer</a></td></tr>
 <tr class="separator:ad87765e8ec7219f8276e941e48415cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,8 +138,6 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements an HDLC-lite encoder and decoder. </p>
-
-<p class="definition">Definition in file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a6b7b47dd702d9e331586d485013fd1ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b7b47dd702d9e331586d485013fd1ea">&#9670;&nbsp;</a></span>anonymous enum</h2>
@@ -161,8 +158,6 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00039">39</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a9af226f4ce7009de156cc75f20e5891b"></a>
@@ -181,8 +176,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a9af226f4ce7009de156cc75f20e5891ba2636cec1a60936d66a0ca3a4fa187680"></a>kStateSync&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9af226f4ce7009de156cc75f20e5891ba8ee7e011c46ea433b1cc62063785bad5"></a>kStateEscaped&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00215">215</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -215,7 +208,7 @@ Variables</h2></td></tr>
           <td class="memname">_Success_ </td>
           <td>(</td>
           <td class="paramtype">return&#160;</td>
-          <td class="paramname"> = <code>=&#160;<a class="el" href="stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></code></td><td>)</td>
+          <td class="paramname"> = <code>=&#160;<a class="el" href="wrap__stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -238,8 +231,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00186">186</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a5222b3688a21a68ac34454ff37efd719"></a>
@@ -257,8 +248,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00111">111</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -287,8 +276,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00119">119</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -329,8 +316,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00143">143</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -377,8 +362,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00199">199</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -435,8 +418,6 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The updated FCS. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00070">70</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -452,8 +433,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00212">212</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a04eae62d362d4985e36e1e1b3c9f61c1"></a>
@@ -467,8 +446,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00181">181</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -484,8 +461,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00229">229</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a7149cbca15b2e31430c8611fa016f570"></a>
@@ -499,8 +474,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00173">173</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -516,8 +489,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00236">236</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a597612c7fd4e0c84d63a6a2bd423f999"></a>
@@ -532,8 +503,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00184">184</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a2a7681db6419ed8260d429294e94037c"></a>
@@ -547,11 +516,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    USHORT <a class="code" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a7fda9957a603e6460ad201a2863b7966">Fcs</a> = <a class="code" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a6b7b47dd702d9e331586d485013fd1eaa451148c0c6c72a65e2b58ee88aa1a73e">kInitFcs</a></div><div class="ttc" id="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_html_a6b7b47dd702d9e331586d485013fd1eaa451148c0c6c72a65e2b58ee88aa1a73e"><div class="ttname"><a href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a6b7b47dd702d9e331586d485013fd1eaa451148c0c6c72a65e2b58ee88aa1a73e">kInitFcs</a></div><div class="ttdoc">Initial FCS value. </div><div class="ttdef"><b>Definition:</b> <a href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00041">hdlc.cpp:41</a></div></div>
-<div class="ttc" id="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_html_a7fda9957a603e6460ad201a2863b7966"><div class="ttname"><a href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a7fda9957a603e6460ad201a2863b7966">Fcs</a></div><div class="ttdeci">Fcs</div><div class="ttdef"><b>Definition:</b> <a href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00197">hdlc.cpp:197</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    USHORT <a class="code" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a7fda9957a603e6460ad201a2863b7966">Fcs</a> = <a class="code" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a6b7b47dd702d9e331586d485013fd1eaa451148c0c6c72a65e2b58ee88aa1a73e">kInitFcs</a></div><div class="ttc" id="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_html_a6b7b47dd702d9e331586d485013fd1eaa451148c0c6c72a65e2b58ee88aa1a73e"><div class="ttname"><a href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a6b7b47dd702d9e331586d485013fd1eaa451148c0c6c72a65e2b58ee88aa1a73e">kInitFcs</a></div><div class="ttdoc">Initial FCS value. </div><div class="ttdef"><b>Definition:</b> hdlc.cpp:41</div></div>
+<div class="ttc" id="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_html_a7fda9957a603e6460ad201a2863b7966"><div class="ttname"><a href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a7fda9957a603e6460ad201a2863b7966">Fcs</a></div><div class="ttdeci">Fcs</div><div class="ttdef"><b>Definition:</b> hdlc.cpp:197</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00178">178</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a5df37b7f02e5cdc7d9412b7f872b8e01"></a>
@@ -565,8 +532,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00342">342</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -582,8 +547,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00197">197</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="abcb827bbb38ab5c907c25d5852f2234e"></a>
@@ -598,8 +561,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    UCHAR byte</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00233">233</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ae585c130754b017932e384fe2c5c1057"></a>
@@ -613,8 +574,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00180">180</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
 
 </div>
 </div>
@@ -630,14 +589,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html#l00235">235</a> of file <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp_source.html">hdlc.cpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

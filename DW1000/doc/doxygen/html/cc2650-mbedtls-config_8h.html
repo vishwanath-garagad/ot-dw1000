@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/platforms/cc2650/crypto/cc2650-mbedtls-config.h File Reference</title>
+<title>OT-DW1000: openthread-master/examples/platforms/cc2650/crypto/cc2650-mbedtls-config.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_095e96dd0fc9cb65d8ffe33a5ba9ba15.html">platforms</a></li><li class="navelem"><a class="el" href="dir_655d755f7bc12c8e28168363582226c6.html">cc2650</a></li><li class="navelem"><a class="el" href="dir_d909e830097fd711b6db2ec773e73a71.html">crypto</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_efb9e46700d82a506c208f1e86fd6a17.html">platforms</a></li><li class="navelem"><a class="el" href="dir_a0f61a6e737d64e606668288a5521fa3.html">cc2650</a></li><li class="navelem"><a class="el" href="dir_05a297e47c626d0b0a299e775506d14e.html">crypto</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,7 +69,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;inttypes.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="logging_8h_source.html">platform/logging.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">openthread/platform/logging.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="check__config_8h_source.html">mbedtls/check_config.h</a>&quot;</code><br />
 </div>
 <p><a href="cc2650-mbedtls-config_8h_source.html">Go to the source code of this file.</a></p>
@@ -89,9 +90,6 @@ Macros</h2></td></tr>
 </div></td></tr>
 <tr class="memitem:aa26fe7f0ff88b6531a7bd48825ad9356"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2650-mbedtls-config_8h.html#aa26fe7f0ff88b6531a7bd48825ad9356">MBEDTLS_AES_ALT</a></td></tr>
 <tr class="separator:aa26fe7f0ff88b6531a7bd48825ad9356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">SECTION: mbed TLS feature support</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>This section sets support for features that are or are not needed within the modules that are enabled. </p>
-</div></td></tr>
 <tr class="memitem:a2bcb06530a302f01bd89495d00002125"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2650-mbedtls-config_8h.html#a2bcb06530a302f01bd89495d00002125">MBEDTLS_SHA256_ALT</a></td></tr>
 <tr class="separator:a2bcb06530a302f01bd89495d00002125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a0f22be83a0b34bd8e8251b77a680a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2650-mbedtls-config_8h.html#a1a0f22be83a0b34bd8e8251b77a680a0">MBEDTLS_ENTROPY_HARDWARE_ALT</a></td></tr>
@@ -226,8 +224,6 @@ Macros</h2></td></tr>
 <p>This module enables the following ciphersuites (if other requisites are enabled as well): MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CBC_SHA MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CBC_SHA MBEDTLS_TLS_DHE_PSK_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CBC_SHA MBEDTLS_TLS_DHE_PSK_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CBC_SHA MBEDTLS_TLS_RSA_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_RSA_WITH_AES_256_CBC_SHA256 MBEDTLS_TLS_RSA_WITH_AES_256_CBC_SHA MBEDTLS_TLS_RSA_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_RSA_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_RSA_WITH_AES_128_CBC_SHA MBEDTLS_TLS_RSA_PSK_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_RSA_PSK_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_RSA_PSK_WITH_AES_256_CBC_SHA MBEDTLS_TLS_RSA_PSK_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_RSA_PSK_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_RSA_PSK_WITH_AES_128_CBC_SHA MBEDTLS_TLS_PSK_WITH_AES_256_GCM_SHA384 MBEDTLS_TLS_PSK_WITH_AES_256_CBC_SHA384 MBEDTLS_TLS_PSK_WITH_AES_256_CBC_SHA MBEDTLS_TLS_PSK_WITH_AES_128_GCM_SHA256 MBEDTLS_TLS_PSK_WITH_AES_128_CBC_SHA256 MBEDTLS_TLS_PSK_WITH_AES_128_CBC_SHA</p>
 <p>PEM_PARSE uses AES for decrypting encrypted keys. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01445">1445</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="aa0aaa3f0466b5ae15ff9bf176f632a3d"></a>
@@ -243,8 +239,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Store the AES tables in ROM.</p>
 <p>Uncomment this macro to store the AES tables in ROM. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00307">307</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -262,8 +256,6 @@ Macros</h2></td></tr>
 <p>Enable the generic ASN1 parser.</p>
 <p>Module: library/asn1.c Caller: <a class="el" href="x509_8c.html">library/x509.c</a> <a class="el" href="dhm_8c.html">library/dhm.c</a> <a class="el" href="pkcs12_8c.html">library/pkcs12.c</a> <a class="el" href="pkcs5_8c.html" title="PKCS#5 functions. ">library/pkcs5.c</a> <a class="el" href="pkparse_8c.html">library/pkparse.c</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01482">1482</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a79098f46901a7da949424ca81fcb4be2"></a>
@@ -279,8 +271,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable the generic ASN1 writer.</p>
 <p>Module: <a class="el" href="asn1write_8c.html">library/asn1write.c</a> Caller: <a class="el" href="library_2ecdsa_8c.html">library/ecdsa.c</a> <a class="el" href="pkwrite_8c.html">library/pkwrite.c</a> <a class="el" href="x509__create_8c.html">library/x509_create.c</a> <a class="el" href="x509write__crt_8c.html">library/x509write_crt.c</a> library/mbedtls_x509write_csr.c </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01496">1496</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -298,8 +288,6 @@ Macros</h2></td></tr>
 <p>Enable the multi-precision integer library.</p>
 <p>Module: <a class="el" href="bignum_8c.html">library/bignum.c</a> Caller: <a class="el" href="dhm_8c.html">library/dhm.c</a> <a class="el" href="ecp_8c.html">library/ecp.c</a> <a class="el" href="library_2ecdsa_8c.html">library/ecdsa.c</a> <a class="el" href="rsa_8c.html">library/rsa.c</a> <a class="el" href="ssl__tls_8c.html">library/ssl_tls.c</a></p>
 <p>This module is required for RSA, DHM and ECC (ECDH, ECDSA) support. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01524">1524</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -319,8 +307,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_AES_C or MBEDTLS_CAMELLIA_C</p>
 <p>This module enables the AES-CCM ciphersuites, if other requisites are enabled as well. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01602">1602</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a4a186eda38ce80f484524f3f12de2923"></a>
@@ -337,8 +323,6 @@ Macros</h2></td></tr>
 <p>Enable the generic cipher layer.</p>
 <p>Module: <a class="el" href="cipher_8c.html" title="Generic cipher wrapper for mbed TLS. ">library/cipher.c</a> Caller: <a class="el" href="ssl__tls_8c.html">library/ssl_tls.c</a></p>
 <p>Uncomment to enable generic cipher wrappers. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01626">1626</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -358,8 +342,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_AES_C</p>
 <p>This module provides the CTR_DRBG AES-256 random number generator. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01640">1640</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="ac64f663ce793cda3cc14e5a300e30a65"></a>
@@ -377,8 +359,6 @@ Macros</h2></td></tr>
 <p>Module: <a class="el" href="mbedtls_2repo_2library_2debug_8c.html">library/debug.c</a> Caller: <a class="el" href="ssl__cli_8c.html">library/ssl_cli.c</a> <a class="el" href="ssl__srv_8c.html">library/ssl_srv.c</a> <a class="el" href="ssl__tls_8c.html">library/ssl_tls.c</a></p>
 <p>This module provides debugging functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01654">1654</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="af4c97c30b6084ceb60392781b93c9f58"></a>
@@ -393,12 +373,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Enable the elliptic curve J-PAKE library.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This is currently experimental. EC J-PAKE support is based on the <a class="el" href="namespace_thread.html">Thread</a> v1.0.0 specification; incompatible changes to the specification might still happen. For this reason, this is disabled by default.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This is currently experimental. EC J-PAKE support is based on the Thread v1.0.0 specification; incompatible changes to the specification might still happen. For this reason, this is disabled by default.</dd></dl>
 <p>Module: <a class="el" href="ecjpake_8c.html">library/ecjpake.c</a> Caller:</p>
 <p>This module is used by the following key exchanges: ECJPAKE</p>
 <p>Requires: MBEDTLS_ECP_C, MBEDTLS_MD_C </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01744">1744</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -417,8 +395,6 @@ Macros</h2></td></tr>
 <p>Module: <a class="el" href="ecp_8c.html">library/ecp.c</a> Caller: <a class="el" href="ecdh_8c.html">library/ecdh.c</a> <a class="el" href="library_2ecdsa_8c.html">library/ecdsa.c</a> <a class="el" href="ecjpake_8c.html">library/ecjpake.c</a></p>
 <p>Requires: MBEDTLS_BIGNUM_C and at least one MBEDTLS_ECP_DP_XXX_ENABLED </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01758">1758</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="aa7661e25bab8f0e87060ee05f1216fe4"></a>
@@ -432,8 +408,6 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00426">426</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -450,8 +424,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable fixed-point speed-up </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02461">2461</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a98099ce7241e89e42ba34b79e770a0ab"></a>
@@ -466,8 +438,6 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Maximum bit size of groups </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02459">2459</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -485,8 +455,6 @@ Macros</h2></td></tr>
 <p>Enable specific 'modulo p' routines for each NIST prime. Depending on the prime and architecture, makes operations 4 to 8 times faster on the corresponding curve.</p>
 <p>Comment this macro to disable NIST curves optimisation. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00446">446</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a0e14e10966cfd209e80d66a16b6c94ec"></a>
@@ -501,8 +469,6 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Maximum window size used </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02460">2460</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -522,8 +488,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_SHA512_C or MBEDTLS_SHA256_C</p>
 <p>This module provides a generic entropy pool </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01772">1772</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a1a0f22be83a0b34bd8e8251b77a680a0"></a>
@@ -538,10 +502,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Uncomment this macro to let mbed TLS use your own implementation of a hardware entropy collector.</p>
-<p>Your function must be called <code><a class="el" href="cc2650_2random_8c.html#a3a84e46c4ff3cdaccf85d05dfb7d5594">mbedtls_hardware_poll()</a></code>, have the same prototype as declared in <a class="el" href="entropy__poll_8h.html" title="Platform-specific and custom entropy polling functions. ">entropy_poll.h</a>, and accept NULL as first argument.</p>
+<p>Your function must be called <code><a class="el" href="hardware__entropy_8c.html#a45ce4792a68304d592fb711bd8f2fc86">mbedtls_hardware_poll()</a></code>, have the same prototype as declared in <a class="el" href="entropy__poll_8h.html" title="Platform-specific and custom entropy polling functions. ">entropy_poll.h</a>, and accept NULL as first argument.</p>
 <p>Uncomment to use your own hardware entropy collector. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00298">298</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -561,8 +523,6 @@ Macros</h2></td></tr>
 <p>Used in: <a class="el" href="timing_8c.html">library/timing.c</a> <a class="el" href="padlock_8c.html">library/padlock.c</a> <a class="el" href="bn__mul_8h.html" title="Multi-precision integer library. ">include/mbedtls/bn_mul.h</a></p>
 <p>Comment to disable the use of assembly code. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00062">62</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a3ddaec887496f6a2b18975d52afc87d5"></a>
@@ -581,8 +541,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_MD_C</p>
 <p>Uncomment to enable the HMAC_DRBG random number geerator. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01835">1835</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="ac9580ac865324c142232c3e0bc654e14"></a>
@@ -597,11 +555,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Enable the ECJPAKE based ciphersuite modes in SSL / TLS.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This is currently experimental. EC J-PAKE support is based on the <a class="el" href="namespace_thread.html">Thread</a> v1.0.0 specification; incompatible changes to the specification might still happen. For this reason, this is disabled by default.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This is currently experimental. EC J-PAKE support is based on the Thread v1.0.0 specification; incompatible changes to the specification might still happen. For this reason, this is disabled by default.</dd></dl>
 <p>Requires: MBEDTLS_ECJPAKE_C MBEDTLS_SHA256_C MBEDTLS_ECP_DP_SECP256R1_ENABLED</p>
 <p>This enables the following ciphersuites (if other requisites are enabled as well): MBEDTLS_TLS_ECJPAKE_WITH_AES_128_CCM_8 </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00721">721</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -619,8 +575,6 @@ Macros</h2></td></tr>
 <p>Enable the generic message digest layer.</p>
 <p>Module: library/mbedtls_md.c Caller:</p>
 <p>Uncomment to enable generic message digest wrappers. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01847">1847</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -640,8 +594,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_PLATFORM_C MBEDTLS_PLATFORM_MEMORY (to use it within mbed TLS)</p>
 <p>Enable this module to enable the buffer memory allocator. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01902">1902</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a02bfffc46b7b2e10c0080d29bb56e6b0"></a>
@@ -657,8 +609,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Maximum number of bytes for usable MPIs. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02443">2443</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a7cec1de79c434f1053488b1d3b9454c4"></a>
@@ -673,8 +623,6 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Maximum windows size used. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02442">2442</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -692,8 +640,6 @@ Macros</h2></td></tr>
 <p>Do not use built-in platform entropy functions. This is useful if your platform does not support standards like the /dev/urandom or Windows CryptoAPI.</p>
 <p>Uncomment this macro to disable the built-in platform entropy functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00790">790</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a0960129d0cf6e043a1cbc7c41d7c2297"></a>
@@ -710,8 +656,6 @@ Macros</h2></td></tr>
 <p>Enable the OID database.</p>
 <p>Module: <a class="el" href="oid_8c.html" title="Object Identifier (OID) database. ">library/oid.c</a> Caller: <a class="el" href="asn1write_8c.html">library/asn1write.c</a> <a class="el" href="pkcs5_8c.html" title="PKCS#5 functions. ">library/pkcs5.c</a> <a class="el" href="pkparse_8c.html">library/pkparse.c</a> <a class="el" href="pkwrite_8c.html">library/pkwrite.c</a> <a class="el" href="rsa_8c.html">library/rsa.c</a> <a class="el" href="x509_8c.html">library/x509.c</a> <a class="el" href="x509__create_8c.html">library/x509_create.c</a> library/mbedtls_x509_crl.c library/mbedtls_x509_crt.c library/mbedtls_x509_csr.c <a class="el" href="x509write__crt_8c.html">library/x509write_crt.c</a> library/mbedtls_x509write_csr.c</p>
 <p>This modules translates between OIDs and internal values. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01944">1944</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -731,8 +675,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_RSA_C or MBEDTLS_ECP_C</p>
 <p>Uncomment to enable generic public key wrappers. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02008">2008</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a09eefef8f4562ba86a9c7a47c114ddaa"></a>
@@ -750,8 +692,6 @@ Macros</h2></td></tr>
 <p>Module: <a class="el" href="pkparse_8c.html">library/pkparse.c</a> Caller: library/mbedtls_x509_crt.c library/mbedtls_x509_csr.c</p>
 <p>Requires: MBEDTLS_PK_C</p>
 <p>Uncomment to enable generic public key parse functions. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02023">2023</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -771,8 +711,6 @@ Macros</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This abstraction layer must be enabled on Windows (including MSYS2) as other module rely on it for a fixed snprintf implementation.</dd></dl>
 <p>Module: <a class="el" href="third__party_2mbedtls_2repo_2library_2platform_8c.html">library/platform.c</a> Caller: Most other .c files</p>
 <p>This module enables abstraction of common (libc) functions. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02101">2101</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -794,8 +732,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_PLATFORM_C</p>
 <p>Enable this layer to allow use of alternative memory allocators. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00118">118</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a177299909ee6cd36ec008af9c0e617ff"></a>
@@ -814,8 +750,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_PLATFORM_C</p>
 <p>Uncomment to prevent default assignment of standard functions in the platform layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00137">137</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a2bcb06530a302f01bd89495d00002125"></a>
@@ -829,8 +763,6 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00246">246</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -849,8 +781,6 @@ Macros</h2></td></tr>
 <p>Module: library/mbedtls_sha256.c Caller: <a class="el" href="entropy_8c.html">library/entropy.c</a> library/mbedtls_md.c <a class="el" href="ssl__cli_8c.html">library/ssl_cli.c</a> <a class="el" href="ssl__srv_8c.html">library/ssl_srv.c</a> <a class="el" href="ssl__tls_8c.html">library/ssl_tls.c</a></p>
 <p>This module adds support for SHA-224 and SHA-256. This module is required for the SSL/TLS 1.2 PRF function. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02163">2163</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a37056e26ff582813ab505fa8e59287b6"></a>
@@ -867,8 +797,6 @@ Macros</h2></td></tr>
 <p>Enable an implementation of SHA-256 that has lower ROM footprint but also lower performance.</p>
 <p>The default implementation is meant to be a reasonnable compromise between performance and size. This version optimizes more aggressively for size at the expense of performance. Eg on Cortex-M4 it reduces the size of <a class="el" href="sha256__alt_8c.html#a1166c1d669de6fe668623612d936f402">mbedtls_sha256_process()</a> from ~2KB to ~0.5KB for a performance hit of about 30%.</p>
 <p>Uncomment to enable the smaller implementation of SHA256. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00895">895</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -888,8 +816,6 @@ Macros</h2></td></tr>
 <p>Use this to save a few hundred bytes of ROM (default ordering of all available ciphersuites) and a few to a few hundred bytes of RAM.</p>
 <p>The value below is only an example, not the default. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02517">2517</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a38112435a93c8cf0e9c9e9c15cb3f516"></a>
@@ -908,8 +834,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_SSL_TLS_C</p>
 <p>This module is required for SSL/TLS client support. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02226">2226</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a5c1e2c54608878fd46c1d72880eed9d9"></a>
@@ -925,8 +849,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable basic implementation of DTLS cookies for hello verification.</p>
 <p>Module: <a class="el" href="ssl__cookie_8c.html">library/ssl_cookie.c</a> Caller: </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02200">2200</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -945,8 +867,6 @@ Macros</h2></td></tr>
 <p>If you need all error reporting you should enable this during debugging, but remove this for production servers that should log as well.</p>
 <p>Uncomment this macro to report all debug messages on errors introducing a timing side-channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l00937">937</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a3a74b34386b00896b50e2809d2b5bbfc"></a>
@@ -964,8 +884,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_SSL_TLS_C MBEDTLS_SSL_PROTO_DTLS</p>
 <dl class="section warning"><dt>Warning</dt><dd>Disabling this is often a security risk! See <a class="el" href="ssl_8h.html#a46d919254eafef2ae642fb692c5e560a" title="Enable or disable anti-replay protection for DTLS. (DTLS only, no effect on TLS.) Default: enabled...">mbedtls_ssl_conf_dtls_anti_replay()</a> for details.</dd></dl>
 <p>Comment this to disable anti-replay in DTLS. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01143">1143</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -986,8 +904,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_SSL_PROTO_DTLS</p>
 <p>Comment this to disable support for HelloVerifyRequest. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01161">1161</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a19bd05cfdb812a81e4727a679e5d5472"></a>
@@ -1004,8 +920,6 @@ Macros</h2></td></tr>
 <p>Enable support for exporting key block and master secret. This is required for certain users of TLS, e.g. EAP-TLS.</p>
 <p>Comment this macro to disable support for key export </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01212">1212</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a4a5b73bae4d762a05684812ad6c6b1b2"></a>
@@ -1020,8 +934,6 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Maxium fragment length in bytes, determines the size of each of the two internal I/O buffers </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02500">2500</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -1038,8 +950,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable support for RFC 6066 max_fragment_length extension in SSL.</p>
 <p>Comment this macro to disable support for the max_fragment_length extension </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01056">1056</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -1059,8 +969,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_SSL_PROTO_TLS1_1 or MBEDTLS_SSL_PROTO_TLS1_2</p>
 <p>Comment this macro to disable support for DTLS </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01119">1119</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a8a7aca10569198cf8e8dbff1c40677c6"></a>
@@ -1077,8 +985,6 @@ Macros</h2></td></tr>
 <p>Enable support for TLS 1.2 (and DTLS 1.2 if DTLS is enabled).</p>
 <p>Requires: MBEDTLS_SHA1_C or MBEDTLS_SHA256_C or MBEDTLS_SHA512_C (Depends on ciphersuites)</p>
 <p>Comment this macro to disable support for TLS 1.2 / DTLS 1.2 </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l01104">1104</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
 
 </div>
 </div>
@@ -1098,8 +1004,6 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_SSL_TLS_C</p>
 <p>This module is required for SSL/TLS server support. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02240">2240</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 <a id="a85f2821433dbf22916e865a49f2652df"></a>
@@ -1118,14 +1022,12 @@ Macros</h2></td></tr>
 <p>Requires: MBEDTLS_CIPHER_C, MBEDTLS_MD_C and at least one of the MBEDTLS_SSL_PROTO_XXX defines</p>
 <p>This module is required for SSL/TLS. </p>
 
-<p class="definition">Definition at line <a class="el" href="cc2650-mbedtls-config_8h_source.html#l02256">2256</a> of file <a class="el" href="cc2650-mbedtls-config_8h_source.html">cc2650-mbedtls-config.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

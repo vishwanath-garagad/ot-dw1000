@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>otChildInfo Struct Reference</title>
+<title>OT-DW1000: otChildInfo Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -61,11 +62,11 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">otChildInfo Struct Reference<div class="ingroups"><a class="el" href="group__api.html">API</a> &raquo; <a class="el" href="group__diags.html">Diagnostics</a></div></div>  </div>
+<div class="title">otChildInfo Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -93,6 +94,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ace8456d43cbd0ceb03c44e2053d38693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_child_info.html#ace8456d43cbd0ceb03c44e2053d38693">mAverageRssi</a></td></tr>
 <tr class="memdesc:ace8456d43cbd0ceb03c44e2053d38693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average RSSI.  <a href="#ace8456d43cbd0ceb03c44e2053d38693">More...</a><br /></td></tr>
 <tr class="separator:ace8456d43cbd0ceb03c44e2053d38693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26b9299dbb2e3adcbff5b7d13394068"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_child_info.html#aa26b9299dbb2e3adcbff5b7d13394068">mLastRssi</a></td></tr>
+<tr class="memdesc:aa26b9299dbb2e3adcbff5b7d13394068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last observed RSSI.  <a href="#aa26b9299dbb2e3adcbff5b7d13394068">More...</a><br /></td></tr>
+<tr class="separator:aa26b9299dbb2e3adcbff5b7d13394068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e524a9b9d012b244447e870bb3b6e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_child_info.html#a10e524a9b9d012b244447e870bb3b6e8">mRxOnWhenIdle</a>: 1</td></tr>
 <tr class="memdesc:a10e524a9b9d012b244447e870bb3b6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">rx-on-when-idle  <a href="#a10e524a9b9d012b244447e870bb3b6e8">More...</a><br /></td></tr>
 <tr class="separator:a10e524a9b9d012b244447e870bb3b6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,9 +111,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:a39a2ab1bb3344052647c2872f52c4522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This structure holds diagnostic information for a <a class="el" href="namespace_thread.html">Thread</a> Child </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00785">785</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
+<div class="textblock"><p>This structure holds diagnostic information for a Thread Child </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="ab661817edde00332f6458028a9db71d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab661817edde00332f6458028a9db71d8">&#9670;&nbsp;</a></span>mAge</h2>
@@ -124,8 +126,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Time last heard. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00789">789</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -143,8 +143,6 @@ Data Fields</h2></td></tr>
 
 <p>Average RSSI. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00794">794</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a271008c76beb20161e71ab3e1d20c7d2"></a>
@@ -160,8 +158,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Child ID. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00791">791</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -179,8 +175,6 @@ Data Fields</h2></td></tr>
 
 <p>IEEE 802.15.4 Extended Address. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00787">787</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="afaa0ac04156298bc2f4a780ca3588c29"></a>
@@ -196,8 +190,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Full Function Device. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00797">797</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +207,21 @@ Data Fields</h2></td></tr>
 
 <p>Full Network Data. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00798">798</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
+</div>
+</div>
+<a id="aa26b9299dbb2e3adcbff5b7d13394068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa26b9299dbb2e3adcbff5b7d13394068">&#9670;&nbsp;</a></span>mLastRssi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> mLastRssi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Last observed RSSI. </p>
 
 </div>
 </div>
@@ -233,8 +239,6 @@ Data Fields</h2></td></tr>
 
 <p>Link Quality In. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00793">793</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a778ebc0c37bca2631cc372fe98bd8506"></a>
@@ -250,8 +254,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Network Data Version. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00792">792</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -269,8 +271,6 @@ Data Fields</h2></td></tr>
 
 <p>RLOC16. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00790">790</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a10e524a9b9d012b244447e870bb3b6e8"></a>
@@ -286,8 +286,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>rx-on-when-idle </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00795">795</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -305,8 +303,6 @@ Data Fields</h2></td></tr>
 
 <p>Secure Data Requests. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00796">796</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a526c77796c62318153d7a7120a853156"></a>
@@ -323,17 +319,15 @@ Data Fields</h2></td></tr>
 
 <p>Timeout. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00788">788</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a></li>
+<li>openthread-master/include/openthread/<a class="el" href="types_8h_source.html">types.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:39 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

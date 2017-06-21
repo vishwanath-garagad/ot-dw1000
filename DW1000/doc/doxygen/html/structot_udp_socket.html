@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>otUdpSocket Struct Reference</title>
+<title>OT-DW1000: otUdpSocket Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -61,18 +62,18 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">otUdpSocket Struct Reference<div class="ingroups"><a class="el" href="group__api.html">API</a> &raquo; <a class="el" href="group__udp.html">UDP</a></div></div>  </div>
+<div class="title">otUdpSocket Struct Reference<div class="ingroups"><a class="el" href="group__api.html">API</a> &raquo; <a class="el" href="group__api-net.html">IPv6 Networking</a> &raquo; <a class="el" href="group__api-udp.html">UDP</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="udp_8h_source.html">udp.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for otUdpSocket:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structot_udp_socket.png" usemap="#otUdpSocket_map" alt=""/>
   <map id="otUdpSocket_map" name="otUdpSocket_map">
-<area href="class_thread_1_1_ip6_1_1_udp_socket.html" alt="UdpSocket" shape="rect" coords="0,56,82,80"/>
+<area href="classot_1_1_ip6_1_1_udp_socket.html" alt="UdpSocket" shape="rect" coords="0,56,82,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -84,7 +85,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a48678b53dbe8a958cf4087ffc5e78874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structot_sock_addr.html">otSockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_udp_socket.html#a48678b53dbe8a958cf4087ffc5e78874">mPeerName</a></td></tr>
 <tr class="memdesc:a48678b53dbe8a958cf4087ffc5e78874"><td class="mdescLeft">&#160;</td><td class="mdescRight">The peer IPv6 socket address.  <a href="#a48678b53dbe8a958cf4087ffc5e78874">More...</a><br /></td></tr>
 <tr class="separator:a48678b53dbe8a958cf4087ffc5e78874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab7bb97725fae4b0c7922703a18378f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__udp.html#gacff67ed83068976da50fdfd6efdeaa1f">otUdpReceive</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_udp_socket.html#aab7bb97725fae4b0c7922703a18378f9">mHandler</a></td></tr>
+<tr class="memitem:aab7bb97725fae4b0c7922703a18378f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-udp.html#gad6f6e0d606a8510cd082c6c57f42f4a1">otUdpReceive</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_udp_socket.html#aab7bb97725fae4b0c7922703a18378f9">mHandler</a></td></tr>
 <tr class="memdesc:aab7bb97725fae4b0c7922703a18378f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function pointer to the application callback.  <a href="#aab7bb97725fae4b0c7922703a18378f9">More...</a><br /></td></tr>
 <tr class="separator:aab7bb97725fae4b0c7922703a18378f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814892b21f57b7e896333599602ffbc3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_udp_socket.html#a814892b21f57b7e896333599602ffbc3">mContext</a></td></tr>
@@ -99,8 +100,6 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure represents a UDP socket. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l01032">1032</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a814892b21f57b7e896333599602ffbc3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a814892b21f57b7e896333599602ffbc3">&#9670;&nbsp;</a></span>mContext</h2>
@@ -116,8 +115,6 @@ Data Fields</h2></td></tr>
 
 <p>A pointer to application-specific context. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l01037">1037</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="aab7bb97725fae4b0c7922703a18378f9"></a>
@@ -127,14 +124,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__udp.html#gacff67ed83068976da50fdfd6efdeaa1f">otUdpReceive</a> mHandler</td>
+          <td class="memname"><a class="el" href="group__api-udp.html#gad6f6e0d606a8510cd082c6c57f42f4a1">otUdpReceive</a> mHandler</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>A function pointer to the application callback. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l01036">1036</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -152,8 +147,6 @@ Data Fields</h2></td></tr>
 
 <p>A pointer to the next UDP socket (internal use only). </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l01039">1039</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a48678b53dbe8a958cf4087ffc5e78874"></a>
@@ -169,8 +162,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The peer IPv6 socket address. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l01035">1035</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -188,8 +179,6 @@ Data Fields</h2></td></tr>
 
 <p>The local IPv6 socket address. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l01034">1034</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a692644e3c41a49be12ea78990ad0dbe2"></a>
@@ -206,17 +195,15 @@ Data Fields</h2></td></tr>
 
 <p>A pointer to the transport object (internal use only). </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l01038">1038</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a></li>
+<li>openthread-master/include/openthread/<a class="el" href="udp_8h_source.html">udp.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:39 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

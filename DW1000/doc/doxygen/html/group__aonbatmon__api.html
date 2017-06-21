@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aonbatmon_api</title>
+<title>OT-DW1000: Aonbatmon_api</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -106,8 +107,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="aon__batmon_8h_source.html#l00084">84</a> of file <a class="el" href="aon__batmon_8h_source.html">aon_batmon.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -135,8 +134,6 @@ Use the function <a class="el" href="group__aonbatmon__api.html#gabeccf6ef6b88b0
 <dl class="section return"><dt>Returns</dt><dd>Returns the current battery monitor value of the battery voltage measurement in a &lt;int.frac&gt; format size &lt;3.8&gt; in units of volt.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__aonbatmon__api.html#gabeccf6ef6b88b00badf4a162b10b3773" title="Check if battery monitor measurement has changed. ">AONBatMonNewBatteryMeasureReady()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="aon__batmon_8h_source.html#l00191">191</a> of file <a class="el" href="aon__batmon_8h_source.html">aon_batmon.h</a>.</p>
-
 </div>
 </div>
 <a id="gadfd12e252b726c999cecf34e1a603b41"></a>
@@ -158,8 +155,6 @@ Use the function <a class="el" href="group__aonbatmon__api.html#gabeccf6ef6b88b0
 <p>Disable the temperature and battery monitoring. </p>
 <p>This function will disable the measurements of the temperature and the battery voltage.</p>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="aon__batmon_8h_source.html#l00144">144</a> of file <a class="el" href="aon__batmon_8h_source.html">aon_batmon.h</a>.</p>
 
 </div>
 </div>
@@ -186,8 +181,6 @@ Use the function <a class="el" href="group__aonbatmon__api.html#gabeccf6ef6b88b0
 <dl class="section note"><dt>Note</dt><dd>Temperature and battery voltage measurements are not done in parallel. The measurement cycle is controlled by a hardware Finite State Machine. First the temperature and then the battery voltage each taking one cycle to complete. However, if the comparator measuring the battery voltage detects a change on the reference value, a new measurement of the battery voltage only is performed immediately after. This has no impact on the cycle count.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="aon__batmon_8h_source.html#l00123">123</a> of file <a class="el" href="aon__batmon_8h_source.html">aon_batmon.h</a>.</p>
-
 </div>
 </div>
 <a id="gabeccf6ef6b88b00badf4a162b10b3773"></a>
@@ -213,8 +206,6 @@ Use the function <a class="el" href="group__aonbatmon__api.html#gabeccf6ef6b88b0
 <dl class="section return"><dt>Returns</dt><dd>Returns <code>true</code> if the measurement value has changed and <code>false</code> otherwise.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__aonbatmon__api.html#ga71e8aded8a60625cec206365c10bb416" title="Check if temperature monitor measurement has changed. ">AONBatMonNewTempMeasureReady()</a>, <a class="el" href="group__aonbatmon__api.html#gaf790ac2c0ff8b0140529c053b07c2d67" title="Get the battery monitor measurement. ">AONBatMonBatteryVoltageGet()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="aon__batmon_8h_source.html#l00224">224</a> of file <a class="el" href="aon__batmon_8h_source.html">aon_batmon.h</a>.</p>
-
 </div>
 </div>
 <a id="ga71e8aded8a60625cec206365c10bb416"></a>
@@ -239,8 +230,6 @@ Use the function <a class="el" href="group__aonbatmon__api.html#gabeccf6ef6b88b0
 <dl class="section note"><dt>Note</dt><dd>It is always possible to read out the current value of the temperature using <a class="el" href="aon__batmon_8c.html#a19ba2c4e19b87a40629e0aa5642d5dd1">AONBatMonTemperatureGetDegC()</a> but this function can be used to check if the measurement has changed.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns <code>true</code> if the measurement value has changed and <code>false</code> otherwise.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__aonbatmon__api.html#gabeccf6ef6b88b00badf4a162b10b3773" title="Check if battery monitor measurement has changed. ">AONBatMonNewBatteryMeasureReady()</a>, <a class="el" href="group__aonbatmon__api.html#ga19ba2c4e19b87a40629e0aa5642d5dd1">AONBatMonTemperatureGetDegC()</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="aon__batmon_8h_source.html#l00269">269</a> of file <a class="el" href="aon__batmon_8h_source.html">aon_batmon.h</a>.</p>
 
 </div>
 </div>
@@ -268,14 +257,12 @@ Use the function <a class="el" href="group__aonbatmon__api.html#ga71e8aded8a6062
 <dl class="section return"><dt>Returns</dt><dd>Returns signed integer part of temperature in Deg C (-256 .. +255)</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__aonbatmon__api.html#ga71e8aded8a60625cec206365c10bb416" title="Check if temperature monitor measurement has changed. ">AONBatMonNewTempMeasureReady()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="aon__batmon_8c_source.html#l00060">60</a> of file <a class="el" href="aon__batmon_8c_source.html">aon_batmon.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:37 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:08 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -8,5 +8,8 @@ var searchData=
   ['qspi_5fucode_5fs',['qspi_ucode_s',['../structqspi__ucode__s.html',1,'']]],
   ['qspi_5fwrite_5ftype',['QSPI_WRITE_Type',['../struct_q_s_p_i___w_r_i_t_e___type.html',1,'']]],
   ['qspic_5ftype',['QSPIC_Type',['../struct_q_s_p_i_c___type.html',1,'']]],
-  ['quad_5ftype',['QUAD_Type',['../struct_q_u_a_d___type.html',1,'']]]
+  ['quad_5ftype',['QUAD_Type',['../struct_q_u_a_d___type.html',1,'']]],
+  ['querymetadata',['QueryMetadata',['../classot_1_1_dns_1_1_query_metadata.html',1,'ot::Dns']]],
+  ['question',['Question',['../classot_1_1_dns_1_1_question.html',1,'ot::Dns']]],
+  ['questionaaaa',['QuestionAaaa',['../classot_1_1_dns_1_1_question_aaaa.html',1,'ot::Dns']]]
 ];

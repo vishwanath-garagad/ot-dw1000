@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>examples/drivers/windows/otLwf/iocontrol.c File Reference</title>
+<title>OT-DW1000: openthread-master/examples/drivers/windows/otLwf/iocontrol.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_757d408b91fe77c0d6541574880c2422.html">drivers</a></li><li class="navelem"><a class="el" href="dir_2241398f140824e7a05e00f2ce66418d.html">windows</a></li><li class="navelem"><a class="el" href="dir_a0359699c7e7a236fc9778c284a07817.html">otLwf</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_3a4200dec5d2fc89ce94e5472198e7a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_f008ccfebca6b1721ca65dcf50715dd5.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a7733a9637be92d1f239c18e2519fad4.html">windows</a></li><li class="navelem"><a class="el" href="dir_bfd46bc989430388275c68f6255e9095.html">otLwf</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,14 +74,12 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="ot_lwf_2precomp_8h_source.html">precomp.h</a>&quot;</code><br />
 <code>#include &quot;iocontrol.tmh&quot;</code><br />
-</div>
-<p><a href="iocontrol_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6f83b3ac940ab53527f240a88e66ff31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iocontrol_8c.html#a6f83b3ac940ab53527f240a88e66ff31">RSSI_OVERRIDE_DISABLED</a>&#160;&#160;&#160;127</td></tr>
 <tr class="separator:a6f83b3ac940ab53527f240a88e66ff31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a14352289ebc7eceb0868a17f69c27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iocontrol_8c.html#a44a14352289ebc7eceb0868a17f69c27">IsNotNullTerminated</a>(buf)&#160;&#160;&#160;(<a class="el" href="spinel_8c.html#a6bd766a5e6cefc1f45487ca1e870741f">strnlen</a>(buf, sizeof(buf)) == sizeof(buf))</td></tr>
+<tr class="memitem:a44a14352289ebc7eceb0868a17f69c27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iocontrol_8c.html#a44a14352289ebc7eceb0868a17f69c27">IsNotNullTerminated</a>(buf)&#160;&#160;&#160;(<a class="el" href="wrap__string_8h.html#ac5bf628e4f2a40dc496dfae75de8cc4f">strnlen</a>(buf, sizeof(buf)) == sizeof(buf))</td></tr>
 <tr class="separator:a44a14352289ebc7eceb0868a17f69c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -134,7 +133,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">buf</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="spinel_8c.html#a6bd766a5e6cefc1f45487ca1e870741f">strnlen</a>(buf, sizeof(buf)) == sizeof(buf))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="wrap__string_8h.html#ac5bf628e4f2a40dc496dfae75de8cc4f">strnlen</a>(buf, sizeof(buf)) == sizeof(buf))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -152,8 +151,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l03473">3473</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
 
 </div>
 </div>
@@ -176,8 +173,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fcea86bb67e4a0e31443460395799604c916"></a>kThreadMode_FullNetworkData&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l01541">1541</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -197,8 +192,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l00032">32</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 <a id="ac12c0a96e8098df477a86a0390f87ebd"></a>
@@ -216,8 +209,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l00534">534</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
 
 </div>
 </div>
@@ -237,8 +228,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l00147">147</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -254,8 +243,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l00046">46</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 <a id="ae03c2cc5cfccd9ba276e6f38e07fae8a"></a>
@@ -269,8 +256,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l02511">2511</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
 
 </div>
 </div>
@@ -286,8 +271,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l02512">2512</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 <a id="a977287106d90993e9a0214ec24feec95"></a>
@@ -301,8 +284,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l02510">2510</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
 
 </div>
 </div>
@@ -318,8 +299,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l02513">2513</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 <a id="a4c63210e7afdbce04d696d1fd7ae5956"></a>
@@ -333,8 +312,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l02506">2506</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
 
 </div>
 </div>
@@ -350,8 +327,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l02508">2508</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 <a id="a3ec626bc63d37c60dd42b132ea09ea93"></a>
@@ -365,8 +340,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l02509">2509</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
 
 </div>
 </div>
@@ -382,14 +355,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iocontrol_8c_source.html#l00044">44</a> of file <a class="el" href="iocontrol_8c_source.html">iocontrol.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

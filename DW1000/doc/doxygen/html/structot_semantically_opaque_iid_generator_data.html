@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>otSemanticallyOpaqueIidGeneratorData Struct Reference</title>
+<title>OT-DW1000: otSemanticallyOpaqueIidGeneratorData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -65,14 +66,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for otSemanticallyOpaqueIidGeneratorData:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structot_semantically_opaque_iid_generator_data.png" usemap="#otSemanticallyOpaqueIidGeneratorData_map" alt=""/>
   <map id="otSemanticallyOpaqueIidGeneratorData_map" name="otSemanticallyOpaqueIidGeneratorData_map">
-<area href="class_thread_1_1_utils_1_1_semantically_opaque_iid_generator.html" alt="SemanticallyOpaqueIidGenerator" shape="rect" coords="0,56,233,80"/>
+<area href="classot_1_1_utils_1_1_semantically_opaque_iid_generator.html" alt="SemanticallyOpaqueIidGenerator" shape="rect" coords="0,56,233,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -102,8 +103,6 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure represents data used by Semantically Opaque IID Generator. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00948">948</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a0b0847516dc5103efe95413be768e461"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b0847516dc5103efe95413be768e461">&#9670;&nbsp;</a></span>mDadCounter</h2>
@@ -118,8 +117,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Duplicate address detection counter. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00956">956</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -137,8 +134,6 @@ Data Fields</h2></td></tr>
 
 <p>String of bytes representing interface ID. Like "eth0" or "wlan0". </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00950">950</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a056bacacfb7e4e1d8dfba1b89eb096cc"></a>
@@ -154,8 +149,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of interface ID string. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00951">951</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -173,8 +166,6 @@ Data Fields</h2></td></tr>
 
 <p>Network ID (or name). Can be null if mNetworkIdLength is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00953">953</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a392485f46b1d2bb0da2fb9e2949348c2"></a>
@@ -190,8 +181,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of Network ID string. </p>
-
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00954">954</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
 
 </div>
 </div>
@@ -209,8 +198,6 @@ Data Fields</h2></td></tr>
 
 <p>Secret key used to create IID. Cannot be null. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00958">958</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <a id="a46806ca3279167f2238077500e353ca1"></a>
@@ -227,17 +214,15 @@ Data Fields</h2></td></tr>
 
 <p>Secret key length in bytes. Should be at least 16 bytes == 128 bits. </p>
 
-<p class="definition">Definition at line <a class="el" href="openthread-types_8h_source.html#l00959">959</a> of file <a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a></li>
+<li>openthread-master/include/openthread/<a class="el" href="types_8h_source.html">types.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:39 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:09 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

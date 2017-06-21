@@ -1,9 +1,17 @@
 var searchData=
 [
-  ['panid',['PanId',['../group__core-mac.html#gae3fed85680fe94a34da58ae5a4654b9b',1,'Thread::Mac']]],
+  ['panic_5ffptr',['panic_fptr',['../group__xcvr.html#ga60e13c6e2a003a65b1de88e3464e0f78',1,'fsl_xcvr.h']]],
+  ['panid',['PanId',['../group__core-mac.html#gae3fed85680fe94a34da58ae5a4654b9b',1,'ot::Mac']]],
   ['pfilter_5fnotification_5fentry',['PFILTER_NOTIFICATION_ENTRY',['../device_8h.html#ab517b8566afa255bf3c2e1a3363a314d',1,'device.h']]],
-  ['phystate',['PhyState',['../group__radio-types.html#gae4fc9607be8fe78429890574e85da2e1',1,'radio.h']]],
+  ['pflash_5fprotection_5fstatus_5flow_5ft',['pflash_protection_status_low_t',['../group__flash__driver.html#ga14a45f73a4290889b94ee2b6501242ec',1,'fsl_flash.h']]],
+  ['pflash_5fprotection_5fstatus_5ft',['pflash_protection_status_t',['../group__flash__driver.html#gab30d00073defe79ddbcb3f952522dda2',1,'fsl_flash.h']]],
   ['pip_5faddress_5fstorage',['PIP_ADDRESS_STORAGE',['../nsihelper_8h.html#ab0e03c386bc26b750b8d5c687352e73a',1,'nsihelper.h']]],
+  ['pit_5fchnl_5ft',['pit_chnl_t',['../group__pit.html#gadda15e462fb93f2eea6237cab74dc7ca',1,'fsl_pit.h']]],
+  ['pit_5fconfig_5ft',['pit_config_t',['../group__pit.html#ga767a81b02a29e189c563188dd467a67b',1,'fsl_pit.h']]],
+  ['pit_5finterrupt_5fenable_5ft',['pit_interrupt_enable_t',['../group__pit.html#gae6b70a879fb84816fb40294c9e42846d',1,'fsl_pit.h']]],
+  ['pit_5fstatus_5fflags_5ft',['pit_status_flags_t',['../group__pit.html#ga8f00d842bb7b1921ac26313e13dc75ba',1,'fsl_pit.h']]],
+  ['pmc_5flow_5fvolt_5fdetect_5fconfig_5ft',['pmc_low_volt_detect_config_t',['../group__pmc.html#ga6614b7fa35b6399db446c0d0e7304406',1,'fsl_pmc.h']]],
+  ['pmc_5flow_5fvolt_5fwarning_5fconfig_5ft',['pmc_low_volt_warning_config_t',['../group__pmc.html#ga8e06305a65f64f60fa3290e2d09123f7',1,'fsl_pmc.h']]],
   ['pms_5ffilter',['PMS_FILTER',['../filter_8h.html#ab062a6a5f0fe7dc4e2801ed6d6a6ab5e',1,'PMS_FILTER():&#160;filter.h'],['../ot_lwf_2precomp_8h.html#a825d1f36245e605fb0442db724859e95',1,'PMS_FILTER():&#160;precomp.h']]],
   ['pndis_5fnsi_5finterface_5finformation_5frod',['PNDIS_NSI_INTERFACE_INFORMATION_ROD',['../nsihelper_8h.html#a99bde5140c2cc6b70a39666cce0146c2',1,'nsihelper.h']]],
   ['pndis_5fnsi_5finterface_5finformation_5frw',['PNDIS_NSI_INTERFACE_INFORMATION_RW',['../nsihelper_8h.html#a524771b54ec9ee5a31fd369040f20758',1,'nsihelper.h']]],
@@ -13,6 +21,8 @@ var searchData=
   ['pnl_5finterface_5frw',['PNL_INTERFACE_RW',['../nsihelper_8h.html#a5521f5df27217a46451f3b889950c84d',1,'nsihelper.h']]],
   ['pnl_5finternet_5fconnectivity_5fstatus',['PNL_INTERNET_CONNECTIVITY_STATUS',['../nsihelper_8h.html#af61eafede3f23f798d0281ae182730f4',1,'nsihelper.h']]],
   ['pnl_5fobject_5ftype',['PNL_OBJECT_TYPE',['../nsihelper_8h.html#ad1cba8a6d66fb89a4ae2e0739fc71da6',1,'nsihelper.h']]],
+  ['port_5fctrl',['PORT_CTRL',['../dw__gpio_8h.html#aa20cb73d59515f63de57fa2c877b3a58',1,'dw_gpio.h']]],
+  ['port_5finterrupt_5ft',['port_interrupt_t',['../group__port.html#gaeb69517ed6497ab54c133fd9992c1842',1,'fsl_port.h']]],
   ['pot_5fcapabilities',['POT_CAPABILITIES',['../ot_o_i_d_8h.html#a1a4d26969a1714b51b82bf1f81c98d92',1,'otOID.h']]],
   ['pot_5fcurrent_5fchannel',['POT_CURRENT_CHANNEL',['../ot_o_i_d_8h.html#a072da96696e06efc455cbb8d73ca6388',1,'otOID.h']]],
   ['pot_5fenergy_5fscan',['POT_ENERGY_SCAN',['../ot_o_i_d_8h.html#aba416de76e753eebb640a4247225adc2',1,'otOID.h']]],
@@ -36,6 +46,7 @@ var searchData=
   ['potlwf_5fnotification',['POTLWF_NOTIFICATION',['../ot_lwf_ioctl_8h.html#acd7613dd97cebfa4c25076406c26d74a',1,'otLwfIoctl.h']]],
   ['pottmp_5fadapter_5fcontext',['POTTMP_ADAPTER_CONTEXT',['../adapter_8hpp.html#a430f21e00caf90055e9424405971b61e',1,'POTTMP_ADAPTER_CONTEXT():&#160;adapter.hpp'],['../pch_8hpp.html#a0e75641c625dc6803c9db5cf6d8d2e13',1,'POTTMP_ADAPTER_CONTEXT():&#160;pch.hpp']]],
   ['pottmp_5fdevice_5fcontext',['POTTMP_DEVICE_CONTEXT',['../device_8hpp.html#aa8770ec4a53142739adab145ad6de174',1,'POTTMP_DEVICE_CONTEXT():&#160;device.hpp'],['../pch_8hpp.html#a92aaee0c84377cb72d3d3c17c2d2d750',1,'POTTMP_DEVICE_CONTEXT():&#160;pch.hpp']]],
+  ['processor_5fframe',['PROCESSOR_FRAME',['../group___a_r_c___h_a_l___e_x_c_e_p_t_i_o_n___c_p_u.html#gad9bfc2f63beb1dc4db9ee2897ac9952f',1,'arc_exception.h']]],
   ['pserial_5fsend_5fitem',['PSERIAL_SEND_ITEM',['../adapter_8hpp.html#abc771d7c758637070916fb1db9b88703',1,'adapter.hpp']]],
   ['pwdf_5fdevice_5finfo',['PWDF_DEVICE_INFO',['../adapter_8hpp.html#aebb468731791c8f9fbf1983d7704a4a0',1,'adapter.hpp']]]
 ];

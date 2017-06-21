@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tests/unit/test_platform.cpp File Reference</title>
+<title>OT-DW1000: openthread-master/tests/unit/test_platform.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7711e90abc3d4bd55823d9013a185d04.html">unit</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_8cddc98a40eca39295af8c55be011434.html">tests</a></li><li class="navelem"><a class="el" href="dir_a68a9469982966d32b5c56cd47770a06.html">unit</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,20 +72,18 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="test__platform_8h_source.html">test_platform.h</a>&quot;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
-</div>
-<p><a href="test__platform_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af9af4ecd085d05093681d78ffb0065a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#af9af4ecd085d05093681d78ffb0065a7">testPlatResetToDefaults</a> (void)</td></tr>
 <tr class="separator:af9af4ecd085d05093681d78ffb0065a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04d5608ac68a78eb3e8fc167587c61f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__execution.html#ga04d5608ac68a78eb3e8fc167587c61f3">otSignalTaskletPending</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
-<tr class="separator:ga04d5608ac68a78eb3e8fc167587c61f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga68278ebdaa8b35f1bb305649708f061a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga68278ebdaa8b35f1bb305649708f061a">otPlatAlarmStop</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memitem:ga504d39f61afb73805cb9452695fdbdb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-tasklets.html#ga504d39f61afb73805cb9452695fdbdb0">otTaskletsSignalPending</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
+<tr class="separator:ga504d39f61afb73805cb9452695fdbdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68278ebdaa8b35f1bb305649708f061a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-alarm.html#ga68278ebdaa8b35f1bb305649708f061a">otPlatAlarmStop</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga68278ebdaa8b35f1bb305649708f061a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9b96ec4fe6a41ad8ba4ac91fd861f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gab9b96ec4fe6a41ad8ba4ac91fd861f53">otPlatAlarmStartAt</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aT0, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aDt)</td></tr>
+<tr class="memitem:gab9b96ec4fe6a41ad8ba4ac91fd861f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-alarm.html#gab9b96ec4fe6a41ad8ba4ac91fd861f53">otPlatAlarmStartAt</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aT0, <a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> aDt)</td></tr>
 <tr class="separator:gab9b96ec4fe6a41ad8ba4ac91fd861f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8829e3591e03e29e136685fcdeb3300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gaf8829e3591e03e29e136685fcdeb3300">otPlatAlarmGetNow</a> (void)</td></tr>
+<tr class="memitem:gaf8829e3591e03e29e136685fcdeb3300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-alarm.html#gaf8829e3591e03e29e136685fcdeb3300">otPlatAlarmGetNow</a> (void)</td></tr>
 <tr class="separator:gaf8829e3591e03e29e136685fcdeb3300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6940d730c862fae890f3a2912000002d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-config.html#ga6940d730c862fae890f3a2912000002d">otPlatRadioGetIeeeEui64</a> (<a class="el" href="structot_instance.html">otInstance</a> *, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
 <tr class="separator:ga6940d730c862fae890f3a2912000002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,18 +97,18 @@ Functions</h2></td></tr>
 <tr class="separator:ga0a905ad5c76c5931ee2ef395342f0dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf26840dd6a3c6bd1da7156127c8306f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaf26840dd6a3c6bd1da7156127c8306f5">otPlatRadioIsEnabled</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:gaf26840dd6a3c6bd1da7156127c8306f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2f1f79b0fe0bb9015fd996c723ed52e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gad2f1f79b0fe0bb9015fd996c723ed52e">otPlatRadioEnable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:gad2f1f79b0fe0bb9015fd996c723ed52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b14c6db562150d0a80c47ef278e5ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5b14c6db562150d0a80c47ef278e5ab8">otPlatRadioDisable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ga5b14c6db562150d0a80c47ef278e5ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga979f5ee2e63f0cba66f372149b2ac013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga979f5ee2e63f0cba66f372149b2ac013">otPlatRadioSleep</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
-<tr class="separator:ga979f5ee2e63f0cba66f372149b2ac013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga063a389dc7d1e68cbe495cc3cff758c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga063a389dc7d1e68cbe495cc3cff758c1">otPlatRadioReceive</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
-<tr class="separator:ga063a389dc7d1e68cbe495cc3cff758c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03fb7cf07043b47e23735e490b6372a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga03fb7cf07043b47e23735e490b6372a0">otPlatRadioTransmit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *aPacket)</td></tr>
-<tr class="separator:ga03fb7cf07043b47e23735e490b6372a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe1fdf44907fccdb06be0db517d4fb01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_radio_packet.html">RadioPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gafe1fdf44907fccdb06be0db517d4fb01">otPlatRadioGetTransmitBuffer</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:gafe1fdf44907fccdb06be0db517d4fb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfe31d09ed784e1799cb43187b302c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gabfe31d09ed784e1799cb43187b302c8d">otPlatRadioEnable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gabfe31d09ed784e1799cb43187b302c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0fef7e3418e4568f9b568f65848eff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gad0fef7e3418e4568f9b568f65848eff0">otPlatRadioDisable</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gad0fef7e3418e4568f9b568f65848eff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b64d6357b07b8db540e3679155285b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga4b64d6357b07b8db540e3679155285b2">otPlatRadioSleep</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
+<tr class="separator:ga4b64d6357b07b8db540e3679155285b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga315627b370d8ff89ea101d6529911be7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga315627b370d8ff89ea101d6529911be7">otPlatRadioReceive</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> aChannel)</td></tr>
+<tr class="separator:ga315627b370d8ff89ea101d6529911be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcd90257ecef86b069b91987c53da694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gadcd90257ecef86b069b91987c53da694">otPlatRadioTransmit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *aFrame)</td></tr>
+<tr class="separator:gadcd90257ecef86b069b91987c53da694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeab4fb61100d446642492d8fbe58dea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structot_radio_frame.html">otRadioFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaaeab4fb61100d446642492d8fbe58dea">otPlatRadioGetTransmitBuffer</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gaaeab4fb61100d446642492d8fbe58dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ac10bba73d06f59af623bbb3349d3fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga4ac10bba73d06f59af623bbb3349d3fb">otPlatRadioGetRssi</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
 <tr class="separator:ga4ac10bba73d06f59af623bbb3349d3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a5999dadb6ac0ee70a69a960930f132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5a5999dadb6ac0ee70a69a960930f132">otPlatRadioGetCaps</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
@@ -118,72 +117,76 @@ Functions</h2></td></tr>
 <tr class="separator:gaef6191a2f5c0dd177dc009dae3796e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb1f75e02a0c91b2db8e1325e8575861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gabb1f75e02a0c91b2db8e1325e8575861">otPlatRadioEnableSrcMatch</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aEnable)</td></tr>
 <tr class="separator:gabb1f75e02a0c91b2db8e1325e8575861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e1cf45dd77ef0608056f2e9cf992d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5e1cf45dd77ef0608056f2e9cf992d8d">otPlatRadioAddSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
-<tr class="separator:ga5e1cf45dd77ef0608056f2e9cf992d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f24dc46cba2235b6dea0670df50a5c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga3f24dc46cba2235b6dea0670df50a5c2">otPlatRadioAddSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
-<tr class="separator:ga3f24dc46cba2235b6dea0670df50a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga923d941e8a4d37be5d41de6be4fc275f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga923d941e8a4d37be5d41de6be4fc275f">otPlatRadioClearSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
-<tr class="separator:ga923d941e8a4d37be5d41de6be4fc275f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57238173bfc0ad9cce66e999f9ad3234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga57238173bfc0ad9cce66e999f9ad3234">otPlatRadioClearSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
-<tr class="separator:ga57238173bfc0ad9cce66e999f9ad3234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f53926a91fdef11329a8c3b2e3aecfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga8f53926a91fdef11329a8c3b2e3aecfc">otPlatRadioAddSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
+<tr class="separator:ga8f53926a91fdef11329a8c3b2e3aecfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac924003fc3bc21a86ab2e2efbbfdddc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gac924003fc3bc21a86ab2e2efbbfdddc3">otPlatRadioAddSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
+<tr class="separator:gac924003fc3bc21a86ab2e2efbbfdddc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89ec142cb8988bf06b825b9e85879460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga89ec142cb8988bf06b825b9e85879460">otPlatRadioClearSrcMatchShortEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aShortAddress)</td></tr>
+<tr class="separator:ga89ec142cb8988bf06b825b9e85879460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9d428bf1e47845d327d48b910ab6c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga6c9d428bf1e47845d327d48b910ab6c2">otPlatRadioClearSrcMatchExtEntry</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aExtAddress)</td></tr>
+<tr class="separator:ga6c9d428bf1e47845d327d48b910ab6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95d8f1c200b49f481d117765ec7a66d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga95d8f1c200b49f481d117765ec7a66d4">otPlatRadioClearSrcMatchShortEntries</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga95d8f1c200b49f481d117765ec7a66d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f50253b5f4847da0444a001e014ba65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga3f50253b5f4847da0444a001e014ba65">otPlatRadioClearSrcMatchExtEntries</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
 <tr class="separator:ga3f50253b5f4847da0444a001e014ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3b9ed222f4ad93e1d09e285b57be1ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gae3b9ed222f4ad93e1d09e285b57be1ef">otPlatRadioEnergyScan</a> (<a class="el" href="structot_instance.html">otInstance</a> *, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)</td></tr>
-<tr class="separator:gae3b9ed222f4ad93e1d09e285b57be1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa20820ca4e6e1ce8cd47ded9762b14ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__random.html#gaa20820ca4e6e1ce8cd47ded9762b14ca">otPlatRandomGet</a> (void)</td></tr>
+<tr class="memitem:ga9fc070f8dc28f13a78e621b8131f4762"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga9fc070f8dc28f13a78e621b8131f4762">otPlatRadioEnergyScan</a> (<a class="el" href="structot_instance.html">otInstance</a> *, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)</td></tr>
+<tr class="separator:ga9fc070f8dc28f13a78e621b8131f4762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a3c8fe726a4ab0b28435b2f7b0bb8dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga5a3c8fe726a4ab0b28435b2f7b0bb8dd">otPlatRadioSetDefaultTxPower</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> aPower)</td></tr>
+<tr class="separator:ga5a3c8fe726a4ab0b28435b2f7b0bb8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71b5cc59aaead9fc2e42b4907392a664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga71b5cc59aaead9fc2e42b4907392a664">otPlatRadioGetReceiveSensitivity</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga71b5cc59aaead9fc2e42b4907392a664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa20820ca4e6e1ce8cd47ded9762b14ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-random.html#gaa20820ca4e6e1ce8cd47ded9762b14ca">otPlatRandomGet</a> (void)</td></tr>
 <tr class="separator:gaa20820ca4e6e1ce8cd47ded9762b14ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad05a02879d22d5fb3f69f523b0667f10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__random.html#gad05a02879d22d5fb3f69f523b0667f10">otPlatRandomSecureGet</a> (<a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aInputLength, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aOutput, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *aOutputLength)</td></tr>
-<tr class="separator:gad05a02879d22d5fb3f69f523b0667f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09e3cc83c3548fd0a9f4536324276028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-random.html#ga09e3cc83c3548fd0a9f4536324276028">otPlatRandomGetTrue</a> (<a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aOutput, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aOutputLength)</td></tr>
+<tr class="separator:ga09e3cc83c3548fd0a9f4536324276028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c94320fbe57f6d0cd4db2828852b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a60c94320fbe57f6d0cd4db2828852b7c">otPlatDiagProcess</a> (int argc, char *argv[], char *aOutput)</td></tr>
 <tr class="separator:a60c94320fbe57f6d0cd4db2828852b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac43ce755f483330b1caaa62d45c87bd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#gac43ce755f483330b1caaa62d45c87bd3">otPlatDiagModeSet</a> (<a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aMode)</td></tr>
+<tr class="memitem:gac43ce755f483330b1caaa62d45c87bd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#gac43ce755f483330b1caaa62d45c87bd3">otPlatDiagModeSet</a> (<a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> aMode)</td></tr>
 <tr class="separator:gac43ce755f483330b1caaa62d45c87bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9dbb920bd0361e88c9a9b22cf18ee254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__diag.html#ga9dbb920bd0361e88c9a9b22cf18ee254">otPlatDiagModeGet</a> ()</td></tr>
+<tr class="memitem:ga9dbb920bd0361e88c9a9b22cf18ee254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-factory-diagnostics.html#ga9dbb920bd0361e88c9a9b22cf18ee254">otPlatDiagModeGet</a> ()</td></tr>
 <tr class="separator:ga9dbb920bd0361e88c9a9b22cf18ee254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf1f0acac2fd94a3434b64dd09bf49e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gacf1f0acac2fd94a3434b64dd09bf49e9">otPlatDiagAlarmFired</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
+<tr class="memitem:gacf1f0acac2fd94a3434b64dd09bf49e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-alarm.html#gacf1f0acac2fd94a3434b64dd09bf49e9">otPlatDiagAlarmFired</a> (<a class="el" href="structot_instance.html">otInstance</a> *)</td></tr>
 <tr class="separator:gacf1f0acac2fd94a3434b64dd09bf49e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32d56bf3d7825d4ff3f50d6e9c186007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#ga32d56bf3d7825d4ff3f50d6e9c186007">otPlatDiagRadioTransmitDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>)</td></tr>
-<tr class="separator:ga32d56bf3d7825d4ff3f50d6e9c186007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0be6d07fec8fccc00da07a29d698d6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaa0be6d07fec8fccc00da07a29d698d6d">otPlatDiagRadioReceiveDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *, <a class="el" href="struct_radio_packet.html">RadioPacket</a> *, <a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>)</td></tr>
-<tr class="separator:gaa0be6d07fec8fccc00da07a29d698d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2950583380bb90a3779f980c28fbaa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#gab2950583380bb90a3779f980c28fbaa0">otPlatUartSendDone</a> (void)</td></tr>
+<tr class="memitem:gaeb80a809d0eb66480cee3d1802a6680a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gaeb80a809d0eb66480cee3d1802a6680a">otPlatDiagRadioTransmitDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *, <a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>)</td></tr>
+<tr class="separator:gaeb80a809d0eb66480cee3d1802a6680a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1c786ec198169be810d3763a09e9b92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__radio-operation.html#gac1c786ec198169be810d3763a09e9b92">otPlatDiagRadioReceiveDone</a> (<a class="el" href="structot_instance.html">otInstance</a> *, <a class="el" href="structot_radio_frame.html">otRadioFrame</a> *, <a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>)</td></tr>
+<tr class="separator:gac1c786ec198169be810d3763a09e9b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2950583380bb90a3779f980c28fbaa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#gab2950583380bb90a3779f980c28fbaa0">otPlatUartSendDone</a> (void)</td></tr>
 <tr class="separator:gab2950583380bb90a3779f980c28fbaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2aec94bad212a6bd72bc82fe310eaca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart.html#ga2aec94bad212a6bd72bc82fe310eaca2">otPlatUartReceived</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)</td></tr>
+<tr class="memitem:ga2aec94bad212a6bd72bc82fe310eaca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-uart.html#ga2aec94bad212a6bd72bc82fe310eaca2">otPlatUartReceived</a> (const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)</td></tr>
 <tr class="separator:ga2aec94bad212a6bd72bc82fe310eaca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5e33121dff7942b201db3cc37e9e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a6e5e33121dff7942b201db3cc37e9e86">otPlatReset</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:a6e5e33121dff7942b201db3cc37e9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26ce83d07357b4c94234a5c12aff289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#ab26ce83d07357b4c94234a5c12aff289">otPlatGetResetReason</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:ab26ce83d07357b4c94234a5c12aff289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada6f3e6235ef97eb169bccb45755fd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#gada6f3e6235ef97eb169bccb45755fd5a">otPlatLog</a> (<a class="el" href="group__logging.html#ga84a41d6b28556e61b4dd8b508472ab13">otLogLevel</a>, <a class="el" href="group__logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a>, const char *,...)</td></tr>
+<tr class="memitem:ga6e5e33121dff7942b201db3cc37e9e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-misc.html#ga6e5e33121dff7942b201db3cc37e9e86">otPlatReset</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga6e5e33121dff7942b201db3cc37e9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab26ce83d07357b4c94234a5c12aff289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__plat-misc.html#ga0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-misc.html#gab26ce83d07357b4c94234a5c12aff289">otPlatGetResetReason</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:gab26ce83d07357b4c94234a5c12aff289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada6f3e6235ef97eb169bccb45755fd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#gada6f3e6235ef97eb169bccb45755fd5a">otPlatLog</a> (<a class="el" href="group__plat-logging.html#ga541df22d7943d447bc99f16f517f6abd">otLogLevel</a>, <a class="el" href="group__plat-logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a>, const char *,...)</td></tr>
 <tr class="separator:gada6f3e6235ef97eb169bccb45755fd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915799404344a36bcb0b9d4ca301d938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a915799404344a36bcb0b9d4ca301d938">otPlatSettingsInit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:a915799404344a36bcb0b9d4ca301d938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a0a8c17d95538396928be7af8aafd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#ac6a0a8c17d95538396928be7af8aafd7">otPlatSettingsBeginChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:ac6a0a8c17d95538396928be7af8aafd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin atomic change set.  <a href="#ac6a0a8c17d95538396928be7af8aafd7">More...</a><br /></td></tr>
-<tr class="separator:ac6a0a8c17d95538396928be7af8aafd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32d1d192f55898281e8924ad33e1d395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a32d1d192f55898281e8924ad33e1d395">otPlatSettingsCommitChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:a32d1d192f55898281e8924ad33e1d395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="#a32d1d192f55898281e8924ad33e1d395">More...</a><br /></td></tr>
-<tr class="separator:a32d1d192f55898281e8924ad33e1d395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6526eedcd9a6e0d249f76c7020d3e4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#ae6526eedcd9a6e0d249f76c7020d3e4e">otPlatSettingsAbandonChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:ae6526eedcd9a6e0d249f76c7020d3e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abandon all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="#ae6526eedcd9a6e0d249f76c7020d3e4e">More...</a><br /></td></tr>
-<tr class="separator:ae6526eedcd9a6e0d249f76c7020d3e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22beca78bce58103b2c0e1059add0cf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a22beca78bce58103b2c0e1059add0cf8">otPlatSettingsGet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *aValueLength)</td></tr>
-<tr class="memdesc:a22beca78bce58103b2c0e1059add0cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the value of a setting.  <a href="#a22beca78bce58103b2c0e1059add0cf8">More...</a><br /></td></tr>
-<tr class="separator:a22beca78bce58103b2c0e1059add0cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5bb3c9a196271b055b3275be0c2b68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a4c5bb3c9a196271b055b3275be0c2b68">otPlatSettingsSet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
-<tr class="memdesc:a4c5bb3c9a196271b055b3275be0c2b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or replaces the value of a setting.  <a href="#a4c5bb3c9a196271b055b3275be0c2b68">More...</a><br /></td></tr>
-<tr class="separator:a4c5bb3c9a196271b055b3275be0c2b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b4717038f891793776e7e09d61cf33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a79b4717038f891793776e7e09d61cf33">otPlatSettingsAdd</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
-<tr class="memdesc:a79b4717038f891793776e7e09d61cf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a value to a setting.  <a href="#a79b4717038f891793776e7e09d61cf33">More...</a><br /></td></tr>
-<tr class="separator:a79b4717038f891793776e7e09d61cf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12607e0b29be777cf24d878702197b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a12607e0b29be777cf24d878702197b83">otPlatSettingsDelete</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex)</td></tr>
-<tr class="memdesc:a12607e0b29be777cf24d878702197b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a setting from the setting store.  <a href="#a12607e0b29be777cf24d878702197b83">More...</a><br /></td></tr>
-<tr class="separator:a12607e0b29be777cf24d878702197b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9512db56b3712ba7b5a263e0280fa20a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a9512db56b3712ba7b5a263e0280fa20a">otPlatSettingsWipe</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:a9512db56b3712ba7b5a263e0280fa20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all settings from the setting store.  <a href="#a9512db56b3712ba7b5a263e0280fa20a">More...</a><br /></td></tr>
-<tr class="separator:a9512db56b3712ba7b5a263e0280fa20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga915799404344a36bcb0b9d4ca301d938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga915799404344a36bcb0b9d4ca301d938">otPlatSettingsInit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga915799404344a36bcb0b9d4ca301d938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79ac3141a0829914c01ddae3c3a2bab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3">otPlatSettingsBeginChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:ga79ac3141a0829914c01ddae3c3a2bab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin atomic change set.  <a href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3">More...</a><br /></td></tr>
+<tr class="separator:ga79ac3141a0829914c01ddae3c3a2bab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga293c86fc237c1cda20017c67cb8d8d54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga293c86fc237c1cda20017c67cb8d8d54">otPlatSettingsCommitChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:ga293c86fc237c1cda20017c67cb8d8d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit all settings changes since previous call to <a class="el" href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="group__plat-settings.html#ga293c86fc237c1cda20017c67cb8d8d54">More...</a><br /></td></tr>
+<tr class="separator:ga293c86fc237c1cda20017c67cb8d8d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7e58191d678ae7bfd43814d003c6a6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#gab7e58191d678ae7bfd43814d003c6a6e">otPlatSettingsAbandonChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:gab7e58191d678ae7bfd43814d003c6a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abandon all settings changes since previous call to <a class="el" href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="group__plat-settings.html#gab7e58191d678ae7bfd43814d003c6a6e">More...</a><br /></td></tr>
+<tr class="separator:gab7e58191d678ae7bfd43814d003c6a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0fa57fbb3dd2aafe0bb2af52518ee04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#gad0fa57fbb3dd2aafe0bb2af52518ee04">otPlatSettingsGet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *aValueLength)</td></tr>
+<tr class="memdesc:gad0fa57fbb3dd2aafe0bb2af52518ee04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the value of a setting.  <a href="group__plat-settings.html#gad0fa57fbb3dd2aafe0bb2af52518ee04">More...</a><br /></td></tr>
+<tr class="separator:gad0fa57fbb3dd2aafe0bb2af52518ee04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8de8672dce112939ef04d0b4b182bbe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga8de8672dce112939ef04d0b4b182bbe3">otPlatSettingsSet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
+<tr class="memdesc:ga8de8672dce112939ef04d0b4b182bbe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or replaces the value of a setting.  <a href="group__plat-settings.html#ga8de8672dce112939ef04d0b4b182bbe3">More...</a><br /></td></tr>
+<tr class="separator:ga8de8672dce112939ef04d0b4b182bbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79f95407a75ed792af8058a164552c1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga79f95407a75ed792af8058a164552c1e">otPlatSettingsAdd</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
+<tr class="memdesc:ga79f95407a75ed792af8058a164552c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a value to a setting.  <a href="group__plat-settings.html#ga79f95407a75ed792af8058a164552c1e">More...</a><br /></td></tr>
+<tr class="separator:ga79f95407a75ed792af8058a164552c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaef25d37f98fabe792cebaf5b60dab2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#gaeaef25d37f98fabe792cebaf5b60dab2">otPlatSettingsDelete</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex)</td></tr>
+<tr class="memdesc:gaeaef25d37f98fabe792cebaf5b60dab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a setting from the setting store.  <a href="group__plat-settings.html#gaeaef25d37f98fabe792cebaf5b60dab2">More...</a><br /></td></tr>
+<tr class="separator:gaeaef25d37f98fabe792cebaf5b60dab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9512db56b3712ba7b5a263e0280fa20a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga9512db56b3712ba7b5a263e0280fa20a">otPlatSettingsWipe</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:ga9512db56b3712ba7b5a263e0280fa20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all settings from the setting store.  <a href="group__plat-settings.html#ga9512db56b3712ba7b5a263e0280fa20a">More...</a><br /></td></tr>
+<tr class="separator:ga9512db56b3712ba7b5a263e0280fa20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -197,7 +200,7 @@ Variables</h2></td></tr>
 <tr class="separator:a2d19230ce687265c4e34c75936b41333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee9946722c4dd59f21e7171911dccab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#abf26c7b6cbc097b11baea5f7b3419e27">testPlatAlarmGetNow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#aee9946722c4dd59f21e7171911dccab0">g_testPlatAlarmGetNow</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:aee9946722c4dd59f21e7171911dccab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796e6a55333b2eed5bac9840f6246339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a796e6a55333b2eed5bac9840f6246339">g_testPlatRadioCaps</a> = <a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55af71ef7e6e8404c56664ad79012c2ae4c">kRadioCapsNone</a></td></tr>
+<tr class="memitem:a796e6a55333b2eed5bac9840f6246339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a796e6a55333b2eed5bac9840f6246339">g_testPlatRadioCaps</a> = <a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55a6d5d517247cb67a374004023245ee374">OT_RADIO_CAPS_NONE</a></td></tr>
 <tr class="separator:a796e6a55333b2eed5bac9840f6246339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2835b9ca95e386213712cf1fafe8d3cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a3014da0b4f691c2c095869dd7b5461e4">testPlatRadioSetPanId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a2835b9ca95e386213712cf1fafe8d3cd">g_testPlatRadioSetPanId</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:a2835b9ca95e386213712cf1fafe8d3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,17 +208,17 @@ Variables</h2></td></tr>
 <tr class="separator:a2c10ec67595bc471fbb24cea1c3728dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eee955c6fc342b2fd29ae18fc0fa711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a3b33cb3e4c39c1ca4ab6964e6f0dfe02">testPlatRadioIsEnabled</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a2eee955c6fc342b2fd29ae18fc0fa711">g_testPlatRadioIsEnabled</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:a2eee955c6fc342b2fd29ae18fc0fa711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a63e3b674030e626213dfded233cdba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a33ea256e52d89380bc411e20f76c837c">testPlatRadioEnable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a4a63e3b674030e626213dfded233cdba">g_testPlatRadioEnable</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:a4a63e3b674030e626213dfded233cdba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a8e58b535974b80c31679cb06183d2150">testPlatRadioEnable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a4a63e3b674030e626213dfded233cdba">g_testPlatRadioEnable</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:a4a63e3b674030e626213dfded233cdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5c2d2016ca7b91f5c04798e0bb3174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a423b18cef658e0271460314db5198950">testPlatRadioDisable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a5a5c2d2016ca7b91f5c04798e0bb3174">g_testPlatRadioDisable</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:a5a5c2d2016ca7b91f5c04798e0bb3174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#ad1dec9162da713691b86e52bbc1106ed">testPlatRadioDisable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a5a5c2d2016ca7b91f5c04798e0bb3174">g_testPlatRadioDisable</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:a5a5c2d2016ca7b91f5c04798e0bb3174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a958338c58a7292b924481a368fb251fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a320f01dc4610c80d1b93c08c38483a9e">testPlatRadioSetShortAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a958338c58a7292b924481a368fb251fe">g_testPlatRadioSetShortAddress</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:a958338c58a7292b924481a368fb251fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19c3236a82d9d56429d144170c51725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#acd6ca932dff6d4ce505afb86ef9a1ec7">testPlatRadioReceive</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#ae19c3236a82d9d56429d144170c51725">g_testPlatRadioReceive</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:ae19c3236a82d9d56429d144170c51725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a6ab41bd6fee0fd5d9b137b23a613036a">testPlatRadioReceive</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#ae19c3236a82d9d56429d144170c51725">g_testPlatRadioReceive</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:ae19c3236a82d9d56429d144170c51725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab927bb1d1b1f03946340358d5bfa5340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a2444b5708a26307576de0b3b0a53ba4d">testPlatRadioTransmit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#ab927bb1d1b1f03946340358d5bfa5340">g_testPlatRadioTransmit</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:ab927bb1d1b1f03946340358d5bfa5340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a0f2edfb334a7a441ee2f537aa962d983">testPlatRadioTransmit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#ab927bb1d1b1f03946340358d5bfa5340">g_testPlatRadioTransmit</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:ab927bb1d1b1f03946340358d5bfa5340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7dd90209cf6ae2d3144df36c3a72085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a89db32940b043fc7364fd51fccb0dfa4">testPlatRadioGetTransmitBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#aa7dd90209cf6ae2d3144df36c3a72085">g_testPlatRadioGetTransmitBuffer</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:aa7dd90209cf6ae2d3144df36c3a72085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test__platform_8h.html#a3623a9dda52d0ea4e490421861cfc30b">testPlatRadioGetTransmitBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#aa7dd90209cf6ae2d3144df36c3a72085">g_testPlatRadioGetTransmitBuffer</a> = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr class="separator:aa7dd90209cf6ae2d3144df36c3a72085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8674f084fae1359604c1ef9c083a6c27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__platform_8cpp.html#a8674f084fae1359604c1ef9c083a6c27">sDiagMode</a> = <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a5df37b7f02e5cdc7d9412b7f872b8e01">false</a></td></tr>
 <tr class="separator:a8674f084fae1359604c1ef9c083a6c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,488 +256,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00344">344</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ab26ce83d07357b4c94234a5c12aff289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab26ce83d07357b4c94234a5c12aff289">&#9670;&nbsp;</a></span>otPlatGetResetReason()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="misc_8h.html#a0cba84283c1ab3c6aa37c143e9a552c8">otPlatResetReason</a> otPlatGetResetReason </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function returns the reason for the last platform reset.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Function documented in <a class="el" href="misc_8h.html" title="This file includes platform abstractions for miscellaneous behaviors. ">platform/misc.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00394">394</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6e5e33121dff7942b201db3cc37e9e86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e5e33121dff7942b201db3cc37e9e86">&#9670;&nbsp;</a></span>otPlatReset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatReset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function performs a software reset on the platform, if supported.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Function documented in <a class="el" href="misc_8h.html" title="This file includes platform abstractions for miscellaneous behaviors. ">platform/misc.h</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00389">389</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ae6526eedcd9a6e0d249f76c7020d3e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6526eedcd9a6e0d249f76c7020d3e4e">&#9670;&nbsp;</a></span>otPlatSettingsAbandonChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsAbandonChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Abandon all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> </p>
-<p>This function may be called at the end of a sequence of changes. instead of <a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a>. If implemented, it causes all changes made since <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> to be rolled back and abandoned.</p>
-<p>The implementation of this function is optional. If not implemented, it should return kThreadError_NotImplemented.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The changes made since the last call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> have been successfully rolled back. </td></tr>
-    <tr><td class="paramname">kThreadError_InvalidState</td><td><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> has not been called. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>, <a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00427">427</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a79b4717038f891793776e7e09d61cf33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79b4717038f891793776e7e09d61cf33">&#9670;&nbsp;</a></span>otPlatSettingsAdd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsAdd </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aValueLength</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a value to a setting. </p>
-<p>This function adds the value to a setting identified by aKey, without replacing any existing values.</p>
-<p>Note that the underlying implementation is not required to maintain the order of the items associated with a specific key. The added value may be added to the end, the beginning, or even somewhere in the middle. The order of any pre-existing values may also change.</p>
-<p>Calling this function successfully may cause unrelated settings with multiple values to be reordered.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the setting to change. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aValue</td><td>A pointer to where the new value of the setting should be read from. MUST NOT be NULL if aValueLength is non-zero. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">[in/out]</td><td>aValueLength The length of the data pointed to by aValue. May be zero.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given setting was added or staged to be added. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00456">456</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac6a0a8c17d95538396928be7af8aafd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6a0a8c17d95538396928be7af8aafd7">&#9670;&nbsp;</a></span>otPlatSettingsBeginChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsBeginChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Begin atomic change set. </p>
-<p>This function is called at the start of a sequence of changes that should be made atomically.</p>
-<p>This function, along with <code><a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a></code> are designed to ensure atomicity of changes to multiple settings. Once this function has been called, any changes made to the settings store are only committed when <code><a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a></code> is called.</p>
-<p>The implementation of this function is optional. If not implemented, it should return kThreadError_None.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The settings commit lock has been set. </td></tr>
-    <tr><td class="paramname">kThreadError_Already</td><td>The commit lock is already set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a>, <a class="el" href="settings_8h.html#ae6526eedcd9a6e0d249f76c7020d3e4e" title="Abandon all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsAbandonChange()</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00413">413</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a32d1d192f55898281e8924ad33e1d395"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32d1d192f55898281e8924ad33e1d395">&#9670;&nbsp;</a></span>otPlatSettingsCommitChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsCommitChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Commit all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> </p>
-<p>This function is called at the end of a sequence of changes. The implementation of this function is optional. If not implemented, it should return kThreadError_NotImplemented.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The changes made since the last call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> have been successfully committed. </td></tr>
-    <tr><td class="paramname">kThreadError_InvalidState</td><td><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> has not been called. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>, <a class="el" href="settings_8h.html#ae6526eedcd9a6e0d249f76c7020d3e4e" title="Abandon all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsAbandonChange()</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00420">420</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a12607e0b29be777cf24d878702197b83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12607e0b29be777cf24d878702197b83">&#9670;&nbsp;</a></span>otPlatSettingsDelete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsDelete </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aIndex</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a setting from the setting store. </p>
-<p>This function deletes a specific value from the setting identified by aKey from the settings store.</p>
-<p>Note that the underlying implementation is not required to maintain the order of the items associated with a specific key.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the requested setting. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aIndex</td><td>The index of the value to be removed. If set to -1, all values for this aKey will be removed.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given key and index was found and removed successfully. </td></tr>
-    <tr><td class="paramname">kThreadError_NotFound</td><td>The given key or index was not found in the setting store. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00466">466</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a22beca78bce58103b2c0e1059add0cf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22beca78bce58103b2c0e1059add0cf8">&#9670;&nbsp;</a></span>otPlatSettingsGet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsGet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
-          <td class="paramname"><em>aValueLength</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fetches the value of a setting. </p>
-<p>This function fetches the value of the setting identified by aKey and write it to the memory pointed to by aValue. It then writes the length to the integer pointed to by aValueLength. The initial value of aValueLength is the maximum number of bytes to be written to aValue.</p>
-<p>This function can be used to check for the existence of a key without fetching the value by setting aValue and aValueLength to NULL. You can also check the length of the setting without fetching it by setting only aValue to NULL.</p>
-<p>Note that the underlying storage implementation is not required to maintain the order of settings with multiple values. The order of such values MAY change after ANY write operation to the store.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the requested setting. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aIndex</td><td>The index of the specific item to get. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aValue</td><td>A pointer to where the value of the setting should be written. May be set to NULL if just testing for the presence or length of a setting. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">[in/out]</td><td>aValueLength A pointer to the length of the value. When called, this pointer should point to an integer containing the maximum value size that can be written to aValue. At return, the actual length of the setting is written. This may be set to NULL if performing a presence check.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given setting was found and fetched successfully. </td></tr>
-    <tr><td class="paramname">kThreadError_NotFound</td><td>The given setting was not found in the setting store. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00434">434</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a915799404344a36bcb0b9d4ca301d938"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a915799404344a36bcb0b9d4ca301d938">&#9670;&nbsp;</a></span>otPlatSettingsInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatSettingsInit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Performs any initialization for the settings subsystem, if necessary.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00408">408</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a4c5bb3c9a196271b055b3275be0c2b68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5bb3c9a196271b055b3275be0c2b68">&#9670;&nbsp;</a></span>otPlatSettingsSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsSet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aValueLength</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets or replaces the value of a setting. </p>
-<p>This function sets or replaces the value of a setting identified by aKey. If there was more than one value previously associated with aKey, then they are all deleted and replaced with this single entry.</p>
-<p>Calling this function successfully may cause unrelated settings with multiple values to be reordered.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the setting to change. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aValue</td><td>A pointer to where the new value of the setting should be read from. MUST NOT be NULL if aValueLength is non-zero. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aValueLength</td><td>The length of the data pointed to by aValue. May be zero.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given setting was changed or staged. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00446">446</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a9512db56b3712ba7b5a263e0280fa20a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9512db56b3712ba7b5a263e0280fa20a">&#9670;&nbsp;</a></span>otPlatSettingsWipe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatSettingsWipe </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all settings from the setting store. </p>
-<p>This function deletes all settings from the settings store, resetting it to its initial factory state.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00475">475</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <a id="af9af4ecd085d05093681d78ffb0065a7"></a>
@@ -753,8 +274,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00060">60</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -770,8 +289,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00047">47</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a54319c596f6e63b67d3e146ece645e92"></a>
@@ -785,8 +302,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00044">44</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -802,8 +317,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00043">43</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a2d19230ce687265c4e34c75936b41333"></a>
@@ -817,8 +330,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00046">46</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -834,8 +345,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00045">45</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a796e6a55333b2eed5bac9840f6246339"></a>
@@ -845,12 +354,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a> g_testPlatRadioCaps = <a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55af71ef7e6e8404c56664ad79012c2ae4c">kRadioCapsNone</a></td>
+          <td class="memname"><a class="el" href="group__radio-types.html#ga64d6a0cf11075e2ab0079c9d86c34b55">otRadioCaps</a> g_testPlatRadioCaps = <a class="el" href="group__radio-types.html#gga64d6a0cf11075e2ab0079c9d86c34b55a6d5d517247cb67a374004023245ee374">OT_RADIO_CAPS_NONE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00049">49</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -861,12 +368,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test__platform_8h.html#a423b18cef658e0271460314db5198950">testPlatRadioDisable</a> g_testPlatRadioDisable = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+          <td class="memname"><a class="el" href="test__platform_8h.html#ad1dec9162da713691b86e52bbc1106ed">testPlatRadioDisable</a> g_testPlatRadioDisable = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00054">54</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -877,12 +382,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test__platform_8h.html#a33ea256e52d89380bc411e20f76c837c">testPlatRadioEnable</a> g_testPlatRadioEnable = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+          <td class="memname"><a class="el" href="test__platform_8h.html#a8e58b535974b80c31679cb06183d2150">testPlatRadioEnable</a> g_testPlatRadioEnable = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00053">53</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -893,12 +396,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test__platform_8h.html#a89db32940b043fc7364fd51fccb0dfa4">testPlatRadioGetTransmitBuffer</a> g_testPlatRadioGetTransmitBuffer = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+          <td class="memname"><a class="el" href="test__platform_8h.html#a3623a9dda52d0ea4e490421861cfc30b">testPlatRadioGetTransmitBuffer</a> g_testPlatRadioGetTransmitBuffer = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00058">58</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -914,8 +415,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00052">52</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ae19c3236a82d9d56429d144170c51725"></a>
@@ -925,12 +424,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test__platform_8h.html#acd6ca932dff6d4ce505afb86ef9a1ec7">testPlatRadioReceive</a> g_testPlatRadioReceive = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+          <td class="memname"><a class="el" href="test__platform_8h.html#a6ab41bd6fee0fd5d9b137b23a613036a">testPlatRadioReceive</a> g_testPlatRadioReceive = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00056">56</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -946,8 +443,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00051">51</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a2835b9ca95e386213712cf1fafe8d3cd"></a>
@@ -961,8 +456,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00050">50</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -978,8 +471,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00055">55</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ab927bb1d1b1f03946340358d5bfa5340"></a>
@@ -989,12 +480,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test__platform_8h.html#a2444b5708a26307576de0b3b0a53ba4d">testPlatRadioTransmit</a> g_testPlatRadioTransmit = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+          <td class="memname"><a class="el" href="test__platform_8h.html#a0f2edfb334a7a441ee2f537aa962d983">testPlatRadioTransmit</a> g_testPlatRadioTransmit = <a class="el" href="_s_e_g_g_e_r___r_t_t_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00057">57</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
 
 </div>
 </div>
@@ -1010,14 +499,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__platform_8cpp_source.html#l00080">80</a> of file <a class="el" href="test__platform_8cpp_source.html">test_platform.cpp</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:30 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:01 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

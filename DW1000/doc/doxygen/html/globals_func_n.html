@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Globals</title>
+<title>OT-DW1000: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -72,13 +73,18 @@ $(function() {
 </li>
 <li>NMI_Handler()
 : <a class="el" href="vector_8c.html#a28d0727a98d80db91f982ffca62a5c4d">vector.c</a>
+, <a class="el" href="examples_2platforms_2kw41z_2platform_8c.html#a6ad7a5e3ee69cb6db6a6b9111ba898bc">platform.c</a>
 </li>
 <li>NMI_HandlerC()
 : <a class="el" href="group___watchdog___timer.html#ga0b5be5db378e8aa19b36e8446db1db11">hw_watchdog.c</a>
 </li>
 <li>NmiSR()
-: <a class="el" href="startup__gcc_8c.html#a80fa94c2cc46218e3c2de4edebe4f4cf">startup_gcc.c</a>
-, <a class="el" href="startup__iar_8c.html#ad1d98813d5003e7dba6f1108621cd901">startup_iar.c</a>
+: <a class="el" href="startup__iar_8c.html#ad1d98813d5003e7dba6f1108621cd901">startup_iar.c</a>
+, <a class="el" href="startup__gcc_8c.html#a80fa94c2cc46218e3c2de4edebe4f4cf">startup_gcc.c</a>
+</li>
+<li>nrf5AlarmDeinit()
+: <a class="el" href="platforms_2nrf52840_2alarm_8c.html#a84371d0377c116e246fde21903e0cbd6">alarm.c</a>
+, <a class="el" href="platform-nrf5_8h.html#a84371d0377c116e246fde21903e0cbd6">platform-nrf5.h</a>
 </li>
 <li>nrf5AlarmInit()
 : <a class="el" href="platforms_2nrf52840_2alarm_8c.html#a57ec4e2b205a5a81a443e86b706a2f83">alarm.c</a>
@@ -88,29 +94,53 @@ $(function() {
 : <a class="el" href="platforms_2nrf52840_2alarm_8c.html#ad61350e60ac94a9c8e73b340142bbfd8">alarm.c</a>
 , <a class="el" href="platform-nrf5_8h.html#ad61350e60ac94a9c8e73b340142bbfd8">platform-nrf5.h</a>
 </li>
+<li>nrf5CryptoDeinit()
+: <a class="el" href="platform-nrf5_8h.html#a57b6c09d0aae8bf002ffb56a99d7ab96">platform-nrf5.h</a>
+, <a class="el" href="nrf52840_2misc_8c.html#a995bfc21bbf5b7b071a2afd768e1b9f5">misc.c</a>
+</li>
 <li>nrf5CryptoInit()
 : <a class="el" href="nrf52840_2misc_8c.html#a504928ea4e3d8a0df02c3ed341efa7b4">misc.c</a>
 , <a class="el" href="platform-nrf5_8h.html#a3ca14ee6bc8f3663f80a249add8bced7">platform-nrf5.h</a>
+</li>
+<li>nrf5LogDeinit()
+: <a class="el" href="nrf52840_2logging_8c.html#a33f3196b165c10df10742a3c74cca062">logging.c</a>
+, <a class="el" href="platform-nrf5_8h.html#a1d4ffd2200d1cc1da66babad6a4e7efd">platform-nrf5.h</a>
 </li>
 <li>nrf5LogInit()
 : <a class="el" href="nrf52840_2logging_8c.html#ae5c4aa2f16a1bbbeff9069967ed545e2">logging.c</a>
 , <a class="el" href="platform-nrf5_8h.html#a93cdf79c2ba57559fb7ab79e641fc1f5">platform-nrf5.h</a>
 </li>
+<li>nrf5MiscDeinit()
+: <a class="el" href="nrf52840_2misc_8c.html#a79fbe40a2b1b31460a8acef6e71e696b">misc.c</a>
+, <a class="el" href="platform-nrf5_8h.html#a79fbe40a2b1b31460a8acef6e71e696b">platform-nrf5.h</a>
+</li>
 <li>nrf5MiscInit()
 : <a class="el" href="nrf52840_2misc_8c.html#a3cc3a00b05bffce0da87f4eb800ed21e">misc.c</a>
 , <a class="el" href="platform-nrf5_8h.html#a3cc3a00b05bffce0da87f4eb800ed21e">platform-nrf5.h</a>
+</li>
+<li>nrf5RadioDeinit()
+: <a class="el" href="platform-nrf5_8h.html#a28d42d59c817751c92a85aa60a5ef1b9">platform-nrf5.h</a>
+, <a class="el" href="platforms_2nrf52840_2radio_8c.html#a28d42d59c817751c92a85aa60a5ef1b9">radio.c</a>
 </li>
 <li>nrf5RadioInit()
 : <a class="el" href="platform-nrf5_8h.html#a8c0479a69ab58460391ab33c2ac97062">platform-nrf5.h</a>
 , <a class="el" href="platforms_2nrf52840_2radio_8c.html#a8c0479a69ab58460391ab33c2ac97062">radio.c</a>
 </li>
 <li>nrf5RadioProcess()
-: <a class="el" href="platform-nrf5_8h.html#a5f1bc7073d47da68c7bd452b1153dd54">platform-nrf5.h</a>
-, <a class="el" href="platforms_2nrf52840_2radio_8c.html#a5f1bc7073d47da68c7bd452b1153dd54">radio.c</a>
+: <a class="el" href="platforms_2nrf52840_2radio_8c.html#a5f1bc7073d47da68c7bd452b1153dd54">radio.c</a>
+, <a class="el" href="platform-nrf5_8h.html#a5f1bc7073d47da68c7bd452b1153dd54">platform-nrf5.h</a>
+</li>
+<li>nrf5RandomDeinit()
+: <a class="el" href="platform-nrf5_8h.html#acd2174d47f5dfece958f30cdf13fbe35">platform-nrf5.h</a>
+, <a class="el" href="nrf52840_2random_8c.html#acd2174d47f5dfece958f30cdf13fbe35">random.c</a>
 </li>
 <li>nrf5RandomInit()
 : <a class="el" href="platform-nrf5_8h.html#a62e35fffbc9891aa4607943f02cdf485">platform-nrf5.h</a>
 , <a class="el" href="nrf52840_2random_8c.html#a62e35fffbc9891aa4607943f02cdf485">random.c</a>
+</li>
+<li>nrf5UartDeinit()
+: <a class="el" href="platform-nrf5_8h.html#a125aeb7444c70c71171a5b8c5965f1c9">platform-nrf5.h</a>
+, <a class="el" href="examples_2platforms_2nrf52840_2uart_8c.html#a125aeb7444c70c71171a5b8c5965f1c9">uart.c</a>
 </li>
 <li>nrf5UartInit()
 : <a class="el" href="platform-nrf5_8h.html#ac12935bb5ba1ad8bf027ce9c350d2b9c">platform-nrf5.h</a>
@@ -181,8 +211,8 @@ $(function() {
 : <a class="el" href="nrf__delay_8h.html#a1a71cc1910bd812df67e7b8a71a3473e">nrf_delay.h</a>
 </li>
 <li>nrf_drv_clock_hfclk_is_running()
-: <a class="el" href="nrf__drv__clock_8c.html#ae25988638664f2e4da8512b221adfdfd">nrf_drv_clock.c</a>
-, <a class="el" href="nrf__drv__clock_8h.html#ae25988638664f2e4da8512b221adfdfd">nrf_drv_clock.h</a>
+: <a class="el" href="nrf__drv__clock_8h.html#ae25988638664f2e4da8512b221adfdfd">nrf_drv_clock.h</a>
+, <a class="el" href="nrf__drv__clock_8c.html#ae25988638664f2e4da8512b221adfdfd">nrf_drv_clock.c</a>
 </li>
 <li>nrf_drv_clock_hfclk_release()
 : <a class="el" href="nrf__drv__clock_8c.html#a5ca3bff3e9a29a62561329f71277800d">nrf_drv_clock.c</a>
@@ -215,6 +245,10 @@ $(function() {
 <li>nrf_drv_is_in_RAM()
 : <a class="el" href="nrf__drv__spi_8c.html#a9c5ce31ee83467a46ddf6a4d606deced">nrf_drv_spi.c</a>
 </li>
+<li>nrf_drv_radio802154_ack_tx_power_set()
+: <a class="el" href="nrf__drv__radio802154_8c.html#a0922594a7bbc64bfedf2c434d93de6af">nrf_drv_radio802154.c</a>
+, <a class="el" href="nrf__drv__radio802154_8h.html#a0922594a7bbc64bfedf2c434d93de6af">nrf_drv_radio802154.h</a>
+</li>
 <li>nrf_drv_radio802154_auto_pending_bit_set()
 : <a class="el" href="nrf__drv__radio802154_8c.html#ad472582f41552aed8383250208d07754">nrf_drv_radio802154.c</a>
 , <a class="el" href="nrf__drv__radio802154_8h.html#ad472582f41552aed8383250208d07754">nrf_drv_radio802154.h</a>
@@ -230,6 +264,10 @@ $(function() {
 <li>nrf_drv_radio802154_channel_get()
 : <a class="el" href="nrf__drv__radio802154_8c.html#a68fcf39d5d61d799968b8f39e6da0605">nrf_drv_radio802154.c</a>
 , <a class="el" href="nrf__drv__radio802154_8h.html#a68fcf39d5d61d799968b8f39e6da0605">nrf_drv_radio802154.h</a>
+</li>
+<li>nrf_drv_radio802154_deinit()
+: <a class="el" href="nrf__drv__radio802154_8c.html#ae80a4393ce0c8082503b64d1798f8c57">nrf_drv_radio802154.c</a>
+, <a class="el" href="nrf__drv__radio802154_8h.html#ae80a4393ce0c8082503b64d1798f8c57">nrf_drv_radio802154.h</a>
 </li>
 <li>nrf_drv_radio802154_energy_detected()
 : <a class="el" href="platforms_2nrf52840_2radio_8c.html#a1e1ff5ae32d808f03af328997d5dd6d9">radio.c</a>
@@ -294,13 +332,17 @@ $(function() {
 : <a class="el" href="nrf__drv__radio802154_8c.html#ab06b0c0c0f1f20f278bce26af6e30328">nrf_drv_radio802154.c</a>
 , <a class="el" href="nrf__drv__radio802154_8h.html#ab06b0c0c0f1f20f278bce26af6e30328">nrf_drv_radio802154.h</a>
 </li>
+<li>nrf_drv_radio802154_state_get()
+: <a class="el" href="nrf__drv__radio802154_8c.html#a06750a1bf380484ea57a588da6b7b6e4">nrf_drv_radio802154.c</a>
+, <a class="el" href="nrf__drv__radio802154_8h.html#a06750a1bf380484ea57a588da6b7b6e4">nrf_drv_radio802154.h</a>
+</li>
 <li>nrf_drv_radio802154_transmit()
 : <a class="el" href="nrf__drv__radio802154_8c.html#ae0f8af5ce5e3c12b021765fccf823710">nrf_drv_radio802154.c</a>
 , <a class="el" href="nrf__drv__radio802154_8h.html#ae0f8af5ce5e3c12b021765fccf823710">nrf_drv_radio802154.h</a>
 </li>
 <li>nrf_drv_radio802154_transmitted()
-: <a class="el" href="platforms_2nrf52840_2radio_8c.html#a3b25f96e7a941e90aacaf1d5d779aae1">radio.c</a>
-, <a class="el" href="nrf__drv__radio802154_8h.html#a3b25f96e7a941e90aacaf1d5d779aae1">nrf_drv_radio802154.h</a>
+: <a class="el" href="nrf__drv__radio802154_8h.html#a4f89f6f4ef77beab8682656be0c11c70">nrf_drv_radio802154.h</a>
+, <a class="el" href="platforms_2nrf52840_2radio_8c.html#a5313bf99d3372f693f35889dbfe4e54b">radio.c</a>
 </li>
 <li>nrf_drv_spi_abort()
 : <a class="el" href="group__nrf__drv__spi.html#ga7641553a5f15c8f0cddfc41b70318099">nrf_drv_spi.c</a>
@@ -512,16 +554,16 @@ $(function() {
 : <a class="el" href="group__nrf__gpiote__abs.html#gad6c9778692fe00da64863bb31972154a">nrf_gpiote.h</a>
 </li>
 <li>nrf_nvmc_page_erase()
-: <a class="el" href="group__nrf__nvmc.html#ga8cf428dbb2a28a342c3b57cc07869d9d">nrf_nvmc.c</a>
-, <a class="el" href="group__nrf__nvmc.html#ga8cf428dbb2a28a342c3b57cc07869d9d">nrf_nvmc.h</a>
+: <a class="el" href="group__nrf__nvmc.html#ga8cf428dbb2a28a342c3b57cc07869d9d">nrf_nvmc.h</a>
+, <a class="el" href="group__nrf__nvmc.html#ga8cf428dbb2a28a342c3b57cc07869d9d">nrf_nvmc.c</a>
 </li>
 <li>nrf_nvmc_write_byte()
 : <a class="el" href="group__nrf__nvmc.html#ga008c6a4096bda07d67f33294af00ad9b">nrf_nvmc.c</a>
 , <a class="el" href="group__nrf__nvmc.html#ga008c6a4096bda07d67f33294af00ad9b">nrf_nvmc.h</a>
 </li>
 <li>nrf_nvmc_write_bytes()
-: <a class="el" href="group__nrf__nvmc.html#ga7d566edd65fdc5655ce7be3cd17faba0">nrf_nvmc.c</a>
-, <a class="el" href="group__nrf__nvmc.html#ga7d566edd65fdc5655ce7be3cd17faba0">nrf_nvmc.h</a>
+: <a class="el" href="group__nrf__nvmc.html#ga7d566edd65fdc5655ce7be3cd17faba0">nrf_nvmc.h</a>
+, <a class="el" href="group__nrf__nvmc.html#ga7d566edd65fdc5655ce7be3cd17faba0">nrf_nvmc.c</a>
 </li>
 <li>nrf_nvmc_write_word()
 : <a class="el" href="group__nrf__nvmc.html#ga1347c44095f9486554be7c3d62737925">nrf_nvmc.c</a>
@@ -955,7 +997,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:54 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:15 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

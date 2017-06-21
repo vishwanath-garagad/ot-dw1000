@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Core Definitions</title>
+<title>OT-DW1000: Core Definitions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -116,12 +117,184 @@ Macros</h2></td></tr>
 <tr class="separator:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d">CoreDebug</a>&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td></tr>
 <tr class="separator:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
+<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58effaac0b93006b756d33209e814646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td></tr>
+<tr class="separator:ga58effaac0b93006b756d33209e814646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0288691785a5f868238e0468b39523d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td></tr>
+<tr class="separator:gaa0288691785a5f868238e0468b39523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
+<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
+<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd96c53beeaff8f603fcda425eb295de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td></tr>
+<tr class="separator:gacd96c53beeaff8f603fcda425eb295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td></tr>
+<tr class="separator:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
+<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58effaac0b93006b756d33209e814646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td></tr>
+<tr class="separator:ga58effaac0b93006b756d33209e814646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0288691785a5f868238e0468b39523d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td></tr>
+<tr class="separator:gaa0288691785a5f868238e0468b39523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
+<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
+<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd96c53beeaff8f603fcda425eb295de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td></tr>
+<tr class="separator:gacd96c53beeaff8f603fcda425eb295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td></tr>
+<tr class="separator:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
+<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd76251e412a195ec0a8f47227a8359e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>&#160;&#160;&#160;(0xE0000000UL)</td></tr>
+<tr class="separator:gadd76251e412a195ec0a8f47227a8359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdab534f961bf8935eb456cb7700dcd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>&#160;&#160;&#160;(0xE0001000UL)</td></tr>
+<tr class="separator:gafdab534f961bf8935eb456cb7700dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b1eeff850a7e418844ca847145a1a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>&#160;&#160;&#160;(0xE0040000UL)</td></tr>
+<tr class="separator:ga2b1eeff850a7e418844ca847145a1a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>&#160;&#160;&#160;(0xE000EDF0UL)</td></tr>
+<tr class="separator:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58effaac0b93006b756d33209e814646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td></tr>
+<tr class="separator:ga58effaac0b93006b756d33209e814646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0288691785a5f868238e0468b39523d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td></tr>
+<tr class="separator:gaa0288691785a5f868238e0468b39523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
+<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga9fe0cd2eef83a8adad94490d9ecca63f">SCnSCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td></tr>
+<tr class="separator:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
+<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd96c53beeaff8f603fcda425eb295de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td></tr>
+<tr class="separator:gacd96c53beeaff8f603fcda425eb295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td></tr>
+<tr class="separator:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae7cdf882def602cb787bb039ff6a43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabae7cdf882def602cb787bb039ff6a43">ITM</a>&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td></tr>
+<tr class="separator:gabae7cdf882def602cb787bb039ff6a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabbe5a060185e1d5afa3f85b14e10a6ce">DWT</a>&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td></tr>
+<tr class="separator:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga8b4dd00016aed25a0ea54e9a9acd1239">TPI</a>&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td></tr>
+<tr class="separator:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d">CoreDebug</a>&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td></tr>
+<tr class="separator:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
+<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd76251e412a195ec0a8f47227a8359e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>&#160;&#160;&#160;(0xE0000000UL)</td></tr>
+<tr class="separator:gadd76251e412a195ec0a8f47227a8359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdab534f961bf8935eb456cb7700dcd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>&#160;&#160;&#160;(0xE0001000UL)</td></tr>
+<tr class="separator:gafdab534f961bf8935eb456cb7700dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b1eeff850a7e418844ca847145a1a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>&#160;&#160;&#160;(0xE0040000UL)</td></tr>
+<tr class="separator:ga2b1eeff850a7e418844ca847145a1a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>&#160;&#160;&#160;(0xE000EDF0UL)</td></tr>
+<tr class="separator:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58effaac0b93006b756d33209e814646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td></tr>
+<tr class="separator:ga58effaac0b93006b756d33209e814646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0288691785a5f868238e0468b39523d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td></tr>
+<tr class="separator:gaa0288691785a5f868238e0468b39523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
+<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga9fe0cd2eef83a8adad94490d9ecca63f">SCnSCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td></tr>
+<tr class="separator:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
+<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd96c53beeaff8f603fcda425eb295de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td></tr>
+<tr class="separator:gacd96c53beeaff8f603fcda425eb295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td></tr>
+<tr class="separator:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae7cdf882def602cb787bb039ff6a43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabae7cdf882def602cb787bb039ff6a43">ITM</a>&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td></tr>
+<tr class="separator:gabae7cdf882def602cb787bb039ff6a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabbe5a060185e1d5afa3f85b14e10a6ce">DWT</a>&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td></tr>
+<tr class="separator:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga8b4dd00016aed25a0ea54e9a9acd1239">TPI</a>&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td></tr>
+<tr class="separator:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d">CoreDebug</a>&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td></tr>
+<tr class="separator:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
+<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd76251e412a195ec0a8f47227a8359e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>&#160;&#160;&#160;(0xE0000000UL)</td></tr>
+<tr class="separator:gadd76251e412a195ec0a8f47227a8359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdab534f961bf8935eb456cb7700dcd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>&#160;&#160;&#160;(0xE0001000UL)</td></tr>
+<tr class="separator:gafdab534f961bf8935eb456cb7700dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b1eeff850a7e418844ca847145a1a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>&#160;&#160;&#160;(0xE0040000UL)</td></tr>
+<tr class="separator:ga2b1eeff850a7e418844ca847145a1a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>&#160;&#160;&#160;(0xE000EDF0UL)</td></tr>
+<tr class="separator:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58effaac0b93006b756d33209e814646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td></tr>
+<tr class="separator:ga58effaac0b93006b756d33209e814646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0288691785a5f868238e0468b39523d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td></tr>
+<tr class="separator:gaa0288691785a5f868238e0468b39523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
+<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga9fe0cd2eef83a8adad94490d9ecca63f">SCnSCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td></tr>
+<tr class="separator:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
+<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd96c53beeaff8f603fcda425eb295de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td></tr>
+<tr class="separator:gacd96c53beeaff8f603fcda425eb295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td></tr>
+<tr class="separator:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae7cdf882def602cb787bb039ff6a43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabae7cdf882def602cb787bb039ff6a43">ITM</a>&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td></tr>
+<tr class="separator:gabae7cdf882def602cb787bb039ff6a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabbe5a060185e1d5afa3f85b14e10a6ce">DWT</a>&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td></tr>
+<tr class="separator:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga8b4dd00016aed25a0ea54e9a9acd1239">TPI</a>&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td></tr>
+<tr class="separator:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d">CoreDebug</a>&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td></tr>
+<tr class="separator:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
+<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58effaac0b93006b756d33209e814646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td></tr>
+<tr class="separator:ga58effaac0b93006b756d33209e814646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0288691785a5f868238e0468b39523d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td></tr>
+<tr class="separator:gaa0288691785a5f868238e0468b39523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
+<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga9fe0cd2eef83a8adad94490d9ecca63f">SCnSCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td></tr>
+<tr class="separator:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
+<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd96c53beeaff8f603fcda425eb295de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td></tr>
+<tr class="separator:gacd96c53beeaff8f603fcda425eb295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td></tr>
+<tr class="separator:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
+<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd76251e412a195ec0a8f47227a8359e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>&#160;&#160;&#160;(0xE0000000UL)</td></tr>
+<tr class="separator:gadd76251e412a195ec0a8f47227a8359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdab534f961bf8935eb456cb7700dcd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>&#160;&#160;&#160;(0xE0001000UL)</td></tr>
+<tr class="separator:gafdab534f961bf8935eb456cb7700dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b1eeff850a7e418844ca847145a1a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>&#160;&#160;&#160;(0xE0040000UL)</td></tr>
+<tr class="separator:ga2b1eeff850a7e418844ca847145a1a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>&#160;&#160;&#160;(0xE000EDF0UL)</td></tr>
+<tr class="separator:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58effaac0b93006b756d33209e814646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td></tr>
+<tr class="separator:ga58effaac0b93006b756d33209e814646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0288691785a5f868238e0468b39523d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td></tr>
+<tr class="separator:gaa0288691785a5f868238e0468b39523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
+<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga9fe0cd2eef83a8adad94490d9ecca63f">SCnSCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td></tr>
+<tr class="separator:ga9fe0cd2eef83a8adad94490d9ecca63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
+<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd96c53beeaff8f603fcda425eb295de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td></tr>
+<tr class="separator:gacd96c53beeaff8f603fcda425eb295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td></tr>
+<tr class="separator:gac8e97e8ce56ae9f57da1363a937f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae7cdf882def602cb787bb039ff6a43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabae7cdf882def602cb787bb039ff6a43">ITM</a>&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td></tr>
+<tr class="separator:gabae7cdf882def602cb787bb039ff6a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gabbe5a060185e1d5afa3f85b14e10a6ce">DWT</a>&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td></tr>
+<tr class="separator:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#ga8b4dd00016aed25a0ea54e9a9acd1239">TPI</a>&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td></tr>
+<tr class="separator:ga8b4dd00016aed25a0ea54e9a9acd1239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d">CoreDebug</a>&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td></tr>
+<tr class="separator:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Definitions for base addresses, unions, and structures. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gab6e30a2b802d9021619dbb0be7f5d63d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab6e30a2b802d9021619dbb0be7f5d63d">&#9670;&nbsp;</a></span>CoreDebug</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6e30a2b802d9021619dbb0be7f5d63d">&#9670;&nbsp;</a></span>CoreDebug <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,12 +306,70 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Core Debug configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01550">1550</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gab6e30a2b802d9021619dbb0be7f5d63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6e30a2b802d9021619dbb0be7f5d63d">&#9670;&nbsp;</a></span>CoreDebug <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug configuration struct </p>
+
+</div>
+</div>
+<a id="gab6e30a2b802d9021619dbb0be7f5d63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6e30a2b802d9021619dbb0be7f5d63d">&#9670;&nbsp;</a></span>CoreDebug <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug configuration struct </p>
+
+</div>
+</div>
+<a id="gab6e30a2b802d9021619dbb0be7f5d63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6e30a2b802d9021619dbb0be7f5d63d">&#9670;&nbsp;</a></span>CoreDebug <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug configuration struct </p>
+
+</div>
+</div>
+<a id="gab6e30a2b802d9021619dbb0be7f5d63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6e30a2b802d9021619dbb0be7f5d63d">&#9670;&nbsp;</a></span>CoreDebug <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug&#160;&#160;&#160;((<a class="el" href="struct_core_debug___type.html">CoreDebug_Type</a> *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug configuration struct </p>
 
 </div>
 </div>
 <a id="ga680604dbcda9e9b31a1639fcffe5230b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga680604dbcda9e9b31a1639fcffe5230b">&#9670;&nbsp;</a></span>CoreDebug_BASE</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga680604dbcda9e9b31a1639fcffe5230b">&#9670;&nbsp;</a></span>CoreDebug_BASE <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,12 +381,70 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Core Debug Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01538">1538</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="ga680604dbcda9e9b31a1639fcffe5230b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga680604dbcda9e9b31a1639fcffe5230b">&#9670;&nbsp;</a></span>CoreDebug_BASE <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug_BASE&#160;&#160;&#160;(0xE000EDF0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug Base Address </p>
+
+</div>
+</div>
+<a id="ga680604dbcda9e9b31a1639fcffe5230b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga680604dbcda9e9b31a1639fcffe5230b">&#9670;&nbsp;</a></span>CoreDebug_BASE <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug_BASE&#160;&#160;&#160;(0xE000EDF0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug Base Address </p>
+
+</div>
+</div>
+<a id="ga680604dbcda9e9b31a1639fcffe5230b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga680604dbcda9e9b31a1639fcffe5230b">&#9670;&nbsp;</a></span>CoreDebug_BASE <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug_BASE&#160;&#160;&#160;(0xE000EDF0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug Base Address </p>
+
+</div>
+</div>
+<a id="ga680604dbcda9e9b31a1639fcffe5230b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga680604dbcda9e9b31a1639fcffe5230b">&#9670;&nbsp;</a></span>CoreDebug_BASE <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CoreDebug_BASE&#160;&#160;&#160;(0xE000EDF0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core Debug Base Address </p>
 
 </div>
 </div>
 <a id="gabbe5a060185e1d5afa3f85b14e10a6ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabbe5a060185e1d5afa3f85b14e10a6ce">&#9670;&nbsp;</a></span>DWT</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbe5a060185e1d5afa3f85b14e10a6ce">&#9670;&nbsp;</a></span>DWT <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,12 +456,70 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>DWT configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01548">1548</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gabbe5a060185e1d5afa3f85b14e10a6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbe5a060185e1d5afa3f85b14e10a6ce">&#9670;&nbsp;</a></span>DWT <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT configuration struct </p>
+
+</div>
+</div>
+<a id="gabbe5a060185e1d5afa3f85b14e10a6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbe5a060185e1d5afa3f85b14e10a6ce">&#9670;&nbsp;</a></span>DWT <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT configuration struct </p>
+
+</div>
+</div>
+<a id="gabbe5a060185e1d5afa3f85b14e10a6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbe5a060185e1d5afa3f85b14e10a6ce">&#9670;&nbsp;</a></span>DWT <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT configuration struct </p>
+
+</div>
+</div>
+<a id="gabbe5a060185e1d5afa3f85b14e10a6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbe5a060185e1d5afa3f85b14e10a6ce">&#9670;&nbsp;</a></span>DWT <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT&#160;&#160;&#160;((<a class="el" href="struct_d_w_t___type.html">DWT_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gafdab534f961bf8935eb456cb7700dcd2">DWT_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT configuration struct </p>
 
 </div>
 </div>
 <a id="gafdab534f961bf8935eb456cb7700dcd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafdab534f961bf8935eb456cb7700dcd2">&#9670;&nbsp;</a></span>DWT_BASE</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdab534f961bf8935eb456cb7700dcd2">&#9670;&nbsp;</a></span>DWT_BASE <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,12 +531,70 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>DWT Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01536">1536</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gafdab534f961bf8935eb456cb7700dcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdab534f961bf8935eb456cb7700dcd2">&#9670;&nbsp;</a></span>DWT_BASE <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT_BASE&#160;&#160;&#160;(0xE0001000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT Base Address </p>
+
+</div>
+</div>
+<a id="gafdab534f961bf8935eb456cb7700dcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdab534f961bf8935eb456cb7700dcd2">&#9670;&nbsp;</a></span>DWT_BASE <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT_BASE&#160;&#160;&#160;(0xE0001000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT Base Address </p>
+
+</div>
+</div>
+<a id="gafdab534f961bf8935eb456cb7700dcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdab534f961bf8935eb456cb7700dcd2">&#9670;&nbsp;</a></span>DWT_BASE <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT_BASE&#160;&#160;&#160;(0xE0001000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT Base Address </p>
+
+</div>
+</div>
+<a id="gafdab534f961bf8935eb456cb7700dcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdab534f961bf8935eb456cb7700dcd2">&#9670;&nbsp;</a></span>DWT_BASE <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DWT_BASE&#160;&#160;&#160;(0xE0001000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DWT Base Address </p>
 
 </div>
 </div>
 <a id="gabae7cdf882def602cb787bb039ff6a43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabae7cdf882def602cb787bb039ff6a43">&#9670;&nbsp;</a></span>ITM</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabae7cdf882def602cb787bb039ff6a43">&#9670;&nbsp;</a></span>ITM <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,12 +606,70 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>ITM configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01547">1547</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gabae7cdf882def602cb787bb039ff6a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabae7cdf882def602cb787bb039ff6a43">&#9670;&nbsp;</a></span>ITM <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM configuration struct </p>
+
+</div>
+</div>
+<a id="gabae7cdf882def602cb787bb039ff6a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabae7cdf882def602cb787bb039ff6a43">&#9670;&nbsp;</a></span>ITM <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM configuration struct </p>
+
+</div>
+</div>
+<a id="gabae7cdf882def602cb787bb039ff6a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabae7cdf882def602cb787bb039ff6a43">&#9670;&nbsp;</a></span>ITM <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM configuration struct </p>
+
+</div>
+</div>
+<a id="gabae7cdf882def602cb787bb039ff6a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabae7cdf882def602cb787bb039ff6a43">&#9670;&nbsp;</a></span>ITM <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM&#160;&#160;&#160;((<a class="el" href="struct_i_t_m___type.html">ITM_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM configuration struct </p>
 
 </div>
 </div>
 <a id="gadd76251e412a195ec0a8f47227a8359e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd76251e412a195ec0a8f47227a8359e">&#9670;&nbsp;</a></span>ITM_BASE</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd76251e412a195ec0a8f47227a8359e">&#9670;&nbsp;</a></span>ITM_BASE <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,12 +681,70 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>ITM Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01535">1535</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gadd76251e412a195ec0a8f47227a8359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd76251e412a195ec0a8f47227a8359e">&#9670;&nbsp;</a></span>ITM_BASE <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM_BASE&#160;&#160;&#160;(0xE0000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM Base Address </p>
+
+</div>
+</div>
+<a id="gadd76251e412a195ec0a8f47227a8359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd76251e412a195ec0a8f47227a8359e">&#9670;&nbsp;</a></span>ITM_BASE <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM_BASE&#160;&#160;&#160;(0xE0000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM Base Address </p>
+
+</div>
+</div>
+<a id="gadd76251e412a195ec0a8f47227a8359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd76251e412a195ec0a8f47227a8359e">&#9670;&nbsp;</a></span>ITM_BASE <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM_BASE&#160;&#160;&#160;(0xE0000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM Base Address </p>
+
+</div>
+</div>
+<a id="gadd76251e412a195ec0a8f47227a8359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd76251e412a195ec0a8f47227a8359e">&#9670;&nbsp;</a></span>ITM_BASE <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITM_BASE&#160;&#160;&#160;(0xE0000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ITM Base Address </p>
 
 </div>
 </div>
 <a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,12 +756,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>NVIC configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm0_8h_source.html#l00589">589</a> of file <a class="el" href="core__cm0_8h_source.html">core_cm0.h</a>.</p>
-
 </div>
 </div>
 <a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,12 +771,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>NVIC configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01546">1546</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC configuration struct </p>
+
+</div>
+</div>
+<a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC configuration struct </p>
+
+</div>
+</div>
+<a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC configuration struct </p>
+
+</div>
+</div>
+<a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC configuration struct </p>
+
+</div>
+</div>
+<a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC configuration struct </p>
+
+</div>
+</div>
+<a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC configuration struct </p>
+
+</div>
+</div>
+<a id="gac8e97e8ce56ae9f57da1363a937f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8e97e8ce56ae9f57da1363a937f8a17">&#9670;&nbsp;</a></span>NVIC <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC&#160;&#160;&#160;((<a class="el" href="struct_n_v_i_c___type.html">NVIC_Type</a>      *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d">NVIC_BASE</a>     )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC configuration struct </p>
 
 </div>
 </div>
 <a id="gaa0288691785a5f868238e0468b39523d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,12 +891,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>NVIC Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm0_8h_source.html#l00584">584</a> of file <a class="el" href="core__cm0_8h_source.html">core_cm0.h</a>.</p>
-
 </div>
 </div>
 <a id="gaa0288691785a5f868238e0468b39523d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,12 +906,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>NVIC Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01540">1540</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gaa0288691785a5f868238e0468b39523d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC Base Address </p>
+
+</div>
+</div>
+<a id="gaa0288691785a5f868238e0468b39523d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC Base Address </p>
+
+</div>
+</div>
+<a id="gaa0288691785a5f868238e0468b39523d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC Base Address </p>
+
+</div>
+</div>
+<a id="gaa0288691785a5f868238e0468b39523d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC Base Address </p>
+
+</div>
+</div>
+<a id="gaa0288691785a5f868238e0468b39523d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC Base Address </p>
+
+</div>
+</div>
+<a id="gaa0288691785a5f868238e0468b39523d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC Base Address </p>
+
+</div>
+</div>
+<a id="gaa0288691785a5f868238e0468b39523d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0288691785a5f868238e0468b39523d">&#9670;&nbsp;</a></span>NVIC_BASE <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NVIC Base Address </p>
 
 </div>
 </div>
 <a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,12 +1026,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>SCB configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm0_8h_source.html#l00587">587</a> of file <a class="el" href="core__cm0_8h_source.html">core_cm0.h</a>.</p>
-
 </div>
 </div>
 <a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,12 +1041,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>SCB configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01544">1544</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SCB configuration struct </p>
+
+</div>
+</div>
+<a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SCB configuration struct </p>
+
+</div>
+</div>
+<a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SCB configuration struct </p>
+
+</div>
+</div>
+<a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SCB configuration struct </p>
+
+</div>
+</div>
+<a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SCB configuration struct </p>
+
+</div>
+</div>
+<a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SCB configuration struct </p>
+
+</div>
+</div>
+<a id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf6477c2bde2f00f99e3c2fd1060b01">&#9670;&nbsp;</a></span>SCB <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="struct_s_c_b___type.html">SCB_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SCB configuration struct </p>
 
 </div>
 </div>
 <a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,12 +1161,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>System Control Block Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm0_8h_source.html#l00585">585</a> of file <a class="el" href="core__cm0_8h_source.html">core_cm0.h</a>.</p>
-
 </div>
 </div>
 <a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,12 +1176,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>System Control Block Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01541">1541</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Block Base Address </p>
+
+</div>
+</div>
+<a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Block Base Address </p>
+
+</div>
+</div>
+<a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Block Base Address </p>
+
+</div>
+</div>
+<a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Block Base Address </p>
+
+</div>
+</div>
+<a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Block Base Address </p>
+
+</div>
+</div>
+<a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Block Base Address </p>
+
+</div>
+</div>
+<a id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">&#9670;&nbsp;</a></span>SCB_BASE <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Block Base Address </p>
 
 </div>
 </div>
 <a id="ga9fe0cd2eef83a8adad94490d9ecca63f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9fe0cd2eef83a8adad94490d9ecca63f">&#9670;&nbsp;</a></span>SCnSCB</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fe0cd2eef83a8adad94490d9ecca63f">&#9670;&nbsp;</a></span>SCnSCB <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,12 +1296,85 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>System control Register not in SCB </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01543">1543</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="ga9fe0cd2eef83a8adad94490d9ecca63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fe0cd2eef83a8adad94490d9ecca63f">&#9670;&nbsp;</a></span>SCnSCB <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCnSCB&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System control Register not in SCB </p>
+
+</div>
+</div>
+<a id="ga9fe0cd2eef83a8adad94490d9ecca63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fe0cd2eef83a8adad94490d9ecca63f">&#9670;&nbsp;</a></span>SCnSCB <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCnSCB&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System control Register not in SCB </p>
+
+</div>
+</div>
+<a id="ga9fe0cd2eef83a8adad94490d9ecca63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fe0cd2eef83a8adad94490d9ecca63f">&#9670;&nbsp;</a></span>SCnSCB <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCnSCB&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System control Register not in SCB </p>
+
+</div>
+</div>
+<a id="ga9fe0cd2eef83a8adad94490d9ecca63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fe0cd2eef83a8adad94490d9ecca63f">&#9670;&nbsp;</a></span>SCnSCB <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCnSCB&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System control Register not in SCB </p>
+
+</div>
+</div>
+<a id="ga9fe0cd2eef83a8adad94490d9ecca63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fe0cd2eef83a8adad94490d9ecca63f">&#9670;&nbsp;</a></span>SCnSCB <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCnSCB&#160;&#160;&#160;((<a class="el" href="struct_s_cn_s_c_b___type.html">SCnSCB_Type</a>    *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System control Register not in SCB </p>
 
 </div>
 </div>
 <a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,12 +1386,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>System Control Space Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm0_8h_source.html#l00582">582</a> of file <a class="el" href="core__cm0_8h_source.html">core_cm0.h</a>.</p>
-
 </div>
 </div>
 <a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,12 +1401,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>System Control Space Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01534">1534</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Space Base Address </p>
+
+</div>
+</div>
+<a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Space Base Address </p>
+
+</div>
+</div>
+<a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Space Base Address </p>
+
+</div>
+</div>
+<a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Space Base Address </p>
+
+</div>
+</div>
+<a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Space Base Address </p>
+
+</div>
+</div>
+<a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Space Base Address </p>
+
+</div>
+</div>
+<a id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c14ed93192c8d9143322bbf77ebf770">&#9670;&nbsp;</a></span>SCS_BASE <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>System Control Space Base Address </p>
 
 </div>
 </div>
 <a id="gacd96c53beeaff8f603fcda425eb295de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,12 +1521,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>SysTick configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm0_8h_source.html#l00588">588</a> of file <a class="el" href="core__cm0_8h_source.html">core_cm0.h</a>.</p>
-
 </div>
 </div>
 <a id="gacd96c53beeaff8f603fcda425eb295de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,12 +1536,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>SysTick configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01545">1545</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="gacd96c53beeaff8f603fcda425eb295de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick configuration struct </p>
+
+</div>
+</div>
+<a id="gacd96c53beeaff8f603fcda425eb295de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick configuration struct </p>
+
+</div>
+</div>
+<a id="gacd96c53beeaff8f603fcda425eb295de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick configuration struct </p>
+
+</div>
+</div>
+<a id="gacd96c53beeaff8f603fcda425eb295de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick configuration struct </p>
+
+</div>
+</div>
+<a id="gacd96c53beeaff8f603fcda425eb295de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick configuration struct </p>
+
+</div>
+</div>
+<a id="gacd96c53beeaff8f603fcda425eb295de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick configuration struct </p>
+
+</div>
+</div>
+<a id="gacd96c53beeaff8f603fcda425eb295de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd96c53beeaff8f603fcda425eb295de">&#9670;&nbsp;</a></span>SysTick <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick&#160;&#160;&#160;((<a class="el" href="struct_sys_tick___type.html">SysTick_Type</a>   *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga58effaac0b93006b756d33209e814646">SysTick_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick configuration struct </p>
 
 </div>
 </div>
 <a id="ga58effaac0b93006b756d33209e814646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,12 +1656,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>SysTick Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm0_8h_source.html#l00583">583</a> of file <a class="el" href="core__cm0_8h_source.html">core_cm0.h</a>.</p>
-
 </div>
 </div>
 <a id="ga58effaac0b93006b756d33209e814646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,12 +1671,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>SysTick Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01539">1539</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="ga58effaac0b93006b756d33209e814646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick Base Address </p>
+
+</div>
+</div>
+<a id="ga58effaac0b93006b756d33209e814646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick Base Address </p>
+
+</div>
+</div>
+<a id="ga58effaac0b93006b756d33209e814646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick Base Address </p>
+
+</div>
+</div>
+<a id="ga58effaac0b93006b756d33209e814646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick Base Address </p>
+
+</div>
+</div>
+<a id="ga58effaac0b93006b756d33209e814646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick Base Address </p>
+
+</div>
+</div>
+<a id="ga58effaac0b93006b756d33209e814646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick Base Address </p>
+
+</div>
+</div>
+<a id="ga58effaac0b93006b756d33209e814646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58effaac0b93006b756d33209e814646">&#9670;&nbsp;</a></span>SysTick_BASE <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SysTick_BASE&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s__core__base.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0010UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SysTick Base Address </p>
 
 </div>
 </div>
 <a id="ga8b4dd00016aed25a0ea54e9a9acd1239"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b4dd00016aed25a0ea54e9a9acd1239">&#9670;&nbsp;</a></span>TPI</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b4dd00016aed25a0ea54e9a9acd1239">&#9670;&nbsp;</a></span>TPI <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,12 +1791,70 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>TPI configuration struct </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01549">1549</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="ga8b4dd00016aed25a0ea54e9a9acd1239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b4dd00016aed25a0ea54e9a9acd1239">&#9670;&nbsp;</a></span>TPI <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI configuration struct </p>
+
+</div>
+</div>
+<a id="ga8b4dd00016aed25a0ea54e9a9acd1239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b4dd00016aed25a0ea54e9a9acd1239">&#9670;&nbsp;</a></span>TPI <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI configuration struct </p>
+
+</div>
+</div>
+<a id="ga8b4dd00016aed25a0ea54e9a9acd1239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b4dd00016aed25a0ea54e9a9acd1239">&#9670;&nbsp;</a></span>TPI <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI configuration struct </p>
+
+</div>
+</div>
+<a id="ga8b4dd00016aed25a0ea54e9a9acd1239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b4dd00016aed25a0ea54e9a9acd1239">&#9670;&nbsp;</a></span>TPI <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI&#160;&#160;&#160;((<a class="el" href="struct_t_p_i___type.html">TPI_Type</a>       *)     <a class="el" href="group___c_m_s_i_s__core__base.html#ga2b1eeff850a7e418844ca847145a1a68">TPI_BASE</a>      )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI configuration struct </p>
 
 </div>
 </div>
 <a id="ga2b1eeff850a7e418844ca847145a1a68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b1eeff850a7e418844ca847145a1a68">&#9670;&nbsp;</a></span>TPI_BASE</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b1eeff850a7e418844ca847145a1a68">&#9670;&nbsp;</a></span>TPI_BASE <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,14 +1866,72 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>TPI Base Address </p>
 
-<p class="definition">Definition at line <a class="el" href="core__cm4_8h_source.html#l01537">1537</a> of file <a class="el" href="core__cm4_8h_source.html">core_cm4.h</a>.</p>
+</div>
+</div>
+<a id="ga2b1eeff850a7e418844ca847145a1a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b1eeff850a7e418844ca847145a1a68">&#9670;&nbsp;</a></span>TPI_BASE <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI_BASE&#160;&#160;&#160;(0xE0040000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI Base Address </p>
+
+</div>
+</div>
+<a id="ga2b1eeff850a7e418844ca847145a1a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b1eeff850a7e418844ca847145a1a68">&#9670;&nbsp;</a></span>TPI_BASE <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI_BASE&#160;&#160;&#160;(0xE0040000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI Base Address </p>
+
+</div>
+</div>
+<a id="ga2b1eeff850a7e418844ca847145a1a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b1eeff850a7e418844ca847145a1a68">&#9670;&nbsp;</a></span>TPI_BASE <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI_BASE&#160;&#160;&#160;(0xE0040000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI Base Address </p>
+
+</div>
+</div>
+<a id="ga2b1eeff850a7e418844ca847145a1a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b1eeff850a7e418844ca847145a1a68">&#9670;&nbsp;</a></span>TPI_BASE <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPI_BASE&#160;&#160;&#160;(0xE0040000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TPI Base Address </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:35 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:05 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

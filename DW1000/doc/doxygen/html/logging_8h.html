@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>include/platform/logging.h File Reference</title>
+<title>OT-DW1000: openthread-master/include/openthread/platform/logging.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ac186d3e8926949364e5821f25491cc3.html">platform</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_61d5b5043cdae76d6d92e24d2958a5cb.html">include</a></li><li class="navelem"><a class="el" href="dir_c799c50edf1c744cd55002f04a278732.html">openthread</a></li><li class="navelem"><a class="el" href="dir_e147634c1c0e69856cd4e206277ac627.html">platform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,68 +81,63 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga417046f666e1f37898d76194c100172e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#ga417046f666e1f37898d76194c100172e">OPENTHREAD_LOG_LEVEL_NONE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga417046f666e1f37898d76194c100172e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f3394352ece4ef6dca78ae39b36d681"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#ga3f3394352ece4ef6dca78ae39b36d681">OPENTHREAD_LOG_LEVEL_CRIT</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ga3f3394352ece4ef6dca78ae39b36d681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1036ce6837f06ff7cec8335003d699c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#ga1036ce6837f06ff7cec8335003d699c0">OPENTHREAD_LOG_LEVEL_WARN</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga1036ce6837f06ff7cec8335003d699c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1aaf4b31af0caca1d066d702d85c470"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#gaf1aaf4b31af0caca1d066d702d85c470">OPENTHREAD_LOG_LEVEL_INFO</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:gaf1aaf4b31af0caca1d066d702d85c470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga489e4b93b18d8c2b5613020f4563239c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#ga489e4b93b18d8c2b5613020f4563239c">OPENTHREAD_LOG_LEVEL_DEBG</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ga489e4b93b18d8c2b5613020f4563239c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga987f77155965c0df144959c8425acece"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#ga987f77155965c0df144959c8425acece">OT_LOG_LEVEL_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga987f77155965c0df144959c8425acece"><td class="mdescLeft">&#160;</td><td class="mdescRight">None.  <a href="group__plat-logging.html#ga987f77155965c0df144959c8425acece">More...</a><br /></td></tr>
+<tr class="separator:ga987f77155965c0df144959c8425acece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45e13bc61de33b7b69dcea2cd7a2e3d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#ga45e13bc61de33b7b69dcea2cd7a2e3d9">OT_LOG_LEVEL_CRIT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ga45e13bc61de33b7b69dcea2cd7a2e3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Critical.  <a href="group__plat-logging.html#ga45e13bc61de33b7b69dcea2cd7a2e3d9">More...</a><br /></td></tr>
+<tr class="separator:ga45e13bc61de33b7b69dcea2cd7a2e3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1124e3c83ea474c959435b3922484806"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#ga1124e3c83ea474c959435b3922484806">OT_LOG_LEVEL_WARN</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ga1124e3c83ea474c959435b3922484806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Warning.  <a href="group__plat-logging.html#ga1124e3c83ea474c959435b3922484806">More...</a><br /></td></tr>
+<tr class="separator:ga1124e3c83ea474c959435b3922484806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d7749dcdebf56aa96aca267c6d4f8c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#ga5d7749dcdebf56aa96aca267c6d4f8c8">OT_LOG_LEVEL_INFO</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:ga5d7749dcdebf56aa96aca267c6d4f8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info.  <a href="group__plat-logging.html#ga5d7749dcdebf56aa96aca267c6d4f8c8">More...</a><br /></td></tr>
+<tr class="separator:ga5d7749dcdebf56aa96aca267c6d4f8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bafd1269d6e2223b0d86e782b5ca123"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#ga2bafd1269d6e2223b0d86e782b5ca123">OT_LOG_LEVEL_DEBG</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:ga2bafd1269d6e2223b0d86e782b5ca123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug.  <a href="group__plat-logging.html#ga2bafd1269d6e2223b0d86e782b5ca123">More...</a><br /></td></tr>
+<tr class="separator:ga2bafd1269d6e2223b0d86e782b5ca123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gabb9575d6dac7e47be5da966032637c8a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__logging.html#ga84a41d6b28556e61b4dd8b508472ab13">otLogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#gabb9575d6dac7e47be5da966032637c8a">otLogLevel</a></td></tr>
-<tr class="separator:gabb9575d6dac7e47be5da966032637c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga808e7871ed75a73318c4228f404486e0"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#ga808e7871ed75a73318c4228f404486e0">otLogRegion</a></td></tr>
+<tr class="memitem:ga541df22d7943d447bc99f16f517f6abd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#ga541df22d7943d447bc99f16f517f6abd">otLogLevel</a></td></tr>
+<tr class="separator:ga541df22d7943d447bc99f16f517f6abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga808e7871ed75a73318c4228f404486e0"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__plat-logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#ga808e7871ed75a73318c4228f404486e0">otLogRegion</a></td></tr>
 <tr class="separator:ga808e7871ed75a73318c4228f404486e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga84a41d6b28556e61b4dd8b508472ab13"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#ga84a41d6b28556e61b4dd8b508472ab13">otLogLevel</a> { <br />
-&#160;&#160;<a class="el" href="group__logging.html#gga84a41d6b28556e61b4dd8b508472ab13afb8e284fd66ce9718329269ebaeaabe8">kLogLevelNone</a> = OPENTHREAD_LOG_LEVEL_NONE, 
-<a class="el" href="group__logging.html#gga84a41d6b28556e61b4dd8b508472ab13af45a26061cae3ea018c9ffa38c618184">kLogLevelCrit</a> = OPENTHREAD_LOG_LEVEL_CRIT, 
-<a class="el" href="group__logging.html#gga84a41d6b28556e61b4dd8b508472ab13aa1472fcc1b367484457985649393ca92">kLogLevelWarn</a> = OPENTHREAD_LOG_LEVEL_WARN, 
-<a class="el" href="group__logging.html#gga84a41d6b28556e61b4dd8b508472ab13a407a207057113bdbf53c0fa100c9d8b3">kLogLevelInfo</a> = OPENTHREAD_LOG_LEVEL_INFO, 
+<tr class="memitem:gaee25d56d067df60b93f75b2ff587668c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a> { <br />
+&#160;&#160;<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668ca035d48996c365d85e4d45d9bf0e4a1e5">OT_LOG_REGION_API</a> = 1, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668ca11b4d682838585bfcd8de18b8da8489f">OT_LOG_REGION_MLE</a> = 2, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668cad4e4277f13b0004154a4752c35e2492a">OT_LOG_REGION_ARP</a> = 3, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668ca10fc429c24ff6bccd100182363c12a67">OT_LOG_REGION_NET_DATA</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="group__logging.html#gga84a41d6b28556e61b4dd8b508472ab13a7492b236935c85a415a18cb9a1e21364">kLogLevelDebg</a> = OPENTHREAD_LOG_LEVEL_DEBG
+&#160;&#160;<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668cabdbd31167a6f5efb5e35426eb8fb4d1a">OT_LOG_REGION_ICMP</a> = 5, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668caf9943bb06231d25b972727d93b69cbbd">OT_LOG_REGION_IP6</a> = 6, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668ca8486c90c340479177e175374687a2267">OT_LOG_REGION_MAC</a> = 7, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668ca96f0bc11bb2edcca16e9b64279b04fc4">OT_LOG_REGION_MEM</a> = 8, 
 <br />
- }</td></tr>
-<tr class="separator:ga84a41d6b28556e61b4dd8b508472ab13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee25d56d067df60b93f75b2ff587668c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a> { <br />
-&#160;&#160;<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca49870e7e5fcd118dd5ed67af31be7e3b">kLogRegionApi</a> = 1, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668caf346c93d0979773b1c4dc1a071d7763e">kLogRegionMle</a> = 2, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca4ae7bdeb925a623fdc2c86ce37ce19ba">kLogRegionArp</a> = 3, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca9d9bd5a9bb628d750079a1afa5c67897">kLogRegionNetData</a> = 4, 
+&#160;&#160;<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668cadc9701e21d9c4f155d078ec89e5f679d">OT_LOG_REGION_NCP</a> = 9, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668ca206f1070d267f7e59ebfd3975fe68a05">OT_LOG_REGION_MESH_COP</a> = 10, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668caebaf21c12a0d460c5a607c2770e3341d">OT_LOG_REGION_NET_DIAG</a> = 11, 
+<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668cac5c150b337284ff78ac0733fa90fe9b0">OT_LOG_REGION_PLATFORM</a> = 12, 
 <br />
-&#160;&#160;<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668caabd0f54f25492e4b2ad3282777761eed">kLogRegionIcmp</a> = 5, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca23282f221d40e51b9bdc1124299ab418">kLogRegionIp6</a> = 6, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca5b3b119a4abb512caab4e00735f70f7e">kLogRegionMac</a> = 7, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668cae041e0188420de65f4e0514452bd707d">kLogRegionMem</a> = 8, 
-<br />
-&#160;&#160;<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca7ca6af65ae617ccab42ec8174d68ebcd">kLogRegionNcp</a> = 9, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca2e24c126abad883195527cc62c8d907b">kLogRegionMeshCoP</a> = 10, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668caae978914f3d7b4f4cbc77db1dfb347c0">kLogRegionNetDiag</a> = 11, 
-<a class="el" href="group__logging.html#ggaee25d56d067df60b93f75b2ff587668ca1b62c13fe126af0b0a995d626ee33514">kLogRegionPlatform</a> = 12
+&#160;&#160;<a class="el" href="group__plat-logging.html#ggaee25d56d067df60b93f75b2ff587668caa9d7c9f0623f8469559f2c01890f98ce">OT_LOG_REGION_COAP</a> = 13
 <br />
  }</td></tr>
 <tr class="separator:gaee25d56d067df60b93f75b2ff587668c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gada6f3e6235ef97eb169bccb45755fd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging.html#gada6f3e6235ef97eb169bccb45755fd5a">otPlatLog</a> (<a class="el" href="group__logging.html#ga84a41d6b28556e61b4dd8b508472ab13">otLogLevel</a> aLogLevel, <a class="el" href="group__logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a> aLogRegion, const char *aFormat,...)</td></tr>
+<tr class="memitem:gada6f3e6235ef97eb169bccb45755fd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-logging.html#gada6f3e6235ef97eb169bccb45755fd5a">otPlatLog</a> (<a class="el" href="group__plat-logging.html#ga541df22d7943d447bc99f16f517f6abd">otLogLevel</a> aLogLevel, <a class="el" href="group__plat-logging.html#gaee25d56d067df60b93f75b2ff587668c">otLogRegion</a> aLogRegion, const char *aFormat,...)</td></tr>
 <tr class="separator:gada6f3e6235ef97eb169bccb45755fd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes the platform abstraction for the debug log service. </p>
-
-<p class="definition">Definition in file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

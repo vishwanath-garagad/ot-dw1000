@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>include/platform/settings.h File Reference</title>
+<title>OT-DW1000: openthread-master/include/openthread/platform/settings.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ac186d3e8926949364e5821f25491cc3.html">platform</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_61d5b5043cdae76d6d92e24d2958a5cb.html">include</a></li><li class="navelem"><a class="el" href="dir_c799c50edf1c744cd55002f04a278732.html">openthread</a></li><li class="navelem"><a class="el" href="dir_e147634c1c0e69856cd4e206277ac627.html">platform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,474 +70,47 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This file includes platform abstractions for non-volatile storage of settings.  
+<p>This file includes platform abstraction for non-volatile storage of settings.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="types_8h_source.html">openthread/types.h</a>&gt;</code><br />
 </div>
 <p><a href="settings_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a915799404344a36bcb0b9d4ca301d938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a915799404344a36bcb0b9d4ca301d938">otPlatSettingsInit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="separator:a915799404344a36bcb0b9d4ca301d938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a0a8c17d95538396928be7af8aafd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7">otPlatSettingsBeginChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:ac6a0a8c17d95538396928be7af8aafd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin atomic change set.  <a href="#ac6a0a8c17d95538396928be7af8aafd7">More...</a><br /></td></tr>
-<tr class="separator:ac6a0a8c17d95538396928be7af8aafd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32d1d192f55898281e8924ad33e1d395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395">otPlatSettingsCommitChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:a32d1d192f55898281e8924ad33e1d395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="#a32d1d192f55898281e8924ad33e1d395">More...</a><br /></td></tr>
-<tr class="separator:a32d1d192f55898281e8924ad33e1d395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6526eedcd9a6e0d249f76c7020d3e4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#ae6526eedcd9a6e0d249f76c7020d3e4e">otPlatSettingsAbandonChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:ae6526eedcd9a6e0d249f76c7020d3e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abandon all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="#ae6526eedcd9a6e0d249f76c7020d3e4e">More...</a><br /></td></tr>
-<tr class="separator:ae6526eedcd9a6e0d249f76c7020d3e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22beca78bce58103b2c0e1059add0cf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a22beca78bce58103b2c0e1059add0cf8">otPlatSettingsGet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *aValueLength)</td></tr>
-<tr class="memdesc:a22beca78bce58103b2c0e1059add0cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the value of a setting.  <a href="#a22beca78bce58103b2c0e1059add0cf8">More...</a><br /></td></tr>
-<tr class="separator:a22beca78bce58103b2c0e1059add0cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5bb3c9a196271b055b3275be0c2b68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a4c5bb3c9a196271b055b3275be0c2b68">otPlatSettingsSet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
-<tr class="memdesc:a4c5bb3c9a196271b055b3275be0c2b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or replaces the value of a setting.  <a href="#a4c5bb3c9a196271b055b3275be0c2b68">More...</a><br /></td></tr>
-<tr class="separator:a4c5bb3c9a196271b055b3275be0c2b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b4717038f891793776e7e09d61cf33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a79b4717038f891793776e7e09d61cf33">otPlatSettingsAdd</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
-<tr class="memdesc:a79b4717038f891793776e7e09d61cf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a value to a setting.  <a href="#a79b4717038f891793776e7e09d61cf33">More...</a><br /></td></tr>
-<tr class="separator:a79b4717038f891793776e7e09d61cf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12607e0b29be777cf24d878702197b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a12607e0b29be777cf24d878702197b83">otPlatSettingsDelete</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex)</td></tr>
-<tr class="memdesc:a12607e0b29be777cf24d878702197b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a setting from the setting store.  <a href="#a12607e0b29be777cf24d878702197b83">More...</a><br /></td></tr>
-<tr class="separator:a12607e0b29be777cf24d878702197b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9512db56b3712ba7b5a263e0280fa20a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a9512db56b3712ba7b5a263e0280fa20a">otPlatSettingsWipe</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
-<tr class="memdesc:a9512db56b3712ba7b5a263e0280fa20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all settings from the setting store.  <a href="#a9512db56b3712ba7b5a263e0280fa20a">More...</a><br /></td></tr>
-<tr class="separator:a9512db56b3712ba7b5a263e0280fa20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga915799404344a36bcb0b9d4ca301d938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga915799404344a36bcb0b9d4ca301d938">otPlatSettingsInit</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="separator:ga915799404344a36bcb0b9d4ca301d938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79ac3141a0829914c01ddae3c3a2bab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3">otPlatSettingsBeginChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:ga79ac3141a0829914c01ddae3c3a2bab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin atomic change set.  <a href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3">More...</a><br /></td></tr>
+<tr class="separator:ga79ac3141a0829914c01ddae3c3a2bab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga293c86fc237c1cda20017c67cb8d8d54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga293c86fc237c1cda20017c67cb8d8d54">otPlatSettingsCommitChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:ga293c86fc237c1cda20017c67cb8d8d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit all settings changes since previous call to <a class="el" href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="group__plat-settings.html#ga293c86fc237c1cda20017c67cb8d8d54">More...</a><br /></td></tr>
+<tr class="separator:ga293c86fc237c1cda20017c67cb8d8d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7e58191d678ae7bfd43814d003c6a6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#gab7e58191d678ae7bfd43814d003c6a6e">otPlatSettingsAbandonChange</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:gab7e58191d678ae7bfd43814d003c6a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abandon all settings changes since previous call to <a class="el" href="group__plat-settings.html#ga79ac3141a0829914c01ddae3c3a2bab3" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>  <a href="group__plat-settings.html#gab7e58191d678ae7bfd43814d003c6a6e">More...</a><br /></td></tr>
+<tr class="separator:gab7e58191d678ae7bfd43814d003c6a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0fa57fbb3dd2aafe0bb2af52518ee04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#gad0fa57fbb3dd2aafe0bb2af52518ee04">otPlatSettingsGet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex, <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *aValueLength)</td></tr>
+<tr class="memdesc:gad0fa57fbb3dd2aafe0bb2af52518ee04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the value of a setting.  <a href="group__plat-settings.html#gad0fa57fbb3dd2aafe0bb2af52518ee04">More...</a><br /></td></tr>
+<tr class="separator:gad0fa57fbb3dd2aafe0bb2af52518ee04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8de8672dce112939ef04d0b4b182bbe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga8de8672dce112939ef04d0b4b182bbe3">otPlatSettingsSet</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
+<tr class="memdesc:ga8de8672dce112939ef04d0b4b182bbe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or replaces the value of a setting.  <a href="group__plat-settings.html#ga8de8672dce112939ef04d0b4b182bbe3">More...</a><br /></td></tr>
+<tr class="separator:ga8de8672dce112939ef04d0b4b182bbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79f95407a75ed792af8058a164552c1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga79f95407a75ed792af8058a164552c1e">otPlatSettingsAdd</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *aValue, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aValueLength)</td></tr>
+<tr class="memdesc:ga79f95407a75ed792af8058a164552c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a value to a setting.  <a href="group__plat-settings.html#ga79f95407a75ed792af8058a164552c1e">More...</a><br /></td></tr>
+<tr class="separator:ga79f95407a75ed792af8058a164552c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaef25d37f98fabe792cebaf5b60dab2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abaaa90aaa35da8f9d394a227a23a6a49">otError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#gaeaef25d37f98fabe792cebaf5b60dab2">otPlatSettingsDelete</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance, <a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> aKey, int aIndex)</td></tr>
+<tr class="memdesc:gaeaef25d37f98fabe792cebaf5b60dab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a setting from the setting store.  <a href="group__plat-settings.html#gaeaef25d37f98fabe792cebaf5b60dab2">More...</a><br /></td></tr>
+<tr class="separator:gaeaef25d37f98fabe792cebaf5b60dab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9512db56b3712ba7b5a263e0280fa20a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plat-settings.html#ga9512db56b3712ba7b5a263e0280fa20a">otPlatSettingsWipe</a> (<a class="el" href="structot_instance.html">otInstance</a> *aInstance)</td></tr>
+<tr class="memdesc:ga9512db56b3712ba7b5a263e0280fa20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all settings from the setting store.  <a href="group__plat-settings.html#ga9512db56b3712ba7b5a263e0280fa20a">More...</a><br /></td></tr>
+<tr class="separator:ga9512db56b3712ba7b5a263e0280fa20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file includes platform abstractions for non-volatile storage of settings. </p>
-
-<p class="definition">Definition in file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae6526eedcd9a6e0d249f76c7020d3e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6526eedcd9a6e0d249f76c7020d3e4e">&#9670;&nbsp;</a></span>otPlatSettingsAbandonChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsAbandonChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Abandon all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> </p>
-<p>This function may be called at the end of a sequence of changes. instead of <a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a>. If implemented, it causes all changes made since <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> to be rolled back and abandoned.</p>
-<p>The implementation of this function is optional. If not implemented, it should return kThreadError_NotImplemented.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The changes made since the last call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> have been successfully rolled back. </td></tr>
-    <tr><td class="paramname">kThreadError_InvalidState</td><td><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> has not been called. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>, <a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00450">450</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="a79b4717038f891793776e7e09d61cf33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79b4717038f891793776e7e09d61cf33">&#9670;&nbsp;</a></span>otPlatSettingsAdd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsAdd </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aValueLength</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a value to a setting. </p>
-<p>This function adds the value to a setting identified by aKey, without replacing any existing values.</p>
-<p>Note that the underlying implementation is not required to maintain the order of the items associated with a specific key. The added value may be added to the end, the beginning, or even somewhere in the middle. The order of any pre-existing values may also change.</p>
-<p>Calling this function successfully may cause unrelated settings with multiple values to be reordered.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the setting to change. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aValue</td><td>A pointer to where the new value of the setting should be read from. MUST NOT be NULL if aValueLength is non-zero. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">[in/out]</td><td>aValueLength The length of the data pointed to by aValue. May be zero.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given setting was added or staged to be added. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00488">488</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="ac6a0a8c17d95538396928be7af8aafd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6a0a8c17d95538396928be7af8aafd7">&#9670;&nbsp;</a></span>otPlatSettingsBeginChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsBeginChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Begin atomic change set. </p>
-<p>This function is called at the start of a sequence of changes that should be made atomically.</p>
-<p>This function, along with <code><a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a></code> are designed to ensure atomicity of changes to multiple settings. Once this function has been called, any changes made to the settings store are only committed when <code><a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a></code> is called.</p>
-<p>The implementation of this function is optional. If not implemented, it should return kThreadError_None.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The settings commit lock has been set. </td></tr>
-    <tr><td class="paramname">kThreadError_Already</td><td>The commit lock is already set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#a32d1d192f55898281e8924ad33e1d395" title="Commit all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsCommitChange()</a>, <a class="el" href="settings_8h.html#ae6526eedcd9a6e0d249f76c7020d3e4e" title="Abandon all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsAbandonChange()</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00438">438</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="a32d1d192f55898281e8924ad33e1d395"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32d1d192f55898281e8924ad33e1d395">&#9670;&nbsp;</a></span>otPlatSettingsCommitChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsCommitChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Commit all settings changes since previous call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> </p>
-<p>This function is called at the end of a sequence of changes. The implementation of this function is optional. If not implemented, it should return kThreadError_NotImplemented.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The changes made since the last call to <a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> have been successfully committed. </td></tr>
-    <tr><td class="paramname">kThreadError_InvalidState</td><td><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a> has not been called. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="settings_8h.html#ac6a0a8c17d95538396928be7af8aafd7" title="Begin atomic change set. ">otPlatSettingsBeginChange()</a>, <a class="el" href="settings_8h.html#ae6526eedcd9a6e0d249f76c7020d3e4e" title="Abandon all settings changes since previous call to otPlatSettingsBeginChange() ">otPlatSettingsAbandonChange()</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00444">444</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="a12607e0b29be777cf24d878702197b83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12607e0b29be777cf24d878702197b83">&#9670;&nbsp;</a></span>otPlatSettingsDelete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsDelete </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aIndex</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a setting from the setting store. </p>
-<p>This function deletes a specific value from the setting identified by aKey from the settings store.</p>
-<p>Note that the underlying implementation is not required to maintain the order of the items associated with a specific key.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the requested setting. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aIndex</td><td>The index of the value to be removed. If set to -1, all values for this aKey will be removed.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given key and index was found and removed successfully. </td></tr>
-    <tr><td class="paramname">kThreadError_NotFound</td><td>The given key or index was not found in the setting store. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00506">506</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="a22beca78bce58103b2c0e1059add0cf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22beca78bce58103b2c0e1059add0cf8">&#9670;&nbsp;</a></span>otPlatSettingsGet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsGet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
-          <td class="paramname"><em>aValueLength</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fetches the value of a setting. </p>
-<p>This function fetches the value of the setting identified by aKey and write it to the memory pointed to by aValue. It then writes the length to the integer pointed to by aValueLength. The initial value of aValueLength is the maximum number of bytes to be written to aValue.</p>
-<p>This function can be used to check for the existence of a key without fetching the value by setting aValue and aValueLength to NULL. You can also check the length of the setting without fetching it by setting only aValue to NULL.</p>
-<p>Note that the underlying storage implementation is not required to maintain the order of settings with multiple values. The order of such values MAY change after ANY write operation to the store.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the requested setting. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aIndex</td><td>The index of the specific item to get. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aValue</td><td>A pointer to where the value of the setting should be written. May be set to NULL if just testing for the presence or length of a setting. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">[in/out]</td><td>aValueLength A pointer to the length of the value. When called, this pointer should point to an integer containing the maximum value size that can be written to aValue. At return, the actual length of the setting is written. This may be set to NULL if performing a presence check.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given setting was found and fetched successfully. </td></tr>
-    <tr><td class="paramname">kThreadError_NotFound</td><td>The given setting was not found in the setting store. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00456">456</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="a915799404344a36bcb0b9d4ca301d938"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a915799404344a36bcb0b9d4ca301d938">&#9670;&nbsp;</a></span>otPlatSettingsInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatSettingsInit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Performs any initialization for the settings subsystem, if necessary.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00038">38</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="a4c5bb3c9a196271b055b3275be0c2b68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5bb3c9a196271b055b3275be0c2b68">&#9670;&nbsp;</a></span>otPlatSettingsSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="openthread-types_8h.html#ab701d053a9c34ab7f11e43e0dc09ac9f">ThreadError</a> otPlatSettingsSet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>aValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>aValueLength</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets or replaces the value of a setting. </p>
-<p>This function sets or replaces the value of a setting identified by aKey. If there was more than one value previously associated with aKey, then they are all deleted and replaced with this single entry.</p>
-<p>Calling this function successfully may cause unrelated settings with multiple values to be reordered.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aKey</td><td>The key associated with the setting to change. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aValue</td><td>A pointer to where the new value of the setting should be read from. MUST NOT be NULL if aValueLength is non-zero. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aValueLength</td><td>The length of the data pointed to by aValue. May be zero.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">kThreadError_None</td><td>The given setting was changed or staged. </td></tr>
-    <tr><td class="paramname">kThreadError_NotImplemented</td><td>This function is not implemented on this platform. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00472">472</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-<a id="a9512db56b3712ba7b5a263e0280fa20a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9512db56b3712ba7b5a263e0280fa20a">&#9670;&nbsp;</a></span>otPlatSettingsWipe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void otPlatSettingsWipe </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structot_instance.html">otInstance</a> *&#160;</td>
-          <td class="paramname"><em>aInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all settings from the setting store. </p>
-<p>This function deletes all settings from the settings store, resetting it to its initial factory state.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aInstance</td><td>The <a class="el" href="namespace_open_thread.html">OpenThread</a> instance structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00520">520</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>This file includes platform abstraction for non-volatile storage of settings. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

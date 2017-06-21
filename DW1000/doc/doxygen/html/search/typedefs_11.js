@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['radiopacket',['RadioPacket',['../group__radio-types.html#ga4ec1493a92b716164820cfc6f63d0727',1,'radio.h']]],
+  ['radio_5fmode_5ft',['radio_mode_t',['../group__xcvr.html#gae1f6be47c5ea717c4aba4589d3165afc',1,'fsl_xcvr.h']]],
   ['ratmr_5ft',['ratmr_t',['../rf__mailbox_8h.html#af9975defb67093aa9e6235d578cb60ca',1,'rf_mailbox.h']]],
-  ['receiveframehandler',['ReceiveFrameHandler',['../class_thread_1_1_mac_1_1_receiver.html#a14a5e43c88f7c23176c56bef11e76e3f',1,'Thread::Mac::Receiver']]],
-  ['receivehandler',['ReceiveHandler',['../class_thread_1_1_mesh_co_p_1_1_dtls.html#a490c0f50d9b3f1392145ee1199f97e79',1,'Thread::MeshCoP::Dtls']]],
-  ['receiverfunction',['ReceiverFunction',['../group__core-coap.html#ga1c9dc931f8be5c3e7fd1899fcc1f219b',1,'Thread::Coap::CoapBase']]],
-  ['recvbuffer',['RecvBuffer',['../examples_2platforms_2cc2538_2uart_8c.html#aab637b1a9f8f0c7d6640423ed453b5f2',1,'uart.c']]],
+  ['rcm_5freset_5fpin_5ffilter_5fconfig_5ft',['rcm_reset_pin_filter_config_t',['../group__rcm.html#ga1ff478888c7dd7c6ed8ff27f8fb00f59',1,'fsl_rcm.h']]],
+  ['rcm_5freset_5fsource_5ft',['rcm_reset_source_t',['../group__rcm.html#ga3846d327a8556045a76cea7143317ddb',1,'fsl_rcm.h']]],
+  ['rcm_5frun_5fwait_5ffilter_5fmode_5ft',['rcm_run_wait_filter_mode_t',['../group__rcm.html#gab04818291759684817621ea4afa2466d',1,'fsl_rcm.h']]],
+  ['receiveframehandler',['ReceiveFrameHandler',['../classot_1_1_mac_1_1_receiver.html#a14a5e43c88f7c23176c56bef11e76e3f',1,'ot::Mac::Receiver']]],
+  ['receivehandler',['ReceiveHandler',['../classot_1_1_mesh_co_p_1_1_dtls.html#a490c0f50d9b3f1392145ee1199f97e79',1,'ot::MeshCoP::Dtls']]],
+  ['recvbuffer',['RecvBuffer',['../examples_2platforms_2cc2538_2uart_8c.html#aab637b1a9f8f0c7d6640423ed453b5f2',1,'RecvBuffer():&#160;uart.c'],['../examples_2platforms_2efr32_2uart_8c.html#aab637b1a9f8f0c7d6640423ed453b5f2',1,'RecvBuffer():&#160;uart.c'],['../examples_2platforms_2kw41z_2uart_8c.html#aab637b1a9f8f0c7d6640423ed453b5f2',1,'RecvBuffer():&#160;uart.c']]],
   ['ret_5fcode_5ft',['ret_code_t',['../group__sdk__error.html#gaf6c20fb483036617204f12e99e0b997b',1,'sdk_errors.h']]],
   ['rfc_5fbleadvoutput_5ft',['rfc_bleAdvOutput_t',['../group__ble__cmd.html#gaa16a1fc8e10613fca1b3d037ee83cc28',1,'rf_ble_cmd.h']]],
   ['rfc_5fbleadvpar_5ft',['rfc_bleAdvPar_t',['../group__ble__cmd.html#ga13dfea5b734e9fab585755131e5d3c93',1,'rf_ble_cmd.h']]],
@@ -102,5 +104,9 @@ var searchData=
   ['rfc_5fproprxoutput_5ft',['rfc_propRxOutput_t',['../group__prop__cmd.html#ga4b9abd69acde7fdbd76763542cebe0af',1,'rf_prop_cmd.h']]],
   ['rfc_5fproprxstatus_5ft',['rfc_propRxStatus_t',['../group__prop__cmd.html#ga53b566160c13310280fbc25a8e006a42',1,'rf_prop_cmd.h']]],
   ['rfc_5fradioop_5ft',['rfc_radioOp_t',['../group__common__cmd.html#ga227394472aa59c6d981ed4194b2cb878',1,'rf_common_cmd.h']]],
-  ['rfc_5fshortaddrentry_5ft',['rfc_shortAddrEntry_t',['../group__ieee__cmd.html#gafb034528db0e26f0fb593f88c651aab6',1,'rf_ieee_cmd.h']]]
+  ['rfc_5fshortaddrentry_5ft',['rfc_shortAddrEntry_t',['../group__ieee__cmd.html#gafb034528db0e26f0fb593f88c651aab6',1,'rf_ieee_cmd.h']]],
+  ['rtc_5fconfig_5ft',['rtc_config_t',['../group__rtc.html#ga4f6e75330ce537c2dfeac74d1aec3d37',1,'fsl_rtc.h']]],
+  ['rtc_5fdatetime_5ft',['rtc_datetime_t',['../group__rtc.html#ga1c92d4d0732e176d854c9bd6acfddf54',1,'fsl_rtc.h']]],
+  ['rtc_5finterrupt_5fenable_5ft',['rtc_interrupt_enable_t',['../group__rtc.html#gaeb1b859adba89d7257893319b166dfd6',1,'fsl_rtc.h']]],
+  ['rtc_5fstatus_5fflags_5ft',['rtc_status_flags_t',['../group__rtc.html#ga07906a0d5dd00ca074b4b5cea7cd1fa1',1,'fsl_rtc.h']]]
 ];

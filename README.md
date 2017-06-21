@@ -76,20 +76,20 @@ The Connection details of the Hardware setup is explained in [Hardware_setup.md]
 
 Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh INITIAL`
 ```bash
-$ source ./build_setup.sh INITIAL
+$ ./build_setup.sh INITIAL
 ```
 2.To initialize the Environment Variables, setup(clone the OT repo and sym link creation for dw1000) and building the application (**Next Time on Wards**).
 
 Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh Update`
 ```bash
-$ source ./build_setup.sh UPDATE
+$ ./build_setup.sh UPDATE
 ```
 3.To build the OT CLI and NCP application.
 
 Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh`
 
 ```bash
-$ source ./build_setup.sh
+$ ./build_setup.sh
 ```
 
 
@@ -98,7 +98,7 @@ Use Command line tools for flashing binary on to nrf52840.
 In the previous steps `setup.sh` would have installed the command line tools `nrfjprog`.
 ```bash
 $ cd $OT_ROOT/nrfjprog
-$ sudo ./nrfjprog -f nrf52 --chiperase --program $OT_ROOT/output/bin/arm-none-eabi-ot-cli-ftd.hex
+$ sudo ./nrfjprog -f nrf52 --chiperase --program $OT_ROOT/nrf52840/output/bin/ot-cli-ftd.hex
 $ sudo ./nrfjprog -f nrf52 -r
 ```
 
@@ -196,6 +196,10 @@ The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 
 [TBR]: ./DW1000/doc/Thread_Border_Router.md
 
+## COAP based cloud application
+The COAP based Cloud application is explained in [COAP_CLOUD_APPLICATION][CCA].
+
+[CCA]: ./DW1000/doc/COAP_Cloud_Application.md
 
 ### Known Issues
 * Observed that Discover Command displays network info all the channels instead of displaying for active channel.

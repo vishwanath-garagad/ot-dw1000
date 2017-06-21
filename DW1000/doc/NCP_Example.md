@@ -108,7 +108,7 @@ ping fd64:941b:1c5d:0:7c34:ca08:8028:352c
 On Linux Terminal (use ping6 )
 ```bash
 ping6 fd64:941b:1c5d:0:7c34:ca08:8028:352c
-PING fd64:941b:1c5d:0:7c34:ca08:8028:352c(fd64:941b:1c5d:0:7c34:ca08:8028:352c) 56 data bytes 
+PING fd64:941b:1c5d:0:7c34:ca08:8028:352c(fd64:941b:1c5d:0:7c34:ca08:8028:352c) 56 data bytes
 64 bytes from fd64:941b:1c5d:0:7c34:ca08:8028:352c: icmp_seq=1 ttl=64 time=0.015 ms
 64 bytes from fd64:941b:1c5d:0:7c34:ca08:8028:352c: icmp_seq=1 ttl=64 time=0.015 ms
 64 bytes from fd64:941b:1c5d:0:7c34:ca08:8028:352c: icmp_seq=1 ttl=64 time=0.015 ms

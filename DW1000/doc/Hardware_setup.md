@@ -1,6 +1,6 @@
 
 # Hardware Setup
-This section explains how to connect the Nordic Hardware Platform to EVB1000 through SPI interface. 
+This section explains how to connect the Nordic Hardware Platform to EVB1000 through SPI interface.
 * Turn off S2 DIP switches
 * Turn off S3-1 DIP switch
 * Remove the jumper J10

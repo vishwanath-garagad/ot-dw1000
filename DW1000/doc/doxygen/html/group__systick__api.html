@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Systick_api</title>
+<title>OT-DW1000: Systick_api</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -140,8 +141,6 @@ API</h1>
 <p>This will stop the SysTick counter. If an interrupt handler has been registered, it will no longer be called until SysTick is restarted.</p>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00114">114</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
-
 </div>
 </div>
 <a id="ga3065fe058a853954734d36c0f372c2ce"></a>
@@ -165,8 +164,6 @@ API</h1>
 <dl class="section note"><dt>Note</dt><dd>Calling this function will cause the SysTick counter to (re)commence counting from its current value. The counter is not automatically reloaded with the period as specified in a previous call to <a class="el" href="group__systick__api.html#gaada2d534847c60ae61a0e965ee362228">SysTickPeriodSet()</a>. If an immediate reload is required, the NVIC_ST_CURRENT register must be written to force this. Any write to this register clears the SysTick counter to 0 and will cause a reload with the supplied period on the next clock.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00095">95</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
-
 </div>
 </div>
 <a id="ga1fe4891290cc707780f28c7ce545b5a8"></a>
@@ -188,8 +185,6 @@ API</h1>
 <p>Disables the SysTick interrupt. </p>
 <p>This function will disable the SysTick interrupt, preventing it from being reflected to the processor.</p>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00212">212</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
 
 </div>
 </div>
@@ -213,8 +208,6 @@ API</h1>
 <p>This function will enable the SysTick interrupt, allowing it to be reflected to the processor.</p>
 <dl class="section note"><dt>Note</dt><dd>The SysTick interrupt handler does not need to clear the SysTick interrupt source as this is done automatically by NVIC when the interrupt handler is called.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00193">193</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
 
 </div>
 </div>
@@ -245,8 +238,6 @@ API</h1>
 <dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interrupt_8c.html#a6f1887adb4940a774bc068d5cf6eb275">IntRegister()</a> <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a3c5146858ebe315023403d0bcf65a5d9">for</a> important information about registering interrupt handlers. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00138">138</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
-
 </div>
 </div>
 <a id="ga23ac2566ea7fa69ce3e468f2660aedb8"></a>
@@ -270,8 +261,6 @@ API</h1>
 <dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interrupt_8c.html#a6f1887adb4940a774bc068d5cf6eb275">IntRegister()</a> <a class="el" href="examples_2drivers_2windows_2ottmp_2hdlc_8cpp.html#a3c5146858ebe315023403d0bcf65a5d9">for</a> important information about registering interrupt handlers. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00165">165</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
-
 </div>
 </div>
 <a id="gaed3655451ccc43729c6075c4c50e2b3d"></a>
@@ -293,8 +282,6 @@ API</h1>
 <p>Gets the period of the SysTick counter. </p>
 <p>This function returns the rate at which the SysTick counter wraps; this equals to the number of processor clocks between interrupts.</p>
 <dl class="section return"><dt>Returns</dt><dd>Returns the period of the SysTick counter. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00264">264</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
 
 </div>
 </div>
@@ -325,8 +312,6 @@ API</h1>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00240">240</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
-
 </div>
 </div>
 <a id="ga5a408b5370b8a1643febedb0ccbd4312"></a>
@@ -349,14 +334,12 @@ API</h1>
 <p>This function returns the current value of the SysTick counter; this will be a value between the (period - 1) and zero, both included.</p>
 <dl class="section return"><dt>Returns</dt><dd>Returns the current value of the SysTick counter </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="systick_8h_source.html#l00283">283</a> of file <a class="el" href="systick_8h_source.html">systick.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:38 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:08 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

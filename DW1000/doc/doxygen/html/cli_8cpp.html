@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>src/cli/cli.cpp File Reference</title>
+<title>OT-DW1000: openthread-master/src/cli/cli.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,59 +59,76 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b78fdfbbb632ce54d070469d6a721373.html">cli</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_e7e04e66d76e31c0e8b2494724c42aa4.html">src</a></li><li class="navelem"><a class="el" href="dir_37e7c84297d29c3326941d35009ec82a.html">cli</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cli.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;openthread-config.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="cli_8hpp_source.html">cli.hpp</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-instance_8h_source.html">openthread-instance.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-diag_8h_source.html">openthread-diag.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="commissioner_8h_source.html">commissioning/commissioner.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="joiner_8h_source.html">commissioning/joiner.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dhcp6__server_8h_source.html">dhcp6/dhcp6_server.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dhcp6__client_8h_source.html">dhcp6/dhcp6_client.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="cli_8hpp_source.html">cli.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="wrap__string_8h_source.html">utils/wrap_string.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="openthread_8h_source.html">openthread/openthread.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="commissioner_8h_source.html">openthread/commissioner.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="icmp6_8h_source.html">openthread/icmp6.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="joiner_8h_source.html">openthread/joiner.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dhcp6__client_8h_source.html">openthread/dhcp6_client.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dhcp6__server_8h_source.html">openthread/dhcp6_server.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="diag_8h_source.html">openthread/diag.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2openthread_2platform_2uart_8h_source.html">openthread/platform/uart.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="openthread-instance_8h_source.html">openthread-instance.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="new_8hpp_source.html">common/new.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ip6_8hpp_source.html">net/ip6.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cli__dataset_8hpp_source.html">cli_dataset.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cli__uart_8hpp_source.html">cli_uart.hpp</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="encoding_8hpp_source.html">common/encoding.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="new_8hpp_source.html">common/new.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ip6_8hpp_source.html">net/ip6.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2uart_8h_source.html">platform/uart.h</a>&gt;</code><br />
-</div>
-<p><a href="cli_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &quot;<a class="el" href="encoding_8hpp_source.html">common/encoding.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_1_1_cli_1_1_interpreter.html">Interpreter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_1_1_cli_1_1_interpreter.html">Interpreter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_cli_1_1ot_ptr.html">otPtr&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_thread"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html">Thread</a></td></tr>
+<tr class="memitem:namespaceot"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html">ot</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_thread_1_1_cli"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread_1_1_cli.html">Thread::Cli</a></td></tr>
-<tr class="memdesc:namespace_thread_1_1_cli"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace contains definitions for the CLI interpreter. <br /></td></tr>
+<tr class="memitem:namespaceot_1_1_cli"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_cli.html">ot::Cli</a></td></tr>
+<tr class="memdesc:namespaceot_1_1_cli"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace contains definitions for the CLI interpreter. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa222cb4f85ed049fad4987fb362b822f"><td class="memItemLeft" align="right" valign="top">typedef otPtr&lt; const <a class="el" href="structot_mac_counters.html">otMacCounters</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_cli.html#aa222cb4f85ed049fad4987fb362b822f">otMacCountersPtr</a></td></tr>
+<tr class="separator:aa222cb4f85ed049fad4987fb362b822f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeda98f9a07b232b500c66594f685d0c"><td class="memItemLeft" align="right" valign="top">typedef otPtr&lt; const <a class="el" href="structot_netif_address.html">otNetifAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_cli.html#afeda98f9a07b232b500c66594f685d0c">otNetifAddressPtr</a></td></tr>
+<tr class="separator:afeda98f9a07b232b500c66594f685d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc60d79a95a1dfd0013862bc150d57ad"><td class="memItemLeft" align="right" valign="top">typedef otPtr&lt; const <a class="el" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_cli.html#afc60d79a95a1dfd0013862bc150d57ad">otBufferPtr</a></td></tr>
+<tr class="separator:afc60d79a95a1dfd0013862bc150d57ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ba5782befc773c60138da1d9739ab9"><td class="memItemLeft" align="right" valign="top">typedef otPtr&lt; const char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_cli.html#a81ba5782befc773c60138da1d9739ab9">otStringPtr</a></td></tr>
+<tr class="separator:a81ba5782befc773c60138da1d9739ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad368d74f014edb3a7411c0f73dfc2aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_cli.html#ad368d74f014edb3a7411c0f73dfc2aa9">otFreeMemory</a> (const void *)</td></tr>
+<tr class="separator:ad368d74f014edb3a7411c0f73dfc2aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements the CLI interpreter. </p>
-
-<p class="definition">Definition in file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:29 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

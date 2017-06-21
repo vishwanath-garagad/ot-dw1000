@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>src/core/mac/mac_frame.hpp File Reference</title>
+<title>OT-DW1000: openthread-master/src/core/mac/mac_frame.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Open-Thread-Logo-200x42.png"/></td>
-    <td style="padding-left: 0.5em;">
-    <div id="projectbrief">CLI and NCP Application</div>
-    </td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OT-DW1000
+   </div>
+  </td>
  </tr>
  </tbody>
 </table>
@@ -58,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_4f2226f7ee388b01e44ffc735c8969ec.html">mac</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fe649ec14e5e3782f227cc9e4abd38da.html">openthread-master</a></li><li class="navelem"><a class="el" href="dir_e7e04e66d76e31c0e8b2494724c42aa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4ca71ea08edab0ee9a604b83c61d680d.html">core</a></li><li class="navelem"><a class="el" href="dir_5ab58ff2d3d8d07c797af371d1eeec75.html">mac</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,65 +73,65 @@ $(function() {
 <div class="title">mac_frame.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="openthread-core-config_8h_source.html">openthread-core-config.h</a>&gt;</code><br />
-<code>#include &lt;limits.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="encoding_8hpp_source.html">common/encoding.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="openthread-types_8h_source.html">openthread-types.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="include_2platform_2radio_8h_source.html">platform/radio.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;limits.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="wrap__stdint_8h_source.html">utils/wrap_stdint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="wrap__string_8h_source.html">utils/wrap_string.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="types_8h_source.html">openthread/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2openthread_2platform_2radio_8h_source.html">openthread/platform/radio.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="openthread-core-config_8h_source.html">openthread-core-config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="encoding_8hpp_source.html">common/encoding.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mac__frame_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_1_1_mac_1_1_ext_address.html">ExtAddress</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_mac_1_1_ext_address.html">ExtAddress</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_1_1_mac_1_1_address.html">Address</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structot_1_1_mac_1_1_address.html">Address</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_1_1_mac_1_1_frame.html">Frame</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_mac_1_1_frame.html">Frame</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_1_1_mac_1_1_beacon.html">Beacon</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_mac_1_1_beacon.html">Beacon</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classot_1_1_mac_1_1_beacon_payload.html">BeaconPayload</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_thread"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread.html">Thread</a></td></tr>
+<tr class="memitem:namespaceot"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot.html">ot</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_thread_1_1_ip6"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread_1_1_ip6.html">Thread::Ip6</a></td></tr>
-<tr class="memdesc:namespace_thread_1_1_ip6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace includes definitions for IPv6 networking. <br /></td></tr>
+<tr class="memitem:namespaceot_1_1_ip6"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_ip6.html">ot::Ip6</a></td></tr>
+<tr class="memdesc:namespaceot_1_1_ip6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace includes definitions for IPv6 networking. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_thread_1_1_mac"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_thread_1_1_mac.html">Thread::Mac</a></td></tr>
+<tr class="memitem:namespaceot_1_1_mac"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceot_1_1_mac.html">ot::Mac</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gae3fed85680fe94a34da58ae5a4654b9b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="openthread-types_8h.html#a2dd7c7e7e4b5a8a15e9af7fb78de1eda">otPanId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-mac.html#gae3fed85680fe94a34da58ae5a4654b9b">PanId</a></td></tr>
+<tr class="memitem:gae3fed85680fe94a34da58ae5a4654b9b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#a2dd7c7e7e4b5a8a15e9af7fb78de1eda">otPanId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-mac.html#gae3fed85680fe94a34da58ae5a4654b9b">PanId</a></td></tr>
 <tr class="separator:gae3fed85680fe94a34da58ae5a4654b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae086f32f984b6547ccfe9fc089c7cb97"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="openthread-types_8h.html#a9199b7f0fe13ebcd0da2e3af71f04c40">otShortAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-mac.html#gae086f32f984b6547ccfe9fc089c7cb97">ShortAddress</a></td></tr>
+<tr class="memitem:gae086f32f984b6547ccfe9fc089c7cb97"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#a9199b7f0fe13ebcd0da2e3af71f04c40">otShortAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-mac.html#gae086f32f984b6547ccfe9fc089c7cb97">ShortAddress</a></td></tr>
 <tr class="separator:gae086f32f984b6547ccfe9fc089c7cb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gabe974f22edeef8189603ba75fd90ff3c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__core-mac.html#ggabe974f22edeef8189603ba75fd90ff3ca5764e6638c129d86a570ef9d41011704">kShortAddrBroadcast</a> = 0xffff, 
-<a class="el" href="group__core-mac.html#ggabe974f22edeef8189603ba75fd90ff3caa71036b40f622a5e8475ae2bed371099">kShortAddrInvalid</a> = 0xfffe, 
-<a class="el" href="group__core-mac.html#ggabe974f22edeef8189603ba75fd90ff3ca1478a693e97f57f51fe9ee87356161de">kPanIdBroadcast</a> = 0xffff
+<tr class="memitem:ga4f126a0a9b1d8c6a8f46a051ef8830bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__core-mac.html#gga4f126a0a9b1d8c6a8f46a051ef8830bba5764e6638c129d86a570ef9d41011704">kShortAddrBroadcast</a> = 0xffff, 
+<a class="el" href="group__core-mac.html#gga4f126a0a9b1d8c6a8f46a051ef8830bbaa71036b40f622a5e8475ae2bed371099">kShortAddrInvalid</a> = 0xfffe, 
+<a class="el" href="group__core-mac.html#gga4f126a0a9b1d8c6a8f46a051ef8830bba1478a693e97f57f51fe9ee87356161de">kPanIdBroadcast</a> = 0xffff
  }</td></tr>
-<tr class="separator:gabe974f22edeef8189603ba75fd90ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga4f126a0a9b1d8c6a8f46a051ef8830bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:gab5032c311b9ae6bcc16e79dae009d197"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_thread_1_1_mac_1_1_beacon.html">Thread::Mac::Beacon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-mac.html#gab5032c311b9ae6bcc16e79dae009d197">OT_TOOL_PACKED_END</a></td></tr>
-<tr class="separator:gab5032c311b9ae6bcc16e79dae009d197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b93c653a7e49cb97ac28cd847772941"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classot_1_1_mac_1_1_frame.html">ot::Mac::Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core-mac.html#ga1b93c653a7e49cb97ac28cd847772941">OT_TOOL_PACKED_END</a></td></tr>
+<tr class="separator:ga1b93c653a7e49cb97ac28cd847772941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes definitions for generating and processing IEEE 802.15.4 MAC frames. </p>
-
-<p class="definition">Definition in file <a class="el" href="mac__frame_8hpp_source.html">mac_frame.hpp</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 18:32:30 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 18:58:00 for OT-DW1000 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
